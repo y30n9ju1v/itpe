@@ -3,7 +3,7 @@ title: "TAM-SAM-SOM 시장 규모 추정 프레임워크"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "정보전략및관리", "경영정보", "시장분석", "TAM", "SAM", "SOM"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

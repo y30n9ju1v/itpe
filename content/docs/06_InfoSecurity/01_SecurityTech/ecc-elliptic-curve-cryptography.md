@@ -3,7 +3,7 @@ title: "타원곡선 암호 (ECC, Elliptic Curve Cryptography)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보보안", "보안기술", "ECC", "타원곡선암호", "공개키암호", "ECDHE", "양자내성암호"]
 draft: false
-exam: "136회"
+exam_peim: "136회"
 ---
 
 ## 개요

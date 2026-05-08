@@ -3,7 +3,7 @@ title: "AGI 관점에서 ANI의 필요성"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "AGI", "ANI", "범용인공지능", "특화인공지능"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

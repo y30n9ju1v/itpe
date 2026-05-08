@@ -3,7 +3,7 @@ title: "다차원 색인구조 (Multidimensional Index Structure)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "자료처리", "자료구조론", "다차원색인", "R-Tree", "KD-Tree", "공간데이터", "벡터DB"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

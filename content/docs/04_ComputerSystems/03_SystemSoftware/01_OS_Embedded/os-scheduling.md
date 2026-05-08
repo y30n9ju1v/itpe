@@ -3,7 +3,8 @@ title: "운영체제 스케줄링 (CPU·디스크 스케줄링)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "컴퓨터시스템", "운영체제", "CPU스케줄링", "디스크스케줄링", "SJF", "SSTF"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
+exam_pecs: "138회"
 ---
 
 ## 개요

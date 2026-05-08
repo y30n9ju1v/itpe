@@ -3,7 +3,7 @@ title: "확장성 해싱 (Extendible Hashing)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "자료구조론", "확장성해싱", "동적해싱", "버킷", "디렉토리"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

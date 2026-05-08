@@ -3,7 +3,7 @@ title: "혼동행렬과 분류 성능 지표 (Confusion Matrix)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "혼동행렬", "정확도", "정밀도", "재현율", "F1-score"]
 draft: false
-exam: "136회"
+exam_peim: "136회"
 ---
 
 ## 개요

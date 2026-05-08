@@ -3,7 +3,7 @@ title: "SOAP와 REST 비교"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "컴퓨터통신및네트워크", "네트워크프로토콜", "SOAP", "REST", "웹서비스", "API"]
 draft: false
-exam: "135회"
+exam_pecs: "135회"
 ---
 
 ## 개요

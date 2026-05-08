@@ -3,7 +3,7 @@ title: "MCP (Model Context Protocol) 보안 취약점"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "정보보호", "MCP", "AI보안", "에이전트보안", "LLM"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

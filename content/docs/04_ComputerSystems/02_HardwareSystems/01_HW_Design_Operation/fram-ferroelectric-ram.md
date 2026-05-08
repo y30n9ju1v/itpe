@@ -3,7 +3,7 @@ title: "FRAM (강유전체 RAM)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "컴퓨터시스템", "하드웨어", "FRAM", "메모리", "비휘발성메모리"]
 draft: false
-exam: "138회"
+exam_pecs: "138회"
 ---
 
 ## 개요

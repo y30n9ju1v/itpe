@@ -3,7 +3,7 @@ title: "PR 곡선과 ROC 곡선 비교"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "PR곡선", "ROC곡선", "AUC", "정밀도", "재현율"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

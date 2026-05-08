@@ -3,7 +3,7 @@ title: "AI 거버넌스 (AI Governance)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "AI윤리", "AI거버넌스", "책임AI", "AI정책"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

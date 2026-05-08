@@ -3,7 +3,7 @@ title: "빅데이터 시각화 (Big Data Visualization)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "빅데이터분석", "시각화", "데이터시각화", "대시보드", "인포그래픽"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

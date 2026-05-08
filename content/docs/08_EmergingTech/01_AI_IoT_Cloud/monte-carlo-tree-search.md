@@ -3,7 +3,7 @@ title: "몬테카를로 트리탐색 (Monte Carlo Tree Search)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "최신기술", "AI", "MCTS", "트리탐색", "강화학습", "게임AI"]
 draft: false
-exam: "135회"
+exam_pecs: "135회"
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "인터미턴트 컴퓨팅 (Intermittent Computing)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "가상화", "인터미턴트컴퓨팅", "에너지하베스팅", "IoT", "배터리리스"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

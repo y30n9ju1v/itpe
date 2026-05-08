@@ -3,7 +3,7 @@ title: "팬텀 충돌 (Phantom Conflict)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "DBMS", "팬텀충돌", "팬텀읽기", "트랜잭션", "격리수준"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

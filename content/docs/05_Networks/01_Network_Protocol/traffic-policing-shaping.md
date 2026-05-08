@@ -3,7 +3,7 @@ title: "트래픽 폴리싱과 트래픽 쉐이핑 (Traffic Policing & Shaping)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "컴퓨터통신및네트워크", "네트워크설계", "트래픽제어", "QoS", "폴리싱", "쉐이핑"]
 draft: false
-exam: "135회"
+exam_pecs: "135회"
 ---
 
 ## 개요

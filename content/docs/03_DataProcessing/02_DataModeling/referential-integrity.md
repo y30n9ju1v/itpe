@@ -3,7 +3,7 @@ title: "정보모델링의 참조 무결성 (Referential Integrity)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터모델링", "참조무결성", "외래키", "무결성제약"]
 draft: false
-exam: "135회, 138회"
+exam_peim: "138회"
 ---
 
 ## 개요

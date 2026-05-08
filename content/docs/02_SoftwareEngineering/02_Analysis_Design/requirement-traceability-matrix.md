@@ -3,7 +3,7 @@ title: "요구사항 추적표 (Requirement Traceability Matrix)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "SW분석설계", "요구사항추적", "RTM", "요구사항관리"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

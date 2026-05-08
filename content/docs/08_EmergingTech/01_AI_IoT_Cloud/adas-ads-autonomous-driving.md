@@ -3,7 +3,7 @@ title: "ADAS와 ADS (첨단 운전자 지원 시스템과 자율주행 시스템
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "자율주행", "ADAS", "ADS", "자동차", "AI"]
 draft: false
-exam: "138회"
+exam_pecs: "138회"
 ---
 
 ## 개요

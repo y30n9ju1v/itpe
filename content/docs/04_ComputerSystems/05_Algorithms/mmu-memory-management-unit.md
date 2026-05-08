@@ -3,7 +3,7 @@ title: "MMU (Memory Management Unit)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템소프트웨어및응용소프트웨어", "운영체제", "MMU", "TLB", "IOMMU", "가상메모리", "주소변환"]
 draft: false
-exam: "137회"
+exam_pecs: "137회"
 ---
 
 ## 개요

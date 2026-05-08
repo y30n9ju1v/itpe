@@ -3,7 +3,7 @@ title: "스마트선박과 자율운항선박 (IMO MASS)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "IoT", "스마트선박", "자율운항", "IMO", "SAN", "INS"]
 draft: false
-exam: "138회"
+exam_pecs: "138회"
 ---
 
 ## 개요

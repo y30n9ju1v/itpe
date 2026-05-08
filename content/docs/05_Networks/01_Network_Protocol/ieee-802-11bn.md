@@ -3,7 +3,7 @@ title: "IEEE 802.11bn (Ultra High Reliability Wi-Fi)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크프로토콜", "IEEE802.11bn", "Wi-Fi8", "UHR", "무선랜"]
 draft: false
-exam: "135회"
+exam_peim: "135회"
 ---
 
 ## 개요

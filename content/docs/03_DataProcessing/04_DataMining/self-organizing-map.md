@@ -3,7 +3,7 @@ title: "SOM (자기조직화 지도, Self Organizing Map)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "SOM", "군집분석", "비지도학습", "신경망"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

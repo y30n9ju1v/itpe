@@ -3,7 +3,7 @@ title: "SBOM (소프트웨어 자재명세서, Software Bill of Materials)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "소프트웨어공학", "SW품질", "SBOM", "오픈소스", "공급망보안", "취약점관리"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

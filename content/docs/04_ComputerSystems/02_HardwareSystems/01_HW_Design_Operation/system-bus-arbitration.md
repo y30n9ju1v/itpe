@@ -3,7 +3,7 @@ title: "시스템 버스와 버스 중재 (System Bus & Bus Arbitration)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "하드웨어시스템", "HW구성설계", "시스템버스", "버스중재", "데이지체인", "폴링"]
 draft: false
-exam: "137회"
+exam_pecs: "137회"
 ---
 
 ## 개요

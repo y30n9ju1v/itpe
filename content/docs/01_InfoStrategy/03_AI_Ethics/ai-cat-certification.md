@@ -3,7 +3,7 @@ title: "AI 신뢰성 검인증 제도 (CAT)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "AI윤리", "CAT", "AI신뢰성", "AI인증", "검인증"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

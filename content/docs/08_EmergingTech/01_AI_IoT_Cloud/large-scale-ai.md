@@ -3,7 +3,7 @@ title: "초거대 AI (Large-Scale AI / Foundation Model)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "초거대AI", "LLM", "파운데이션모델", "공공AI"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

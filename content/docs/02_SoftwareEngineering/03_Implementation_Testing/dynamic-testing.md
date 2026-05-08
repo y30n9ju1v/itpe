@@ -3,7 +3,7 @@ title: "동적 테스트 (Dynamic Testing)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "SW구현시험", "동적테스트", "명세기반", "구조기반", "동등분할"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

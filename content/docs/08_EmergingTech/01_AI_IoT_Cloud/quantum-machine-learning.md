@@ -3,7 +3,7 @@ title: "양자 머신러닝 (QML, Quantum Machine Learning)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "AI", "양자컴퓨팅", "QML", "머신러닝", "양자회로"]
 draft: false
-exam: "137회"
+exam_pecs: "137회"
 ---
 
 ## 개요

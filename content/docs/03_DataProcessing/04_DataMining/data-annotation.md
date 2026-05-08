@@ -3,7 +3,7 @@ title: "이미지 데이터 어노테이션 (Data Annotation)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "어노테이션", "라벨링", "AI학습데이터"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

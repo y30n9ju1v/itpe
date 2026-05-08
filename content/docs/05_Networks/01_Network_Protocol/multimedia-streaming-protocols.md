@@ -3,7 +3,7 @@ title: "멀티미디어 스트리밍 프로토콜"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "컴퓨터통신및네트워크", "네트워크프로토콜", "스트리밍", "HLS", "DASH", "RTMP", "WebRTC"]
 draft: false
-exam: "137회"
+exam_pecs: "137회"
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "지능형 엣지 컴퓨팅"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "AI", "엣지컴퓨팅", "IoT", "MEC", "온디바이스AI"]
 draft: false
-exam: "137회"
+exam_pecs: "137회"
 ---
 
 ## 개요

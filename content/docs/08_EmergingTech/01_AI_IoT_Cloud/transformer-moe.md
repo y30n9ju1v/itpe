@@ -3,7 +3,7 @@ title: "트랜스포머(Transformer)와 MoE(Mixture of Experts)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "트랜스포머", "MoE", "어텐션", "LLM"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

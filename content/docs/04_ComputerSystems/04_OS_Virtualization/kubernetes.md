@@ -3,7 +3,7 @@ title: "쿠버네티스 (Kubernetes)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템", "가상화", "쿠버네티스", "컨테이너", "HPA", "오케스트레이션"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

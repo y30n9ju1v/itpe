@@ -3,7 +3,7 @@ title: "중앙은행 디지털 화폐 (CBDC, Central Bank Digital Currency)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "최신기술", "블록체인", "CBDC", "디지털화폐", "핀테크", "중앙은행"]
 draft: false
-exam: "135회"
+exam_pecs: "135회"
 ---
 
 ## 개요

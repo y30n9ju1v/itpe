@@ -3,7 +3,7 @@ title: "정보은닉 (Information Hiding)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "소프트웨어공학", "SW분석설계", "정보은닉", "캡슐화", "객체지향"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

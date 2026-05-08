@@ -3,7 +3,7 @@ title: "다크패턴 (Dark Pattern)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "정보전략및관리", "경영정보", "다크패턴", "UX", "소비자보호", "개인정보"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

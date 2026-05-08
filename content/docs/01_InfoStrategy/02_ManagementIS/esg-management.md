@@ -3,7 +3,7 @@ title: "ESG 경영과 정보기술(IT)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "정보전략및관리", "경영정보", "ESG", "지속가능경영", "그린IT", "IT활용"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

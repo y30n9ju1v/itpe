@@ -3,7 +3,7 @@ title: "스토리지 가상화 (Storage Virtualization)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "가상화", "스토리지가상화", "SAN", "NAS", "클라우드스토리지"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

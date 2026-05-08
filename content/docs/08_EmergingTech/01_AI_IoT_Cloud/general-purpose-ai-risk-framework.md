@@ -3,7 +3,7 @@ title: "범용 AI 위험관리 프레임워크 (General-Purpose AI Risk Framewor
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "최신기술", "AI", "범용AI", "GPAI", "위험관리", "AI법", "EU AI Act"]
 draft: false
-exam: "136회"
+exam_peim: "136회"
 ---
 
 ## 개요

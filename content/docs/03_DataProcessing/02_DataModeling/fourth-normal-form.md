@@ -3,7 +3,7 @@ title: "제4정규형 (4NF, Fourth Normal Form)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "자료처리", "데이터모델링", "정규화", "4NF", "다치종속", "BCNF"]
 draft: false
-exam: "136회"
+exam_peim: "136회"
 ---
 
 ## 개요

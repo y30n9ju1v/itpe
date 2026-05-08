@@ -3,7 +3,7 @@ title: "AI-Native Network와 6G 이동통신"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "통신시스템", "6G", "AI-Native", "AI-RAN", "디지털트윈"]
 draft: false
-exam: "135회, 138회"
+exam_peim: "138회"
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "개방형 API (Open API)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크프로토콜", "OpenAPI", "REST", "SOAP", "API보안"]
 draft: false
-exam: "134회"
+exam_peim: "134회"
 ---
 
 ## 개요

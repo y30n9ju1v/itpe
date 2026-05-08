@@ -3,7 +3,7 @@ title: "ISP와 ISMP (정보전략계획 vs 정보시스템 마스터플랜)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "정보전략", "ISP", "ISMP", "EA"]
 draft: false
-exam: "138회"
+exam_peim: "138회"
 ---
 
 ## 개요

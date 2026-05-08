@@ -3,7 +3,7 @@ title: "프롬프트 인젝션 (Prompt Injection)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "프롬프트인젝션", "LLM", "AI보안"]
 draft: false
-exam: "138회"
+exam_peim: "138회"
 ---
 
 ## 개요

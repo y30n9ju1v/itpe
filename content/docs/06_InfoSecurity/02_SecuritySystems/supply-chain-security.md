@@ -3,7 +3,7 @@ title: "공급망 보안 (Supply Chain Security)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보보안", "보안시스템", "공급망보안", "제로트러스트", "SBOM", "소프트웨어공급망"]
 draft: false
-exam: "136회"
+exam_peim: "136회"
 ---
 
 ## 개요

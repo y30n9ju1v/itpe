@@ -3,7 +3,7 @@ title: "모라벡의 역설 (Moravec's Paradox)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "AI", "모라벡의역설", "로봇공학", "인공지능한계"]
 draft: false
-exam: "138회"
+exam_pecs: "138회"
 ---
 
 ## 개요

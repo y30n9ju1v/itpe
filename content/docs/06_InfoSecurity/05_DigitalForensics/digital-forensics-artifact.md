@@ -3,7 +3,7 @@ title: "디지털 포렌식 아티팩트 (Digital Forensics Artifact)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "디지털포렌식", "아티팩트", "증거수집", "포렌식분석"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요

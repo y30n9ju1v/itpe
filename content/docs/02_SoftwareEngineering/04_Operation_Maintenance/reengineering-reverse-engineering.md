@@ -3,7 +3,7 @@ title: "재공학과 역공학 (Re-engineering & Reverse-engineering)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "운영유지보수", "재공학", "역공학", "레거시"]
 draft: false
-exam: "138회, 137회"
+exam_peim: "138회"
 ---
 
 ## 개요

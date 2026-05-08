@@ -3,7 +3,7 @@ title: "국가 망 보안체계 N²SF (National Network Security Framework)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "정보보호", "N2SF", "망보안", "국가정보원", "공공보안"]
 draft: false
-exam: "137회"
+exam_peim: "137회"
 ---
 
 ## 개요
