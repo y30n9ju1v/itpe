@@ -56,7 +56,7 @@ exam: "137회"
 ## 연관 개념
 
 - [제로 트러스트 보안]({{< relref "/docs/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model" >}}) — 최소 권한 원칙 연계
-- [보안 감사]({{< relref "/docs/06_InfoSecurity/07_SecurityAudit" >}}) — Secure OS의 감사 기능
+- 보안 감사 — Secure OS의 감사 기능
 - [Common Criteria (CC)]({{< relref "/docs/06_InfoSecurity/08_SecurityCertification/common-criteria-cc" >}}) — Secure OS 인증 기준
 
 ## 참고 기출

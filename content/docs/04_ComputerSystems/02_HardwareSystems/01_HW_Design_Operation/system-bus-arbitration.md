@@ -61,7 +61,7 @@ CPU(중재기) → 장치1 → 장치2 → 장치3 (직렬 연결)
 ## 연관 개념
 
 - [DMA]({{< relref "/docs/04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access" >}}) — DMA는 버스 마스터로 시스템 버스 사용
-- [입출력 인터페이스]({{< relref "/docs/04_ComputerSystems/02_HardwareSystems/03_IO_Interface" >}}) — PCIe·USB 등 현대 버스 인터페이스
+- 입출력 인터페이스 — PCIe·USB 등 현대 버스 인터페이스
 
 ## 참고 기출
 

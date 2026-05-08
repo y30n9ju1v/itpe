@@ -59,7 +59,7 @@ exam: "135회"
 ## 연관 개념
 
 - [FTS/HA]({{< relref "/docs/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — HA 구성 시 추가 자원 고려
-- [성능평가]({{< relref "/docs/07_SystemEvaluation/01_PerformanceEvaluation" >}}) — 벤치마크 기반 성능 측정
+- 성능평가 — 벤치마크 기반 성능 측정
 - 클라우드 오토스케일링 — 동적 규모산정 대안
 
 ## 참고 기출
