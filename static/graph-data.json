@@ -1,7 +1,19 @@
 {
   "nodes": [
     {
-      "id": "peim/03_DataProcessing/01_DataStructures/binary-search-tree",
+      "id": "_index",
+      "title": "Docs",
+      "tags": [],
+      "category": "other"
+    },
+    {
+      "id": "03_DataProcessing/_index",
+      "title": "데이터처리",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/01_DataStructures/binary-search-tree",
       "title": "이진 탐색 트리 (Binary Search Tree)",
       "tags": [
         "peim",
@@ -12,10 +24,10 @@
         "트리",
         "알고리즘"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/01_DataStructures/extendible-hashing",
+      "id": "03_DataProcessing/01_DataStructures/extendible-hashing",
       "title": "확장성 해싱 (Extendible Hashing)",
       "tags": [
         "peim",
@@ -26,10 +38,16 @@
         "버킷",
         "디렉토리"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
+      "id": "03_DataProcessing/01_DataStructures/_index",
+      "title": "자료구조",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
       "title": "DB 트랜잭션 격리 수준 (Transaction Isolation Level)",
       "tags": [
         "peim",
@@ -40,10 +58,10 @@
         "동시성제어",
         "ACID"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
+      "id": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
       "title": "오픈소스 DBMS 전환 및 마이그레이션",
       "tags": [
         "peim",
@@ -53,10 +71,10 @@
         "마이그레이션",
         "고가용성"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
+      "id": "03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
       "title": "팬텀 충돌 (Phantom Conflict)",
       "tags": [
         "peim",
@@ -67,10 +85,10 @@
         "트랜잭션",
         "격리수준"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
+      "id": "03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
       "title": "데이터베이스 인덱스: 클러스터드 vs 논클러스터드",
       "tags": [
         "peim",
@@ -81,10 +99,10 @@
         "B+Tree",
         "검색최적화"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning",
+      "id": "03_DataProcessing/03_DBMS_Distributed/db-partitioning",
       "title": "데이터베이스 분할 (DB Partitioning)",
       "tags": [
         "peim",
@@ -95,10 +113,10 @@
         "수직분할",
         "샤딩"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/03_DBMS_Distributed/text2sql",
+      "id": "03_DataProcessing/03_DBMS_Distributed/text2sql",
       "title": "TEXT2SQL (자연어를 SQL로 변환)",
       "tags": [
         "peim",
@@ -109,10 +127,16 @@
         "LLM",
         "데이터접근성"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/05_DataQuality/data-observability",
+      "id": "03_DataProcessing/03_DBMS_Distributed/_index",
+      "title": "DBMS·분산",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/05_DataQuality/data-observability",
       "title": "데이터 관측가능성 (Data Observability)",
       "tags": [
         "peim",
@@ -122,10 +146,10 @@
         "데이터파이프라인",
         "모니터링"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/05_DataQuality/data-valuation",
+      "id": "03_DataProcessing/05_DataQuality/data-valuation",
       "title": "데이터 가치평가 (Data Valuation)",
       "tags": [
         "peim",
@@ -135,10 +159,10 @@
         "데이터거래",
         "데이터산업법"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/05_DataQuality/data-swamp",
+      "id": "03_DataProcessing/05_DataQuality/data-swamp",
       "title": "데이터 늪 (Data Swamp)",
       "tags": [
         "peim",
@@ -148,10 +172,16 @@
         "데이터레이크",
         "메타데이터"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
+      "id": "03_DataProcessing/05_DataQuality/_index",
+      "title": "데이터품질",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
       "title": "빅데이터 시각화 (Big Data Visualization)",
       "tags": [
         "peim",
@@ -162,10 +192,16 @@
         "대시보드",
         "인포그래픽"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/02_DataModeling/denormalization",
+      "id": "03_DataProcessing/06_BigDataAnalytics/_index",
+      "title": "빅데이터분석",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/02_DataModeling/denormalization",
       "title": "반정규화 (Denormalization)",
       "tags": [
         "peim",
@@ -175,10 +211,10 @@
         "물리데이터모델링",
         "성능최적화"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/02_DataModeling/referential-integrity",
+      "id": "03_DataProcessing/02_DataModeling/referential-integrity",
       "title": "정보모델링의 참조 무결성 (Referential Integrity)",
       "tags": [
         "peim",
@@ -188,10 +224,10 @@
         "외래키",
         "무결성제약"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/02_DataModeling/fourth-normal-form",
+      "id": "03_DataProcessing/02_DataModeling/fourth-normal-form",
       "title": "제4정규형 (4NF, Fourth Normal Form)",
       "tags": [
         "peim",
@@ -202,10 +238,16 @@
         "다치종속",
         "BCNF"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/silhouette-coefficient",
+      "id": "03_DataProcessing/02_DataModeling/_index",
+      "title": "데이터모델링",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/04_DataMining/silhouette-coefficient",
       "title": "실루엣 계수 (Silhouette Coefficient)",
       "tags": [
         "peim",
@@ -215,10 +257,10 @@
         "클러스터링평가",
         "K-Means"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/association-rule-analysis",
+      "id": "03_DataProcessing/04_DataMining/association-rule-analysis",
       "title": "연관 규칙 분석 (Association Rule Analysis)",
       "tags": [
         "peim",
@@ -228,10 +270,10 @@
         "장바구니분석",
         "Apriori"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
+      "id": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
       "title": "벡터 데이터베이스와 HNSW/IVF 검색 알고리즘",
       "tags": [
         "peim",
@@ -243,10 +285,10 @@
         "임베딩",
         "RAG"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
+      "id": "03_DataProcessing/04_DataMining/confusion-matrix-metrics",
       "title": "혼동행렬과 분류 성능 지표 (Confusion Matrix)",
       "tags": [
         "peim",
@@ -258,10 +300,10 @@
         "재현율",
         "F1-score"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/outlier-detection",
+      "id": "03_DataProcessing/04_DataMining/outlier-detection",
       "title": "아웃라이어(Outlier) 탐지",
       "tags": [
         "peim",
@@ -273,10 +315,10 @@
         "맥락이상치",
         "군집이상치"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/03_DataProcessing/04_DataMining/pr-roc-curve",
+      "id": "03_DataProcessing/04_DataMining/pr-roc-curve",
       "title": "PR 곡선과 ROC 곡선 비교",
       "tags": [
         "peim",
@@ -288,10 +330,22 @@
         "정밀도",
         "재현율"
       ],
-      "category": "peim"
+      "category": "03_DataProcessing"
     },
     {
-      "id": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p",
+      "id": "03_DataProcessing/04_DataMining/_index",
+      "title": "데이터마이닝",
+      "tags": [],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "06_InfoSecurity/_index",
+      "title": "정보보안",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/04_AdminSecurity/isms-isms-p",
       "title": "ISMS와 ISMS-P (정보보호 관리체계)",
       "tags": [
         "peim",
@@ -302,10 +356,16 @@
         "인증",
         "개인정보"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar",
+      "id": "06_InfoSecurity/04_AdminSecurity/_index",
+      "title": "관리보안",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/02_SecuritySystems/siem-soar",
       "title": "SIEM과 SOAR 비교",
       "tags": [
         "peim",
@@ -316,10 +376,10 @@
         "보안운영",
         "SOC"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor",
+      "id": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
       "title": "BPFdoor (Berkeley Packet Filter 기반 백도어)",
       "tags": [
         "peim",
@@ -330,10 +390,10 @@
         "APT",
         "리눅스보안"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
+      "id": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
       "title": "공격 표면과 측면 이동 (Attack Surface & Lateral Movement)",
       "tags": [
         "peim",
@@ -344,10 +404,10 @@
         "사이버위협",
         "APT"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas",
+      "id": "06_InfoSecurity/02_SecuritySystems/ransomware-raas",
       "title": "랜섬웨어와 RaaS (Ransomware as a Service)",
       "tags": [
         "peim",
@@ -358,10 +418,10 @@
         "사이버공격",
         "암호화"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/supply-chain-security",
+      "id": "06_InfoSecurity/02_SecuritySystems/supply-chain-security",
       "title": "공급망 보안 (Supply Chain Security)",
       "tags": [
         "peim",
@@ -372,10 +432,10 @@
         "SBOM",
         "소프트웨어공급망"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/deepfake",
+      "id": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "title": "딥페이크 (Deepfake)",
       "tags": [
         "peim",
@@ -386,10 +446,10 @@
         "AI보안",
         "미디어위조"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
+      "id": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
       "title": "OWASP LLM Top 10 (2025)",
       "tags": [
         "peim",
@@ -400,10 +460,16 @@
         "AI보안",
         "프롬프트인젝션"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack",
+      "id": "06_InfoSecurity/02_SecuritySystems/_index",
+      "title": "보안시스템",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/01_SecurityTech/model-inversion-attack",
       "title": "모델 전도 공격 (Model Inversion Attack)",
       "tags": [
         "peim",
@@ -413,10 +479,10 @@
         "AI보안",
         "프라이버시"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
+      "id": "06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
       "title": "양자 암호 기술: QKD와 PQC",
       "tags": [
         "peim",
@@ -428,10 +494,10 @@
         "양자내성암호",
         "양자키분배"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
+      "id": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
       "title": "해시 함수, Rainbow Table, Hash Salt, Key Stretching",
       "tags": [
         "peim",
@@ -442,10 +508,10 @@
         "솔트",
         "암호화"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/ttps",
+      "id": "06_InfoSecurity/01_SecurityTech/ttps",
       "title": "TTPs (Tactics, Techniques and Procedures)",
       "tags": [
         "peim",
@@ -455,10 +521,10 @@
         "MITRE ATT&CK",
         "위협인텔리전스"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection",
+      "id": "06_InfoSecurity/01_SecurityTech/prompt-injection",
       "title": "프롬프트 인젝션 (Prompt Injection)",
       "tags": [
         "peim",
@@ -468,10 +534,10 @@
         "LLM",
         "AI보안"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/ciphertext-attack",
+      "id": "06_InfoSecurity/01_SecurityTech/ciphertext-attack",
       "title": "암호문 공격 (Ciphertext Attack)",
       "tags": [
         "peim",
@@ -482,10 +548,10 @@
         "CPA",
         "CCA"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks",
+      "id": "06_InfoSecurity/01_SecurityTech/llm-security-risks",
       "title": "LLM 보안 위험과 대응방안 (AI 기반 SW 개발)",
       "tags": [
         "peim",
@@ -496,10 +562,10 @@
         "OWASP",
         "프롬프트인젝션"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
+      "id": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
       "title": "타원곡선 암호 (ECC, Elliptic Curve Cryptography)",
       "tags": [
         "peim",
@@ -511,10 +577,16 @@
         "ECDHE",
         "양자내성암호"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
+      "id": "06_InfoSecurity/01_SecurityTech/_index",
+      "title": "보안기술",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
       "title": "디지털 포렌식 아티팩트 (Digital Forensics Artifact)",
       "tags": [
         "peim",
@@ -524,10 +596,16 @@
         "증거수집",
         "포렌식분석"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/03_InfoProtection/n2sf-network-security",
+      "id": "06_InfoSecurity/05_DigitalForensics/_index",
+      "title": "디지털포렌식",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/03_InfoProtection/n2sf-network-security",
       "title": "국가 망 보안체계 N²SF (National Network Security Framework)",
       "tags": [
         "peim",
@@ -538,10 +616,10 @@
         "국가정보원",
         "공공보안"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
+      "id": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
       "title": "경계 기반 보안과 제로 트러스트 성숙도 모델 2.0",
       "tags": [
         "peim",
@@ -552,10 +630,10 @@
         "성숙도모델",
         "경계보안"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/03_InfoProtection/mcp-security",
+      "id": "06_InfoSecurity/03_InfoProtection/mcp-security",
       "title": "MCP (Model Context Protocol) 보안 취약점",
       "tags": [
         "peim",
@@ -566,10 +644,16 @@
         "에이전트보안",
         "LLM"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
+      "id": "06_InfoSecurity/03_InfoProtection/_index",
+      "title": "정보보호",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
       "title": "CC (Common Criteria, 공통평가기준)",
       "tags": [
         "peim",
@@ -581,10 +665,16 @@
         "보안기능요건",
         "보안보증요건"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
+      "id": "06_InfoSecurity/08_SecurityCertification/_index",
+      "title": "보안인증",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
       "title": "PET (개인정보 보호 강화기술, Privacy Enhancing Technology)",
       "tags": [
         "peim",
@@ -595,10 +685,10 @@
         "차분프라이버시",
         "연합학습"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
+      "id": "06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
       "title": "안면인식 결제 서비스",
       "tags": [
         "peim",
@@ -608,10 +698,10 @@
         "생체인증",
         "PET"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
+      "id": "06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
       "title": "개인정보 안심구역과 데이터안심구역 비교",
       "tags": [
         "peim",
@@ -622,10 +712,22 @@
         "마이데이터",
         "데이터활용"
       ],
-      "category": "peim"
+      "category": "06_InfoSecurity"
     },
     {
-      "id": "peim/05_Networks/02_NetworkDesign/ibn-intent-based-networking",
+      "id": "06_InfoSecurity/06_PrivacyProtection/_index",
+      "title": "개인정보보호",
+      "tags": [],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "05_Networks/_index",
+      "title": "네트워크",
+      "tags": [],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
       "title": "IBN (Intent-Based Networking)",
       "tags": [
         "peim",
@@ -636,10 +738,10 @@
         "SDN",
         "자율네트워크"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/02_NetworkDesign/igp-egp-routing",
+      "id": "05_Networks/02_NetworkDesign/igp-egp-routing",
       "title": "IGP와 EGP (동적 라우팅 프로토콜)",
       "tags": [
         "peim",
@@ -651,10 +753,16 @@
         "BGP",
         "OSPF"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/01_Network_Protocol/modbus-protocol",
+      "id": "05_Networks/02_NetworkDesign/_index",
+      "title": "네트워크 설계",
+      "tags": [],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/01_Network_Protocol/modbus-protocol",
       "title": "MODBUS 프로토콜",
       "tags": [
         "peim",
@@ -665,10 +773,10 @@
         "OT보안",
         "ICS"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/01_Network_Protocol/arq-error-control",
+      "id": "05_Networks/01_Network_Protocol/arq-error-control",
       "title": "오류 제어와 ARQ (Error Control & ARQ)",
       "tags": [
         "peim",
@@ -679,10 +787,10 @@
         "오류검출",
         "오류정정"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
+      "id": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
       "title": "TLS 1.2 취약점과 TLS 1.3 개선 사항",
       "tags": [
         "peim",
@@ -693,10 +801,10 @@
         "보안통신",
         "암호화"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/01_Network_Protocol/ieee-802-11bn",
+      "id": "05_Networks/01_Network_Protocol/ieee-802-11bn",
       "title": "IEEE 802.11bn (Ultra High Reliability Wi-Fi)",
       "tags": [
         "peim",
@@ -707,10 +815,10 @@
         "UHR",
         "무선랜"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/01_Network_Protocol/congestion-control-sliding-window",
+      "id": "05_Networks/01_Network_Protocol/congestion-control-sliding-window",
       "title": "오류 제어·혼잡 제어·슬라이딩 윈도우",
       "tags": [
         "peim",
@@ -721,10 +829,16 @@
         "슬라이딩윈도우",
         "TCP"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g",
+      "id": "05_Networks/01_Network_Protocol/_index",
+      "title": "네트워크 프로토콜",
+      "tags": [],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/03_CommunicationSystems/ai-native-network-6g",
       "title": "AI-Native Network와 6G 이동통신",
       "tags": [
         "peim",
@@ -735,10 +849,22 @@
         "AI-RAN",
         "디지털트윈"
       ],
-      "category": "peim"
+      "category": "05_Networks"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/memory-areas",
+      "id": "05_Networks/03_CommunicationSystems/_index",
+      "title": "통신시스템",
+      "tags": [],
+      "category": "05_Networks"
+    },
+    {
+      "id": "04_ComputerSystems/_index",
+      "title": "컴퓨터시스템",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/05_Algorithms/memory-areas",
       "title": "프로그램 메모리 4가지 영역 (Code/Data/Heap/Stack)",
       "tags": [
         "peim",
@@ -749,10 +875,10 @@
         "힙",
         "시스템프로그래밍"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/segmentation-fault",
+      "id": "04_ComputerSystems/05_Algorithms/segmentation-fault",
       "title": "세그멘테이션 오류 (Segmentation Fault)",
       "tags": [
         "peim",
@@ -763,10 +889,10 @@
         "SIGSEGV",
         "버퍼오버플로우"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/cache-memory",
+      "id": "04_ComputerSystems/05_Algorithms/cache-memory",
       "title": "캐시 메모리 (Cache Memory)",
       "tags": [
         "peim",
@@ -777,10 +903,10 @@
         "캐시일관성",
         "멀티코어"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/genetic-algorithm",
+      "id": "04_ComputerSystems/05_Algorithms/genetic-algorithm",
       "title": "유전 알고리즘 (Genetic Algorithm)",
       "tags": [
         "peim",
@@ -791,10 +917,10 @@
         "최적화",
         "메타휴리스틱"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
+      "id": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
       "title": "동적 메모리 할당과 메모리 누수",
       "tags": [
         "peim",
@@ -805,10 +931,10 @@
         "GC",
         "힙메모리"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm",
+      "id": "04_ComputerSystems/05_Algorithms/banker-algorithm",
       "title": "은행가 알고리즘 (Banker's Algorithm)",
       "tags": [
         "peim",
@@ -818,10 +944,16 @@
         "교착상태",
         "자원할당"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
+      "id": "04_ComputerSystems/05_Algorithms/_index",
+      "title": "알고리즘",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
       "title": "다중지역 동시 가동방식 재해복구 (Multi-Region Active-Active)",
       "tags": [
         "peim",
@@ -832,10 +964,10 @@
         "멀티리전",
         "DR"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha",
+      "id": "04_ComputerSystems/06_InfraArchitecture/fts-ha",
       "title": "FTS와 HA (장애허용시스템 vs 고가용성)",
       "tags": [
         "peim",
@@ -846,10 +978,10 @@
         "고가용성",
         "가용성"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
+      "id": "04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
       "title": "CXL (Compute Express Link)",
       "tags": [
         "peim",
@@ -860,10 +992,22 @@
         "이종컴퓨팅",
         "PCIe"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
+      "id": "04_ComputerSystems/06_InfraArchitecture/_index",
+      "title": "인프라아키텍처",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/03_SystemSoftware/_index",
+      "title": "시스템소프트웨어",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
       "title": "운영체제 스케줄링 (CPU·디스크 스케줄링)",
       "tags": [
         "peim",
@@ -874,10 +1018,10 @@
         "SJF",
         "SSTF"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
       "title": "IPC (Inter Process Communication, 프로세스 간 통신)",
       "tags": [
         "peim",
@@ -888,10 +1032,16 @@
         "동기화",
         "공유메모리"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes",
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/_index",
+      "title": "OS·임베디드",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/04_OS_Virtualization/kubernetes",
       "title": "쿠버네티스 (Kubernetes)",
       "tags": [
         "peim",
@@ -902,10 +1052,10 @@
         "HPA",
         "오케스트레이션"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
+      "id": "04_ComputerSystems/04_OS_Virtualization/serverless-computing",
       "title": "서버리스 컴퓨팅 (Serverless Computing)",
       "tags": [
         "peim",
@@ -916,10 +1066,16 @@
         "AWS Lambda",
         "클라우드"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
+      "id": "04_ComputerSystems/04_OS_Virtualization/_index",
+      "title": "OS·가상화",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/04_OS_Virtualization/multi-cloud",
       "title": "멀티클라우드 (MultiCloud)",
       "tags": [
         "peim",
@@ -930,10 +1086,16 @@
         "벤더종속",
         "하이브리드클라우드"
       ],
-      "category": "peim"
+      "category": "04_ComputerSystems"
     },
     {
-      "id": "peim/02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
+      "id": "02_SoftwareEngineering/_index",
+      "title": "소프트웨어공학",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
       "title": "재공학과 역공학 (Re-engineering & Reverse-engineering)",
       "tags": [
         "peim",
@@ -943,10 +1105,16 @@
         "역공학",
         "레거시"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/01_Dev_Methodology/devsecops",
+      "id": "02_SoftwareEngineering/04_Operation_Maintenance/_index",
+      "title": "운영·유지보수",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/devsecops",
       "title": "DevSecOps와 CI/CD 파이프라인 보안",
       "tags": [
         "peim",
@@ -958,10 +1126,10 @@
         "SAST",
         "DAST"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
       "title": "제품계열 방법론 (Product Line Methodology)",
       "tags": [
         "peim",
@@ -972,10 +1140,10 @@
         "공통자산",
         "재사용"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code",
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code",
       "title": "로우코드/노코드 플랫폼 (Low Code / No Code)",
       "tags": [
         "peim",
@@ -985,10 +1153,10 @@
         "노코드",
         "시민개발자"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
       "title": "DevOps 장점과 단점",
       "tags": [
         "peim",
@@ -999,10 +1167,16 @@
         "자동화",
         "문화"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/01_Dev_Methodology/tailoring",
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/_index",
+      "title": "개발방법론",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/tailoring",
       "title": "개발방법론 테일러링 (Tailoring)",
       "tags": [
         "peim",
@@ -1012,10 +1186,10 @@
         "선도개발",
         "프로세스조정"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
+      "id": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
       "title": "요구사항 추적표 (Requirement Traceability Matrix)",
       "tags": [
         "peim",
@@ -1025,10 +1199,10 @@
         "RTM",
         "요구사항관리"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/02_Analysis_Design/uml-behavior-diagrams",
+      "id": "02_SoftwareEngineering/02_Analysis_Design/uml-behavior-diagrams",
       "title": "UML 행위 다이어그램 (Activity·State·Use-Case Diagram)",
       "tags": [
         "peim",
@@ -1039,10 +1213,10 @@
         "상태다이어그램",
         "유스케이스"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern",
+      "id": "02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern",
       "title": "프록시 디자인 패턴 (Proxy Design Pattern)",
       "tags": [
         "peim",
@@ -1053,10 +1227,16 @@
         "GoF",
         "구조패턴"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect",
+      "id": "02_SoftwareEngineering/02_Analysis_Design/_index",
+      "title": "분석·설계",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect",
       "title": "TA와 AA (기술 아키텍트 vs 애플리케이션 아키텍트)",
       "tags": [
         "peim",
@@ -1067,10 +1247,10 @@
         "클라우드네이티브",
         "아키텍처"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
       "title": "동적 테스트 (Dynamic Testing)",
       "tags": [
         "peim",
@@ -1081,10 +1261,10 @@
         "구조기반",
         "동등분할"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
       "title": "A/B 테스팅",
       "tags": [
         "peim",
@@ -1094,10 +1274,16 @@
         "실험설계",
         "통계검정"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/_index",
+      "title": "구현·테스트",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
       "title": "AI 소프트웨어 품질 보증을 위한 테스트 기법",
       "tags": [
         "peim",
@@ -1108,10 +1294,10 @@
         "뉴런커버리지",
         "안전반경"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
+      "id": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
       "title": "소프트웨어 보안 품질",
       "tags": [
         "peim",
@@ -1123,10 +1309,10 @@
         "DAST",
         "보안자동화"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
+      "id": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
       "title": "소프트웨어 기술 부채 (SW Technical Debt)",
       "tags": [
         "peim",
@@ -1136,10 +1322,10 @@
         "리팩토링",
         "코드품질"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement",
+      "id": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement",
       "title": "SLA (서비스 수준 협약)",
       "tags": [
         "peim",
@@ -1149,10 +1335,10 @@
         "서비스수준협약",
         "운영관리"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
+      "id": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "title": "소프트웨어 품질보증과 인스펙션",
       "tags": [
         "peim",
@@ -1163,10 +1349,22 @@
         "SQA",
         "정적검토"
       ],
-      "category": "peim"
+      "category": "02_SoftwareEngineering"
     },
     {
-      "id": "peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
+      "id": "02_SoftwareEngineering/05_SW_Quality/_index",
+      "title": "SW 품질",
+      "tags": [],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "08_EmergingTech/_index",
+      "title": "신기술",
+      "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
       "title": "생성형 AI 서비스 이용자 보호 가이드라인 (2025)",
       "tags": [
         "peim",
@@ -1176,10 +1374,10 @@
         "생성형AI",
         "가이드라인"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law",
+      "id": "08_EmergingTech/03_Regulations_Policies/ai-basic-law",
       "title": "인공지능기본법 (AI 발전과 신뢰 기반 조성 등에 관한 기본법)",
       "tags": [
         "peim",
@@ -1189,10 +1387,16 @@
         "고위험AI",
         "국가AI전략"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
+      "id": "08_EmergingTech/03_Regulations_Policies/_index",
+      "title": "규정·정책",
+      "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "title": "AGI 관점에서 ANI의 필요성",
       "tags": [
         "peim",
@@ -1203,10 +1407,10 @@
         "범용인공지능",
         "특화인공지능"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
       "title": "AI 기반 디지털 전환 (AX, AI Transformation)",
       "tags": [
         "peim",
@@ -1216,10 +1420,10 @@
         "AX",
         "AI전환전략"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
       "title": "GPU와 TPU (AI 학습 전용 프로세서 비교)",
       "tags": [
         "peim",
@@ -1230,10 +1434,10 @@
         "딥러닝",
         "하드웨어"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
       "title": "VAE (Variational AutoEncoder)",
       "tags": [
         "peim",
@@ -1244,10 +1448,10 @@
         "잠재공간",
         "딥러닝"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
       "title": "MCP (Model Context Protocol)",
       "tags": [
         "peim",
@@ -1259,10 +1463,10 @@
         "Anthropic",
         "AI프로토콜"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
       "title": "ISO/IEC 42001:2023 (AI 관리시스템 표준)",
       "tags": [
         "peim",
@@ -1272,10 +1476,10 @@
         "AI관리시스템",
         "인증"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
       "title": "초거대 AI (Large-Scale AI / Foundation Model)",
       "tags": [
         "peim",
@@ -1286,10 +1490,10 @@
         "파운데이션모델",
         "공공AI"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
       "title": "프롬프트 엔지니어링 (Prompt Engineering)",
       "tags": [
         "peim",
@@ -1300,10 +1504,10 @@
         "CoT",
         "RAG"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "title": "트랜스포머(Transformer)와 MoE(Mixture of Experts)",
       "tags": [
         "peim",
@@ -1314,10 +1518,10 @@
         "어텐션",
         "LLM"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
       "title": "범용 AI 위험관리 프레임워크 (General-Purpose AI Risk Framework)",
       "tags": [
         "peim",
@@ -1329,10 +1533,10 @@
         "AI법",
         "EU AI Act"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
       "title": "에이전틱 AI (Agentic AI)",
       "tags": [
         "peim",
@@ -1344,10 +1548,10 @@
         "MCP",
         "멀티에이전트"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
       "title": "공공기관 LLM 적용: 고려사항과 아키텍처",
       "tags": [
         "peim",
@@ -1359,10 +1563,10 @@
         "RAG",
         "파인튜닝"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
       "title": "멀티모달 LLM (Multimodal Large Language Model)",
       "tags": [
         "peim",
@@ -1373,10 +1577,10 @@
         "GPT-4V",
         "Gemini"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
       "title": "AI 디지털교과서",
       "tags": [
         "peim",
@@ -1387,10 +1591,10 @@
         "개인화학습",
         "LMS"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
       "title": "AI RMF (AI 위험관리 프레임워크)",
       "tags": [
         "peim",
@@ -1400,10 +1604,10 @@
         "NIST",
         "위험관리"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
       "title": "GNN (Graph Neural Network, 그래프 신경망)",
       "tags": [
         "peim",
@@ -1414,10 +1618,28 @@
         "딥러닝",
         "지식그래프"
       ],
-      "category": "peim"
+      "category": "08_EmergingTech"
     },
     {
-      "id": "peim/01_InfoStrategy/04_IT_Audit/pmo-vs-audit",
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/_index",
+      "title": "AI·IoT·클라우드",
+      "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/02_BigData/_index",
+      "title": "빅데이터",
+      "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "01_InfoStrategy/_index",
+      "title": "정보전략",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/04_IT_Audit/pmo-vs-audit",
       "title": "PMO와 정보시스템 감리 비교",
       "tags": [
         "peim",
@@ -1427,10 +1649,10 @@
         "상주감리",
         "전자정부사업관리위탁"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
+      "id": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
       "title": "정보시스템 감리 — 시스템 운영 및 유지보수 감리",
       "tags": [
         "peim",
@@ -1440,10 +1662,16 @@
         "유지보수감리",
         "전자정부법"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
+      "id": "01_InfoStrategy/04_IT_Audit/_index",
+      "title": "IT 감리",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
       "title": "회귀모형의 등분산성과 다중공선성",
       "tags": [
         "peim",
@@ -1454,10 +1682,10 @@
         "회귀분석",
         "VIF"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
+      "id": "01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
       "title": "이항분포와 포아송분포 비교",
       "tags": [
         "peim",
@@ -1468,10 +1696,10 @@
         "확률분포",
         "이산분포"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/05_Statistics/bayes-theorem",
+      "id": "01_InfoStrategy/05_Statistics/bayes-theorem",
       "title": "베이즈 정리 (Bayes' Theorem)",
       "tags": [
         "peim",
@@ -1481,10 +1709,10 @@
         "조건부확률",
         "머신러닝"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/05_Statistics/unbiased-estimator",
+      "id": "01_InfoStrategy/05_Statistics/unbiased-estimator",
       "title": "불편추정량 (Unbiased Estimator)",
       "tags": [
         "peim",
@@ -1495,10 +1723,10 @@
         "추정량",
         "표본분산"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/05_Statistics/ar-ma-model",
+      "id": "01_InfoStrategy/05_Statistics/ar-ma-model",
       "title": "자기회귀모형(AR)과 이동평균모형(MA)",
       "tags": [
         "peim",
@@ -1509,10 +1737,16 @@
         "MA",
         "ARIMA"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
+      "id": "01_InfoStrategy/05_Statistics/_index",
+      "title": "통계",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
       "title": "소프트웨어 사업 대가산정 (SW 대가산정 가이드 2025)",
       "tags": [
         "peim",
@@ -1522,10 +1756,10 @@
         "소프트웨어사업",
         "AI서비스비용"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp",
+      "id": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp",
       "title": "ISP와 ISMP (정보전략계획 vs 정보시스템 마스터플랜)",
       "tags": [
         "peim",
@@ -1535,10 +1769,16 @@
         "ISMP",
         "EA"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/06_ProjectManagement/project-risk-management",
+      "id": "01_InfoStrategy/01_InfoStrategy_Planning/_index",
+      "title": "정보전략 계획",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/06_ProjectManagement/project-risk-management",
       "title": "프로젝트 위험관리",
       "tags": [
         "peim",
@@ -1547,10 +1787,10 @@
         "위험관리",
         "리스크"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
+      "id": "01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
       "title": "터크만의 팀 발달 5단계 모델 (Tuckman Model)",
       "tags": [
         "peim",
@@ -1560,10 +1800,10 @@
         "터크만",
         "갈등관리"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/06_ProjectManagement/it-project-management",
+      "id": "01_InfoStrategy/06_ProjectManagement/it-project-management",
       "title": "IT 프로젝트 관리",
       "tags": [
         "peim",
@@ -1574,10 +1814,16 @@
         "포트폴리오관리",
         "PMBOK"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/02_ManagementIS/white-label-marketing",
+      "id": "01_InfoStrategy/06_ProjectManagement/_index",
+      "title": "프로젝트 관리",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/02_ManagementIS/white-label-marketing",
       "title": "화이트 레이블 마케팅 (White Label Marketing)",
       "tags": [
         "peim",
@@ -1587,10 +1833,10 @@
         "OEM",
         "브랜드전략"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
+      "id": "01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
       "title": "공급망관리 (SCM, Supply Chain Management)",
       "tags": [
         "peim",
@@ -1601,10 +1847,16 @@
         "효과성",
         "효율성"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
+      "id": "01_InfoStrategy/02_ManagementIS/_index",
+      "title": "경영정보시스템",
+      "tags": [],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
       "title": "AI 신뢰성 검인증 제도 (CAT)",
       "tags": [
         "peim",
@@ -1615,10 +1867,10 @@
         "AI인증",
         "검인증"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance",
+      "id": "01_InfoStrategy/03_AI_Ethics/ai-governance",
       "title": "AI 거버넌스 (AI Governance)",
       "tags": [
         "peim",
@@ -1628,10 +1880,10 @@
         "책임AI",
         "AI정책"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
     },
     {
-      "id": "peim/01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
+      "id": "01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
       "title": "국내 AI 윤리기준과 생성형 AI 역기능",
       "tags": [
         "peim",
@@ -1641,981 +1893,987 @@
         "과기정통부",
         "AI윤리기준"
       ],
-      "category": "peim"
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/03_AI_Ethics/_index",
+      "title": "AI 윤리",
+      "tags": [],
+      "category": "01_InfoStrategy"
     }
   ],
   "links": [
     {
-      "source": "peim/03_DataProcessing/01_DataStructures/binary-search-tree",
-      "target": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "03_DataProcessing/01_DataStructures/binary-search-tree",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
-      "source": "peim/03_DataProcessing/01_DataStructures/binary-search-tree",
-      "target": "peim/03_DataProcessing/04_DataMining/association-rule-analysis"
+      "source": "03_DataProcessing/01_DataStructures/binary-search-tree",
+      "target": "03_DataProcessing/04_DataMining/association-rule-analysis"
     },
     {
-      "source": "peim/03_DataProcessing/01_DataStructures/extendible-hashing",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/phantom-conflict"
+      "source": "03_DataProcessing/01_DataStructures/extendible-hashing",
+      "target": "03_DataProcessing/03_DBMS_Distributed/phantom-conflict"
     },
     {
-      "source": "peim/03_DataProcessing/01_DataStructures/extendible-hashing",
-      "target": "peim/03_DataProcessing/01_DataStructures/binary-search-tree"
+      "source": "03_DataProcessing/01_DataStructures/extendible-hashing",
+      "target": "03_DataProcessing/01_DataStructures/binary-search-tree"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+      "source": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
+      "source": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
+      "target": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
+      "source": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
+      "target": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+      "source": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level"
+      "source": "03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
+      "target": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
-      "target": "peim/03_DataProcessing/01_DataStructures/extendible-hashing"
+      "source": "03_DataProcessing/03_DBMS_Distributed/phantom-conflict",
+      "target": "03_DataProcessing/01_DataStructures/extendible-hashing"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
-      "target": "peim/03_DataProcessing/02_DataModeling/fourth-normal-form"
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered",
+      "target": "03_DataProcessing/02_DataModeling/fourth-normal-form"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-partitioning",
+      "target": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-partitioning",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/text2sql",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+      "source": "03_DataProcessing/03_DBMS_Distributed/text2sql",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
-      "source": "peim/03_DataProcessing/03_DBMS_Distributed/text2sql",
-      "target": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "source": "03_DataProcessing/03_DBMS_Distributed/text2sql",
+      "target": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
     },
     {
-      "source": "peim/03_DataProcessing/05_DataQuality/data-valuation",
-      "target": "peim/03_DataProcessing/05_DataQuality/data-observability"
+      "source": "03_DataProcessing/05_DataQuality/data-valuation",
+      "target": "03_DataProcessing/05_DataQuality/data-observability"
     },
     {
-      "source": "peim/03_DataProcessing/05_DataQuality/data-valuation",
-      "target": "peim/03_DataProcessing/06_BigDataAnalytics/bigdata-visualization"
+      "source": "03_DataProcessing/05_DataQuality/data-valuation",
+      "target": "03_DataProcessing/06_BigDataAnalytics/bigdata-visualization"
     },
     {
-      "source": "peim/03_DataProcessing/05_DataQuality/data-swamp",
-      "target": "peim/03_DataProcessing/05_DataQuality/data-observability"
+      "source": "03_DataProcessing/05_DataQuality/data-swamp",
+      "target": "03_DataProcessing/05_DataQuality/data-observability"
     },
     {
-      "source": "peim/03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
-      "target": "peim/03_DataProcessing/05_DataQuality/data-valuation"
+      "source": "03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
+      "target": "03_DataProcessing/05_DataQuality/data-valuation"
     },
     {
-      "source": "peim/03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
-      "target": "peim/03_DataProcessing/05_DataQuality/data-observability"
+      "source": "03_DataProcessing/06_BigDataAnalytics/bigdata-visualization",
+      "target": "03_DataProcessing/05_DataQuality/data-observability"
     },
     {
-      "source": "peim/03_DataProcessing/02_DataModeling/denormalization",
-      "target": "peim/03_DataProcessing/02_DataModeling/referential-integrity"
+      "source": "03_DataProcessing/02_DataModeling/denormalization",
+      "target": "03_DataProcessing/02_DataModeling/referential-integrity"
     },
     {
-      "source": "peim/03_DataProcessing/02_DataModeling/denormalization",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+      "source": "03_DataProcessing/02_DataModeling/denormalization",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
     },
     {
-      "source": "peim/03_DataProcessing/02_DataModeling/fourth-normal-form",
-      "target": "peim/03_DataProcessing/02_DataModeling/referential-integrity"
+      "source": "03_DataProcessing/02_DataModeling/fourth-normal-form",
+      "target": "03_DataProcessing/02_DataModeling/referential-integrity"
     },
     {
-      "source": "peim/03_DataProcessing/02_DataModeling/fourth-normal-form",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered"
+      "source": "03_DataProcessing/02_DataModeling/fourth-normal-form",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/silhouette-coefficient",
-      "target": "peim/03_DataProcessing/04_DataMining/outlier-detection"
+      "source": "03_DataProcessing/04_DataMining/silhouette-coefficient",
+      "target": "03_DataProcessing/04_DataMining/outlier-detection"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/silhouette-coefficient",
-      "target": "peim/03_DataProcessing/04_DataMining/pr-roc-curve"
+      "source": "03_DataProcessing/04_DataMining/silhouette-coefficient",
+      "target": "03_DataProcessing/04_DataMining/pr-roc-curve"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/association-rule-analysis",
-      "target": "peim/03_DataProcessing/01_DataStructures/binary-search-tree"
+      "source": "03_DataProcessing/04_DataMining/association-rule-analysis",
+      "target": "03_DataProcessing/01_DataStructures/binary-search-tree"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/association-rule-analysis",
-      "target": "peim/01_InfoStrategy/05_Statistics/bayes-theorem"
+      "source": "03_DataProcessing/04_DataMining/association-rule-analysis",
+      "target": "01_InfoStrategy/05_Statistics/bayes-theorem"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+      "source": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/text2sql"
+      "source": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
+      "target": "03_DataProcessing/03_DBMS_Distributed/text2sql"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "peim/03_DataProcessing/04_DataMining/association-rule-analysis"
+      "source": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
+      "target": "03_DataProcessing/04_DataMining/association-rule-analysis"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
-      "target": "peim/03_DataProcessing/04_DataMining/outlier-detection"
+      "source": "03_DataProcessing/04_DataMining/confusion-matrix-metrics",
+      "target": "03_DataProcessing/04_DataMining/outlier-detection"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
-      "target": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "source": "03_DataProcessing/04_DataMining/confusion-matrix-metrics",
+      "target": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/outlier-detection",
-      "target": "peim/03_DataProcessing/04_DataMining/confusion-matrix-metrics"
+      "source": "03_DataProcessing/04_DataMining/outlier-detection",
+      "target": "03_DataProcessing/04_DataMining/confusion-matrix-metrics"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/outlier-detection",
-      "target": "peim/03_DataProcessing/05_DataQuality/data-observability"
+      "source": "03_DataProcessing/04_DataMining/outlier-detection",
+      "target": "03_DataProcessing/05_DataQuality/data-observability"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/pr-roc-curve",
-      "target": "peim/03_DataProcessing/04_DataMining/confusion-matrix-metrics"
+      "source": "03_DataProcessing/04_DataMining/pr-roc-curve",
+      "target": "03_DataProcessing/04_DataMining/confusion-matrix-metrics"
     },
     {
-      "source": "peim/03_DataProcessing/04_DataMining/pr-roc-curve",
-      "target": "peim/03_DataProcessing/04_DataMining/silhouette-coefficient"
+      "source": "03_DataProcessing/04_DataMining/pr-roc-curve",
+      "target": "03_DataProcessing/04_DataMining/silhouette-coefficient"
     },
     {
-      "source": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/04_AdminSecurity/isms-isms-p",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/04_AdminSecurity/isms-isms-p",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar",
-      "target": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+      "source": "06_InfoSecurity/02_SecuritySystems/siem-soar",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/02_SecuritySystems/siem-soar",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
+      "source": "06_InfoSecurity/02_SecuritySystems/siem-soar",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ttps"
+      "source": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
+      "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor",
-      "target": "peim/06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact"
+      "source": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
+      "target": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/n2sf-network-security"
+      "source": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
+      "target": "06_InfoSecurity/03_InfoProtection/n2sf-network-security"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ttps"
+      "source": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
+      "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas"
+      "source": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement",
+      "target": "06_InfoSecurity/02_SecuritySystems/ransomware-raas"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/02_SecuritySystems/ransomware-raas",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ttps"
+      "source": "06_InfoSecurity/02_SecuritySystems/ransomware-raas",
+      "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
+      "source": "06_InfoSecurity/02_SecuritySystems/ransomware-raas",
+      "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/supply-chain-security",
-      "target": "peim/01_InfoStrategy/02_ManagementIS/scm-supply-chain-management"
+      "source": "06_InfoSecurity/02_SecuritySystems/supply-chain-security",
+      "target": "01_InfoStrategy/02_ManagementIS/scm-supply-chain-management"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/supply-chain-security",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks"
+      "source": "06_InfoSecurity/02_SecuritySystems/supply-chain-security",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/deepfake",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
+      "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/deepfake",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks"
+      "source": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/supply-chain-security"
+      "source": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
+      "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "06_InfoSecurity/01_SecurityTech/model-inversion-attack",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment"
+      "source": "06_InfoSecurity/01_SecurityTech/model-inversion-attack",
+      "target": "06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/01_SecurityTech/model-inversion-attack",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
+      "source": "06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
+      "target": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
+      "source": "06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
+      "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ttps",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/01_SecurityTech/ttps",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ttps",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas"
+      "source": "06_InfoSecurity/01_SecurityTech/ttps",
+      "target": "06_InfoSecurity/02_SecuritySystems/ransomware-raas"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "06_InfoSecurity/01_SecurityTech/prompt-injection",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "06_InfoSecurity/01_SecurityTech/prompt-injection",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ciphertext-attack",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
+      "source": "06_InfoSecurity/01_SecurityTech/ciphertext-attack",
+      "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ciphertext-attack",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/01_SecurityTech/ciphertext-attack",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-risks",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-risks",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-risks",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
-      "target": "peim/05_Networks/01_Network_Protocol/tls-1-2-vs-1-3"
+      "source": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
+      "target": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3"
     },
     {
-      "source": "peim/06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
+      "source": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
+      "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
-      "source": "peim/06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ttps"
+      "source": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
+      "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
     {
-      "source": "peim/06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor"
+      "source": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
+      "target": "06_InfoSecurity/02_SecuritySystems/bpfdoor"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/n2sf-network-security",
-      "target": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+      "source": "06_InfoSecurity/03_InfoProtection/n2sf-network-security",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/n2sf-network-security",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/03_InfoProtection/n2sf-network-security",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/n2sf-network-security",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/bpfdoor"
+      "source": "06_InfoSecurity/03_InfoProtection/n2sf-network-security",
+      "target": "06_InfoSecurity/02_SecuritySystems/bpfdoor"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar"
+      "source": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
+      "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
-      "target": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+      "source": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/mcp-security"
+      "source": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model",
+      "target": "06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/mcp-security",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "06_InfoSecurity/03_InfoProtection/mcp-security",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/mcp-security",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "06_InfoSecurity/03_InfoProtection/mcp-security",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/06_InfoSecurity/03_InfoProtection/mcp-security",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+      "source": "06_InfoSecurity/03_InfoProtection/mcp-security",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "peim/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
-      "target": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+      "source": "06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
-      "source": "peim/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
+      "source": "06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment"
+      "source": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
+      "target": "06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
-      "target": "peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+      "source": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
-      "target": "peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+      "source": "06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
-      "source": "peim/06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
-      "target": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law"
+      "source": "06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
+      "target": "08_EmergingTech/03_Regulations_Policies/ai-basic-law"
     },
     {
-      "source": "peim/05_Networks/02_NetworkDesign/ibn-intent-based-networking",
-      "target": "peim/05_Networks/02_NetworkDesign/igp-egp-routing"
+      "source": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
+      "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
     },
     {
-      "source": "peim/05_Networks/02_NetworkDesign/ibn-intent-based-networking",
-      "target": "peim/04_ComputerSystems/04_OS_Virtualization/multi-cloud"
+      "source": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
+      "target": "04_ComputerSystems/04_OS_Virtualization/multi-cloud"
     },
     {
-      "source": "peim/05_Networks/02_NetworkDesign/igp-egp-routing",
-      "target": "peim/05_Networks/01_Network_Protocol/arq-error-control"
+      "source": "05_Networks/02_NetworkDesign/igp-egp-routing",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
     },
     {
-      "source": "peim/05_Networks/02_NetworkDesign/igp-egp-routing",
-      "target": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g"
+      "source": "05_Networks/02_NetworkDesign/igp-egp-routing",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/modbus-protocol",
-      "target": "peim/05_Networks/02_NetworkDesign/igp-egp-routing"
+      "source": "05_Networks/01_Network_Protocol/modbus-protocol",
+      "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/arq-error-control",
-      "target": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g"
+      "source": "05_Networks/01_Network_Protocol/arq-error-control",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
+      "source": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
+      "target": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/ciphertext-attack"
+      "source": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
+      "target": "06_InfoSecurity/01_SecurityTech/ciphertext-attack"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/ieee-802-11bn",
-      "target": "peim/05_Networks/01_Network_Protocol/arq-error-control"
+      "source": "05_Networks/01_Network_Protocol/ieee-802-11bn",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/ieee-802-11bn",
-      "target": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g"
+      "source": "05_Networks/01_Network_Protocol/ieee-802-11bn",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/congestion-control-sliding-window",
-      "target": "peim/05_Networks/01_Network_Protocol/arq-error-control"
+      "source": "05_Networks/01_Network_Protocol/congestion-control-sliding-window",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/congestion-control-sliding-window",
-      "target": "peim/05_Networks/02_NetworkDesign/igp-egp-routing"
+      "source": "05_Networks/01_Network_Protocol/congestion-control-sliding-window",
+      "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
     },
     {
-      "source": "peim/05_Networks/01_Network_Protocol/congestion-control-sliding-window",
-      "target": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g"
+      "source": "05_Networks/01_Network_Protocol/congestion-control-sliding-window",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
-      "source": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g",
-      "target": "peim/05_Networks/01_Network_Protocol/arq-error-control"
+      "source": "05_Networks/03_CommunicationSystems/ai-native-network-6g",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
     },
     {
-      "source": "peim/05_Networks/03_CommunicationSystems/ai-native-network-6g",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "05_Networks/03_CommunicationSystems/ai-native-network-6g",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/memory-areas",
-      "target": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "04_ComputerSystems/05_Algorithms/memory-areas",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/segmentation-fault",
-      "target": "peim/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation"
+      "source": "04_ComputerSystems/05_Algorithms/segmentation-fault",
+      "target": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/segmentation-fault",
-      "target": "peim/04_ComputerSystems/05_Algorithms/memory-areas"
+      "source": "04_ComputerSystems/05_Algorithms/segmentation-fault",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "peim/04_ComputerSystems/05_Algorithms/memory-areas"
+      "source": "04_ComputerSystems/05_Algorithms/cache-memory",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
+      "source": "04_ComputerSystems/05_Algorithms/cache-memory",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "04_ComputerSystems/05_Algorithms/cache-memory",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/genetic-algorithm",
-      "target": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "04_ComputerSystems/05_Algorithms/genetic-algorithm",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/genetic-algorithm",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+      "source": "04_ComputerSystems/05_Algorithms/genetic-algorithm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
-      "target": "peim/04_ComputerSystems/05_Algorithms/segmentation-fault"
+      "source": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
+      "target": "04_ComputerSystems/05_Algorithms/segmentation-fault"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
-      "target": "peim/04_ComputerSystems/05_Algorithms/memory-areas"
+      "source": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
-      "source": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm",
-      "target": "peim/04_ComputerSystems/05_Algorithms/memory-areas"
+      "source": "04_ComputerSystems/05_Algorithms/banker-algorithm",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
+      "source": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
+      "target": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level"
+      "source": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
+      "target": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
+      "source": "04_ComputerSystems/06_InfraArchitecture/fts-ha",
+      "target": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha",
-      "target": "peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+      "source": "04_ComputerSystems/06_InfraArchitecture/fts-ha",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+      "source": "04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
     },
     {
-      "source": "peim/04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
-      "source": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "peim/04_ComputerSystems/05_Algorithms/memory-areas"
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
-      "source": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "peim/04_ComputerSystems/05_Algorithms/cache-memory"
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
+      "target": "04_ComputerSystems/05_Algorithms/cache-memory"
     },
     {
-      "source": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
-      "target": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
     },
     {
-      "source": "peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
-      "target": "peim/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes",
-      "target": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+      "source": "04_ComputerSystems/04_OS_Virtualization/kubernetes",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "04_ComputerSystems/04_OS_Virtualization/kubernetes",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/mcp-security"
+      "source": "04_ComputerSystems/04_OS_Virtualization/kubernetes",
+      "target": "06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
-      "target": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes"
+      "source": "04_ComputerSystems/04_OS_Virtualization/serverless-computing",
+      "target": "04_ComputerSystems/04_OS_Virtualization/kubernetes"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
+      "source": "04_ComputerSystems/04_OS_Virtualization/serverless-computing",
+      "target": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
-      "target": "peim/04_ComputerSystems/04_OS_Virtualization/kubernetes"
+      "source": "04_ComputerSystems/04_OS_Virtualization/multi-cloud",
+      "target": "04_ComputerSystems/04_OS_Virtualization/kubernetes"
     },
     {
-      "source": "peim/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
-      "target": "peim/05_Networks/02_NetworkDesign/ibn-intent-based-networking"
+      "source": "04_ComputerSystems/04_OS_Virtualization/multi-cloud",
+      "target": "05_Networks/02_NetworkDesign/ibn-intent-based-networking"
     },
     {
-      "source": "peim/02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
-      "target": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+      "source": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/devsecops",
-      "target": "peim/02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/devsecops",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/devsecops",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/siem-soar"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/devsecops",
+      "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/devsecops",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/devsecops",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
-      "target": "peim/02_SoftwareEngineering/01_Dev_Methodology/tailoring"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/tailoring"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
-      "target": "peim/02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code",
-      "target": "peim/02_SoftwareEngineering/01_Dev_Methodology/tailoring"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/low-code-no-code",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/tailoring"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
     },
     {
-      "source": "peim/02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
-      "target": "peim/02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology"
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology"
     },
     {
-      "source": "peim/02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
+      "source": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
     },
     {
-      "source": "peim/02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
-      "target": "peim/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
+      "source": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
+      "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
     },
     {
-      "source": "peim/02_SoftwareEngineering/02_Analysis_Design/uml-behavior-diagrams",
-      "target": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+      "source": "02_SoftwareEngineering/02_Analysis_Design/uml-behavior-diagrams",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
     },
     {
-      "source": "peim/02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern",
-      "target": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+      "source": "02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
     },
     {
-      "source": "peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect",
-      "target": "peim/02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
+      "source": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect",
+      "target": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
     },
     {
-      "source": "peim/02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
-      "target": "peim/02_SoftwareEngineering/03_Implementation_Testing/ab-testing"
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing"
     },
     {
-      "source": "peim/02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
     },
     {
-      "source": "peim/02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
-      "target": "peim/01_InfoStrategy/05_Statistics/bayes-theorem"
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
+      "target": "01_InfoStrategy/05_Statistics/bayes-theorem"
     },
     {
-      "source": "peim/02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
-      "target": "peim/02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
+      "source": "02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks"
+      "source": "02_SoftwareEngineering/05_SW_Quality/ai-sw-testing",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
-      "target": "peim/02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
+      "target": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement",
-      "target": "peim/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
-      "target": "peim/02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
     },
     {
-      "source": "peim/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
-      "target": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law"
+      "source": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
+      "target": "08_EmergingTech/03_Regulations_Policies/ai-basic-law"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/03_Regulations_Policies/ai-basic-law",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "08_EmergingTech/03_Regulations_Policies/ai-basic-law",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law",
-      "target": "peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection"
+      "source": "08_EmergingTech/03_Regulations_Policies/ai-basic-law",
+      "target": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/deepfake"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
+      "target": "06_InfoSecurity/02_SecuritySystems/deepfake"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/mcp-security"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
+      "target": "06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
-      "target": "peim/02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/proxy-design-pattern"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
-      "target": "peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
+      "target": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
-      "target": "peim/06_InfoSecurity/03_InfoProtection/mcp-security"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
+      "target": "06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/llm-security-risks"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/prompt-injection"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
-      "target": "peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe"
     },
     {
-      "source": "peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
-      "source": "peim/01_InfoStrategy/04_IT_Audit/pmo-vs-audit",
-      "target": "peim/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
+      "source": "01_InfoStrategy/04_IT_Audit/pmo-vs-audit",
+      "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
     },
     {
-      "source": "peim/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
-      "target": "peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+      "source": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
     },
     {
-      "source": "peim/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
-      "target": "peim/01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
+      "source": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
+      "target": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
-      "target": "peim/01_InfoStrategy/05_Statistics/unbiased-estimator"
+      "source": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
+      "target": "01_InfoStrategy/05_Statistics/unbiased-estimator"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
-      "target": "peim/01_InfoStrategy/05_Statistics/binomial-poisson-distribution"
+      "source": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
+      "target": "01_InfoStrategy/05_Statistics/binomial-poisson-distribution"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
-      "target": "peim/01_InfoStrategy/05_Statistics/unbiased-estimator"
+      "source": "01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
+      "target": "01_InfoStrategy/05_Statistics/unbiased-estimator"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
-      "target": "peim/01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity"
+      "source": "01_InfoStrategy/05_Statistics/binomial-poisson-distribution",
+      "target": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/bayes-theorem",
-      "target": "peim/01_InfoStrategy/05_Statistics/ar-ma-model"
+      "source": "01_InfoStrategy/05_Statistics/bayes-theorem",
+      "target": "01_InfoStrategy/05_Statistics/ar-ma-model"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/unbiased-estimator",
-      "target": "peim/01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity"
+      "source": "01_InfoStrategy/05_Statistics/unbiased-estimator",
+      "target": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/unbiased-estimator",
-      "target": "peim/01_InfoStrategy/05_Statistics/binomial-poisson-distribution"
+      "source": "01_InfoStrategy/05_Statistics/unbiased-estimator",
+      "target": "01_InfoStrategy/05_Statistics/binomial-poisson-distribution"
     },
     {
-      "source": "peim/01_InfoStrategy/05_Statistics/ar-ma-model",
-      "target": "peim/01_InfoStrategy/05_Statistics/bayes-theorem"
+      "source": "01_InfoStrategy/05_Statistics/ar-ma-model",
+      "target": "01_InfoStrategy/05_Statistics/bayes-theorem"
     },
     {
-      "source": "peim/01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
-      "target": "peim/01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
+      "target": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
     },
     {
-      "source": "peim/01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
-      "source": "peim/01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
-      "target": "peim/01_InfoStrategy/06_ProjectManagement/project-risk-management"
+      "source": "01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
+      "target": "01_InfoStrategy/06_ProjectManagement/project-risk-management"
     },
     {
-      "source": "peim/01_InfoStrategy/06_ProjectManagement/it-project-management",
-      "target": "peim/01_InfoStrategy/06_ProjectManagement/project-risk-management"
+      "source": "01_InfoStrategy/06_ProjectManagement/it-project-management",
+      "target": "01_InfoStrategy/06_ProjectManagement/project-risk-management"
     },
     {
-      "source": "peim/01_InfoStrategy/06_ProjectManagement/it-project-management",
-      "target": "peim/01_InfoStrategy/04_IT_Audit/pmo-vs-audit"
+      "source": "01_InfoStrategy/06_ProjectManagement/it-project-management",
+      "target": "01_InfoStrategy/04_IT_Audit/pmo-vs-audit"
     },
     {
-      "source": "peim/01_InfoStrategy/02_ManagementIS/white-label-marketing",
-      "target": "peim/01_InfoStrategy/02_ManagementIS/scm-supply-chain-management"
+      "source": "01_InfoStrategy/02_ManagementIS/white-label-marketing",
+      "target": "01_InfoStrategy/02_ManagementIS/scm-supply-chain-management"
     },
     {
-      "source": "peim/01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
-      "target": "peim/01_InfoStrategy/02_ManagementIS/white-label-marketing"
+      "source": "01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
+      "target": "01_InfoStrategy/02_ManagementIS/white-label-marketing"
     },
     {
-      "source": "peim/01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
-      "target": "peim/06_InfoSecurity/02_SecuritySystems/supply-chain-security"
+      "source": "01_InfoStrategy/02_ManagementIS/scm-supply-chain-management",
+      "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-cat-certification",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-governance",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-governance",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance",
-      "target": "peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-governance",
+      "target": "08_EmergingTech/03_Regulations_Policies/ai-basic-law"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-governance",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-cat-certification"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
-      "target": "peim/01_InfoStrategy/03_AI_Ethics/ai-governance"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
-      "source": "peim/01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
-      "target": "peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+      "source": "01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     }
   ]
 }

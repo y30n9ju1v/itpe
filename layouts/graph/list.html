@@ -109,26 +109,19 @@
 <script>
 const BASE = "{{ .Site.BaseURL | safeJS }}";
 const COLOR_MAP = {
-  "peim": {
-    "01_InfoStrategy": "#4e79a7",
-    "02_SoftwareEngineering": "#f28e2b",
-    "03_DataProcessing": "#e15759",
-    "04_ComputerSystems": "#76b7b2",
-    "05_Networks": "#59a14f",
-    "06_InfoSecurity": "#edc948",
-    "07_SystemEvaluation": "#b07aa1",
-    "08_EmergingTech": "#ff9da7",
-  },
-  "pecs": "#9c755f",
-  "common": "#bab0ac",
+  "01_InfoStrategy": "#4e79a7",
+  "02_SoftwareEngineering": "#f28e2b",
+  "03_DataProcessing": "#e15759",
+  "04_ComputerSystems": "#76b7b2",
+  "05_Networks": "#59a14f",
+  "06_InfoSecurity": "#edc948",
+  "07_SystemEvaluation": "#b07aa1",
+  "08_EmergingTech": "#ff9da7",
 };
 
 function getColor(node) {
-  const parts = node.id.split("/");
-  if (parts[0] === "peim" && parts[1]) return COLOR_MAP.peim[parts[1]] || "#aaa";
-  if (parts[0] === "pecs") return COLOR_MAP.pecs;
-  if (parts[0] === "common") return COLOR_MAP.common;
-  return "#aaa";
+  const cat = node.id.split("/")[0];
+  return COLOR_MAP[cat] || "#aaa";
 }
 
 fetch(BASE + "graph-data.json")
@@ -154,8 +147,7 @@ function initGraph(data) {
     categorySelect.appendChild(opt);
   });
 
-  const legendData = Object.entries(COLOR_MAP.peim).map(([k, v]) => ({ label: "peim/" + k, color: v }));
-  legendData.push({ label: "pecs", color: COLOR_MAP.pecs }, { label: "common", color: COLOR_MAP.common });
+  const legendData = Object.entries(COLOR_MAP).map(([k, v]) => ({ label: k, color: v }));
   const legend = document.getElementById("legend");
   legendData.forEach(d => {
     const item = document.createElement("div");
