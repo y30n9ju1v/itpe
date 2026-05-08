@@ -56,4 +56,4 @@ Monte Carlo Data, Great Expectations, dbt, Apache Atlas (데이터 계보)
 
 ## 참고 기출
 
-- 138회 1교시 8번
+- 138회 1교시 8번 (PEIM)

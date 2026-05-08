@@ -47,4 +47,4 @@ TTPs(Tactics, Techniques and Procedures)는 공격자의 행동 패턴을 전술
 
 ## 참고 기출
 
-- 138회 1교시 10번
+- 138회 1교시 10번 (PEIM)

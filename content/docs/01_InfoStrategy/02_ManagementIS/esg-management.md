@@ -93,4 +93,4 @@ ESG(Environment·Social·Governance) 경영은 재무적 성과와 함께 환경
 
 ## 참고 기출
 
-- 134회 2교시 5번
+- 134회 2교시 5번 (PEIM)

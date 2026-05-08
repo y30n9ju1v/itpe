@@ -56,4 +56,4 @@ MITRE ATLAS(Adversarial Threat Landscape for AI Systems)에 AML.T0051로 분류.
 
 ## 참고 기출
 
-- 138회 1교시 12번
+- 138회 1교시 12번 (PEIM)

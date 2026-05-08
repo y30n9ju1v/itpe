@@ -66,4 +66,4 @@ SDN 컨트롤러 (Controller Layer)
 
 ## 참고 기출
 
-- 135회 1교시 4번
+- 135회 1교시 4번 (PEIM)

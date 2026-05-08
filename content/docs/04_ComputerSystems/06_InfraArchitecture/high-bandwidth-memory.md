@@ -73,4 +73,4 @@ HBM(High Bandwidth Memory)은 여러 DRAM 다이를 수직으로 적층(3D Stack
 
 ## 참고 기출
 
-- 134회 1교시 12번
+- 134회 1교시 12번 (PEIM)

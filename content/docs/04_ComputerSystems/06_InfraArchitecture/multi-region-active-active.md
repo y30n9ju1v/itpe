@@ -61,4 +61,4 @@ CAP 이론: 분산 시스템에서 Consistency·Availability·Partition Toleranc
 
 ## 참고 기출
 
-- 137회 3교시 3번
+- 137회 3교시 3번 (PEIM)

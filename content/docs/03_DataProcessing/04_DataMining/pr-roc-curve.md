@@ -57,4 +57,4 @@ PR 곡선(Precision-Recall Curve)과 ROC 곡선(Receiver Operating Characteristi
 
 ## 참고 기출
 
-- 135회 1교시 1번
+- 135회 1교시 1번 (PEIM)

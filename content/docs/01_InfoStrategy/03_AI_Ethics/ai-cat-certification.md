@@ -64,4 +64,4 @@ AI 신뢰성 검인증 제도(CAT: Certified AI Trustworthiness)는 AI 시스템
 
 ## 참고 기출
 
-- 137회 1교시 8번
+- 137회 1교시 8번 (PEIM)

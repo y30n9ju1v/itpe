@@ -64,4 +64,4 @@ ANI(Artificial Narrow Intelligence)는 특정 과업에 특화된 AI이며, AGI(
 
 ## 참고 기출
 
-- 135회 1교시 13번
+- 135회 1교시 13번 (PEIM)

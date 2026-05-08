@@ -50,4 +50,4 @@ IEEE 802.11bn은 차세대 Wi-Fi 표준(Wi-Fi 8)으로, UHR(Ultra High Reliabili
 
 ## 참고 기출
 
-- 135회 1교시 10번
+- 135회 1교시 10번 (PEIM)

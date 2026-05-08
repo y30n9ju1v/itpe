@@ -99,4 +99,4 @@ Unit Test → Integration Test → Smoke Test → 카나리 모니터링 → 전
 
 ## 참고 기출
 
-- 134회 3교시 1번
+- 134회 3교시 1번 (PEIM)

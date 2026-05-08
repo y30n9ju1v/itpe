@@ -61,4 +61,4 @@ T1: SELECT * FROM orders WHERE amount > 1000  → 4건 조회 (팬텀!)
 
 ## 참고 기출
 
-- 135회 1교시 11번
+- 135회 1교시 11번 (PEIM)

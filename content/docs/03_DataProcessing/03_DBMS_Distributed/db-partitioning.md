@@ -73,4 +73,4 @@ user_id | name | email | address | profile_image | bio
 
 ## 참고 기출
 
-- 138회 3교시 3번
+- 138회 3교시 3번 (PEIM)

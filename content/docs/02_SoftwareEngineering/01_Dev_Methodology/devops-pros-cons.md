@@ -58,4 +58,4 @@ DevOps는 개발(Development)과 운영(Operations)을 통합하여 소프트웨
 
 ## 참고 기출
 
-- 136회 1교시 6번
+- 136회 1교시 6번 (PEIM)

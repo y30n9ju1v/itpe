@@ -82,4 +82,4 @@ Hash(Password + Salt) → 저장: {Salt, HashValue}
 
 ## 참고 기출
 
-- 138회 4교시 2번
+- 138회 4교시 2번 (PEIM)

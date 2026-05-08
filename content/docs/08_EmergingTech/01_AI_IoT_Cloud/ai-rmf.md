@@ -53,4 +53,4 @@ AI RMF(AI Risk Management Framework)는 미국 국립표준기술연구소(NIST)
 
 ## 참고 기출
 
-- 138회 1교시 1번
+- 138회 1교시 1번 (PEIM)

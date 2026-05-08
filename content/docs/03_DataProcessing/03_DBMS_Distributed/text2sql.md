@@ -68,4 +68,4 @@ GROUP BY product_name ORDER BY total_sales DESC LIMIT 10;
 
 ## 참고 기출
 
-- 137회 2교시 6번
+- 137회 2교시 6번 (PEIM)

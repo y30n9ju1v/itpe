@@ -67,4 +67,4 @@ Client → Server: Finished
 
 ## 참고 기출
 
-- 136회 2교시 6번
+- 136회 2교시 6번 (PEIM)

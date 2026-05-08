@@ -83,4 +83,4 @@ Lift(A → B) = Confidence(A → B) / P(B) = P(A ∩ B) / (P(A) × P(B))
 
 ## 참고 기출
 
-- 137회 1교시 13번
+- 137회 1교시 13번 (PEIM)
