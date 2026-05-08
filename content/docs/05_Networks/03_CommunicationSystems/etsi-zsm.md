@@ -3,7 +3,7 @@ title: "ETSI ZSM (Zero-touch Network and Service Management)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "컴퓨터통신및네트워크", "통신시스템", "ZSM", "ETSI", "자동화", "AI네트워크", "6G"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "지속 가능한 스마트시티 (Smart City)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "최신기술", "스마트시티", "IoT", "지속가능성", "ESG", "데이터플랫폼"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

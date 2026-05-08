@@ -3,7 +3,7 @@ title: "SLO와 에러 버짓 (Service Level Objective & Error Budget)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "소프트웨어공학", "SW품질", "SLO", "에러버짓", "SRE", "가용성"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

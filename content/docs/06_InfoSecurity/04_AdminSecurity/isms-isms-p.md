@@ -3,8 +3,8 @@ title: "ISMS와 ISMS-P (정보보호 관리체계)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "정보보안", "관리적보안", "ISMS", "ISMS-P", "인증", "개인정보"]
 draft: false
-exam_peim: "138회"
-exam_pecs: "138회"
+exam_peim: ["138회"]
+exam_pecs: ["138회"]
 ---
 
 ## 개요

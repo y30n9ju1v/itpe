@@ -3,7 +3,7 @@ title: "sLLM (소형 대형 언어 모델, smaller Large Language Model)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "AI", "sLLM", "LLM", "경량화", "온디바이스AI", "파인튜닝"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

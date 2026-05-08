@@ -3,7 +3,7 @@ title: "ISO/PAS 8800:2024 (자율주행 AI 안전)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "자율주행", "AI안전", "ISO8800", "ISO26262", "SOTIF"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

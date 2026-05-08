@@ -3,7 +3,7 @@ title: "IT 거버넌스 (IT Governance)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "정보전략및관리", "정보전략", "IT거버넌스", "COBIT", "ITIL", "ISO38500"]
 draft: false
-exam_peim: "134회"
+exam_peim: ["134회"]
 ---
 
 ## 개요

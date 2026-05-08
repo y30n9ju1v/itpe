@@ -3,8 +3,8 @@ title: "FTS와 HA (장애허용시스템 vs 고가용성)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "컴퓨터시스템", "인프라아키텍처", "FTS", "HA", "고가용성", "가용성"]
 draft: false
-exam_peim: "138회"
-exam_pecs: "135회"
+exam_peim: ["138회"]
+exam_pecs: ["135회"]
 ---
 
 ## 개요

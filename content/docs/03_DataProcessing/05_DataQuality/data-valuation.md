@@ -3,7 +3,7 @@ title: "데이터 가치평가 (Data Valuation)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터품질", "데이터가치평가", "데이터거래", "데이터산업법"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

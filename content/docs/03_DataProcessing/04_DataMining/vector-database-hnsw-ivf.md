@@ -3,7 +3,7 @@ title: "벡터 데이터베이스와 HNSW/IVF 검색 알고리즘"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "벡터DB", "HNSW", "IVF", "임베딩", "RAG"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

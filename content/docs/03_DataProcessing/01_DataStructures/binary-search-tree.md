@@ -3,7 +3,7 @@ title: "이진 탐색 트리 (Binary Search Tree)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "자료구조론", "이진탐색트리", "BST", "트리", "알고리즘"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

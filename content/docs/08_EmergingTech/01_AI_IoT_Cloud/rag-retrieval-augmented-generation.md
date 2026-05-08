@@ -3,8 +3,8 @@ title: "RAG (검색 증강 생성, Retrieval Augmented Generation)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "pecs", "최신기술", "AI", "RAG", "LLM", "벡터DB", "환각방지"]
 draft: false
-exam_peim: "134회"
-exam_pecs: "137회"
+exam_peim: ["134회"]
+exam_pecs: ["137회"]
 ---
 
 ## 개요

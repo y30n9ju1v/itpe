@@ -3,7 +3,7 @@ title: "Self-Attention 메커니즘"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "AI", "Self-Attention", "Transformer", "LLM", "딥러닝"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

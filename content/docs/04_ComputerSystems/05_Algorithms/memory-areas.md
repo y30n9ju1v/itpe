@@ -3,7 +3,7 @@ title: "프로그램 메모리 4가지 영역 (Code/Data/Heap/Stack)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템", "운영체제", "메모리구조", "스택", "힙", "시스템프로그래밍"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

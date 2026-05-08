@@ -3,7 +3,7 @@ title: "공급망관리 (SCM, Supply Chain Management)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보전략및관리", "경영정보", "SCM", "공급망", "효과성", "효율성"]
 draft: false
-exam_peim: "136회"
+exam_peim: ["136회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "DMA (Direct Memory Access)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "하드웨어시스템", "입출력인터페이스", "DMA", "SG-DMA", "RDMA", "입출력", "메모리"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

@@ -3,8 +3,8 @@ title: "랜섬웨어와 RaaS (Ransomware as a Service)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "정보보안", "보안시스템", "랜섬웨어", "RaaS", "사이버공격", "암호화"]
 draft: false
-exam_peim: "138회"
-exam_pecs: "138회"
+exam_peim: ["138회"]
+exam_pecs: ["138회"]
 ---
 
 ## 개요

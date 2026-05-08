@@ -3,7 +3,7 @@ title: "클라우드 네이티브 보안"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템보안", "정보보호", "클라우드네이티브", "컨테이너보안", "CNAPP", "DevSecOps", "제로트러스트"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

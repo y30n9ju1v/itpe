@@ -3,7 +3,7 @@ title: "방화벽·IDS·IPS·VPN 비교"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템보안", "보안시스템", "방화벽", "IDS", "IPS", "VPN", "네트워크보안"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

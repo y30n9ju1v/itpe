@@ -3,7 +3,7 @@ title: "SIL과 HIL 테스팅 (Software/Hardware-in-the-Loop)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템소프트웨어및응용소프트웨어", "IT품질테스트", "SIL", "HIL", "임베디드", "자동차소프트웨어", "V모델"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

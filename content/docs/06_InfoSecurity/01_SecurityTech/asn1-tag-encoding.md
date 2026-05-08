@@ -3,7 +3,7 @@ title: "ASN.1 Tag 인코딩 (Long-form Tag Number Encoding)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "정보보안", "보안기술", "ASN.1", "인코딩", "BER", "DER", "X.509"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

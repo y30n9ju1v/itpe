@@ -3,7 +3,7 @@ title: "우선순위 역전 (Priority Inversion)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템소프트웨어및응용소프트웨어", "운영체제", "실시간시스템", "우선순위역전", "PIP", "PCP", "RTOS"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["135회", "137회"]
 ---
 
 ## 개요

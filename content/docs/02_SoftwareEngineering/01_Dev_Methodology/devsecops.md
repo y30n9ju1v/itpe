@@ -3,7 +3,7 @@ title: "DevSecOps와 CI/CD 파이프라인 보안"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "개발방법론", "DevSecOps", "CI/CD", "보안자동화", "SAST", "DAST"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

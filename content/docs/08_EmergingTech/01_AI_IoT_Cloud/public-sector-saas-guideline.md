@@ -3,7 +3,7 @@ title: "공공부문 SaaS 이용 가이드라인"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "최신기술", "클라우드", "SaaS", "공공클라우드", "보안", "SLA"]
 draft: false
-exam_peim: "134회"
+exam_peim: ["134회"]
 ---
 
 ## 개요

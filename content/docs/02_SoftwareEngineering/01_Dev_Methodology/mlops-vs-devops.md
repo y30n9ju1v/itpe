@@ -3,7 +3,7 @@ title: "MLOps와 DevOps 비교"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "소프트웨어공학", "개발방법론", "MLOps", "DevOps", "CI/CD", "머신러닝"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

@@ -3,8 +3,8 @@ title: "PET (개인정보 보호 강화기술, Privacy Enhancing Technology)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "정보보안", "개인정보보호", "PET", "동형암호", "차분프라이버시", "연합학습"]
 draft: false
-exam_peim: "138회"
-exam_pecs: "138회"
+exam_peim: ["134회", "138회"]
+exam_pecs: ["138회"]
 ---
 
 ## 개요

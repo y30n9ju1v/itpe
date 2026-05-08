@@ -3,7 +3,7 @@ title: "딥페이크 (Deepfake)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "정보보안", "보안시스템", "딥페이크", "GAN", "AI보안", "미디어위조"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

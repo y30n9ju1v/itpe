@@ -3,7 +3,7 @@ title: "ROM (Read Only Memory) 종류"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "컴퓨터시스템", "하드웨어", "ROM", "비휘발성메모리", "펌웨어", "BIOS"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

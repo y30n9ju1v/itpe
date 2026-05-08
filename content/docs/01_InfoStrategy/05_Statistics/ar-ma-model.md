@@ -3,7 +3,7 @@ title: "자기회귀모형(AR)과 이동평균모형(MA)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "통계", "시계열분석", "AR", "MA", "ARIMA"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

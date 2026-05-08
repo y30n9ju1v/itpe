@@ -3,7 +3,7 @@ title: "Benchmark Test, PoC, Pilot Test 비교"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "소프트웨어공학", "구현테스트", "벤치마크", "PoC", "파일럿테스트", "프로젝트관리"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

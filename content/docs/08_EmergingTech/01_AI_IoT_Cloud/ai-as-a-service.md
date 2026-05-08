@@ -3,7 +3,7 @@ title: "AIaaS (AI as a Service)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "AI", "클라우드", "AIaaS", "서비스형AI", "MLaaS"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

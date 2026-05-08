@@ -3,8 +3,8 @@ title: "ISO/IEC 42001:2023 (AI 관리시스템 표준)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "최신기술", "AI", "ISO42001", "AI관리시스템", "인증"]
 draft: false
-exam_peim: "138회"
-exam_pecs: "138회"
+exam_peim: ["138회"]
+exam_pecs: ["138회"]
 ---
 
 ## 개요

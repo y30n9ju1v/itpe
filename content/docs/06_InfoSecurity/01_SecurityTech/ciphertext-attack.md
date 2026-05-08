@@ -3,7 +3,7 @@ title: "암호문 공격 (Ciphertext Attack)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "암호문공격", "암호분석", "CPA", "CCA"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

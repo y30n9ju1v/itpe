@@ -3,8 +3,8 @@ title: "멀티모달 LLM (Multimodal Large Language Model)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "pecs", "최신기술", "AI", "LLM", "멀티모달", "GPT-4V", "Gemini"]
 draft: false
-exam_peim: "135회"
-exam_pecs: "137회"
+exam_peim: ["135회"]
+exam_pecs: ["137회"]
 ---
 
 ## 개요

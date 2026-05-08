@@ -3,7 +3,7 @@ title: "연관 규칙 분석 (Association Rule Analysis)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "연관규칙", "장바구니분석", "Apriori"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

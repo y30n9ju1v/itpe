@@ -3,7 +3,7 @@ title: "다중지역 동시 가동방식 재해복구 (Multi-Region Active-Activ
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템", "인프라아키텍처", "재해복구", "Active-Active", "멀티리전", "DR"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

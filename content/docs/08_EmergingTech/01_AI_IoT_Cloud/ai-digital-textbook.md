@@ -3,7 +3,7 @@ title: "AI 디지털교과서"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "AI디지털교과서", "에듀테크", "개인화학습", "LMS"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

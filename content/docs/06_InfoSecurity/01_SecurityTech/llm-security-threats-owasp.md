@@ -3,7 +3,7 @@ title: "LLM 보안 위협 (OWASP LLM Top 10)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "정보보안", "보안기술", "LLM", "OWASP", "AI보안", "프롬프트인젝션"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

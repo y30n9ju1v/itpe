@@ -3,7 +3,7 @@ title: "TTFT와 TPOT (LLM 추론 성능 지표)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "AI", "LLM", "TTFT", "TPOT", "성능지표", "추론"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

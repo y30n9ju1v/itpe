@@ -3,8 +3,8 @@ title: "캐시 메모리 (Cache Memory)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "컴퓨터시스템", "알고리즘", "캐시메모리", "쓰기정책", "캐시일관성", "멀티코어"]
 draft: false
-exam_peim: "137회"
-exam_pecs: "135회"
+exam_peim: ["137회"]
+exam_pecs: ["135회"]
 ---
 
 ## 개요

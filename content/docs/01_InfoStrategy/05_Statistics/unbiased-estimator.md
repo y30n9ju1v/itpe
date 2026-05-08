@@ -3,7 +3,7 @@ title: "불편추정량 (Unbiased Estimator)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "통계분석", "불편추정량", "편향", "추정량", "표본분산"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

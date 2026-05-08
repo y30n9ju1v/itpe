@@ -3,7 +3,7 @@ title: "접근통제 정책 비교 (MAC·DAC·RBAC·ABAC)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "시스템보안", "보안체계", "접근통제", "MAC", "DAC", "RBAC", "ABAC"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

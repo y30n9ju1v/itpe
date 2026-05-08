@@ -3,7 +3,7 @@ title: "뉴로모픽 컴퓨팅 (Neuromorphic Computing)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "최신기술", "AI", "뉴로모픽", "SNN", "폰노이만", "하드웨어"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

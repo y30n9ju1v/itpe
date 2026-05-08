@@ -3,7 +3,7 @@ title: "딥러닝 멀티 GPU 기술"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "최신기술", "AI", "GPU", "멀티GPU", "분산학습", "데이터병렬", "모델병렬"]
 draft: false
-exam_peim: "134회"
+exam_peim: ["134회"]
 ---
 
 ## 개요

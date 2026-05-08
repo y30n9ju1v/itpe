@@ -3,7 +3,7 @@ title: "클라우드 AI와 온디바이스 AI 비교"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "AI", "클라우드AI", "온디바이스AI", "엣지AI", "NPU"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

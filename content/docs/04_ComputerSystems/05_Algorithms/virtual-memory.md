@@ -3,7 +3,7 @@ title: "가상 메모리 (Virtual Memory)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "컴퓨터시스템", "운영체제", "가상메모리", "페이징", "스와핑", "TLB"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

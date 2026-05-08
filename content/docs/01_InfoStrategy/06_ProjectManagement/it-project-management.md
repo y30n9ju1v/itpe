@@ -3,7 +3,7 @@ title: "IT 프로젝트 관리"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "정보전략및관리", "프로젝트관리", "IT프로젝트", "PMO", "포트폴리오관리", "PMBOK"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

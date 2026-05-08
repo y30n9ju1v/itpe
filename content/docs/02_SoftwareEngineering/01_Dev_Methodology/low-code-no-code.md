@@ -3,7 +3,7 @@ title: "로우코드/노코드 플랫폼 (Low Code / No Code)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "개발방법론", "로우코드", "노코드", "시민개발자"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "양자 암호 기술: QKD와 PQC"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "양자암호", "QKD", "PQC", "양자내성암호", "양자키분배"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

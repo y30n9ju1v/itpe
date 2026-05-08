@@ -3,7 +3,7 @@ title: "은행가 알고리즘 (Banker's Algorithm)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템", "알고리즘", "은행가알고리즘", "교착상태", "자원할당"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

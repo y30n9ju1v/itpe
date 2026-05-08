@@ -3,7 +3,7 @@ title: "안티드론 시스템 (Anti-Drone System Framework, TTAK.KO-10.1460)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "시스템보안", "보안시스템", "안티드론", "드론보안", "TTA표준"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

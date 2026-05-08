@@ -3,7 +3,7 @@ title: "DB 트랜잭션 격리 수준 (Transaction Isolation Level)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "DBMS", "트랜잭션", "격리수준", "동시성제어", "ACID"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["134회", "137회"]
 ---
 
 ## 개요

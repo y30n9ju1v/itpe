@@ -3,7 +3,7 @@ title: "IEEE 표준과 IEC 국제표준 비교"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "법규정책및표준", "HW_SW표준", "IEEE", "IEC", "국제표준"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

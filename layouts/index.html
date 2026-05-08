@@ -174,9 +174,9 @@
         <td><span class="note-category">{{ $catLabel }}</span></td>
         <td><span class="note-date">
           {{ $examTags := .Params.tags | default slice }}
-          {{ if in $examTags "peim" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PEIM</span>{{ .Params.exam_peim }}{{ end }}
+          {{ if in $examTags "peim" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PEIM</span>{{ range $i, $r := .Params.exam_peim }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
           {{ if and (in $examTags "peim") (in $examTags "pecs") }} / {{ end }}
-          {{ if in $examTags "pecs" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PECS</span>{{ .Params.exam_pecs }}{{ end }}
+          {{ if in $examTags "pecs" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PECS</span>{{ range $i, $r := .Params.exam_pecs }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
         </span></td>
       </tr>
       {{ end }}

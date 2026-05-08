@@ -3,7 +3,7 @@ title: "데이터베이스 트랜잭션 회복 기법 (REDO·UNDO·Shadow Paging
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "자료처리", "DBMS", "트랜잭션", "회복기법", "체크포인트", "REDO", "UNDO"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

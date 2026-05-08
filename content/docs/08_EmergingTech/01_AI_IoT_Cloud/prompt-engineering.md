@@ -3,7 +3,7 @@ title: "프롬프트 엔지니어링 (Prompt Engineering)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "프롬프트엔지니어링", "LLM", "CoT", "RAG"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

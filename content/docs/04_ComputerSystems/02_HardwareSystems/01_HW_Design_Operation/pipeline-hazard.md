@@ -3,7 +3,7 @@ title: "파이프라인 해저드 (Pipeline Hazard)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "하드웨어시스템", "HW설계운영", "파이프라인", "해저드", "CPU아키텍처"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

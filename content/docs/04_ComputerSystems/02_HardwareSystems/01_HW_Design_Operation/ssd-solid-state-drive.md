@@ -3,7 +3,7 @@ title: "SSD (Solid State Drive) 장단점"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "컴퓨터시스템", "하드웨어", "SSD", "저장장치", "NAND플래시"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

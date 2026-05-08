@@ -3,7 +3,7 @@ title: "세그멘테이션 오류 (Segmentation Fault)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "알고리즘", "세그멘테이션폴트", "메모리접근오류", "SIGSEGV", "버퍼오버플로우"]
 draft: false
-exam_peim: "136회"
+exam_peim: ["136회"]
 ---
 
 ## 개요

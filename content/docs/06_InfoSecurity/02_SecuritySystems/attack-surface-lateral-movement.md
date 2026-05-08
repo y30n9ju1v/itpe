@@ -3,7 +3,7 @@ title: "공격 표면과 측면 이동 (Attack Surface & Lateral Movement)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안시스템", "공격표면", "측면이동", "사이버위협", "APT"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

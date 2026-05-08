@@ -3,7 +3,7 @@ title: "TEXT2SQL (자연어를 SQL로 변환)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "DBMS", "TEXT2SQL", "NLP", "LLM", "데이터접근성"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

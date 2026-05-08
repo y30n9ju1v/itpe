@@ -3,7 +3,7 @@ title: "AI RMF (AI 위험관리 프레임워크)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "AI RMF", "NIST", "위험관리"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요

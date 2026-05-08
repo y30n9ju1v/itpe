@@ -3,7 +3,7 @@ title: "보안 운영체제 (Secure OS)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템보안", "보안운영체제", "MAC", "SELinux", "TCB", "보안커널"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

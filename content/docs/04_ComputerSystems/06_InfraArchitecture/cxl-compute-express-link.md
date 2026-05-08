@@ -3,7 +3,7 @@ title: "CXL (Compute Express Link)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "인프라아키텍처", "CXL", "메모리확장", "이종컴퓨팅", "PCIe"]
 draft: false
-exam_peim: "136회"
+exam_peim: ["136회"]
 ---
 
 ## 개요

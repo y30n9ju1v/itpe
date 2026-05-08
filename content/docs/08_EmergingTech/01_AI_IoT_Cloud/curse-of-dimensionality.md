@@ -3,7 +3,7 @@ title: "차원의 저주 (Curse of Dimensionality)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "최신기술", "AI", "머신러닝", "차원의저주", "특징선택", "차원축소"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

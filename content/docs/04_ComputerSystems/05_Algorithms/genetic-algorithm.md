@@ -3,7 +3,7 @@ title: "유전 알고리즘 (Genetic Algorithm)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템", "알고리즘", "유전알고리즘", "진화연산", "최적화", "메타휴리스틱"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

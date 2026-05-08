@@ -3,7 +3,7 @@ title: "OPC UA (Open Platform Communications Unified Architecture)"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "최신기술", "IoT", "스마트팩토리", "OPC-UA", "산업프로토콜", "IIoT"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

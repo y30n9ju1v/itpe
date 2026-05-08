@@ -3,7 +3,7 @@ title: "형상관리와 기준선 (Configuration Management & Baseline)"
 date: 2026-05-09T07:09:12+09:00
 tags: ["peim", "소프트웨어공학", "SW분석설계", "형상관리", "기준선", "형상항목"]
 draft: false
-exam_peim: "134회"
+exam_peim: ["134회"]
 ---
 
 ## 개요

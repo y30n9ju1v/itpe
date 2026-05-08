@@ -3,7 +3,7 @@ title: "RISC-V"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "컴퓨터기초이론", "컴퓨터설계", "RISC-V", "ISA", "오픈소스하드웨어", "RISC"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

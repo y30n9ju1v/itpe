@@ -3,7 +3,7 @@ title: "BPFdoor (Berkeley Packet Filter 기반 백도어)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안시스템", "BPFdoor", "백도어", "APT", "리눅스보안"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "기아현상(Starvation)과 교착상태(Deadlock) 비교"
 date: 2026-05-09T07:56:10+09:00
 tags: ["pecs", "시스템소프트웨어및응용소프트웨어", "운영체제", "기아현상", "교착상태", "스케줄링", "Aging"]
 draft: false
-exam_pecs: "137회"
+exam_pecs: ["137회"]
 ---
 
 ## 개요

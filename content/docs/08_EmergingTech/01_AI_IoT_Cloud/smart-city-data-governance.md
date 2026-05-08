@@ -3,7 +3,7 @@ title: "스마트시티 데이터 거버넌스 (Smart City Data Governance)"
 date: 2026-05-09T08:09:13+09:00
 tags: ["pecs", "최신기술", "스마트시티", "데이터거버넌스", "공공데이터", "개인정보보호"]
 draft: false
-exam_pecs: "135회"
+exam_pecs: ["135회"]
 ---
 
 ## 개요

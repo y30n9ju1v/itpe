@@ -3,7 +3,7 @@ title: "소프트웨어 기술 부채 (SW Technical Debt)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "SW품질", "기술부채", "리팩토링", "코드품질"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

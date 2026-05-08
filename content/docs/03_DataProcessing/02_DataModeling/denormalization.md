@@ -3,7 +3,7 @@ title: "반정규화 (Denormalization)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터모델링", "반정규화", "물리데이터모델링", "성능최적화"]
 draft: false
-exam_peim: "135회"
+exam_peim: ["135회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "Model DoS (LLM 자원 소진 공격)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "정보보안", "보안기술", "ModelDoS", "LLM", "AI보안", "서비스거부공격"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

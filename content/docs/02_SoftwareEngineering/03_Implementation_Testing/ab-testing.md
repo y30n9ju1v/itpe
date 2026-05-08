@@ -3,7 +3,7 @@ title: "A/B 테스팅"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "SW구현시험", "AB테스팅", "실험설계", "통계검정"]
 draft: false
-exam_peim: "137회"
+exam_peim: ["137회"]
 ---
 
 ## 개요

@@ -3,7 +3,7 @@ title: "시스템 콜 (System Call)"
 date: 2026-05-09T07:34:17+09:00
 tags: ["pecs", "컴퓨터시스템", "운영체제", "시스템콜", "커널", "사용자모드", "커널모드"]
 draft: false
-exam_pecs: "138회"
+exam_pecs: ["138회"]
 ---
 
 ## 개요

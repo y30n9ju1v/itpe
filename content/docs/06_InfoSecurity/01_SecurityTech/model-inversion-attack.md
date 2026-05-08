@@ -3,7 +3,7 @@ title: "모델 전도 공격 (Model Inversion Attack)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "모델전도공격", "AI보안", "프라이버시"]
 draft: false
-exam_peim: "138회"
+exam_peim: ["138회"]
 ---
 
 ## 개요
