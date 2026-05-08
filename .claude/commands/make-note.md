@@ -80,6 +80,10 @@ date +"%Y-%m-%dT%H:%M:%S+09:00"
 
 이미 존재하는 노트 파일이면 "참고 기출" 섹션에 회차만 추가하고, tags에 시험 종류가 없으면 추가하고, 내용은 보강하세요.
 
+> **주의**: 기존 노트에 기출을 추가할 때 `tags`와 `참고 기출` 섹션이 반드시 일치해야 합니다.
+> - `참고 기출`에 `(PEIM)` 항목이 있으면 → `tags`에 `"peim"` 포함 필수
+> - `참고 기출`에 `(PECS)` 항목이 있으면 → `tags`에 `"pecs"` 포함 필수
+
 **폴더 구조 (PEIM/PECS 공통)**
 
 PEIM과 PECS 모두 아래 동일한 폴더 구조를 사용합니다. `peim/` 또는 `pecs/` 루트 아래에 같은 구조로 저장하세요. 아래 매핑표를 참고하여 올바른 폴더에 저장하세요.
@@ -189,11 +193,53 @@ exam: "{회차}회"
 - {회차}회 {교시} {문제번호}번 ({시험종류: PEIM 또는 PECS})
 ```
 
-### 4단계: 그래프 데이터 업데이트
+### 4단계: 태그 일관성 검증
+
+노트 생성/수정이 끝나면 아래 스크립트를 실행하여 `참고 기출` 섹션과 `tags`가 일치하는지 반드시 확인하세요.
+
+```bash
+python3 - << 'EOF'
+import os, re
+
+docs_dir = "content/docs"
+issues = []
+
+for root, dirs, files in os.walk(docs_dir):
+    for f in files:
+        if not f.endswith(".md") or f == "_index.md":
+            continue
+        path = os.path.join(root, f)
+        with open(path) as fh:
+            content = fh.read()
+        tags_m = re.search(r'^tags:\s*\[(.+?)\]', content, re.MULTILINE)
+        tags = [t.strip().strip('"\'').lower() for t in tags_m.group(1).split(",")] if tags_m else []
+        exam_mentions = re.findall(r'\(PEIM\)|\(PECS\)', content)
+        has_peim = any('PEIM' in m for m in exam_mentions)
+        has_pecs = any('PECS' in m for m in exam_mentions)
+        missing = []
+        if has_peim and 'peim' not in tags:
+            missing.append('peim')
+        if has_pecs and 'pecs' not in tags:
+            missing.append('pecs')
+        if missing:
+            issues.append((os.path.relpath(path, docs_dir), missing))
+
+if issues:
+    print(f"[오류] 태그 누락 노트 {len(issues)}개 — 수정 필요:")
+    for rel, m in issues:
+        print(f"  {rel} — 누락: {m}")
+else:
+    print("태그 일관성 검증 통과 ✓")
+EOF
+```
+
+오류가 있으면 해당 노트의 `tags`에 누락된 시험 종류를 추가한 뒤 다시 검증하세요. **검증을 통과한 후에만 다음 단계로 진행하세요.**
+
+### 5단계: 그래프 데이터 업데이트
 
 노트 생성/수정이 끝나면 `/build-graph` 스킬을 실행하여 `static/graph-data.json`을 재생성하세요.
 홈페이지 노트 목록은 Hugo가 빌드 시 자동으로 반영되므로 별도 작업이 불필요합니다.
 
-### 5단계: 결과 보고
+### 6단계: 결과 보고
 
 생성/수정된 노트 목록과 각 노트가 매핑된 출제기준 항목을 요약해서 보고하세요.
