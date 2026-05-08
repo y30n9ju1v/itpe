@@ -1,0 +1,265 @@
+{{ define "main" }}
+<style>
+  .graph-container {
+    width: 100%;
+    height: 85vh;
+    background: var(--body-background);
+    border: 1px solid var(--body-font-color);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  #graph-svg {
+    width: 100%;
+    height: 100%;
+  }
+  .node circle {
+    stroke-width: 2;
+    cursor: pointer;
+    transition: r 0.2s;
+  }
+  .node text {
+    font-size: 11px;
+    pointer-events: none;
+    fill: var(--body-font-color);
+  }
+  .link {
+    stroke: #999;
+    stroke-opacity: 0.4;
+    stroke-width: 1.2;
+  }
+  .tooltip {
+    position: absolute;
+    background: var(--body-background);
+    border: 1px solid var(--body-font-color);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    max-width: 240px;
+    z-index: 10;
+  }
+  .graph-controls {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .graph-controls input {
+    padding: 6px 10px;
+    border: 1px solid var(--body-font-color);
+    border-radius: 4px;
+    background: var(--body-background);
+    color: var(--body-font-color);
+    font-size: 13px;
+    width: 220px;
+  }
+  .graph-controls select {
+    padding: 6px 10px;
+    border: 1px solid var(--body-font-color);
+    border-radius: 4px;
+    background: var(--body-background);
+    color: var(--body-font-color);
+    font-size: 13px;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+</style>
+
+<article class="markdown book-article">
+  <h1>노트 연관 관계 그래프</h1>
+  <p>노트 간 <code>relref</code> 링크를 기반으로 연결 관계를 시각화합니다. 노드를 클릭하면 해당 노트로 이동합니다.</p>
+
+  <div class="graph-controls">
+    <input type="text" id="search" placeholder="노트 제목 검색..." />
+    <select id="category-filter">
+      <option value="">전체 카테고리</option>
+    </select>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="graph-container">
+    <svg id="graph-svg"></svg>
+    <div class="tooltip" id="tooltip"></div>
+  </div>
+</article>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const BASE = "{{ .Site.BaseURL | safeJS }}";
+const COLOR_MAP = {
+  "peim": {
+    "01_InfoStrategy": "#4e79a7",
+    "02_SoftwareEngineering": "#f28e2b",
+    "03_DataProcessing": "#e15759",
+    "04_ComputerSystems": "#76b7b2",
+    "05_Networks": "#59a14f",
+    "06_InfoSecurity": "#edc948",
+    "07_SystemEvaluation": "#b07aa1",
+    "08_EmergingTech": "#ff9da7",
+  },
+  "pecs": "#9c755f",
+  "common": "#bab0ac",
+};
+
+function getColor(node) {
+  const parts = node.id.split("/");
+  if (parts[0] === "peim" && parts[1]) return COLOR_MAP.peim[parts[1]] || "#aaa";
+  if (parts[0] === "pecs") return COLOR_MAP.pecs;
+  if (parts[0] === "common") return COLOR_MAP.common;
+  return "#aaa";
+}
+
+fetch(BASE + "graph-data.json")
+  .then(r => r.json())
+  .then(data => initGraph(data))
+  .catch(err => {
+    document.querySelector(".graph-container").innerHTML =
+      `<p style="padding:20px;color:red">그래프 데이터 로드 실패: ${err}</p>`;
+  });
+
+function initGraph(data) {
+  const svg = d3.select("#graph-svg");
+  const container = document.querySelector(".graph-container");
+  const W = container.clientWidth;
+  const H = container.clientHeight;
+
+  const categories = [...new Set(data.nodes.map(n => n.id.split("/")[0] + "/" + (n.id.split("/")[1] || "")))].sort();
+  const categorySelect = document.getElementById("category-filter");
+  categories.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c.split("/")[0];
+    opt.textContent = c;
+    categorySelect.appendChild(opt);
+  });
+
+  const legendData = Object.entries(COLOR_MAP.peim).map(([k, v]) => ({ label: "peim/" + k, color: v }));
+  legendData.push({ label: "pecs", color: COLOR_MAP.pecs }, { label: "common", color: COLOR_MAP.common });
+  const legend = document.getElementById("legend");
+  legendData.forEach(d => {
+    const item = document.createElement("div");
+    item.className = "legend-item";
+    item.innerHTML = `<div class="legend-dot" style="background:${d.color}"></div><span>${d.label}</span>`;
+    legend.appendChild(item);
+  });
+
+  const g = svg.append("g");
+  svg.call(d3.zoom().scaleExtent([0.1, 4]).on("zoom", e => g.attr("transform", e.transform)));
+
+  let nodes = data.nodes.map(d => ({ ...d }));
+  let links = data.links.map(d => ({ ...d }));
+
+  g.append("g").attr("class", "links-layer");
+  g.append("g").attr("class", "nodes-layer");
+
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(80))
+    .force("charge", d3.forceManyBody().strength(-180))
+    .force("center", d3.forceCenter(W / 2, H / 2))
+    .force("collision", d3.forceCollide(18));
+
+  function render(filteredNodes, filteredLinks) {
+    const nodeIds = new Set(filteredNodes.map(n => n.id));
+    const visLinks = filteredLinks.filter(l => nodeIds.has(l.source.id || l.source) && nodeIds.has(l.target.id || l.target));
+
+    const degreeMap = {};
+    filteredNodes.forEach(n => { degreeMap[n.id] = 0; });
+    visLinks.forEach(l => {
+      const s = l.source.id || l.source;
+      const t = l.target.id || l.target;
+      degreeMap[s] = (degreeMap[s] || 0) + 1;
+      degreeMap[t] = (degreeMap[t] || 0) + 1;
+    });
+
+    const linkEl = g.select(".links-layer").selectAll("line")
+      .data(visLinks, d => (d.source.id || d.source) + "-" + (d.target.id || d.target));
+    linkEl.enter().append("line").attr("class", "link");
+    linkEl.exit().remove();
+
+    const nodeEl = g.select(".nodes-layer").selectAll("g.node")
+      .data(filteredNodes, d => d.id);
+    const nodeEnter = nodeEl.enter().append("g").attr("class", "node").call(
+      d3.drag()
+        .on("start", (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on("drag", (e, d) => { d.fx = e.x; d.fy = e.y; })
+        .on("end", (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
+    );
+    nodeEnter.append("circle");
+    nodeEnter.append("text").attr("dy", "0.35em");
+    nodeEnter.on("click", (e, d) => {
+      window.location.href = BASE + "docs/" + d.id.toLowerCase();
+    }).on("mouseover", (e, d) => {
+      const tt = document.getElementById("tooltip");
+      tt.innerHTML = `<strong>${d.title}</strong><br/><small>${d.tags.join(", ")}</small>`;
+      tt.style.opacity = 1;
+    }).on("mousemove", e => {
+      const tt = document.getElementById("tooltip");
+      const rect = container.getBoundingClientRect();
+      tt.style.left = (e.clientX - rect.left + 12) + "px";
+      tt.style.top = (e.clientY - rect.top - 10) + "px";
+    }).on("mouseout", () => {
+      document.getElementById("tooltip").style.opacity = 0;
+    });
+    nodeEl.exit().remove();
+
+    const allNodes = g.select(".nodes-layer").selectAll("g.node");
+    allNodes.select("circle")
+      .attr("r", d => Math.sqrt(degreeMap[d.id] || 0) + 5)
+      .attr("fill", d => getColor(d))
+      .attr("stroke", d => d3.color(getColor(d)).darker(0.8));
+    allNodes.select("text")
+      .attr("x", d => Math.sqrt(degreeMap[d.id] || 0) + 9)
+      .text(d => d.title.length > 18 ? d.title.slice(0, 18) + "…" : d.title);
+
+    sim.nodes(filteredNodes);
+    sim.force("link").links(visLinks);
+    sim.alpha(0.5).restart();
+
+    sim.on("tick", () => {
+      g.select(".links-layer").selectAll("line")
+        .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+      g.select(".nodes-layer").selectAll("g.node")
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+    });
+  }
+
+  function applyFilter() {
+    const q = document.getElementById("search").value.toLowerCase();
+    const cat = document.getElementById("category-filter").value;
+    const fn = nodes.filter(n => {
+      const matchQ = !q || n.title.toLowerCase().includes(q) || n.id.toLowerCase().includes(q);
+      const matchC = !cat || n.id.startsWith(cat);
+      return matchQ && matchC;
+    });
+    render(fn, links);
+  }
+
+  document.getElementById("search").addEventListener("input", applyFilter);
+  document.getElementById("category-filter").addEventListener("change", applyFilter);
+
+  render(nodes, links);
+}
+</script>
+{{ end }}
