@@ -55,8 +55,8 @@ draft: false
 
 ## 연관 개념
 
-- [해시 함수/Rainbow Table]({{< relref "hash-function-rainbow-table" >}}) — 암호 공격의 다른 유형
-- [PET]({{< relref "pet-privacy-enhancing-technology" >}}) — 동형암호의 CPA 안전성
+- [해시 함수/Rainbow Table]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table" >}}) — 암호 공격의 다른 유형
+- [PET]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology" >}}) — 동형암호의 CPA 안전성
 
 ## 참고 기출
 

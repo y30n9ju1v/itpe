@@ -40,8 +40,8 @@ TTPs(Tactics, Techniques and Procedures)는 공격자의 행동 패턴을 전술
 
 ## 연관 개념
 
-- [공격 표면/측면 이동]({{< relref "attack-surface-lateral-movement" >}}) — TTPs의 구체적 기법
-- [랜섬웨어/RaaS]({{< relref "ransomware-raas" >}}) — TTPs 적용 대표 공격 유형
+- [공격 표면/측면 이동]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement" >}}) — TTPs의 구체적 기법
+- [랜섬웨어/RaaS]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas" >}}) — TTPs 적용 대표 공격 유형
 - 디지털포렌식 — TTPs 역추적을 통한 공격자 식별
 
 ## 참고 기출

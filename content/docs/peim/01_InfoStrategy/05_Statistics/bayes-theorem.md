@@ -52,7 +52,7 @@ P(A|B) = P(B|A) × P(A) / P(B)
 
 ## 연관 개념
 
-- [자기회귀모형/이동평균모형]({{< relref "ar-ma-model" >}}) — 시계열 통계 모형
+- [자기회귀모형/이동평균모형]({{< relref "/docs/peim/01_InfoStrategy/05_Statistics/ar-ma-model" >}}) — 시계열 통계 모형
 - 데이터마이닝 — 베이즈 분류기 활용
 
 ## 참고 기출

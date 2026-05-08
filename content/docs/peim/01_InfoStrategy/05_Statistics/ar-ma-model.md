@@ -62,7 +62,7 @@ X_t = μ + ε_t + θ₁ε_{t-1} + θ₂ε_{t-2} + ... + θ_qε_{t-q}
 
 ## 연관 개념
 
-- [베이즈 정리]({{< relref "bayes-theorem" >}}) — 통계적 추론의 또 다른 접근
+- [베이즈 정리]({{< relref "/docs/peim/01_InfoStrategy/05_Statistics/bayes-theorem" >}}) — 통계적 추론의 또 다른 접근
 - 데이터마이닝 — 시계열 예측 모델링
 
 ## 참고 기출

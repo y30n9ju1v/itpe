@@ -78,7 +78,7 @@ draft: false
 
 ## 연관 개념
 
-- [AI-Native Network/6G]({{< relref "ai-native-network-6g" >}}) — 6G에서 오류제어 고도화
+- [AI-Native Network/6G]({{< relref "/docs/peim/05_Networks/03_CommunicationSystems/ai-native-network-6g" >}}) — 6G에서 오류제어 고도화
 - TCP/IP — ARQ 개념의 TCP 레이어 구현
 - 네트워크 프로토콜 — 오류제어의 상위 계층
 

@@ -63,9 +63,9 @@ AI-Native Network는 6G의 핵심 개념으로, 네트워크 설계 단계부터
 
 ## 연관 개념
 
-- [ARQ 오류제어]({{< relref "arq-error-control" >}}) — 통신 신뢰성의 기초
+- [ARQ 오류제어]({{< relref "/docs/peim/05_Networks/01_Network_Protocol/arq-error-control" >}}) — 통신 신뢰성의 기초
 - 네트워크 설계 — 6G 인프라 설계
-- [AI RMF]({{< relref "ai-rmf" >}}) — 네트워크 AI 위험관리
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — 네트워크 AI 위험관리
 
 ## 참고 기출
 

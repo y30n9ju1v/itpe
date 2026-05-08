@@ -49,8 +49,8 @@ MITRE ATLAS(Adversarial Threat Landscape for AI Systems)에 AML.T0051로 분류.
 
 ## 연관 개념
 
-- [모델 전도 공격]({{< relref "model-inversion-attack" >}}) — LLM 보안 위협의 또 다른 유형
-- [AI RMF]({{< relref "ai-rmf" >}}) — AI 보안 위험관리 프레임워크
+- [모델 전도 공격]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack" >}}) — LLM 보안 위협의 또 다른 유형
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — AI 보안 위험관리 프레임워크
 - TTPs — LLM 공격의 전술·기법 분류
 
 ## 참고 기출

@@ -70,9 +70,9 @@ T1: 동일 조건 재조회 → 4건 (幽靈처럼 새 행 등장!)
 
 ## 연관 개념
 
-- [DB 분할]({{< relref "db-partitioning" >}}) — 분산 환경에서 격리 수준 관리
-- [Multi-Region Active-Active]({{< relref "multi-region-active-active" >}}) — 분산 DB 일관성 문제
-- [오픈소스 DBMS 마이그레이션]({{< relref "opensource-dbms-migration" >}}) — DBMS 전환 시 격리 수준 검토
+- [DB 분할]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning" >}}) — 분산 환경에서 격리 수준 관리
+- [Multi-Region Active-Active]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active" >}}) — 분산 DB 일관성 문제
+- [오픈소스 DBMS 마이그레이션]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration" >}}) — DBMS 전환 시 격리 수준 검토
 
 ## 참고 기출
 

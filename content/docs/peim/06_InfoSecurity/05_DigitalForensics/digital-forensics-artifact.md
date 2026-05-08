@@ -55,8 +55,8 @@ draft: false
 
 ## 연관 개념
 
-- [TTPs]({{< relref "ttps" >}}) — 공격자 TTPs를 아티팩트로 역추적
-- [BPFdoor]({{< relref "bpfdoor" >}}) — 아티팩트 은닉 기법을 사용하는 악성코드
+- [TTPs]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/ttps" >}}) — 공격자 TTPs를 아티팩트로 역추적
+- [BPFdoor]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/bpfdoor" >}}) — 아티팩트 은닉 기법을 사용하는 악성코드
 - ISMS — 사고 대응 시 포렌식 수행
 
 ## 참고 기출

@@ -59,9 +59,9 @@ draft: false
 
 ## 연관 개념
 
-- [AI RMF]({{< relref "ai-rmf" >}}) — 미국의 AI 위험관리 (비교 관점)
-- [ISO/IEC 42001]({{< relref "iso-iec-42001" >}}) — 국제 AI 관리시스템 표준
-- [생성형 AI 이용자 보호 가이드라인]({{< relref "generative-ai-user-protection" >}}) — 하위 가이드라인
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — 미국의 AI 위험관리 (비교 관점)
+- [ISO/IEC 42001]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001" >}}) — 국제 AI 관리시스템 표준
+- [생성형 AI 이용자 보호 가이드라인]({{< relref "/docs/peim/08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection" >}}) — 하위 가이드라인
 
 ## 참고 기출
 

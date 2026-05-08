@@ -89,7 +89,7 @@ UML 다이어그램
 
 ## 연관 개념
 
-- [TA/AA]({{< relref "ta-aa-architect" >}}) — 아키텍처 설계에서 UML 활용
+- [TA/AA]({{< relref "/docs/peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect" >}}) — 아키텍처 설계에서 UML 활용
 - 동적 테스트 — 유스케이스 기반 테스트 케이스 도출
 - SW 아키텍처 — UML 구조 다이어그램과 연계
 

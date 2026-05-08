@@ -62,8 +62,8 @@ draft: false
 
 ## 연관 개념
 
-- [ARQ/오류제어]({{< relref "arq-error-control" >}}) — 네트워크 신뢰성의 다른 측면
-- [AI-Native Network/6G]({{< relref "ai-native-network-6g" >}}) — 차세대 네트워크 라우팅
+- [ARQ/오류제어]({{< relref "/docs/peim/05_Networks/01_Network_Protocol/arq-error-control" >}}) — 네트워크 신뢰성의 다른 측면
+- [AI-Native Network/6G]({{< relref "/docs/peim/05_Networks/03_CommunicationSystems/ai-native-network-6g" >}}) — 차세대 네트워크 라우팅
 
 ## 참고 기출
 

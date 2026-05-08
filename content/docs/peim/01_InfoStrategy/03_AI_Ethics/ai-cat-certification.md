@@ -57,9 +57,9 @@ AI 신뢰성 검인증 제도(CAT: Certified AI Trustworthiness)는 AI 시스템
 
 ## 연관 개념
 
-- [AI 거버넌스]({{< relref "ai-governance" >}}) — AI 거버넌스의 기술적 수단
-- [ISO/IEC 42001]({{< relref "iso-iec-42001" >}}) — 국제 AI 관리시스템 인증
-- [AI RMF]({{< relref "ai-rmf" >}}) — AI 위험관리 프레임워크
+- [AI 거버넌스]({{< relref "/docs/peim/01_InfoStrategy/03_AI_Ethics/ai-governance" >}}) — AI 거버넌스의 기술적 수단
+- [ISO/IEC 42001]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001" >}}) — 국제 AI 관리시스템 인증
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — AI 위험관리 프레임워크
 
 ## 참고 기출
 

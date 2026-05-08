@@ -59,9 +59,9 @@ draft: false
 
 ## 연관 개념
 
-- [메모리 영역(Code/Data/Heap/Stack)]({{< relref "memory-areas" >}}) — 메모리 구조
-- [OS 스케줄링]({{< relref "os-scheduling" >}}) — 멀티코어 스케줄링과 캐시 관계
-- [FTS/HA]({{< relref "fts-ha" >}}) — 시스템 성능·가용성 구조
+- [메모리 영역(Code/Data/Heap/Stack)]({{< relref "/docs/peim/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — 메모리 구조
+- [OS 스케줄링]({{< relref "/docs/peim/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling" >}}) — 멀티코어 스케줄링과 캐시 관계
+- [FTS/HA]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — 시스템 성능·가용성 구조
 
 ## 참고 기출
 

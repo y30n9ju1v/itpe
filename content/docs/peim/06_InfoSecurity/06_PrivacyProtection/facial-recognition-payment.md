@@ -42,8 +42,8 @@ draft: false
 
 ## 연관 개념
 
-- [PET (개인정보 보호 강화기술)]({{< relref "pet-privacy-enhancing-technology" >}}) — 프라이버시 보호 기술
-- [모델 전도 공격]({{< relref "model-inversion-attack" >}}) — 안면인식 모델 역공격 위협
+- [PET (개인정보 보호 강화기술)]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology" >}}) — 프라이버시 보호 기술
+- [모델 전도 공격]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack" >}}) — 안면인식 모델 역공격 위협
 - 개인정보보호법 — 민감정보 처리 규제 근거
 
 ## 참고 기출

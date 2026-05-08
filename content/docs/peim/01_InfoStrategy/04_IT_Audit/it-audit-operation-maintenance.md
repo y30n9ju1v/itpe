@@ -57,8 +57,8 @@ draft: false
 
 ## 연관 개념
 
-- [SLA]({{< relref "sla-service-level-agreement" >}}) — 운영 감리의 핵심 평가 기준
-- [ISP/ISMP]({{< relref "isp-ismp" >}}) — 정보화 사업 전 단계 계획
+- [SLA]({{< relref "/docs/peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement" >}}) — 운영 감리의 핵심 평가 기준
+- [ISP/ISMP]({{< relref "/docs/peim/01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp" >}}) — 정보화 사업 전 단계 계획
 - SW 품질 — 감리의 품질 보증 역할
 
 ## 참고 기출

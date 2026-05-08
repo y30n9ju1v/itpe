@@ -75,9 +75,9 @@ draft: false
 
 ## 연관 개념
 
-- [A/B 테스팅]({{< relref "ab-testing" >}}) — 통계 기반 테스트
+- [A/B 테스팅]({{< relref "/docs/peim/02_SoftwareEngineering/03_Implementation_Testing/ab-testing" >}}) — 통계 기반 테스트
 - SW 품질 — 테스트 커버리지와 품질 연관
-- [SLA]({{< relref "sla-service-level-agreement" >}}) — 품질 목표와 테스트 기준 연결
+- [SLA]({{< relref "/docs/peim/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement" >}}) — 품질 목표와 테스트 기준 연결
 
 ## 참고 기출
 

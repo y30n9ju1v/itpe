@@ -75,8 +75,8 @@ Hash(Password + Salt) → 저장: {Salt, HashValue}
 
 ## 연관 개념
 
-- [모델 전도 공격]({{< relref "model-inversion-attack" >}}) — 해시 역추론과 유사한 공격 개념
-- [PET]({{< relref "pet-privacy-enhancing-technology" >}}) — 동형암호 등 고급 프라이버시 기술
+- [모델 전도 공격]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack" >}}) — 해시 역추론과 유사한 공격 개념
+- [PET]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology" >}}) — 동형암호 등 고급 프라이버시 기술
 - 디지털 서명 — 해시 함수 핵심 활용
 
 ## 참고 기출

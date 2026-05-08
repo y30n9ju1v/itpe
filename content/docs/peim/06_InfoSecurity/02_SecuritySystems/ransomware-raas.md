@@ -69,9 +69,9 @@ draft: false
 
 ## 연관 개념
 
-- [공격 표면/측면 이동]({{< relref "attack-surface-lateral-movement" >}}) — 랜섬웨어 확산 경로
-- [TTPs]({{< relref "ttps" >}}) — 랜섬웨어 공격의 전술 분류
-- [해시 함수/암호화]({{< relref "hash-function-rainbow-table" >}}) — AES/RSA 암호화 기반
+- [공격 표면/측면 이동]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement" >}}) — 랜섬웨어 확산 경로
+- [TTPs]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/ttps" >}}) — 랜섬웨어 공격의 전술 분류
+- [해시 함수/암호화]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table" >}}) — AES/RSA 암호화 기반
 
 ## 참고 기출
 

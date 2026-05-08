@@ -65,7 +65,7 @@ draft: false
 
 ## 연관 개념
 
-- [TA/AA]({{< relref "ta-aa-architect" >}}) — 클라우드 전환 시 역공학 활용
+- [TA/AA]({{< relref "/docs/peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect" >}}) — 클라우드 전환 시 역공학 활용
 - SW 품질 — 재공학의 목표
 - 리팩토링 — 재공학의 핵심 기법
 

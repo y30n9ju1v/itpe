@@ -46,7 +46,7 @@ draft: false
 
 ## 연관 개념
 
-- [테일러링]({{< relref "tailoring" >}}) — 로우코드를 방법론 테일러링 수단으로 활용
+- [테일러링]({{< relref "/docs/peim/02_SoftwareEngineering/01_Dev_Methodology/tailoring" >}}) — 로우코드를 방법론 테일러링 수단으로 활용
 - 애자일 방법론 — 로우코드의 빠른 프로토타이핑과 연계
 - SW 품질 — 자동 생성 코드의 품질 관리 이슈
 

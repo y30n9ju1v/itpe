@@ -54,9 +54,9 @@ CAP 이론: 분산 시스템에서 Consistency·Availability·Partition Toleranc
 
 ## 연관 개념
 
-- [FTS/HA]({{< relref "fts-ha" >}}) — 단일 지역 내 고가용성과의 차이
-- [오픈소스 DBMS 마이그레이션]({{< relref "opensource-dbms-migration" >}}) — 분산 DB HA 구성
-- [DB 트랜잭션 격리]({{< relref "transaction-isolation-level" >}}) — 분산 환경 일관성과 연계
+- [FTS/HA]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — 단일 지역 내 고가용성과의 차이
+- [오픈소스 DBMS 마이그레이션]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration" >}}) — 분산 DB HA 구성
+- [DB 트랜잭션 격리]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level" >}}) — 분산 환경 일관성과 연계
 
 ## 참고 기출
 

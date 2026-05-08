@@ -52,7 +52,7 @@ draft: false
 
 ## 연관 개념
 
-- [데이터 관측가능성]({{< relref "data-observability" >}}) — 데이터 늪 예방의 핵심 수단
+- [데이터 관측가능성]({{< relref "/docs/peim/03_DataProcessing/05_DataQuality/data-observability" >}}) — 데이터 늪 예방의 핵심 수단
 - 빅데이터 기획 — 데이터 레이크 설계 시 늪 방지
 - 데이터 품질관리 — 데이터 늪의 본질적 원인
 

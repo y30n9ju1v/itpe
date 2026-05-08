@@ -76,8 +76,8 @@ Lift(A → B) = Confidence(A → B) / P(B) = P(A ∩ B) / (P(A) × P(B))
 
 ## 연관 개념
 
-- [이진 탐색 트리]({{< relref "binary-search-tree" >}}) — 빈발 항목 집합 탐색 자료구조
-- [베이즈 정리]({{< relref "bayes-theorem" >}}) — 조건부 확률 기반 분석
+- [이진 탐색 트리]({{< relref "/docs/peim/03_DataProcessing/01_DataStructures/binary-search-tree" >}}) — 빈발 항목 집합 탐색 자료구조
+- [베이즈 정리]({{< relref "/docs/peim/01_InfoStrategy/05_Statistics/bayes-theorem" >}}) — 조건부 확률 기반 분석
 - 빅데이터 분석 — 대규모 연관 규칙 분석 플랫폼
 
 ## 참고 기출

@@ -58,10 +58,10 @@ draft: false
 
 ## 연관 개념
 
-- [Transformer/MoE]({{< relref "transformer-moe" >}}) — 초거대 AI의 핵심 아키텍처
-- [벡터 데이터베이스/HNSW]({{< relref "vector-database-hnsw-ivf" >}}) — RAG 구현 기반
-- [프롬프트 인젝션]({{< relref "prompt-injection" >}}) — 초거대 AI 보안 위협
-- [AI 거버넌스]({{< relref "ai-governance" >}}) — 공공 AI 거버넌스 체계
+- [Transformer/MoE]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe" >}}) — 초거대 AI의 핵심 아키텍처
+- [벡터 데이터베이스/HNSW]({{< relref "/docs/peim/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf" >}}) — RAG 구현 기반
+- [프롬프트 인젝션]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/prompt-injection" >}}) — 초거대 AI 보안 위협
+- [AI 거버넌스]({{< relref "/docs/peim/01_InfoStrategy/03_AI_Ethics/ai-governance" >}}) — 공공 AI 거버넌스 체계
 
 ## 참고 기출
 

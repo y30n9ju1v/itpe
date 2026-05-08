@@ -53,8 +53,8 @@ draft: false
 
 ## 연관 개념
 
-- [FTS/HA]({{< relref "fts-ha" >}}) — 고가용성 아키텍처 상세
-- [DB 분할]({{< relref "db-partitioning" >}}) — 분산 DBMS 구성
+- [FTS/HA]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — 고가용성 아키텍처 상세
+- [DB 분할]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/db-partitioning" >}}) — 분산 DBMS 구성
 - 데이터 품질관리 — 마이그레이션 후 데이터 정합성 검증
 
 ## 참고 기출

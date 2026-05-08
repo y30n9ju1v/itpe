@@ -45,9 +45,9 @@ AI RMF(AI Risk Management Framework)는 미국 국립표준기술연구소(NIST)
 
 ## 연관 개념
 
-- [ISO/IEC 42001]({{< relref "iso-iec-42001" >}}) — AI 관리시스템 국제 인증 표준
-- [프롬프트 인젝션]({{< relref "prompt-injection" >}}) — AI 보안 위협의 대표 사례
-- [모델 전도 공격]({{< relref "model-inversion-attack" >}}) — AI 프라이버시 위협
+- [ISO/IEC 42001]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001" >}}) — AI 관리시스템 국제 인증 표준
+- [프롬프트 인젝션]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/prompt-injection" >}}) — AI 보안 위협의 대표 사례
+- [모델 전도 공격]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/model-inversion-attack" >}}) — AI 프라이버시 위협
 - AI 윤리 — AI RMF의 공정성·책무성과 연결
 
 ## 참고 기출

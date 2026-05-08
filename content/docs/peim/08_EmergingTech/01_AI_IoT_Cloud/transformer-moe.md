@@ -82,9 +82,9 @@ Q(Query), K(Key), V(Value) — d_k: Key 차원 수
 
 ## 연관 개념
 
-- [GNN]({{< relref "gnn-graph-neural-network" >}}) — 또 다른 현대 딥러닝 아키텍처
-- [초거대 AI]({{< relref "large-scale-ai" >}}) — 트랜스포머 기반 LLM
-- [프롬프트 인젝션]({{< relref "prompt-injection" >}}) — 트랜스포머 기반 LLM 보안 위협
+- [GNN]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network" >}}) — 또 다른 현대 딥러닝 아키텍처
+- [초거대 AI]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai" >}}) — 트랜스포머 기반 LLM
+- [프롬프트 인젝션]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/prompt-injection" >}}) — 트랜스포머 기반 LLM 보안 위협
 
 ## 참고 기출
 

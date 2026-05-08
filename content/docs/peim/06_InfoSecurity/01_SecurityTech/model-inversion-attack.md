@@ -50,9 +50,9 @@ draft: false
 
 ## 연관 개념
 
-- [프롬프트 인젝션]({{< relref "prompt-injection" >}}) — LLM 보안 위협
-- [안면인식 결제]({{< relref "facial-recognition-payment" >}}) — 모델 전도 공격의 주요 대상
-- [PET]({{< relref "pet-privacy-enhancing-technology" >}}) — 대응 기술
+- [프롬프트 인젝션]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/prompt-injection" >}}) — LLM 보안 위협
+- [안면인식 결제]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/facial-recognition-payment" >}}) — 모델 전도 공격의 주요 대상
+- [PET]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology" >}}) — 대응 기술
 
 ## 참고 기출
 

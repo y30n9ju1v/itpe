@@ -41,9 +41,9 @@ draft: false
 
 ## 연관 개념
 
-- [인공지능기본법]({{< relref "ai-basic-law" >}}) — 상위 법적 근거
-- [AI RMF]({{< relref "ai-rmf" >}}) — AI 위험관리 프레임워크
-- [ISO/IEC 42001]({{< relref "iso-iec-42001" >}}) — AI 관리시스템 표준
+- [인공지능기본법]({{< relref "/docs/peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law" >}}) — 상위 법적 근거
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — AI 위험관리 프레임워크
+- [ISO/IEC 42001]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001" >}}) — AI 관리시스템 표준
 
 ## 참고 기출
 

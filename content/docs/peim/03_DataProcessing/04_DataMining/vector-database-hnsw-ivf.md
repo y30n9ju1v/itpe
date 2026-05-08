@@ -87,9 +87,9 @@ draft: false
 
 ## 연관 개념
 
-- [초거대 AI]({{< relref "large-scale-ai" >}}) — RAG에서 벡터 DB 활용
-- [TEXT2SQL]({{< relref "text2sql" >}}) — 스키마 임베딩 검색
-- [연관 규칙 분석]({{< relref "association-rule-analysis" >}}) — 데이터마이닝의 다른 기법
+- [초거대 AI]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai" >}}) — RAG에서 벡터 DB 활용
+- [TEXT2SQL]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/text2sql" >}}) — 스키마 임베딩 검색
+- [연관 규칙 분석]({{< relref "/docs/peim/03_DataProcessing/04_DataMining/association-rule-analysis" >}}) — 데이터마이닝의 다른 기법
 
 ## 참고 기출
 

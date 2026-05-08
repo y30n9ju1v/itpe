@@ -87,9 +87,9 @@ spec:
 
 ## 연관 개념
 
-- [TA/AA]({{< relref "ta-aa-architect" >}}) — 클라우드 네이티브 아키텍처 설계
-- [FTS/HA]({{< relref "fts-ha" >}}) — K8s 기반 고가용성 구현
-- [MCP 보안]({{< relref "mcp-security" >}}) — 컨테이너 환경 MCP 보안
+- [TA/AA]({{< relref "/docs/peim/02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect" >}}) — 클라우드 네이티브 아키텍처 설계
+- [FTS/HA]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — K8s 기반 고가용성 구현
+- [MCP 보안]({{< relref "/docs/peim/06_InfoSecurity/03_InfoProtection/mcp-security" >}}) — 컨테이너 환경 MCP 보안
 
 ## 참고 기출
 

@@ -61,7 +61,7 @@ MODBUS는 1979년 Modicon이 개발한 산업용 직렬 통신 프로토콜로, 
 
 ## 연관 개념
 
-- [IGP/EGP]({{< relref "igp-egp-routing" >}}) — 네트워크 프로토콜 체계
+- [IGP/EGP]({{< relref "/docs/peim/05_Networks/02_NetworkDesign/igp-egp-routing" >}}) — 네트워크 프로토콜 체계
 - 스마트팩토리 — MODBUS 활용 대표 환경
 - OT/IT 보안 통합 — MODBUS 보안의 현대적 과제
 

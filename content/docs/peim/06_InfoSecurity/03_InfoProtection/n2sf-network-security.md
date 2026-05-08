@@ -63,9 +63,9 @@ draft: false
 
 ## 연관 개념
 
-- [ISMS/ISMS-P]({{< relref "isms-isms-p" >}}) — 공공기관 정보보호 관리체계
-- [공격 표면/측면 이동]({{< relref "attack-surface-lateral-movement" >}}) — 망 분리로 방지하는 위협
-- [BPFdoor]({{< relref "bpfdoor" >}}) — 망 분리를 우회하는 공격 유형
+- [ISMS/ISMS-P]({{< relref "/docs/peim/06_InfoSecurity/04_AdminSecurity/isms-isms-p" >}}) — 공공기관 정보보호 관리체계
+- [공격 표면/측면 이동]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement" >}}) — 망 분리로 방지하는 위협
+- [BPFdoor]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/bpfdoor" >}}) — 망 분리를 우회하는 공격 유형
 
 ## 참고 기출
 

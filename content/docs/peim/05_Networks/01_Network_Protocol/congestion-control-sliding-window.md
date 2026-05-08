@@ -72,9 +72,9 @@ ACK 0 수신 → 윈도우 슬라이드: [1][2][3][4] | [5][6][7][8]
 
 ## 연관 개념
 
-- [ARQ/오류제어]({{< relref "arq-error-control" >}}) — ARQ와 슬라이딩 윈도우의 상세
-- [IGP/EGP]({{< relref "igp-egp-routing" >}}) — 네트워크 계층 라우팅
-- [AI-Native Network]({{< relref "ai-native-network-6g" >}}) — 6G 혼잡 제어 AI화
+- [ARQ/오류제어]({{< relref "/docs/peim/05_Networks/01_Network_Protocol/arq-error-control" >}}) — ARQ와 슬라이딩 윈도우의 상세
+- [IGP/EGP]({{< relref "/docs/peim/05_Networks/02_NetworkDesign/igp-egp-routing" >}}) — 네트워크 계층 라우팅
+- [AI-Native Network]({{< relref "/docs/peim/05_Networks/03_CommunicationSystems/ai-native-network-6g" >}}) — 6G 혼잡 제어 AI화
 
 ## 참고 기출
 

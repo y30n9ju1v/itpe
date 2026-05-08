@@ -56,8 +56,8 @@ draft: false
 
 ## 연관 개념
 
-- [ISP/ISMP]({{< relref "isp-ismp" >}}) — SW 사업 예산 계획의 상위 단계
-- [초거대 AI]({{< relref "large-scale-ai" >}}) — 대가산정 적용 대상
+- [ISP/ISMP]({{< relref "/docs/peim/01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp" >}}) — SW 사업 예산 계획의 상위 단계
+- [초거대 AI]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai" >}}) — 대가산정 적용 대상
 - 프로젝트 위험관리 — 대가산정 시 위험 비용 포함
 
 ## 참고 기출

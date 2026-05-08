@@ -71,9 +71,9 @@ draft: false
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "banker-algorithm" >}}) — 자원 스케줄링의 교착상태 회피
-- [메모리 영역]({{< relref "memory-areas" >}}) — OS 자원 관리 전반
-- [캐시 메모리]({{< relref "cache-memory" >}}) — 메모리 계층 구조
+- [은행가 알고리즘]({{< relref "/docs/peim/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 자원 스케줄링의 교착상태 회피
+- [메모리 영역]({{< relref "/docs/peim/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — OS 자원 관리 전반
+- [캐시 메모리]({{< relref "/docs/peim/04_ComputerSystems/05_Algorithms/cache-memory" >}}) — 메모리 계층 구조
 
 ## 참고 기출
 

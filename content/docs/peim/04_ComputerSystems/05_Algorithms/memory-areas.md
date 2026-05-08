@@ -62,7 +62,7 @@ draft: false
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "banker-algorithm" >}}) — 메모리/자원 교착상태 회피
+- [은행가 알고리즘]({{< relref "/docs/peim/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 메모리/자원 교착상태 회피
 - 운영체제 가상화 — 프로세스 메모리 격리
 - 보안공학 — 버퍼 오버플로우 취약점
 

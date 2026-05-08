@@ -77,8 +77,8 @@ draft: false
 
 ## 연관 개념
 
-- [TTPs]({{< relref "ttps" >}}) — 측면 이동은 TTPs의 대표적 기법
-- [랜섬웨어/RaaS]({{< relref "ransomware-raas" >}}) — 측면 이동 후 랜섬웨어 배포
+- [TTPs]({{< relref "/docs/peim/06_InfoSecurity/01_SecurityTech/ttps" >}}) — 측면 이동은 TTPs의 대표적 기법
+- [랜섬웨어/RaaS]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/ransomware-raas" >}}) — 측면 이동 후 랜섬웨어 배포
 - ISMS — 관리적 보안 대응 체계
 
 ## 참고 기출

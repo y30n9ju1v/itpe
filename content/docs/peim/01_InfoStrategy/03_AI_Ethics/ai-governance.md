@@ -66,10 +66,10 @@ EU AI Act 기준:
 
 ## 연관 개념
 
-- [AI RMF]({{< relref "ai-rmf" >}}) — AI 위험관리 프레임워크
-- [ISO/IEC 42001]({{< relref "iso-iec-42001" >}}) — AI 관리시스템 인증
-- [인공지능기본법]({{< relref "ai-basic-law" >}}) — 국내 AI 거버넌스 법적 근거
-- [AI 신뢰성 검인증(CAT)]({{< relref "ai-cat-certification" >}}) — 기술적 거버넌스 수단
+- [AI RMF]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf" >}}) — AI 위험관리 프레임워크
+- [ISO/IEC 42001]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001" >}}) — AI 관리시스템 인증
+- [인공지능기본법]({{< relref "/docs/peim/08_EmergingTech/03_Regulations_Policies/ai-basic-law" >}}) — 국내 AI 거버넌스 법적 근거
+- [AI 신뢰성 검인증(CAT)]({{< relref "/docs/peim/01_InfoStrategy/03_AI_Ethics/ai-cat-certification" >}}) — 기술적 거버넌스 수단
 
 ## 참고 기출
 

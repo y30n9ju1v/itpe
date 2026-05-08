@@ -55,8 +55,8 @@ GNN(Graph Neural Network)은 그래프 구조 데이터(노드·엣지로 표현
 
 ## 연관 개념
 
-- [Transformer/MoE]({{< relref "transformer-moe" >}}) — 어텐션 기반 딥러닝 아키텍처
-- [초거대 AI]({{< relref "large-scale-ai" >}}) — GNN을 포함한 현대 AI 아키텍처
+- [Transformer/MoE]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe" >}}) — 어텐션 기반 딥러닝 아키텍처
+- [초거대 AI]({{< relref "/docs/peim/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai" >}}) — GNN을 포함한 현대 AI 아키텍처
 - 데이터마이닝 — 그래프 기반 패턴 분석
 
 ## 참고 기출

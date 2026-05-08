@@ -58,8 +58,8 @@ ISMS(Information Security Management System)는 정보보호 관리체계 인증
 
 ## 연관 개념
 
-- [공격 표면/측면 이동]({{< relref "attack-surface-lateral-movement" >}}) — ISMS가 방어하는 위협
-- [PET]({{< relref "pet-privacy-enhancing-technology" >}}) — ISMS-P의 개인정보 보호 기술
+- [공격 표면/측면 이동]({{< relref "/docs/peim/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement" >}}) — ISMS가 방어하는 위협
+- [PET]({{< relref "/docs/peim/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology" >}}) — ISMS-P의 개인정보 보호 기술
 - 디지털포렌식 — ISMS 사고 대응 프로세스
 
 ## 참고 기출

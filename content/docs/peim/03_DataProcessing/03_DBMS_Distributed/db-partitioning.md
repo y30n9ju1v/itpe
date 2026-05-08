@@ -66,8 +66,8 @@ user_id | name | email | address | profile_image | bio
 
 ## 연관 개념
 
-- [오픈소스 DBMS 마이그레이션]({{< relref "opensource-dbms-migration" >}}) — 분산 DB 구성
-- [FTS/HA]({{< relref "fts-ha" >}}) — 분산 DB의 고가용성 연계
+- [오픈소스 DBMS 마이그레이션]({{< relref "/docs/peim/03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration" >}}) — 분산 DB 구성
+- [FTS/HA]({{< relref "/docs/peim/04_ComputerSystems/06_InfraArchitecture/fts-ha" >}}) — 분산 DB의 고가용성 연계
 - 참조 무결성 — 분산 환경에서 무결성 유지 어려움
 
 ## 참고 기출
