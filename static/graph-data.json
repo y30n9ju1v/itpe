@@ -451,6 +451,20 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/02_SecuritySystems/secure-os",
+      "title": "보안 운영체제 (Secure OS)",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안운영체제",
+        "MAC",
+        "SELinux",
+        "TCB",
+        "보안커널"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
       "title": "BPFdoor (Berkeley Packet Filter 기반 백도어)",
       "tags": [
@@ -508,6 +522,21 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn",
+      "title": "방화벽·IDS·IPS·VPN 비교",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안시스템",
+        "방화벽",
+        "IDS",
+        "IPS",
+        "VPN",
+        "네트워크보안"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "title": "딥페이크 (Deepfake)",
       "tags": [
@@ -551,6 +580,20 @@
         "모델전도공격",
         "AI보안",
         "프라이버시"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/01_SecurityTech/ai-system-vulnerabilities",
+      "title": "인공지능 시스템의 취약점",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안기술",
+        "AI보안",
+        "적대적공격",
+        "모델역전",
+        "데이터중독"
       ],
       "category": "06_InfoSecurity"
     },
@@ -749,6 +792,21 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/03_InfoProtection/cloud-native-security",
+      "title": "클라우드 네이티브 보안",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "정보보호",
+        "클라우드네이티브",
+        "컨테이너보안",
+        "CNAPP",
+        "DevSecOps",
+        "제로트러스트"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/03_InfoProtection/mcp-security",
       "title": "MCP (Model Context Protocol) 보안 취약점",
       "tags": [
@@ -892,6 +950,20 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/01_Network_Protocol/dns-security",
+      "title": "DNS (Domain Name System)와 보안",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "네트워크프로토콜",
+        "DNS",
+        "DNSSEC",
+        "DNS스푸핑",
+        "DoH"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/01_Network_Protocol/modbus-protocol",
       "title": "MODBUS 프로토콜",
       "tags": [
@@ -902,6 +974,21 @@
         "산업통신",
         "OT보안",
         "ICS"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/01_Network_Protocol/multimedia-streaming-protocols",
+      "title": "멀티미디어 스트리밍 프로토콜",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "네트워크프로토콜",
+        "스트리밍",
+        "HLS",
+        "DASH",
+        "RTMP",
+        "WebRTC"
       ],
       "category": "05_Networks"
     },
@@ -1132,6 +1219,21 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
+      "title": "MMU (Memory Management Unit)",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "운영체제",
+        "MMU",
+        "TLB",
+        "IOMMU",
+        "가상메모리",
+        "주소변환"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/05_Algorithms/_index",
       "title": "알고리즘",
       "tags": [],
@@ -1264,6 +1366,21 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/priority-inversion",
+      "title": "우선순위 역전 (Priority Inversion)",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "운영체제",
+        "실시간시스템",
+        "우선순위역전",
+        "PIP",
+        "PCP",
+        "RTOS"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
       "title": "IPC (Inter Process Communication, 프로세스 간 통신)",
       "tags": [
@@ -1274,6 +1391,20 @@
         "프로세스통신",
         "동기화",
         "공유메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock",
+      "title": "기아현상(Starvation)과 교착상태(Deadlock) 비교",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "운영체제",
+        "기아현상",
+        "교착상태",
+        "스케줄링",
+        "Aging"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1295,6 +1426,20 @@
       "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/_index",
       "title": "OS·임베디드",
       "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/01_CS_Fundamentals/risc-v",
+      "title": "RISC-V",
+      "tags": [
+        "pecs",
+        "컴퓨터기초이론",
+        "컴퓨터설계",
+        "RISC-V",
+        "ISA",
+        "오픈소스하드웨어",
+        "RISC"
+      ],
       "category": "04_ComputerSystems"
     },
     {
@@ -1380,6 +1525,36 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access",
+      "title": "DMA (Direct Memory Access)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "입출력인터페이스",
+        "DMA",
+        "SG-DMA",
+        "RDMA",
+        "입출력",
+        "메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/02_Devices_DeviceDriver/video-compression",
+      "title": "영상압축기법 (무손실·손실·혼합)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "표시입력처리",
+        "영상압축",
+        "무손실압축",
+        "손실압축",
+        "H.264",
+        "HEVC"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
       "title": "SSD (Solid State Drive) 장단점",
       "tags": [
@@ -1450,6 +1625,20 @@
       "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/_index",
       "title": "HW 구성/설계/운영",
       "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/system-bus-arbitration",
+      "title": "시스템 버스와 버스 중재 (System Bus & Bus Arbitration)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "HW구성설계",
+        "시스템버스",
+        "버스중재",
+        "데이지체인",
+        "폴링"
+      ],
       "category": "04_ComputerSystems"
     },
     {
@@ -1669,6 +1858,21 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/sil-hil-testing",
+      "title": "SIL과 HIL 테스팅 (Software/Hardware-in-the-Loop)",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "IT품질테스트",
+        "SIL",
+        "HIL",
+        "임베디드",
+        "자동차소프트웨어",
+        "V모델"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
       "title": "동적 테스트 (Dynamic Testing)",
       "tags": [
@@ -1827,6 +2031,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
+      "title": "소프트웨어 프로세스 품질인증 (SP 인증)",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "IT품질테스트감리",
+        "SP인증",
+        "소프트웨어프로세스",
+        "CMMI",
+        "품질인증"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "title": "소프트웨어 품질보증과 인스펙션",
       "tags": [
@@ -1845,6 +2063,19 @@
       "title": "SW 품질",
       "tags": [],
       "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
+      "title": "IEEE 표준과 IEC 국제표준 비교",
+      "tags": [
+        "pecs",
+        "법규정책및표준",
+        "HW_SW표준",
+        "IEEE",
+        "IEC",
+        "국제표준"
+      ],
+      "category": "07_SystemEvaluation"
     },
     {
       "id": "08_EmergingTech/_index",
@@ -1879,9 +2110,77 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/03_Regulations_Policies/sw-impact-assessment",
+      "title": "소프트웨어 영향평가",
+      "tags": [
+        "pecs",
+        "법규정책및표준",
+        "SW진흥법",
+        "소프트웨어영향평가",
+        "공공SW",
+        "중소기업보호"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/03_Regulations_Policies/digital-service-contract",
+      "title": "디지털서비스 전문계약제도",
+      "tags": [
+        "pecs",
+        "법규정책및표준",
+        "전자정부법",
+        "디지털서비스",
+        "공공조달",
+        "클라우드서비스"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/03_Regulations_Policies/_index",
       "title": "규정·정책",
       "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/03_Regulations_Policies/public-mydata",
+      "title": "공공 마이데이터 활용 방안",
+      "tags": [
+        "pecs",
+        "법규정책및표준",
+        "개인정보보호",
+        "마이데이터",
+        "공공데이터",
+        "정보주체",
+        "데이터이동권"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai",
+      "title": "클라우드 AI와 온디바이스 AI 비교",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "클라우드AI",
+        "온디바이스AI",
+        "엣지AI",
+        "NPU"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service",
+      "title": "AIaaS (AI as a Service)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "클라우드",
+        "AIaaS",
+        "서비스형AI",
+        "MLaaS"
+      ],
       "category": "08_EmergingTech"
     },
     {
@@ -1930,6 +2229,7 @@
       "title": "GPU와 TPU (AI 학습 전용 프로세서 비교)",
       "tags": [
         "peim",
+        "pecs",
         "최신기술",
         "AI",
         "GPU",
@@ -1983,6 +2283,21 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm",
+      "title": "sLLM (소형 대형 언어 모델, smaller Large Language Model)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "sLLM",
+        "LLM",
+        "경량화",
+        "온디바이스AI",
+        "파인튜닝"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
       "title": "MCP (Model Context Protocol)",
       "tags": [
@@ -2022,6 +2337,20 @@
         "ISO42001",
         "AI관리시스템",
         "인증"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing",
+      "title": "지능형 엣지 컴퓨팅",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "엣지컴퓨팅",
+        "IoT",
+        "MEC",
+        "온디바이스AI"
       ],
       "category": "08_EmergingTech"
     },
@@ -2081,6 +2410,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/quantum-machine-learning",
+      "title": "양자 머신러닝 (QML, Quantum Machine Learning)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "양자컴퓨팅",
+        "QML",
+        "머신러닝",
+        "양자회로"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "title": "트랜스포머(Transformer)와 MoE(Mixture of Experts)",
       "tags": [
@@ -2091,6 +2434,21 @@
         "MoE",
         "어텐션",
         "LLM"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types",
+      "title": "클라우드 컴퓨팅 서비스 유형 (IaaS·PaaS·SaaS·FaaS)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "클라우드",
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "FaaS",
+        "서버리스"
       ],
       "category": "08_EmergingTech"
     },
@@ -2121,6 +2479,20 @@
         "위험관리",
         "AI법",
         "EU AI Act"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/opc-ua",
+      "title": "OPC UA (Open Platform Communications Unified Architecture)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "IoT",
+        "스마트팩토리",
+        "OPC-UA",
+        "산업프로토콜",
+        "IIoT"
       ],
       "category": "08_EmergingTech"
     },
@@ -2853,6 +3225,14 @@
       "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
     },
     {
+      "source": "06_InfoSecurity/02_SecuritySystems/secure-os",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/secure-os",
+      "target": "06_InfoSecurity/08_SecurityCertification/common-criteria-cc"
+    },
+    {
       "source": "06_InfoSecurity/02_SecuritySystems/bpfdoor",
       "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
@@ -2893,6 +3273,18 @@
       "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
+      "source": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn",
+      "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn",
+      "target": "06_InfoSecurity/03_InfoProtection/cloud-native-security"
+    },
+    {
       "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
     },
@@ -2923,6 +3315,22 @@
     {
       "source": "06_InfoSecurity/01_SecurityTech/model-inversion-attack",
       "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/ai-system-vulnerabilities",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/ai-system-vulnerabilities",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/ai-system-vulnerabilities",
+      "target": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/ai-system-vulnerabilities",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
       "source": "06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc",
@@ -3045,6 +3453,18 @@
       "target": "06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
+      "source": "06_InfoSecurity/03_InfoProtection/cloud-native-security",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
+    },
+    {
+      "source": "06_InfoSecurity/03_InfoProtection/cloud-native-security",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/devsecops"
+    },
+    {
+      "source": "06_InfoSecurity/03_InfoProtection/cloud-native-security",
+      "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
+    },
+    {
       "source": "06_InfoSecurity/03_InfoProtection/mcp-security",
       "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
@@ -3121,8 +3541,24 @@
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
+      "source": "05_Networks/01_Network_Protocol/dns-security",
+      "target": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/dns-security",
+      "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
+    },
+    {
       "source": "05_Networks/01_Network_Protocol/modbus-protocol",
       "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/multimedia-streaming-protocols",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/multimedia-streaming-protocols",
+      "target": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3"
     },
     {
       "source": "05_Networks/01_Network_Protocol/open-api",
@@ -3253,6 +3689,18 @@
       "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
+      "source": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
+      "target": "04_ComputerSystems/05_Algorithms/virtual-memory"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
+      "target": "04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
+      "target": "04_ComputerSystems/05_Algorithms/cache-memory"
+    },
+    {
       "source": "04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
     },
@@ -3345,11 +3793,27 @@
       "target": "04_ComputerSystems/05_Algorithms/cache-memory"
     },
     {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/priority-inversion",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/priority-inversion",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
+    },
+    {
       "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
       "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
     },
     {
       "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock",
+      "target": "04_ComputerSystems/05_Algorithms/deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock",
       "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
@@ -3363,6 +3827,14 @@
     {
       "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
       "target": "04_ComputerSystems/05_Algorithms/deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/01_CS_Fundamentals/risc-v",
+      "target": "04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory"
+    },
+    {
+      "source": "04_ComputerSystems/01_CS_Fundamentals/risc-v",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
     },
     {
       "source": "04_ComputerSystems/04_OS_Virtualization/storage-virtualization",
@@ -3407,6 +3879,18 @@
     {
       "source": "04_ComputerSystems/04_OS_Virtualization/multi-cloud",
       "target": "05_Networks/02_NetworkDesign/ibn-intent-based-networking"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access",
+      "target": "04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/02_Devices_DeviceDriver/video-compression",
+      "target": "05_Networks/01_Network_Protocol/multimedia-streaming-protocols"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/02_Devices_DeviceDriver/video-compression",
+      "target": "04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory"
     },
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
@@ -3455,6 +3939,10 @@
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
       "target": "04_ComputerSystems/05_Algorithms/memory-areas"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/system-bus-arbitration",
+      "target": "04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access"
     },
     {
       "source": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
@@ -3555,6 +4043,10 @@
     {
       "source": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect",
       "target": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
+    },
+    {
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/sil-hil-testing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving"
     },
     {
       "source": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
@@ -3661,12 +4153,32 @@
       "target": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery"
     },
     {
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
+      "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons"
+    },
+    {
       "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "target": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
     },
     {
       "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+    },
+    {
+      "source": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
+      "target": "05_Networks/01_Network_Protocol/ieee-802-11bn"
+    },
+    {
+      "source": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
     },
     {
       "source": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
@@ -3691,6 +4203,50 @@
     {
       "source": "08_EmergingTech/03_Regulations_Policies/ai-basic-law",
       "target": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/sw-impact-assessment",
+      "target": "01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/digital-service-contract",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/public-sector-saas-guideline"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/digital-service-contract",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/digital-service-contract",
+      "target": "08_EmergingTech/03_Regulations_Policies/sw-impact-assessment"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/public-mydata",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/public-sector-saas-guideline"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/rag-retrieval-augmented-generation"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
@@ -3757,6 +4313,18 @@
       "target": "06_InfoSecurity/02_SecuritySystems/deepfake"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/rag-retrieval-augmented-generation"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
     },
@@ -3787,6 +4355,18 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/public-sector-saas-guideline",
@@ -3833,6 +4413,14 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/quantum-machine-learning",
+      "target": "06_InfoSecurity/01_SecurityTech/quantum-cryptography-qkd-pqc"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/quantum-machine-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
@@ -3843,6 +4431,18 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types",
+      "target": "08_EmergingTech/03_Regulations_Policies/digital-service-contract"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types",
+      "target": "06_InfoSecurity/03_InfoProtection/cloud-native-security"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
@@ -3863,6 +4463,18 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/opc-ua",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/opc-ua",
+      "target": "05_Networks/01_Network_Protocol/modbus-protocol"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/opc-ua",
+      "target": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
