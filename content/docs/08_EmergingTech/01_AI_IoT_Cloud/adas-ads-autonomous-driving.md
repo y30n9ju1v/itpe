@@ -8,7 +8,6 @@ exam_pecs: "138회"
 
 ## 개요
 
-<!--more-->
 
 ADAS(Advanced Driver Assistance System)는 운전자를 보조하는 시스템으로 인간이 주체가 되며, ADS(Automated Driving System)는 시스템이 주체가 되어 완전 자율주행을 수행하는 시스템이다. SAE J3016 기준으로 Level 0~2는 ADAS, Level 3~5는 ADS로 구분된다.
 

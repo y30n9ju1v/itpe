@@ -9,7 +9,6 @@ exam_pecs: "137회"
 
 ## 개요
 
-<!--more-->
 
 RAG(Retrieval Augmented Generation)는 LLM의 응답 생성 시 외부 지식 베이스에서 관련 문서를 검색(Retrieve)하여 컨텍스트로 제공함으로써 환각(Hallucination)을 줄이고 최신 정보를 반영하는 아키텍처 패턴이다. LLM의 파라메트릭 지식(학습 데이터 내 지식)과 논파라메트릭 지식(외부 문서)을 결합한다.
 
