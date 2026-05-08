@@ -1,0 +1,18 @@
+baseURL = "https://y30n9ju1v.github.io/itpe/"
+languageCode = "ko-KR"
+title = "IT Professional Engineer's Notes"
+theme = "hugo-book"
+
+[params]
+  BookTheme = "auto"
+  BookToC = true
+  BookSearch = true
+  BookCollapseSection = true
+  BookComments = false
+  BookMenuBundle = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
