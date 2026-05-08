@@ -1,7 +1,7 @@
 ---
 title: "고대역 초고속 메모리 (HBM: High Bandwidth Memory)"
 date: 2026-05-09T07:09:12+09:00
-tags: ["peim", "컴퓨터시스템및정보통신", "인프라아키텍처", "HBM", "메모리", "AI가속기", "GPU"]
+tags: ["peim", "pecs", "컴퓨터시스템및정보통신", "인프라아키텍처", "HBM", "메모리", "AI가속기", "GPU"]
 draft: false
 exam: "134회"
 ---
