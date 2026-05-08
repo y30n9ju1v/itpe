@@ -66,6 +66,22 @@ exam: "137회"
 - [ARQ/오류제어]({{< relref "/docs/05_Networks/01_Network_Protocol/arq-error-control" >}}) — 네트워크 신뢰성의 다른 측면
 - [AI-Native Network/6G]({{< relref "/docs/05_Networks/03_CommunicationSystems/ai-native-network-6g" >}}) — 차세대 네트워크 라우팅
 
+## RIP vs OSPF 상세 비교
+
+| 구분 | RIP | OSPF |
+|------|-----|------|
+| **알고리즘** | Bellman-Ford (거리 벡터) | Dijkstra (링크 상태) |
+| **메트릭** | 홉 수 (최대 15) | 대역폭 기반 Cost |
+| **업데이트** | 주기적 전송 (30초) | 변경 시만 전송 (LSA) |
+| **수렴 속도** | 느림 (라우팅 루프 발생 가능) | 빠름 |
+| **확장성** | 소규모 (15홉 제한) | 대규모 (Area 분할) |
+| **버전** | RIPv1(클래스풀), RIPv2(CIDR), RIPng(IPv6) | OSPFv2(IPv4), OSPFv3(IPv6) |
+| **네트워크 계층** | L3 UDP 520번 포트 | L3 IP 프로토콜 89번 |
+| **Area 개념** | 없음 | 있음 (Backbone Area 0 필수) |
+| **DR/BDR** | 없음 | 있음 (멀티액세스 네트워크에서 트래픽 절감) |
+| **적합 환경** | 소규모, 간단한 망 | 대규모, 엔터프라이즈, ISP |
+
 ## 참고 기출
 
 - 137회 1교시 1번
+- 134회 1교시 8번
