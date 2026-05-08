@@ -420,6 +420,7 @@
       "title": "ISMS와 ISMS-P (정보보호 관리체계)",
       "tags": [
         "peim",
+        "pecs",
         "정보보안",
         "관리적보안",
         "ISMS",
@@ -482,6 +483,7 @@
       "title": "랜섬웨어와 RaaS (Ransomware as a Service)",
       "tags": [
         "peim",
+        "pecs",
         "정보보안",
         "보안시스템",
         "랜섬웨어",
@@ -568,6 +570,34 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp",
+      "title": "LLM 보안 위협 (OWASP LLM Top 10)",
+      "tags": [
+        "pecs",
+        "정보보안",
+        "보안기술",
+        "LLM",
+        "OWASP",
+        "AI보안",
+        "프롬프트인젝션"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack",
+      "title": "Model DoS (LLM 자원 소진 공격)",
+      "tags": [
+        "pecs",
+        "정보보안",
+        "보안기술",
+        "ModelDoS",
+        "LLM",
+        "AI보안",
+        "서비스거부공격"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
       "title": "해시 함수, Rainbow Table, Hash Salt, Key Stretching",
       "tags": [
@@ -632,6 +662,21 @@
         "AI보안",
         "OWASP",
         "프롬프트인젝션"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/01_SecurityTech/asn1-tag-encoding",
+      "title": "ASN.1 Tag 인코딩 (Long-form Tag Number Encoding)",
+      "tags": [
+        "pecs",
+        "정보보안",
+        "보안기술",
+        "ASN.1",
+        "인코딩",
+        "BER",
+        "DER",
+        "X.509"
       ],
       "category": "06_InfoSecurity"
     },
@@ -749,6 +794,7 @@
       "title": "PET (개인정보 보호 강화기술, Privacy Enhancing Technology)",
       "tags": [
         "peim",
+        "pecs",
         "정보보안",
         "개인정보보호",
         "PET",
@@ -782,6 +828,19 @@
         "데이터안심구역",
         "마이데이터",
         "데이터활용"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/06_PrivacyProtection/ai-privacy-issues",
+      "title": "AI 단계별 프라이버시 이슈와 대응",
+      "tags": [
+        "pecs",
+        "정보보안",
+        "개인정보보호",
+        "AI프라이버시",
+        "데이터처리",
+        "개인정보"
       ],
       "category": "06_InfoSecurity"
     },
@@ -1019,6 +1078,19 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/05_Algorithms/deadlock",
+      "title": "데드락 (Deadlock, 교착 상태)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "데드락",
+        "교착상태",
+        "프로세스관리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
       "title": "동적 메모리 할당과 메모리 누수",
       "tags": [
@@ -1029,6 +1101,20 @@
         "메모리누수",
         "GC",
         "힙메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/05_Algorithms/virtual-memory",
+      "title": "가상 메모리 (Virtual Memory)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "가상메모리",
+        "페이징",
+        "스와핑",
+        "TLB"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1108,6 +1194,20 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery",
+      "title": "공공망 배터리 화재 대응: 인프라 이중화·백업복구",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "인프라아키텍처",
+        "백업복구",
+        "이중화",
+        "공공망",
+        "BCP"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/06_InfraArchitecture/ai-datacenter-tech",
       "title": "대규모 AI 데이터센터 구축 기술",
       "tags": [
@@ -1135,10 +1235,25 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
+      "title": "운영체제 동기화 (OS Synchronization)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "동기화",
+        "뮤텍스",
+        "세마포어",
+        "경쟁조건"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
       "title": "운영체제 스케줄링 (CPU·디스크 스케줄링)",
       "tags": [
         "peim",
+        "pecs",
         "컴퓨터시스템",
         "운영체제",
         "CPU스케줄링",
@@ -1159,6 +1274,20 @@
         "프로세스통신",
         "동기화",
         "공유메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
+      "title": "시스템 콜 (System Call)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "시스템콜",
+        "커널",
+        "사용자모드",
+        "커널모드"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1242,6 +1371,85 @@
         "벤더종속",
         "하이브리드클라우드"
       ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/_index",
+      "title": "하드웨어 시스템",
+      "tags": [],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
+      "title": "SSD (Solid State Drive) 장단점",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "하드웨어",
+        "SSD",
+        "저장장치",
+        "NAND플래시"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram",
+      "title": "FRAM (강유전체 RAM)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "하드웨어",
+        "FRAM",
+        "메모리",
+        "비휘발성메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types",
+      "title": "ROM (Read Only Memory) 종류",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "하드웨어",
+        "ROM",
+        "비휘발성메모리",
+        "펌웨어",
+        "BIOS"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
+      "title": "CPU 상태 레지스터 조건 플래그",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "하드웨어",
+        "CPU",
+        "상태레지스터",
+        "조건플래그",
+        "조건분기"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
+      "title": "CPU 내부 레지스터 종류",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "하드웨어",
+        "CPU",
+        "레지스터",
+        "명령어사이클"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/_index",
+      "title": "HW 구성/설계/운영",
+      "tags": [],
       "category": "04_ComputerSystems"
     },
     {
@@ -1337,6 +1545,20 @@
         "CI/CD",
         "자동화",
         "문화"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
+      "title": "MLOps와 DevOps 비교",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "개발방법론",
+        "MLOps",
+        "DevOps",
+        "CI/CD",
+        "머신러닝"
       ],
       "category": "02_SoftwareEngineering"
     },
@@ -1461,6 +1683,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/benchmark-poc-pilot",
+      "title": "Benchmark Test, PoC, Pilot Test 비교",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "구현테스트",
+        "벤치마크",
+        "PoC",
+        "파일럿테스트",
+        "프로젝트관리"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
       "title": "A/B 테스팅",
       "tags": [
@@ -1577,6 +1813,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget",
+      "title": "SLO와 에러 버짓 (Service Level Objective & Error Budget)",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "SW품질",
+        "SLO",
+        "에러버짓",
+        "SRE",
+        "가용성"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "title": "소프트웨어 품질보증과 인스펙션",
       "tags": [
@@ -1662,6 +1912,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism",
+      "title": "Self-Attention 메커니즘",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "Self-Attention",
+        "Transformer",
+        "LLM",
+        "딥러닝"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
       "title": "GPU와 TPU (AI 학습 전용 프로세서 비교)",
       "tags": [
@@ -1672,6 +1936,35 @@
         "TPU",
         "딥러닝",
         "하드웨어"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving",
+      "title": "ADAS와 ADS (첨단 운전자 지원 시스템과 자율주행 시스템)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "자율주행",
+        "ADAS",
+        "ADS",
+        "자동차",
+        "AI"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance",
+      "title": "TTFT와 TPOT (LLM 추론 성능 지표)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "LLM",
+        "TTFT",
+        "TPOT",
+        "성능지표",
+        "추론"
       ],
       "category": "08_EmergingTech"
     },
@@ -1723,6 +2016,7 @@
       "title": "ISO/IEC 42001:2023 (AI 관리시스템 표준)",
       "tags": [
         "peim",
+        "pecs",
         "최신기술",
         "AI",
         "ISO42001",
@@ -1774,6 +2068,19 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/moravec-paradox",
+      "title": "모라벡의 역설 (Moravec's Paradox)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "모라벡의역설",
+        "로봇공학",
+        "인공지능한계"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "title": "트랜스포머(Transformer)와 MoE(Mixture of Experts)",
       "tags": [
@@ -1784,6 +2091,21 @@
         "MoE",
         "어텐션",
         "LLM"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
+      "title": "스마트선박과 자율운항선박 (IMO MASS)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "IoT",
+        "스마트선박",
+        "자율운항",
+        "IMO",
+        "SAN",
+        "INS"
       ],
       "category": "08_EmergingTech"
     },
@@ -1909,6 +2231,34 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety",
+      "title": "ISO/PAS 8800:2024 (자율주행 AI 안전)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "자율주행",
+        "AI안전",
+        "ISO8800",
+        "ISO26262",
+        "SOTIF"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing",
+      "title": "뉴로모픽 컴퓨팅 (Neuromorphic Computing)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "뉴로모픽",
+        "SNN",
+        "폰노이만",
+        "하드웨어"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/02_BigData/_index",
       "title": "빅데이터",
       "tags": [],
@@ -1943,6 +2293,20 @@
         "클라우드전환",
         "감리",
         "클라우드마이그레이션"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/04_IT_Audit/cloud-audit-nia-guideline",
+      "title": "NIA 클라우드 정보화사업 감리 점검가이드",
+      "tags": [
+        "pecs",
+        "정보전략",
+        "IT감리",
+        "클라우드",
+        "NIA",
+        "클라우드감리",
+        "정보화사업"
       ],
       "category": "01_InfoStrategy"
     },
@@ -2569,6 +2933,30 @@
       "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp",
+      "target": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance"
+    },
+    {
       "source": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table",
       "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
@@ -2611,6 +2999,10 @@
     {
       "source": "06_InfoSecurity/01_SecurityTech/llm-security-risks",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+    },
+    {
+      "source": "06_InfoSecurity/01_SecurityTech/asn1-tag-encoding",
+      "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
       "source": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography",
@@ -2699,6 +3091,18 @@
     {
       "source": "06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone",
       "target": "08_EmergingTech/03_Regulations_Policies/ai-basic-law"
+    },
+    {
+      "source": "06_InfoSecurity/06_PrivacyProtection/ai-privacy-issues",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
+      "source": "06_InfoSecurity/06_PrivacyProtection/ai-privacy-issues",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp"
+    },
+    {
+      "source": "06_InfoSecurity/06_PrivacyProtection/ai-privacy-issues",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
       "source": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
@@ -2817,12 +3221,32 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
     {
+      "source": "04_ComputerSystems/05_Algorithms/deadlock",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/deadlock",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization"
+    },
+    {
       "source": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
       "target": "04_ComputerSystems/05_Algorithms/segmentation-fault"
     },
     {
       "source": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
       "target": "04_ComputerSystems/05_Algorithms/memory-areas"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/virtual-memory",
+      "target": "04_ComputerSystems/05_Algorithms/deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/virtual-memory",
+      "target": "04_ComputerSystems/05_Algorithms/dynamic-memory-allocation"
+    },
+    {
+      "source": "04_ComputerSystems/05_Algorithms/virtual-memory",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
       "source": "04_ComputerSystems/05_Algorithms/banker-algorithm",
@@ -2869,6 +3293,18 @@
       "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
+      "source": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery",
+      "target": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery",
+      "target": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
+    },
+    {
       "source": "04_ComputerSystems/06_InfraArchitecture/ai-datacenter-tech",
       "target": "04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory"
     },
@@ -2883,6 +3319,18 @@
     {
       "source": "04_ComputerSystems/06_InfraArchitecture/ai-datacenter-tech",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/multi-gpu-training"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
+      "target": "04_ComputerSystems/05_Algorithms/deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call"
     },
     {
       "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
@@ -2903,6 +3351,18 @@
     {
       "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
       "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization"
+    },
+    {
+      "source": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
+      "target": "04_ComputerSystems/05_Algorithms/deadlock"
     },
     {
       "source": "04_ComputerSystems/04_OS_Virtualization/storage-virtualization",
@@ -2947,6 +3407,54 @@
     {
       "source": "04_ComputerSystems/04_OS_Virtualization/multi-cloud",
       "target": "05_Networks/02_NetworkDesign/ibn-intent-based-networking"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
+      "target": "04_ComputerSystems/05_Algorithms/cache-memory"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
+      "target": "04_ComputerSystems/05_Algorithms/deadlock"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
+      "target": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
+      "target": "04_ComputerSystems/05_Algorithms/memory-areas"
     },
     {
       "source": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering",
@@ -2997,6 +3505,18 @@
       "target": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology"
     },
     {
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons"
+    },
+    {
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/rag-retrieval-augmented-generation"
+    },
+    {
       "source": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
       "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection"
     },
@@ -3043,6 +3563,18 @@
     {
       "source": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing",
       "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+    },
+    {
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/benchmark-poc-pilot",
+      "target": "01_InfoStrategy/06_ProjectManagement/project-risk-management"
+    },
+    {
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/benchmark-poc-pilot",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/sw-testing"
+    },
+    {
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/benchmark-poc-pilot",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing"
     },
     {
       "source": "02_SoftwareEngineering/03_Implementation_Testing/ab-testing",
@@ -3117,6 +3649,18 @@
       "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
+      "source": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget",
+      "target": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery"
+    },
+    {
       "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "target": "02_SoftwareEngineering/03_Implementation_Testing/dynamic-testing"
     },
@@ -3169,8 +3713,40 @@
       "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance",
+      "target": "06_InfoSecurity/01_SecurityTech/model-dos-llm-attack"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ttft-tpot-llm-performance",
+      "target": "06_InfoSecurity/01_SecurityTech/llm-security-threats-owasp"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder",
@@ -3249,6 +3825,14 @@
       "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/moravec-paradox",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/moravec-paradox",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
@@ -3259,6 +3843,14 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/transformer-moe",
       "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework",
@@ -3353,6 +3945,26 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism"
+    },
+    {
       "source": "01_InfoStrategy/04_IT_Audit/pmo-vs-audit",
       "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
     },
@@ -3371,6 +3983,18 @@
     {
       "source": "01_InfoStrategy/04_IT_Audit/cloud-transition-audit",
       "target": "02_SoftwareEngineering/03_Implementation_Testing/deployment-strategy"
+    },
+    {
+      "source": "01_InfoStrategy/04_IT_Audit/cloud-audit-nia-guideline",
+      "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
+    },
+    {
+      "source": "01_InfoStrategy/04_IT_Audit/cloud-audit-nia-guideline",
+      "target": "01_InfoStrategy/04_IT_Audit/cloud-transition-audit"
+    },
+    {
+      "source": "01_InfoStrategy/04_IT_Audit/cloud-audit-nia-guideline",
+      "target": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget"
     },
     {
       "source": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
