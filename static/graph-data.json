@@ -27,6 +27,20 @@
       "category": "03_DataProcessing"
     },
     {
+      "id": "03_DataProcessing/01_DataStructures/linked-list",
+      "title": "연결 리스트 (Linked List)",
+      "tags": [
+        "pecs",
+        "컴퓨터기초이론",
+        "자료구조",
+        "연결리스트",
+        "단순연결",
+        "이중연결",
+        "원형연결"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
       "id": "03_DataProcessing/01_DataStructures/multidimensional-index",
       "title": "다차원 색인구조 (Multidimensional Index Structure)",
       "tags": [
@@ -159,6 +173,22 @@
       "category": "03_DataProcessing"
     },
     {
+      "id": "03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery",
+      "title": "데이터베이스 트랜잭션 회복 기법 (REDO·UNDO·Shadow Paging)",
+      "tags": [
+        "pecs",
+        "peim",
+        "자료처리",
+        "DBMS",
+        "트랜잭션",
+        "회복기법",
+        "체크포인트",
+        "REDO",
+        "UNDO"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
       "id": "03_DataProcessing/03_DBMS_Distributed/_index",
       "title": "DBMS·분산",
       "tags": [],
@@ -187,6 +217,19 @@
         "데이터가치평가",
         "데이터거래",
         "데이터산업법"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/05_DataQuality/public-data-quality-certification",
+      "title": "공공데이터 품질인증",
+      "tags": [
+        "pecs",
+        "자료처리",
+        "데이터품질",
+        "공공데이터",
+        "품질인증",
+        "데이터거버넌스"
       ],
       "category": "03_DataProcessing"
     },
@@ -537,6 +580,19 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/02_SecuritySystems/anti-drone-system",
+      "title": "안티드론 시스템 (Anti-Drone System Framework, TTAK.KO-10.1460)",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안시스템",
+        "안티드론",
+        "드론보안",
+        "TTA표준"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "title": "딥페이크 (Deepfake)",
       "tags": [
@@ -782,6 +838,7 @@
       "title": "경계 기반 보안과 제로 트러스트 성숙도 모델 2.0",
       "tags": [
         "peim",
+        "pecs",
         "정보보안",
         "정보보호",
         "제로트러스트",
@@ -803,6 +860,21 @@
         "CNAPP",
         "DevSecOps",
         "제로트러스트"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/03_InfoProtection/access-control-policy",
+      "title": "접근통제 정책 비교 (MAC·DAC·RBAC·ABAC)",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안체계",
+        "접근통제",
+        "MAC",
+        "DAC",
+        "RBAC",
+        "ABAC"
       ],
       "category": "06_InfoSecurity"
     },
@@ -1021,6 +1093,34 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/01_Network_Protocol/traffic-policing-shaping",
+      "title": "트래픽 폴리싱과 트래픽 쉐이핑 (Traffic Policing & Shaping)",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "네트워크설계",
+        "트래픽제어",
+        "QoS",
+        "폴리싱",
+        "쉐이핑"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/01_Network_Protocol/soap-vs-rest",
+      "title": "SOAP와 REST 비교",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "네트워크프로토콜",
+        "SOAP",
+        "REST",
+        "웹서비스",
+        "API"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
       "title": "TLS 1.2 취약점과 TLS 1.3 개선 사항",
       "tags": [
@@ -1066,6 +1166,35 @@
       "id": "05_Networks/01_Network_Protocol/_index",
       "title": "네트워크 프로토콜",
       "tags": [],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
+      "title": "채널용량과 샤논 제3정리 (Shannon Information Capacity Theorem)",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "통신시스템",
+        "샤논",
+        "채널용량",
+        "정보이론",
+        "SNR"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/03_CommunicationSystems/etsi-zsm",
+      "title": "ETSI ZSM (Zero-touch Network and Service Management)",
+      "tags": [
+        "pecs",
+        "컴퓨터통신및네트워크",
+        "통신시스템",
+        "ZSM",
+        "ETSI",
+        "자동화",
+        "AI네트워크",
+        "6G"
+      ],
       "category": "05_Networks"
     },
     {
@@ -1127,6 +1256,7 @@
       "title": "캐시 메모리 (Cache Memory)",
       "tags": [
         "peim",
+        "pecs",
         "컴퓨터시스템",
         "알고리즘",
         "캐시메모리",
@@ -1244,12 +1374,27 @@
       "title": "고대역 초고속 메모리 (HBM: High Bandwidth Memory)",
       "tags": [
         "peim",
+        "pecs",
         "컴퓨터시스템및정보통신",
         "인프라아키텍처",
         "HBM",
         "메모리",
         "AI가속기",
         "GPU"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/06_InfraArchitecture/server-redundancy",
+      "title": "서버 이중화 구성 방안 (L4 스위치 기반 vs 소프트웨어 기반)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "HW설계운영",
+        "서버이중화",
+        "L4스위치",
+        "로드밸런싱",
+        "HA"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1272,12 +1417,26 @@
       "title": "FTS와 HA (장애허용시스템 vs 고가용성)",
       "tags": [
         "peim",
+        "pecs",
         "컴퓨터시스템",
         "인프라아키텍처",
         "FTS",
         "HA",
         "고가용성",
         "가용성"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/06_InfraArchitecture/blockchain-network-types",
+      "title": "블록체인 네트워크 종류와 차이점",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "블록체인",
+        "퍼블릭블록체인",
+        "프라이빗블록체인",
+        "컨소시엄블록체인"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1568,6 +1727,19 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/hw-sizing-guideline",
+      "title": "정보시스템 하드웨어 규모산정 방법 (TTAK.KO-10.0292/R3)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "HW설계운영",
+        "규모산정",
+        "TTA표준",
+        "성능산정"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram",
       "title": "FRAM (강유전체 RAM)",
       "tags": [
@@ -1591,6 +1763,19 @@
         "비휘발성메모리",
         "펌웨어",
         "BIOS"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
+      "title": "파이프라인 해저드 (Pipeline Hazard)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "HW설계운영",
+        "파이프라인",
+        "해저드",
+        "CPU아키텍처"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1771,6 +1956,21 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/02_Analysis_Design/monolithic-vs-msa",
+      "title": "모놀리식 아키텍처 vs 마이크로서비스 아키텍처 (MSA)",
+      "tags": [
+        "pecs",
+        "peim",
+        "시스템소프트웨어및응용소프트웨어",
+        "응용SW",
+        "아키텍처",
+        "모놀리식",
+        "MSA",
+        "마이크로서비스"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
       "title": "요구사항 추적표 (Requirement Traceability Matrix)",
       "tags": [
@@ -1918,6 +2118,7 @@
       "title": "애플리케이션 배포 전략과 테스트 전략",
       "tags": [
         "peim",
+        "pecs",
         "소프트웨어공학",
         "SW구현시험",
         "배포전략",
@@ -2110,6 +2311,19 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/03_Regulations_Policies/intellectual-property-rights",
+      "title": "지식재산권의 종류",
+      "tags": [
+        "pecs",
+        "법규정책표준",
+        "지식재산권",
+        "저작권",
+        "특허권",
+        "SW라이선스"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/03_Regulations_Policies/sw-impact-assessment",
       "title": "소프트웨어 영향평가",
       "tags": [
@@ -2184,6 +2398,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/cbdc",
+      "title": "중앙은행 디지털 화폐 (CBDC, Central Bank Digital Currency)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "블록체인",
+        "CBDC",
+        "디지털화폐",
+        "핀테크",
+        "중앙은행"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "title": "AGI 관점에서 ANI의 필요성",
       "tags": [
@@ -2194,6 +2422,19 @@
         "ANI",
         "범용인공지능",
         "특화인공지능"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-data-governance",
+      "title": "스마트시티 데이터 거버넌스 (Smart City Data Governance)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "스마트시티",
+        "데이터거버넌스",
+        "공공데이터",
+        "개인정보보호"
       ],
       "category": "08_EmergingTech"
     },
@@ -2317,12 +2558,27 @@
       "title": "RAG (검색 증강 생성, Retrieval Augmented Generation)",
       "tags": [
         "peim",
+        "pecs",
         "최신기술",
         "AI",
         "RAG",
         "LLM",
         "벡터DB",
         "환각방지"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "title": "멀티클라우드 (Multicloud)",
+      "tags": [
+        "pecs",
+        "peim",
+        "최신기술",
+        "클라우드",
+        "멀티클라우드",
+        "하이브리드클라우드",
+        "클라우드전략"
       ],
       "category": "08_EmergingTech"
     },
@@ -2337,6 +2593,20 @@
         "ISO42001",
         "AI관리시스템",
         "인증"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability",
+      "title": "지속 가능한 스마트시티 (Smart City)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "스마트시티",
+        "IoT",
+        "지속가능성",
+        "ESG",
+        "데이터플랫폼"
       ],
       "category": "08_EmergingTech"
     },
@@ -2453,6 +2723,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-data-quality",
+      "title": "생성형 AI 학습용 멀티모달 데이터 품질검증 (TTAK.KO-10.1558)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "멀티모달",
+        "데이터품질",
+        "생성AI",
+        "TTA표준"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
       "title": "스마트선박과 자율운항선박 (IMO MASS)",
       "tags": [
@@ -2512,6 +2796,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/monte-carlo-tree-search",
+      "title": "몬테카를로 트리탐색 (Monte Carlo Tree Search)",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "MCTS",
+        "트리탐색",
+        "강화학습",
+        "게임AI"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
       "title": "공공기관 LLM 적용: 고려사항과 아키텍처",
       "tags": [
@@ -2531,6 +2829,7 @@
       "title": "멀티모달 LLM (Multimodal Large Language Model)",
       "tags": [
         "peim",
+        "pecs",
         "최신기술",
         "AI",
         "LLM",
@@ -2613,6 +2912,21 @@
         "ISO8800",
         "ISO26262",
         "SOTIF"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/curse-of-dimensionality",
+      "title": "차원의 저주 (Curse of Dimensionality)",
+      "tags": [
+        "pecs",
+        "peim",
+        "최신기술",
+        "AI",
+        "머신러닝",
+        "차원의저주",
+        "특징선택",
+        "차원축소"
       ],
       "category": "08_EmergingTech"
     },
@@ -3013,6 +3327,14 @@
       "target": "03_DataProcessing/04_DataMining/association-rule-analysis"
     },
     {
+      "source": "03_DataProcessing/01_DataStructures/linked-list",
+      "target": "03_DataProcessing/01_DataStructures/binary-search-tree"
+    },
+    {
+      "source": "03_DataProcessing/01_DataStructures/linked-list",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
+    },
+    {
       "source": "03_DataProcessing/01_DataStructures/multidimensional-index",
       "target": "03_DataProcessing/01_DataStructures/binary-search-tree"
     },
@@ -3093,12 +3415,24 @@
       "target": "03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
     },
     {
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-index-clustered-nonclustered"
+    },
+    {
+      "source": "03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+    },
+    {
       "source": "03_DataProcessing/05_DataQuality/data-valuation",
       "target": "03_DataProcessing/05_DataQuality/data-observability"
     },
     {
       "source": "03_DataProcessing/05_DataQuality/data-valuation",
       "target": "03_DataProcessing/06_BigDataAnalytics/bigdata-visualization"
+    },
+    {
+      "source": "03_DataProcessing/05_DataQuality/public-data-quality-certification",
+      "target": "08_EmergingTech/03_Regulations_Policies/public-mydata"
     },
     {
       "source": "03_DataProcessing/05_DataQuality/data-swamp",
@@ -3285,6 +3619,14 @@
       "target": "06_InfoSecurity/03_InfoProtection/cloud-native-security"
     },
     {
+      "source": "06_InfoSecurity/02_SecuritySystems/anti-drone-system",
+      "target": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/anti-drone-system",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+    },
+    {
       "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
     },
@@ -3465,6 +3807,18 @@
       "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
     },
     {
+      "source": "06_InfoSecurity/03_InfoProtection/access-control-policy",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
+    },
+    {
+      "source": "06_InfoSecurity/03_InfoProtection/access-control-policy",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "06_InfoSecurity/03_InfoProtection/access-control-policy",
+      "target": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact"
+    },
+    {
       "source": "06_InfoSecurity/03_InfoProtection/mcp-security",
       "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
     },
@@ -3577,6 +3931,22 @@
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
+      "source": "05_Networks/01_Network_Protocol/traffic-policing-shaping",
+      "target": "05_Networks/02_NetworkDesign/ibn-intent-based-networking"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/traffic-policing-shaping",
+      "target": "05_Networks/03_CommunicationSystems/shannon-channel-capacity"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/soap-vs-rest",
+      "target": "05_Networks/01_Network_Protocol/open-api"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/soap-vs-rest",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+    },
+    {
       "source": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
       "target": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
     },
@@ -3603,6 +3973,22 @@
     {
       "source": "05_Networks/01_Network_Protocol/congestion-control-sliding-window",
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
+      "target": "05_Networks/01_Network_Protocol/ieee-802-11bn"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/etsi-zsm",
+      "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/etsi-zsm",
+      "target": "05_Networks/03_CommunicationSystems/shannon-channel-capacity"
     },
     {
       "source": "05_Networks/03_CommunicationSystems/ai-native-network-6g",
@@ -3713,6 +4099,18 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
     },
     {
+      "source": "04_ComputerSystems/06_InfraArchitecture/server-redundancy",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/server-redundancy",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/deployment-strategy"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/server-redundancy",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multicloud"
+    },
+    {
       "source": "04_ComputerSystems/06_InfraArchitecture/multi-region-active-active",
       "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
@@ -3731,6 +4129,14 @@
     {
       "source": "04_ComputerSystems/06_InfraArchitecture/fts-ha",
       "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/blockchain-network-types",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
+      "source": "04_ComputerSystems/06_InfraArchitecture/blockchain-network-types",
+      "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
     },
     {
       "source": "04_ComputerSystems/06_InfraArchitecture/cxl-compute-express-link",
@@ -3905,6 +4311,10 @@
       "target": "04_ComputerSystems/05_Algorithms/cache-memory"
     },
     {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/hw-sizing-guideline",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram",
       "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive"
     },
@@ -3919,6 +4329,18 @@
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types",
       "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
+      "target": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
+      "target": "04_ComputerSystems/05_Algorithms/cache-memory"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
+      "target": "04_ComputerSystems/05_Algorithms/big-o-notation"
     },
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
@@ -4003,6 +4425,18 @@
     {
       "source": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/rag-retrieval-augmented-generation"
+    },
+    {
+      "source": "02_SoftwareEngineering/02_Analysis_Design/monolithic-vs-msa",
+      "target": "05_Networks/01_Network_Protocol/soap-vs-rest"
+    },
+    {
+      "source": "02_SoftwareEngineering/02_Analysis_Design/monolithic-vs-msa",
+      "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
+    },
+    {
+      "source": "02_SoftwareEngineering/02_Analysis_Design/monolithic-vs-msa",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/deployment-strategy"
     },
     {
       "source": "02_SoftwareEngineering/02_Analysis_Design/requirement-traceability-matrix",
@@ -4205,6 +4639,10 @@
       "target": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection"
     },
     {
+      "source": "08_EmergingTech/03_Regulations_Policies/intellectual-property-rights",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/opensource-license-change"
+    },
+    {
       "source": "08_EmergingTech/03_Regulations_Policies/sw-impact-assessment",
       "target": "01_InfoStrategy/01_InfoStrategy_Planning/sw-cost-estimation"
     },
@@ -4249,6 +4687,14 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cbdc",
+      "target": "04_ComputerSystems/06_InfraArchitecture/blockchain-network-types"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/cbdc",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
@@ -4259,6 +4705,18 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-data-governance",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-data-governance",
+      "target": "03_DataProcessing/05_DataQuality/public-data-quality-certification"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-data-governance",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
@@ -4353,7 +4811,31 @@
       "target": "03_DataProcessing/01_DataStructures/multidimensional-index"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "target": "04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-city-sustainability",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
@@ -4445,6 +4927,18 @@
       "target": "06_InfoSecurity/03_InfoProtection/cloud-native-security"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-data-quality",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-data-quality",
+      "target": "03_DataProcessing/05_DataQuality/public-data-quality-certification"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-data-quality",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-ethics-generative-ai"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/smart-ship-autonomous-navigation",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving"
     },
@@ -4487,6 +4981,14 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai",
       "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/monte-carlo-tree-search",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/monte-carlo-tree-search",
+      "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
@@ -4567,6 +5069,10 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/curse-of-dimensionality",
+      "target": "03_DataProcessing/01_DataStructures/multidimensional-index"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/neuromorphic-computing",
