@@ -3,6 +3,7 @@ title: "오류 제어와 ARQ (Error Control & ARQ)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크", "오류제어", "ARQ", "오류검출", "오류정정"]
 draft: false
+exam: "138회, 137회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "TTPs (Tactics, Techniques and Procedures)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "TTPs", "MITRE ATT&CK", "위협인텔리전스"]
 draft: false
+exam: "138회"
 ---
 
 ## 개요

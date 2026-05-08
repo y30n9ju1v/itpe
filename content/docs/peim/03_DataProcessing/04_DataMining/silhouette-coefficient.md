@@ -3,6 +3,7 @@ title: "실루엣 계수 (Silhouette Coefficient)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "자료처리", "데이터마이닝", "실루엣계수", "클러스터링평가", "K-Means"]
 draft: false
+exam: "135회"
 ---
 
 ## 개요

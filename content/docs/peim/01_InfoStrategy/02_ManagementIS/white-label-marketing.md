@@ -3,6 +3,7 @@ title: "화이트 레이블 마케팅 (White Label Marketing)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보전략및관리", "경영정보", "화이트레이블", "OEM", "브랜드전략"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

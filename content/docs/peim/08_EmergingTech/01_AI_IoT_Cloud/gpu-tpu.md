@@ -3,6 +3,7 @@ title: "GPU와 TPU (AI 학습 전용 프로세서 비교)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "GPU", "TPU", "딥러닝", "하드웨어"]
 draft: false
+exam: "138회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "MCP (Model Context Protocol)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "최신기술", "AI", "MCP", "에이전틱AI", "도구통합", "Anthropic", "AI프로토콜"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "에이전틱 AI (Agentic AI)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "최신기술", "AI", "에이전틱AI", "AI에이전트", "자율행동", "MCP", "멀티에이전트"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

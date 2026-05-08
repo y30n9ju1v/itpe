@@ -3,6 +3,7 @@ title: "OWASP LLM Top 10 (2025)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보보안", "보안시스템", "OWASP", "LLM", "AI보안", "프롬프트인젝션"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

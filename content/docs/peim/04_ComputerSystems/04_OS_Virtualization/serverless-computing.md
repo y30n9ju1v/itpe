@@ -3,6 +3,7 @@ title: "서버리스 컴퓨팅 (Serverless Computing)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "가상화", "서버리스", "FaaS", "AWS Lambda", "클라우드"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

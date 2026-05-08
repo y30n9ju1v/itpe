@@ -3,6 +3,7 @@ title: "제품계열 방법론 (Product Line Methodology)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "소프트웨어공학", "개발방법론", "제품계열", "SPL", "공통자산", "재사용"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "GNN (Graph Neural Network, 그래프 신경망)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "GNN", "그래프신경망", "딥러닝", "지식그래프"]
 draft: false
+exam: "137회"
 ---
 
 ## 개요

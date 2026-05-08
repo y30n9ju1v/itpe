@@ -3,6 +3,7 @@ title: "소프트웨어 보안 품질"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "소프트웨어공학", "SW품질", "보안품질", "DevSecOps", "SAST", "DAST", "보안자동화"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

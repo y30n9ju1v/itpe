@@ -3,6 +3,7 @@ title: "해시 함수, Rainbow Table, Hash Salt, Key Stretching"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "정보보안", "보안기술", "해시함수", "레인보우테이블", "솔트", "암호화"]
 draft: false
+exam: "138회"
 ---
 
 ## 개요

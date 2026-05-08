@@ -3,6 +3,7 @@ title: "AI 기반 디지털 전환 (AX, AI Transformation)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "최신기술", "AI", "디지털전환", "AX", "AI전환전략"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

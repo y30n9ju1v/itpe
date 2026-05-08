@@ -3,6 +3,7 @@ title: "IBN (Intent-Based Networking)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크설계", "IBN", "의도기반네트워킹", "SDN", "자율네트워크"]
 draft: false
+exam: "135회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "VAE (Variational AutoEncoder)"
 date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "최신기술", "AI", "VAE", "생성모델", "잠재공간", "딥러닝"]
 draft: false
+exam: "135회"
 ---
 
 ## 개요

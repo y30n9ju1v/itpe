@@ -3,6 +3,7 @@ title: "IPC (Inter Process Communication, 프로세스 간 통신)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "운영체제", "IPC", "프로세스통신", "동기화", "공유메모리"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

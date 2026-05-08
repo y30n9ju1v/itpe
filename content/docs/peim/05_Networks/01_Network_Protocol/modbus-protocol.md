@@ -3,6 +3,7 @@ title: "MODBUS 프로토콜"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크프로토콜", "MODBUS", "산업통신", "OT보안", "ICS"]
 draft: false
+exam: "137회"
 ---
 
 ## 개요

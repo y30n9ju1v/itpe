@@ -3,6 +3,7 @@ title: "IGP와 EGP (동적 라우팅 프로토콜)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "컴퓨터시스템및정보통신", "네트워크설계", "IGP", "EGP", "라우팅", "BGP", "OSPF"]
 draft: false
+exam: "137회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "데이터베이스 분할 (DB Partitioning)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "자료처리", "분산DB", "파티셔닝", "수평분할", "수직분할", "샤딩"]
 draft: false
+exam: "138회"
 ---
 
 ## 개요

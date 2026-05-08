@@ -3,6 +3,7 @@ title: "프록시 디자인 패턴 (Proxy Design Pattern)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "소프트웨어공학", "SW분석설계", "디자인패턴", "프록시패턴", "GoF", "구조패턴"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요

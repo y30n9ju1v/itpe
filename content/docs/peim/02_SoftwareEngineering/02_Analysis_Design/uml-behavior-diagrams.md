@@ -3,6 +3,7 @@ title: "UML 행위 다이어그램 (Activity·State·Use-Case Diagram)"
 date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "소프트웨어공학", "SW분석설계", "UML", "활동다이어그램", "상태다이어그램", "유스케이스"]
 draft: false
+exam: "137회"
 ---
 
 ## 개요

@@ -3,6 +3,7 @@ title: "DevOps 장점과 단점"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "소프트웨어공학", "개발방법론", "DevOps", "CI/CD", "자동화", "문화"]
 draft: false
+exam: "136회"
 ---
 
 ## 개요
