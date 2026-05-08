@@ -130,7 +130,7 @@
   <div class="note-filters">
     <button class="filter-btn active" data-cat="all">전체</button>
     {{ range $name, $pages := .Site.Taxonomies.tags }}{{ end }}
-    {{ $categories := slice "정보전략및관리" "소프트웨어공학" "자료처리" "컴퓨터시스템및정보통신" "정보보안" "최신기술" }}
+    {{ $categories := slice "정보전략및관리" "소프트웨어공학" "자료처리" "컴퓨터시스템및정보통신" "정보보안" "최신기술" "컴퓨터기초이론" "하드웨어시스템" "시스템소프트웨어및응용소프트웨어" "컴퓨터통신및네트워크" "시스템보안" "법규정책및표준" }}
     {{ range $categories }}
     <button class="filter-btn" data-cat="{{ . }}">{{ . }}</button>
     {{ end }}
@@ -159,6 +159,15 @@
       {{ else if in $tags "컴퓨터시스템" }}{{ $catLabel = "컴퓨터시스템및정보통신" }}
       {{ else if in $tags "정보보안" }}{{ $catLabel = "정보보안" }}
       {{ else if in $tags "최신기술" }}{{ $catLabel = "최신기술" }}
+      {{ else if in $tags "하드웨어시스템" }}{{ $catLabel = "하드웨어시스템" }}
+      {{ else if in $tags "시스템소프트웨어및응용소프트웨어" }}{{ $catLabel = "시스템소프트웨어및응용소프트웨어" }}
+      {{ else if in $tags "컴퓨터통신및네트워크" }}{{ $catLabel = "컴퓨터통신및네트워크" }}
+      {{ else if in $tags "시스템보안" }}{{ $catLabel = "시스템보안" }}
+      {{ else if in $tags "컴퓨터기초이론" }}{{ $catLabel = "컴퓨터기초이론" }}
+      {{ else if in $tags "법규정책및표준" }}{{ $catLabel = "법규정책및표준" }}
+      {{ else if in $tags "법규및정책" }}{{ $catLabel = "법규정책및표준" }}
+      {{ else if in $tags "법규정책표준" }}{{ $catLabel = "법규정책및표준" }}
+      {{ else if in $tags "정보전략" }}{{ $catLabel = "정보전략및관리" }}
       {{ end }}
       <tr data-cat="{{ $catLabel }}" data-title="{{ lower .Title }}">
         <td><a class="note-title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></td>
