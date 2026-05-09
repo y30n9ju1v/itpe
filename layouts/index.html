@@ -119,6 +119,18 @@
     text-decoration: none;
   }
   .graph-link:hover { opacity: 1; }
+  .note-mobile-meta { display: none; font-size: 0.72rem; opacity: 0.5; margin-top: 0.2rem; }
+  @media (max-width: 640px) {
+    .note-list-container { padding: 1rem; }
+    .note-search { margin-left: 0; width: 100%; }
+    .note-table th:nth-child(2),
+    .note-table td:nth-child(2),
+    .note-table th:nth-child(3),
+    .note-table td:nth-child(3) { display: none; }
+    .note-mobile-meta { display: block; }
+    .note-table { font-size: 0.85rem; }
+    .note-table td { padding: 0.5rem 0.25rem; }
+  }
 </style>
 
 <div class="note-list-container">
@@ -169,14 +181,19 @@
       {{ else if in $tags "법규정책표준" }}{{ $catLabel = "법규정책및표준" }}
       {{ else if in $tags "정보전략" }}{{ $catLabel = "정보전략및관리" }}
       {{ end }}
+      {{ $examTags2 := .Params.tags | default slice }}
       <tr data-cat="{{ $catLabel }}" data-title="{{ lower .Title }}">
-        <td><a class="note-title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td>
+          <a class="note-title-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="note-mobile-meta">
+            {{ $catLabel }}{{ if and $catLabel (or (in $examTags2 "peim") (in $examTags2 "pecs")) }} · {{ end }}{{ if in $examTags2 "peim" }}PEIM {{ range $i, $r := .Params.exam_peim }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}{{ if and (in $examTags2 "peim") (in $examTags2 "pecs") }} / {{ end }}{{ if in $examTags2 "pecs" }}PECS {{ range $i, $r := .Params.exam_pecs }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
+          </div>
+        </td>
         <td><span class="note-category">{{ $catLabel }}</span></td>
         <td><span class="note-date">
-          {{ $examTags := .Params.tags | default slice }}
-          {{ if in $examTags "peim" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PEIM</span>{{ range $i, $r := .Params.exam_peim }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
-          {{ if and (in $examTags "peim") (in $examTags "pecs") }} / {{ end }}
-          {{ if in $examTags "pecs" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PECS</span>{{ range $i, $r := .Params.exam_pecs }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
+          {{ if in $examTags2 "peim" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PEIM</span>{{ range $i, $r := .Params.exam_peim }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
+          {{ if and (in $examTags2 "peim") (in $examTags2 "pecs") }} / {{ end }}
+          {{ if in $examTags2 "pecs" }}<span style="font-size:0.65rem;opacity:0.6;margin-right:0.2rem">PECS</span>{{ range $i, $r := .Params.exam_pecs }}{{ if $i }}, {{ end }}{{ $r }}{{ end }}{{ end }}
         </span></td>
       </tr>
       {{ end }}
