@@ -4,7 +4,7 @@ date: 2026-05-09T00:00:00+09:00
 tags: ["peim", "pecs", "최신기술", "AI", "LLM", "멀티모달", "GPT-4V", "Gemini"]
 draft: false
 exam_peim: ["135회"]
-exam_pecs: ["137회"]
+exam_pecs: ["134회", "137회"]
 ---
 
 ## 개요
@@ -62,3 +62,4 @@ exam_pecs: ["137회"]
 
 - 135회 1교시 2번 (PEIM)
 - 137회 1교시 9번 (PECS)
+- 134회 4교시 6번 (PECS)

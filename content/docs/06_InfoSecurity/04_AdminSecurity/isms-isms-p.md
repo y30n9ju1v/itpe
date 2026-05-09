@@ -4,7 +4,7 @@ date: 2026-05-08T00:00:00+09:00
 tags: ["peim", "pecs", "정보보안", "관리적보안", "ISMS", "ISMS-P", "인증", "개인정보"]
 draft: false
 exam_peim: ["138회"]
-exam_pecs: ["138회"]
+exam_pecs: ["134회", "138회"]
 ---
 
 ## 개요
@@ -69,3 +69,4 @@ ISMS(Information Security Management System)는 정보보호 관리체계 인증
 - 138회 1교시 1번 (PECS)
 - 138회 3교시 1번 (PECS)
 - 138회 3교시 6번 (PEIM)
+- 134회 2교시 3번 (PECS)

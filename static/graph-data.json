@@ -177,7 +177,6 @@
       "title": "데이터베이스 트랜잭션 회복 기법 (REDO·UNDO·Shadow Paging)",
       "tags": [
         "pecs",
-        "peim",
         "자료처리",
         "DBMS",
         "트랜잭션",
@@ -309,6 +308,20 @@
         "4NF",
         "다치종속",
         "BCNF"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/02_DataModeling/db-integrity-constraints",
+      "title": "데이터베이스 무결성 제약 조건",
+      "tags": [
+        "pecs",
+        "자료처리",
+        "데이터모델링",
+        "무결성",
+        "제약조건",
+        "DB설계",
+        "참조무결성"
       ],
       "category": "03_DataProcessing"
     },
@@ -593,6 +606,20 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/02_SecuritySystems/zero-day-vulnerability",
+      "title": "제로데이(Zero Day) 취약점",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안시스템",
+        "제로데이",
+        "취약점",
+        "CVE",
+        "패치관리"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "title": "딥페이크 (Deepfake)",
       "tags": [
@@ -603,6 +630,21 @@
         "GAN",
         "AI보안",
         "미디어위조"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/02_SecuritySystems/spoofing-attack",
+      "title": "스푸핑(Spoofing) 공격",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안시스템",
+        "스푸핑",
+        "ARP스푸핑",
+        "IP스푸핑",
+        "DNS스푸핑",
+        "네트워크공격"
       ],
       "category": "06_InfoSecurity"
     },
@@ -801,6 +843,20 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/01_SecurityTech/dynamic-wep-key",
+      "title": "동적 WEP 키 (Dynamic WEP Key)",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안기술",
+        "WEP",
+        "무선보안",
+        "동적키",
+        "802.1X"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
       "title": "디지털 포렌식 아티팩트 (Digital Forensics Artifact)",
       "tags": [
@@ -914,6 +970,20 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
+      "title": "ISMS-P 간편인증",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안인증",
+        "ISMS-P",
+        "간편인증",
+        "정보보호",
+        "중소기업"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/08_SecurityCertification/_index",
       "title": "보안인증",
       "tags": [],
@@ -987,6 +1057,20 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/02_NetworkDesign/wifi-7",
+      "title": "Wi-Fi 7 (IEEE 802.11be)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "무선네트워크",
+        "Wi-Fi7",
+        "802.11be",
+        "MLO",
+        "4096-QAM"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
       "title": "IBN (Intent-Based Networking)",
       "tags": [
@@ -1016,6 +1100,20 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/02_NetworkDesign/poe-power-over-ethernet",
+      "title": "PoE (Power over Ethernet)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "네트워크설계",
+        "PoE",
+        "IEEE802.3",
+        "유선네트워크",
+        "전력공급"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/02_NetworkDesign/_index",
       "title": "네트워크 설계",
       "tags": [],
@@ -1032,6 +1130,20 @@
         "DNSSEC",
         "DNS스푸핑",
         "DoH"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/01_Network_Protocol/osi-7-layer",
+      "title": "OSI 7계층 (Open Systems Interconnection)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "네트워크프로토콜",
+        "OSI7계층",
+        "프로토콜",
+        "계층구조",
+        "TCP/IP"
       ],
       "category": "05_Networks"
     },
@@ -1121,6 +1233,20 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/01_Network_Protocol/network-protocol",
+      "title": "네트워크 프로토콜 (개념·3요소·기능)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "네트워크프로토콜",
+        "프로토콜",
+        "신택스",
+        "시맨틱스",
+        "타이밍"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
       "title": "TLS 1.2 취약점과 TLS 1.3 개선 사항",
       "tags": [
@@ -1169,6 +1295,20 @@
       "category": "05_Networks"
     },
     {
+      "id": "05_Networks/01_Network_Protocol/hdlc-protocol",
+      "title": "HDLC (High-level Data Link Control) 프로토콜",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "네트워크프로토콜",
+        "HDLC",
+        "데이터링크",
+        "프레임구조",
+        "동작모드"
+      ],
+      "category": "05_Networks"
+    },
+    {
       "id": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
       "title": "채널용량과 샤논 제3정리 (Shannon Information Capacity Theorem)",
       "tags": [
@@ -1179,6 +1319,35 @@
         "채널용량",
         "정보이론",
         "SNR"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/03_CommunicationSystems/tactile-internet",
+      "title": "촉각 인터넷 (Tactile Internet)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "통신시스템",
+        "촉각인터넷",
+        "초저지연",
+        "햅틱",
+        "6G"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/03_CommunicationSystems/digital-hierarchy-pdh-sdh",
+      "title": "디지털 계위 (PDH·SDH·SONET)",
+      "tags": [
+        "pecs",
+        "네트워크",
+        "통신시스템",
+        "PDH",
+        "SDH",
+        "SONET",
+        "디지털계위",
+        "전송시스템"
       ],
       "category": "05_Networks"
     },
@@ -1767,6 +1936,20 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/npu-neural-processing-unit",
+      "title": "NPU (신경망 처리장치, Neural Processing Unit)",
+      "tags": [
+        "pecs",
+        "하드웨어시스템",
+        "HW설계",
+        "NPU",
+        "AI가속기",
+        "온디바이스AI",
+        "딥러닝"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
       "title": "파이프라인 해저드 (Pipeline Hazard)",
       "tags": [
@@ -1776,6 +1959,21 @@
         "파이프라인",
         "해저드",
         "CPU아키텍처"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/parallel-computing",
+      "title": "병렬 컴퓨팅 (Parallel Computing)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "HW설계",
+        "병렬컴퓨팅",
+        "Flynn분류",
+        "SIMD",
+        "MIMD",
+        "GPU"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1882,6 +2080,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/agile-sw-development",
+      "title": "애자일(Agile) 소프트웨어 개발 장단점",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "개발방법론",
+        "애자일",
+        "스크럼",
+        "스프린트",
+        "반복개발"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
       "title": "제품계열 방법론 (Product Line Methodology)",
       "tags": [
@@ -1923,6 +2135,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/01_Dev_Methodology/platform-engineering",
+      "title": "플랫폼 엔지니어링 (Platform Engineering)",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "개발방법론",
+        "플랫폼엔지니어링",
+        "IDP",
+        "DevOps",
+        "셀프서비스"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
       "title": "MLOps와 DevOps 비교",
       "tags": [
@@ -1960,7 +2186,6 @@
       "title": "모놀리식 아키텍처 vs 마이크로서비스 아키텍처 (MSA)",
       "tags": [
         "pecs",
-        "peim",
         "시스템소프트웨어및응용소프트웨어",
         "응용SW",
         "아키텍처",
@@ -2129,6 +2354,21 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/03_Implementation_Testing/iso-26262-asil",
+      "title": "ISO 26262와 ASIL (자동차 기능안전)",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "SW구현시험",
+        "ISO26262",
+        "ASIL",
+        "기능안전",
+        "자동차안전",
+        "임베디드"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/03_Implementation_Testing/_index",
       "title": "구현·테스트",
       "tags": [],
@@ -2167,6 +2407,7 @@
       "title": "SBOM (소프트웨어 자재명세서, Software Bill of Materials)",
       "tags": [
         "peim",
+        "pecs",
         "소프트웨어공학",
         "SW품질",
         "SBOM",
@@ -2232,6 +2473,34 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/05_SW_Quality/sw-quality-performance-test",
+      "title": "소프트웨어 품질성능 평가시험",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "SW품질",
+        "품질성능평가",
+        "GS인증",
+        "ISO25010",
+        "TTA"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality",
+      "title": "소프트웨어 프로세스(SP) 품질인증",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "SW품질",
+        "SP인증",
+        "소프트웨어프로세스",
+        "CMMI",
+        "TTA"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
       "title": "소프트웨어 프로세스 품질인증 (SP 인증)",
       "tags": [
@@ -2266,6 +2535,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "07_SystemEvaluation/01_PerformanceEvaluation/e-government-performance-metrics",
+      "title": "전자정부 정보시스템 성과 측정지표",
+      "tags": [
+        "pecs",
+        "시스템평가",
+        "성과평가",
+        "전자정부",
+        "성과측정지표",
+        "KPI",
+        "BSC"
+      ],
+      "category": "07_SystemEvaluation"
+    },
+    {
       "id": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
       "title": "IEEE 표준과 IEC 국제표준 비교",
       "tags": [
@@ -2282,6 +2565,19 @@
       "id": "08_EmergingTech/_index",
       "title": "신기술",
       "tags": [],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/03_Regulations_Policies/cloud-service-safety-review",
+      "title": "공공기관 클라우드 서비스 안전성 검토 항목",
+      "tags": [
+        "pecs",
+        "법규정책",
+        "클라우드",
+        "안전성검토",
+        "공공클라우드",
+        "서비스운영"
+      ],
       "category": "08_EmergingTech"
     },
     {
@@ -2481,6 +2777,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/hyperscale-ai-public-guideline",
+      "title": "공공부문 초거대 AI 도입·활용 가이드라인",
+      "tags": [
+        "pecs",
+        "최신기술",
+        "AI",
+        "초거대AI",
+        "LLM",
+        "공공AI",
+        "AI가이드라인"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving",
       "title": "ADAS와 ADS (첨단 운전자 지원 시스템과 자율주행 시스템)",
       "tags": [
@@ -2573,7 +2883,6 @@
       "title": "멀티클라우드 (Multicloud)",
       "tags": [
         "pecs",
-        "peim",
         "최신기술",
         "클라우드",
         "멀티클라우드",
@@ -2920,7 +3229,6 @@
       "title": "차원의 저주 (Curse of Dimensionality)",
       "tags": [
         "pecs",
-        "peim",
         "최신기술",
         "AI",
         "머신러닝",
@@ -2993,6 +3301,19 @@
         "NIA",
         "클라우드감리",
         "정보화사업"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/04_IT_Audit/bigdata-audit-checklist",
+      "title": "지능정보기술 감리 실무 가이드 (빅데이터·클라우드)",
+      "tags": [
+        "pecs",
+        "정보전략",
+        "IT감리",
+        "빅데이터감리",
+        "클라우드감리",
+        "감리점검항목"
       ],
       "category": "01_InfoStrategy"
     },
@@ -3114,6 +3435,20 @@
         "COBIT",
         "ITIL",
         "ISO38500"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/01_InfoStrategy_Planning/enterprise-architecture-guideline",
+      "title": "범정부 정보기술 아키텍처(EA) 도입·운영 지침",
+      "tags": [
+        "pecs",
+        "정보전략",
+        "정보전략계획",
+        "EA",
+        "엔터프라이즈아키텍처",
+        "메타모델",
+        "참조모형"
       ],
       "category": "01_InfoStrategy"
     },
@@ -3627,12 +3962,24 @@
       "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
+      "source": "06_InfoSecurity/02_SecuritySystems/zero-day-vulnerability",
+      "target": "06_InfoSecurity/02_SecuritySystems/supply-chain-security"
+    },
+    {
       "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/vae-variational-autoencoder"
     },
     {
       "source": "06_InfoSecurity/02_SecuritySystems/deepfake",
       "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/spoofing-attack",
+      "target": "05_Networks/01_Network_Protocol/dns-security"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/spoofing-attack",
+      "target": "06_InfoSecurity/03_InfoProtection/zero-trust-maturity-model"
     },
     {
       "source": "06_InfoSecurity/02_SecuritySystems/owasp-llm-top10",
@@ -3763,6 +4110,10 @@
       "target": "06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table"
     },
     {
+      "source": "06_InfoSecurity/01_SecurityTech/dynamic-wep-key",
+      "target": "06_InfoSecurity/02_SecuritySystems/firewall-ids-ips-vpn"
+    },
+    {
       "source": "06_InfoSecurity/05_DigitalForensics/digital-forensics-artifact",
       "target": "06_InfoSecurity/01_SecurityTech/ttps"
     },
@@ -3839,6 +4190,14 @@
       "target": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
     },
     {
+      "source": "06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
       "source": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
       "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
@@ -3879,6 +4238,10 @@
       "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
+      "source": "05_Networks/02_NetworkDesign/wifi-7",
+      "target": "05_Networks/03_CommunicationSystems/tactile-internet"
+    },
+    {
       "source": "05_Networks/02_NetworkDesign/ibn-intent-based-networking",
       "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
     },
@@ -3895,12 +4258,28 @@
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
+      "source": "05_Networks/02_NetworkDesign/poe-power-over-ethernet",
+      "target": "05_Networks/01_Network_Protocol/osi-7-layer"
+    },
+    {
       "source": "05_Networks/01_Network_Protocol/dns-security",
       "target": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3"
     },
     {
       "source": "05_Networks/01_Network_Protocol/dns-security",
       "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/osi-7-layer",
+      "target": "05_Networks/01_Network_Protocol/network-protocol"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/osi-7-layer",
+      "target": "05_Networks/01_Network_Protocol/hdlc-protocol"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/osi-7-layer",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
     },
     {
       "source": "05_Networks/01_Network_Protocol/modbus-protocol",
@@ -3947,6 +4326,18 @@
       "target": "02_SoftwareEngineering/02_Analysis_Design/ta-aa-architect"
     },
     {
+      "source": "05_Networks/01_Network_Protocol/network-protocol",
+      "target": "05_Networks/01_Network_Protocol/osi-7-layer"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/network-protocol",
+      "target": "05_Networks/01_Network_Protocol/hdlc-protocol"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/network-protocol",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
+    },
+    {
       "source": "05_Networks/01_Network_Protocol/tls-1-2-vs-1-3",
       "target": "06_InfoSecurity/01_SecurityTech/ecc-elliptic-curve-cryptography"
     },
@@ -3975,12 +4366,32 @@
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
+      "source": "05_Networks/01_Network_Protocol/hdlc-protocol",
+      "target": "05_Networks/01_Network_Protocol/osi-7-layer"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/hdlc-protocol",
+      "target": "05_Networks/01_Network_Protocol/network-protocol"
+    },
+    {
+      "source": "05_Networks/01_Network_Protocol/hdlc-protocol",
+      "target": "05_Networks/01_Network_Protocol/arq-error-control"
+    },
+    {
       "source": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
       "target": "05_Networks/03_CommunicationSystems/ai-native-network-6g"
     },
     {
       "source": "05_Networks/03_CommunicationSystems/shannon-channel-capacity",
       "target": "05_Networks/01_Network_Protocol/ieee-802-11bn"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/tactile-internet",
+      "target": "05_Networks/02_NetworkDesign/wifi-7"
+    },
+    {
+      "source": "05_Networks/03_CommunicationSystems/digital-hierarchy-pdh-sdh",
+      "target": "05_Networks/01_Network_Protocol/osi-7-layer"
     },
     {
       "source": "05_Networks/03_CommunicationSystems/etsi-zsm",
@@ -4331,6 +4742,14 @@
       "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive"
     },
     {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/npu-neural-processing-unit",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/npu-neural-processing-unit",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
       "target": "04_ComputerSystems/05_Algorithms/mmu-memory-management-unit"
     },
@@ -4341,6 +4760,14 @@
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
       "target": "04_ComputerSystems/05_Algorithms/big-o-notation"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/parallel-computing",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
+      "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/parallel-computing",
+      "target": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/npu-neural-processing-unit"
     },
     {
       "source": "04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
@@ -4395,6 +4822,10 @@
       "target": "02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
     },
     {
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/agile-sw-development",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/platform-engineering"
+    },
+    {
       "source": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology",
       "target": "02_SoftwareEngineering/01_Dev_Methodology/tailoring"
     },
@@ -4413,6 +4844,10 @@
     {
       "source": "02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons",
       "target": "02_SoftwareEngineering/01_Dev_Methodology/product-line-methodology"
+    },
+    {
+      "source": "02_SoftwareEngineering/01_Dev_Methodology/platform-engineering",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/agile-sw-development"
     },
     {
       "source": "02_SoftwareEngineering/01_Dev_Methodology/mlops-vs-devops",
@@ -4523,6 +4958,10 @@
       "target": "02_SoftwareEngineering/03_Implementation_Testing/sw-testing"
     },
     {
+      "source": "02_SoftwareEngineering/03_Implementation_Testing/iso-26262-asil",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality"
+    },
+    {
       "source": "02_SoftwareEngineering/03_Implementation_Testing/sw-testing",
       "target": "02_SoftwareEngineering/03_Implementation_Testing/deployment-strategy"
     },
@@ -4587,6 +5026,18 @@
       "target": "04_ComputerSystems/06_InfraArchitecture/public-network-backup-recovery"
     },
     {
+      "source": "02_SoftwareEngineering/05_SW_Quality/sw-quality-performance-test",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-quality-performance-test"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality",
+      "target": "02_SoftwareEngineering/01_Dev_Methodology/agile-sw-development"
+    },
+    {
       "source": "02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
       "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
     },
@@ -4603,6 +5054,10 @@
       "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
     },
     {
+      "source": "07_SystemEvaluation/01_PerformanceEvaluation/e-government-performance-metrics",
+      "target": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
+    },
+    {
       "source": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
       "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
@@ -4613,6 +5068,14 @@
     {
       "source": "07_SystemEvaluation/02_HW_SW_Standards/ieee-iec-standards-comparison",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-iec-42001"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/cloud-service-safety-review",
+      "target": "01_InfoStrategy/04_IT_Audit/cloud-transition-audit"
+    },
+    {
+      "source": "08_EmergingTech/03_Regulations_Policies/cloud-service-safety-review",
+      "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
       "source": "08_EmergingTech/03_Regulations_Policies/generative-ai-user-protection",
@@ -4741,6 +5204,14 @@
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/hyperscale-ai-public-guideline",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/hyperscale-ai-public-guideline",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/iso-pas-8800-ai-safety"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/adas-ads-autonomous-driving",
@@ -5115,6 +5586,14 @@
       "target": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget"
     },
     {
+      "source": "01_InfoStrategy/04_IT_Audit/bigdata-audit-checklist",
+      "target": "01_InfoStrategy/04_IT_Audit/cloud-transition-audit"
+    },
+    {
+      "source": "01_InfoStrategy/04_IT_Audit/bigdata-audit-checklist",
+      "target": "08_EmergingTech/03_Regulations_Policies/cloud-service-safety-review"
+    },
+    {
       "source": "01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance",
       "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
     },
@@ -5173,6 +5652,10 @@
     {
       "source": "01_InfoStrategy/01_InfoStrategy_Planning/it-governance",
       "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/enterprise-architecture-guideline",
+      "target": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
     },
     {
       "source": "01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
