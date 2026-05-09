@@ -180,6 +180,9 @@
       {{ else if in $tags "법규및정책" }}{{ $catLabel = "법규정책및표준" }}
       {{ else if in $tags "법규정책표준" }}{{ $catLabel = "법규정책및표준" }}
       {{ else if in $tags "정보전략" }}{{ $catLabel = "정보전략및관리" }}
+      {{ else if in $tags "네트워크" }}{{ $catLabel = "컴퓨터통신및네트워크" }}
+      {{ else if in $tags "시스템평가" }}{{ $catLabel = "컴퓨터시스템및정보통신" }}
+      {{ else if in $tags "법규정책" }}{{ $catLabel = "법규정책및표준" }}
       {{ end }}
       {{ $examTags2 := .Params.tags | default slice }}
       <tr data-cat="{{ $catLabel }}" data-title="{{ lower .Title }}">
