@@ -1,8 +1,9 @@
 ---
 title: "운영체제 동기화 (OS Synchronization)"
 date: 2026-05-09T07:34:17+09:00
-tags: ["pecs", "컴퓨터시스템", "운영체제", "동기화", "뮤텍스", "세마포어", "경쟁조건"]
+tags: ["peim", "pecs", "컴퓨터시스템", "운영체제", "동기화", "뮤텍스", "세마포어", "경쟁조건"]
 draft: false
+exam_peim: ["139회"]
 exam_pecs: ["138회"]
 ---
 
@@ -97,3 +98,4 @@ Thread 2: mutex_B.lock() → mutex_A.lock()
 ## 참고 기출
 
 - 138회 4교시 2번 (PECS)
+- 139회 4교시 2번 (PEIM)

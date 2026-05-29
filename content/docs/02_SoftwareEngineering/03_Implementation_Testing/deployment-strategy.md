@@ -102,3 +102,4 @@ Unit Test → Integration Test → Smoke Test → 카나리 모니터링 → 전
 
 - 134회 3교시 1번 (PEIM)
 - 135회 4교시 4번 (PECS)
+- 139회 1교시 5번 (PEIM)

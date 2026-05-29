@@ -145,6 +145,19 @@
       "category": "03_DataProcessing"
     },
     {
+      "id": "03_DataProcessing/03_DBMS_Distributed/distributed-db-transparency",
+      "title": "분산 데이터베이스의 투명성 (Distributed DB Transparency)",
+      "tags": [
+        "peim",
+        "자료처리",
+        "DBMS분산파일처리",
+        "분산DB",
+        "투명성",
+        "위치투명성"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
       "id": "03_DataProcessing/03_DBMS_Distributed/db-partitioning",
       "title": "데이터베이스 분할 (DB Partitioning)",
       "tags": [
@@ -203,6 +216,20 @@
         "데이터관측가능성",
         "데이터파이프라인",
         "모니터링"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/05_DataQuality/ai-training-data-quality",
+      "title": "AI 학습용 데이터 품질관리",
+      "tags": [
+        "peim",
+        "자료처리",
+        "데이터품질",
+        "AI학습데이터",
+        "데이터품질관리",
+        "데이터어노테이션",
+        "머신러닝"
       ],
       "category": "03_DataProcessing"
     },
@@ -398,6 +425,20 @@
         "군집분석",
         "비지도학습",
         "신경망"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
+      "id": "03_DataProcessing/04_DataMining/overfitting-underfitting",
+      "title": "과적합(Overfitting)과 과소적합(Underfitting)",
+      "tags": [
+        "peim",
+        "자료처리",
+        "데이터마이닝",
+        "과적합",
+        "과소적합",
+        "편향분산트레이드오프",
+        "머신러닝"
       ],
       "category": "03_DataProcessing"
     },
@@ -602,6 +643,20 @@
         "안티드론",
         "드론보안",
         "TTA표준"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "06_InfoSecurity/02_SecuritySystems/ctem",
+      "title": "CTEM (지속적 위협 노출 관리, Continuous Threat Exposure Management)",
+      "tags": [
+        "peim",
+        "정보보안",
+        "보안시스템",
+        "CTEM",
+        "위협노출관리",
+        "공격표면",
+        "취약점관리"
       ],
       "category": "06_InfoSecurity"
     },
@@ -1045,6 +1100,20 @@
       "category": "06_InfoSecurity"
     },
     {
+      "id": "06_InfoSecurity/06_PrivacyProtection/pseudonymization",
+      "title": "가명처리 기법 (Pseudonymization)",
+      "tags": [
+        "peim",
+        "정보보안",
+        "개인정보보호",
+        "가명처리",
+        "비식별화",
+        "개인정보보호법",
+        "데이터활용"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
       "id": "06_InfoSecurity/06_PrivacyProtection/_index",
       "title": "개인정보보호",
       "tags": [],
@@ -1060,6 +1129,7 @@
       "id": "05_Networks/02_NetworkDesign/wifi-7",
       "title": "Wi-Fi 7 (IEEE 802.11be)",
       "tags": [
+        "peim",
         "pecs",
         "네트워크",
         "무선네트워크",
@@ -1110,6 +1180,20 @@
         "IEEE802.3",
         "유선네트워크",
         "전력공급"
+      ],
+      "category": "05_Networks"
+    },
+    {
+      "id": "05_Networks/02_NetworkDesign/subnetting-vlsm",
+      "title": "서브네팅·슈퍼네팅·VLSM (Subnetting / Supernetting / VLSM)",
+      "tags": [
+        "peim",
+        "컴퓨터시스템및정보통신",
+        "네트워크설계",
+        "서브네팅",
+        "슈퍼네팅",
+        "VLSM",
+        "IP주소설계"
       ],
       "category": "05_Networks"
     },
@@ -1494,6 +1578,7 @@
       "id": "04_ComputerSystems/05_Algorithms/virtual-memory",
       "title": "가상 메모리 (Virtual Memory)",
       "tags": [
+        "peim",
         "pecs",
         "컴퓨터시스템",
         "운영체제",
@@ -1668,6 +1753,7 @@
       "id": "04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
       "title": "운영체제 동기화 (OS Synchronization)",
       "tags": [
+        "peim",
         "pecs",
         "컴퓨터시스템",
         "운영체제",
@@ -2433,6 +2519,20 @@
       "category": "02_SoftwareEngineering"
     },
     {
+      "id": "02_SoftwareEngineering/05_SW_Quality/mccabe-cyclomatic-complexity",
+      "title": "맥케이브 순환복잡도 (McCabe's Cyclomatic Complexity)",
+      "tags": [
+        "peim",
+        "소프트웨어공학",
+        "SW품질",
+        "순환복잡도",
+        "맥케이브",
+        "제어흐름그래프",
+        "화이트박스테스트"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
       "id": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
       "title": "소프트웨어 기술 부채 (SW Technical Debt)",
       "tags": [
@@ -2708,6 +2808,21 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning",
+      "title": "시계열 딥러닝 (Time-Series Deep Learning)",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "시계열딥러닝",
+        "LSTM",
+        "Transformer",
+        "전력예측",
+        "시계열분석"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "title": "AGI 관점에서 ANI의 필요성",
       "tags": [
@@ -2735,6 +2850,21 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning",
+      "title": "강화학습 (Reinforcement Learning)",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "강화학습",
+        "RL",
+        "보상함수",
+        "Q러닝",
+        "정책최적화"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
       "title": "AI 기반 디지털 전환 (AX, AI Transformation)",
       "tags": [
@@ -2744,6 +2874,22 @@
         "디지털전환",
         "AX",
         "AI전환전략"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/rlhf-raft",
+      "title": "RLHF와 RAFT — LLM 정렬 학습 파이프라인 비교",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "RLHF",
+        "RAFT",
+        "LLM",
+        "파인튜닝",
+        "LLM정렬",
+        "강화학습"
       ],
       "category": "08_EmergingTech"
     },
@@ -2923,6 +3069,7 @@
       "id": "08_EmergingTech/01_AI_IoT_Cloud/intelligent-edge-computing",
       "title": "지능형 엣지 컴퓨팅",
       "tags": [
+        "peim",
         "pecs",
         "최신기술",
         "AI",
@@ -2992,6 +3139,7 @@
       "id": "08_EmergingTech/01_AI_IoT_Cloud/quantum-machine-learning",
       "title": "양자 머신러닝 (QML, Quantum Machine Learning)",
       "tags": [
+        "peim",
         "pecs",
         "최신기술",
         "AI",
@@ -3119,6 +3267,20 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/turboquant",
+      "title": "TurboQuant — 초고속 LLM 양자화 기술",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "TurboQuant",
+        "양자화",
+        "LLM경량화",
+        "모델압축"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
       "title": "공공기관 LLM 적용: 고려사항과 아키텍처",
       "tags": [
@@ -3149,6 +3311,21 @@
       "category": "08_EmergingTech"
     },
     {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-risk",
+      "title": "AI 리스크 (AI Risk) — 보안·프라이버시·사회적 위험",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "AI리스크",
+        "AI보안",
+        "AI프라이버시",
+        "AI윤리",
+        "AI거버넌스"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
       "id": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
       "title": "AI 디지털교과서",
       "tags": [
@@ -3159,6 +3336,21 @@
         "에듀테크",
         "개인화학습",
         "LMS"
+      ],
+      "category": "08_EmergingTech"
+    },
+    {
+      "id": "08_EmergingTech/01_AI_IoT_Cloud/multi-agent-system",
+      "title": "다중 에이전트 시스템 (MAS, Multi-Agent System)",
+      "tags": [
+        "peim",
+        "최신기술",
+        "AI",
+        "다중에이전트",
+        "MAS",
+        "AI에이전트",
+        "에이전틱AI",
+        "업무자동화"
       ],
       "category": "08_EmergingTech"
     },
@@ -3337,6 +3529,19 @@
       "category": "01_InfoStrategy"
     },
     {
+      "id": "01_InfoStrategy/05_Statistics/law-of-large-numbers-clt",
+      "title": "대수의 법칙과 중심극한정리",
+      "tags": [
+        "peim",
+        "정보전략및관리",
+        "통계분석",
+        "대수의법칙",
+        "중심극한정리",
+        "확률통계"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
       "id": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
       "title": "회귀모형의 등분산성과 다중공선성",
       "tags": [
@@ -3439,6 +3644,20 @@
       "category": "01_InfoStrategy"
     },
     {
+      "id": "01_InfoStrategy/01_InfoStrategy_Planning/public-sla",
+      "title": "공공 SLA와 정보시스템 등급제 (전자정부법 개정)",
+      "tags": [
+        "peim",
+        "정보전략및관리",
+        "정보전략",
+        "공공SLA",
+        "정보시스템등급제",
+        "전자정부법",
+        "서비스수준협약"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
       "id": "01_InfoStrategy/01_InfoStrategy_Planning/enterprise-architecture-guideline",
       "title": "범정부 정보기술 아키텍처(EA) 도입·운영 지침",
       "tags": [
@@ -3493,6 +3712,19 @@
         "팀빌딩",
         "터크만",
         "갈등관리"
+      ],
+      "category": "01_InfoStrategy"
+    },
+    {
+      "id": "01_InfoStrategy/06_ProjectManagement/wbs",
+      "title": "WBS (작업 분류 체계, Work Breakdown Structure)",
+      "tags": [
+        "peim",
+        "정보전략및관리",
+        "프로젝트관리",
+        "WBS",
+        "작업분류체계",
+        "범위관리"
       ],
       "category": "01_InfoStrategy"
     },
@@ -3734,6 +3966,18 @@
       "target": "03_DataProcessing/02_DataModeling/fourth-normal-form"
     },
     {
+      "source": "03_DataProcessing/03_DBMS_Distributed/distributed-db-transparency",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+    },
+    {
+      "source": "03_DataProcessing/03_DBMS_Distributed/distributed-db-transparency",
+      "target": "03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level"
+    },
+    {
+      "source": "03_DataProcessing/03_DBMS_Distributed/distributed-db-transparency",
+      "target": "03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery"
+    },
+    {
       "source": "03_DataProcessing/03_DBMS_Distributed/db-partitioning",
       "target": "03_DataProcessing/03_DBMS_Distributed/opensource-dbms-migration"
     },
@@ -3756,6 +4000,18 @@
     {
       "source": "03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery",
       "target": "03_DataProcessing/03_DBMS_Distributed/db-partitioning"
+    },
+    {
+      "source": "03_DataProcessing/05_DataQuality/ai-training-data-quality",
+      "target": "03_DataProcessing/05_DataQuality/data-observability"
+    },
+    {
+      "source": "03_DataProcessing/05_DataQuality/ai-training-data-quality",
+      "target": "03_DataProcessing/04_DataMining/data-annotation"
+    },
+    {
+      "source": "03_DataProcessing/05_DataQuality/ai-training-data-quality",
+      "target": "03_DataProcessing/04_DataMining/overfitting-underfitting"
     },
     {
       "source": "03_DataProcessing/05_DataQuality/data-valuation",
@@ -3844,6 +4100,14 @@
     {
       "source": "03_DataProcessing/04_DataMining/self-organizing-map",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+    },
+    {
+      "source": "03_DataProcessing/04_DataMining/overfitting-underfitting",
+      "target": "03_DataProcessing/04_DataMining/confusion-matrix-metrics"
+    },
+    {
+      "source": "03_DataProcessing/04_DataMining/overfitting-underfitting",
+      "target": "03_DataProcessing/04_DataMining/ml-performance-metrics"
     },
     {
       "source": "03_DataProcessing/04_DataMining/outlier-detection",
@@ -3960,6 +4224,14 @@
     {
       "source": "06_InfoSecurity/02_SecuritySystems/anti-drone-system",
       "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/ctem",
+      "target": "06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
+    },
+    {
+      "source": "06_InfoSecurity/02_SecuritySystems/ctem",
+      "target": "06_InfoSecurity/02_SecuritySystems/siem-soar"
     },
     {
       "source": "06_InfoSecurity/02_SecuritySystems/zero-day-vulnerability",
@@ -4238,6 +4510,14 @@
       "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
+      "source": "06_InfoSecurity/06_PrivacyProtection/pseudonymization",
+      "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
+      "source": "06_InfoSecurity/06_PrivacyProtection/pseudonymization",
+      "target": "06_InfoSecurity/06_PrivacyProtection/personal-data-safety-zone"
+    },
+    {
       "source": "05_Networks/02_NetworkDesign/wifi-7",
       "target": "05_Networks/03_CommunicationSystems/tactile-internet"
     },
@@ -4260,6 +4540,14 @@
     {
       "source": "05_Networks/02_NetworkDesign/poe-power-over-ethernet",
       "target": "05_Networks/01_Network_Protocol/osi-7-layer"
+    },
+    {
+      "source": "05_Networks/02_NetworkDesign/subnetting-vlsm",
+      "target": "05_Networks/02_NetworkDesign/igp-egp-routing"
+    },
+    {
+      "source": "05_Networks/02_NetworkDesign/subnetting-vlsm",
+      "target": "03_DataProcessing/01_DataStructures/binary-search-tree"
     },
     {
       "source": "05_Networks/01_Network_Protocol/dns-security",
@@ -5002,6 +5290,14 @@
       "target": "06_InfoSecurity/01_SecurityTech/llm-security-risks"
     },
     {
+      "source": "02_SoftwareEngineering/05_SW_Quality/mccabe-cyclomatic-complexity",
+      "target": "02_SoftwareEngineering/03_Implementation_Testing/sw-testing"
+    },
+    {
+      "source": "02_SoftwareEngineering/05_SW_Quality/mccabe-cyclomatic-complexity",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt"
+    },
+    {
       "source": "02_SoftwareEngineering/05_SW_Quality/sw-technical-debt",
       "target": "02_SoftwareEngineering/04_Operation_Maintenance/reengineering-reverse-engineering"
     },
@@ -5158,6 +5454,18 @@
       "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning",
+      "target": "01_InfoStrategy/05_Statistics/ar-ma-model"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ani-agi",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
@@ -5182,12 +5490,36 @@
       "target": "06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/rlhf-raft"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/general-purpose-ai-risk-framework"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-transformation-ax",
       "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/rlhf-raft",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/rag-retrieval-augmented-generation"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/rlhf-raft",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/reinforcement-learning"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/rlhf-raft",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/self-attention-mechanism",
@@ -5462,6 +5794,18 @@
       "target": "04_ComputerSystems/05_Algorithms/banker-algorithm"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/turboquant",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/quantum-machine-learning"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/turboquant",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/gpu-tpu"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/turboquant",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/sllm-smaller-llm"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/multimodal-llm"
     },
@@ -5486,12 +5830,36 @@
       "target": "08_EmergingTech/01_AI_IoT_Cloud/prompt-engineering"
     },
     {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-risk",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-risk",
+      "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-risk",
+      "target": "06_InfoSecurity/01_SecurityTech/prompt-injection"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-risk",
+      "target": "06_InfoSecurity/01_SecurityTech/model-inversion-attack"
+    },
+    {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
       "target": "08_EmergingTech/01_AI_IoT_Cloud/llm-architecture-public-sector"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/ai-digital-textbook",
       "target": "01_InfoStrategy/03_AI_Ethics/ai-governance"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multi-agent-system",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/agentic-ai"
+    },
+    {
+      "source": "08_EmergingTech/01_AI_IoT_Cloud/multi-agent-system",
+      "target": "08_EmergingTech/01_AI_IoT_Cloud/mcp-model-context-protocol"
     },
     {
       "source": "08_EmergingTech/01_AI_IoT_Cloud/multi-gpu-training",
@@ -5602,6 +5970,14 @@
       "target": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
     },
     {
+      "source": "01_InfoStrategy/05_Statistics/law-of-large-numbers-clt",
+      "target": "01_InfoStrategy/05_Statistics/unbiased-estimator"
+    },
+    {
+      "source": "01_InfoStrategy/05_Statistics/law-of-large-numbers-clt",
+      "target": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity"
+    },
+    {
       "source": "01_InfoStrategy/05_Statistics/regression-homoscedasticity-multicollinearity",
       "target": "01_InfoStrategy/05_Statistics/unbiased-estimator"
     },
@@ -5654,11 +6030,31 @@
       "target": "06_InfoSecurity/04_AdminSecurity/isms-isms-p"
     },
     {
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/public-sla",
+      "target": "02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+    },
+    {
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/public-sla",
+      "target": "02_SoftwareEngineering/05_SW_Quality/slo-error-budget"
+    },
+    {
+      "source": "01_InfoStrategy/01_InfoStrategy_Planning/public-sla",
+      "target": "07_SystemEvaluation/01_PerformanceEvaluation/e-government-performance-metrics"
+    },
+    {
       "source": "01_InfoStrategy/01_InfoStrategy_Planning/enterprise-architecture-guideline",
       "target": "01_InfoStrategy/01_InfoStrategy_Planning/isp-ismp"
     },
     {
       "source": "01_InfoStrategy/06_ProjectManagement/tuckman-team-development",
+      "target": "01_InfoStrategy/06_ProjectManagement/project-risk-management"
+    },
+    {
+      "source": "01_InfoStrategy/06_ProjectManagement/wbs",
+      "target": "01_InfoStrategy/06_ProjectManagement/it-project-management"
+    },
+    {
+      "source": "01_InfoStrategy/06_ProjectManagement/wbs",
       "target": "01_InfoStrategy/06_ProjectManagement/project-risk-management"
     },
     {

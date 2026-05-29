@@ -63,3 +63,4 @@ GNN(Graph Neural Network)은 그래프 구조 데이터(노드·엣지로 표현
 ## 참고 기출
 
 - 137회 1교시 5번 (PEIM)
+- 139회 4교시 5번 (PEIM)

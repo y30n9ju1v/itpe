@@ -1,8 +1,9 @@
 ---
 title: "양자 머신러닝 (QML, Quantum Machine Learning)"
 date: 2026-05-09T07:56:10+09:00
-tags: ["pecs", "최신기술", "AI", "양자컴퓨팅", "QML", "머신러닝", "양자회로"]
+tags: ["peim", "pecs", "최신기술", "AI", "양자컴퓨팅", "QML", "머신러닝", "양자회로"]
 draft: false
+exam_peim: ["139회"]
 exam_pecs: ["137회"]
 ---
 
@@ -61,3 +62,4 @@ exam_pecs: ["137회"]
 ## 참고 기출
 
 - 137회 4교시 3번 (PECS)
+- 139회 1교시 12번 (PEIM)
