@@ -1,3 +1,4 @@
 ---
+bookCollapseSection: true
 title: "경영정보시스템"
 ---

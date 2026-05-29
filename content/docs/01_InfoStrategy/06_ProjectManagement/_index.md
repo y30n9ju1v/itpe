@@ -1,3 +1,4 @@
 ---
+bookCollapseSection: true
 title: "프로젝트 관리"
 ---

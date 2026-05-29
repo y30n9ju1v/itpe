@@ -1,3 +1,4 @@
 ---
+bookCollapseSection: true
 title: "HW 구성/설계/운영"
 ---

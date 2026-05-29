@@ -1,3 +1,4 @@
 ---
+bookCollapseSection: true
 title: "데이터모델링"
 ---
