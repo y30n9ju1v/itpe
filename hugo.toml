@@ -1,6 +1,6 @@
 baseURL = "https://y30n9ju1v.github.io/itpe/"
 languageCode = "ko-KR"
-title = "IT Professional Engineer's Notes"
+title = "y30n9ju1v's ITPE Notes"
 theme = "hugo-book"
 
 [params]
