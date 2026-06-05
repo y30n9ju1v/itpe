@@ -120,7 +120,8 @@ const COLOR_MAP = {
 };
 
 function getColor(node) {
-  const cat = node.id.split("/")[0];
+  const parts = node.id.split("/");
+  const cat = parts[0] === "notes" ? parts[1] : parts[0];
   return COLOR_MAP[cat] || "#aaa";
 }
 

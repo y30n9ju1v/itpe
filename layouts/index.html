@@ -149,7 +149,8 @@
     <input class="note-search" type="text" id="noteSearch" placeholder="노트 검색...">
   </div>
 
-  {{ $allNotes := where .Site.RegularPages "Type" "docs" }}
+  {{ $notesSection := .Site.GetPage "/docs/notes" }}
+  {{ $allNotes := $notesSection.RegularPagesRecursive }}
   <div class="note-count" id="noteCount">{{ len $allNotes }}개 노트</div>
 
   <table class="note-table" id="noteTable">

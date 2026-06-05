@@ -1,6 +1,6 @@
 # 기출문제 기반 제텔카스텐 노트 생성
 
-기출문제 PDF를 분석하여 출제기준에 맞는 제텔카스텐 노트를 `content/docs/`에 생성합니다.
+기출문제 PDF를 분석하여 출제기준에 맞는 제텔카스텐 노트를 `content/docs/notes/`에 생성합니다.
 
 ## 사용법
 
@@ -74,7 +74,7 @@ date +"%Y-%m-%dT%H:%M:%S+09:00"
 ### 3단계: 노트 파일 생성
 
 모든 노트는 시험 종류(PEIM/PECS)에 관계없이 동일한 경로에 저장하세요.
-- `content/docs/{주요항목폴더}/{세부항목폴더}/{개념명}.md`
+- `content/docs/notes/{주요항목폴더}/{세부항목폴더}/{개념명}.md`
 
 시험 종류는 태그로만 구분합니다 (`tags`에 `"peim"` 또는 `"pecs"` 포함).
 
@@ -186,7 +186,7 @@ exam_pecs: ["{회차}회"]  # PECS 기출인 경우만 포함. 아니면 이 줄
 ## 연관 개념
 
 {관련된 다른 노트로의 링크. 반드시 content 루트 기준 전체 경로를 사용할 것. 아직 없는 노트는 텍스트로만 표기}
-- [연관개념1]({{< relref "/docs/{주요항목폴더}/{세부항목폴더}/파일명" >}}) — 한줄 설명
+- [연관개념1]({{< relref "/docs/notes/{주요항목폴더}/{세부항목폴더}/파일명" >}}) — 한줄 설명
 - 연관개념2 — 한줄 설명 (노트 미작성)
 
 ## 참고 기출
@@ -202,7 +202,7 @@ exam_pecs: ["{회차}회"]  # PECS 기출인 경우만 포함. 아니면 이 줄
 python3 - << 'EOF'
 import os, re
 
-docs_dir = "content/docs"
+docs_dir = "content/docs/notes"
 issues = []
 
 for root, dirs, files in os.walk(docs_dir):

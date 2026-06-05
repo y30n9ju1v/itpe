@@ -20,14 +20,14 @@
 python3 - << 'EOF'
 import os, re, json
 
-docs_dir = "content/docs"
+docs_dir = "content/docs/notes"
 slug_to_title = {}
 slug_to_tags = {}
 slug_to_file = {}
 
 for root, dirs, files in os.walk(docs_dir):
     for f in files:
-        if not f.endswith(".md"):
+        if not f.endswith(".md") or f == "_index.md":
             continue
         path = os.path.join(root, f)
         with open(path) as fh:
@@ -36,7 +36,7 @@ for root, dirs, files in os.walk(docs_dir):
         tags_m = re.search(r'^tags:\s*\[(.+?)\]', content, re.MULTILINE)
         title = title_m.group(1).strip('"\'') if title_m else f
         tags = [t.strip().strip('"\'') for t in tags_m.group(1).split(",")] if tags_m else []
-        rel = os.path.relpath(path, docs_dir).replace("\\", "/").replace(".md", "")
+        rel = os.path.relpath(path, "content/docs").replace("\\", "/").replace(".md", "")
         slug_to_title[rel] = title
         slug_to_tags[rel] = tags
         slug_to_file[rel] = path
