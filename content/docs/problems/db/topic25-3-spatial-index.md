@@ -13,7 +13,7 @@ question_no: 4
 
 ## 문제
 
-공간 인덱스 구조에서 MBR(Minimum Bounding Region)을 설명하고, R트리, R+트리, R*트리를 비교하시오.
+공간 인덱스 구조에서 MBR(Minimum Bounding Rectangle)을 설명하고, R트리, R+트리, R*트리를 비교하시오.
 
 ## 출제 정보
 

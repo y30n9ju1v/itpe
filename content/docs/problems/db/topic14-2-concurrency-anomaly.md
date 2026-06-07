@@ -89,7 +89,7 @@ question_no: 3
 |----------|-----------|--------------------|--------------------|------------|
 | READ UNCOMMITTED | 발생 | 발생 | 발생 | 발생 |
 | READ COMMITTED | 방지 | 발생 | 발생 | 발생 |
-| REPEATABLE READ | 방지 | 방지 | 발생(InnoDB 예외) | 방지 |
+| REPEATABLE READ | 방지 | 방지 | 발생(InnoDB 예외) | 발생(MVCC 구현 의존, SELECT FOR UPDATE로 방지) |
 | SERIALIZABLE | 방지 | 방지 | 방지 | 방지 |
 
 #### 이상현상 해결 기법 비교

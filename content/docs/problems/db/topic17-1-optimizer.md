@@ -99,7 +99,7 @@ question_no: 4
   특징:                               - 컬럼 NDV
   - 통계 불필요, 예측 가능            - 히스토그램(데이터 분포)
   - 데이터 특성 무시                  - 클러스터링 팩터
-  - 현재 Oracle 지원 중단
+  - Oracle 10g 이후 지원 중단
 ```
 
 | 비교 항목 | RBO | CBO |
@@ -109,7 +109,7 @@ question_no: 4
 | **데이터 특성 반영** | 불가 | 가능 |
 | **예측 가능성** | 높음 | 통계 정확도에 의존 |
 | **현재 상태** | 대부분 DBMS 지원 중단 | 현대 모든 DBMS 기본 |
-| **대표 DBMS** | 구 Oracle 8i 이하 | Oracle 9i+, PostgreSQL, MySQL 8.0+ |
+| **대표 DBMS** | 구 Oracle 9i 이하 (10g부터 지원 중단) | Oracle 10g+, PostgreSQL, MySQL 8.0+ |
 
 #### 다. 힌트 (HINT)
 
