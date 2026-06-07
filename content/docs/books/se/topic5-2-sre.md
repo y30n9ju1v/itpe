@@ -71,7 +71,7 @@ Error Budget = 100% - SLO
 
 **관측 가능성 (Observability)**
 
-단순 모니터링을 넘어 복잡계 시스템의 내부 상태를 완벽히 추적하는 체계입니다. 관측 가능성의 3대 요소인 **M.E.L.T** (Metrics, Events, Logs, Traces) 키워드를 반드시 식별하고자 합니다.
+단순 모니터링을 넘어 복잡계 시스템의 내부 상태를 완벽히 추적하는 체계입니다. 관측 가능성의 **3대 기둥(Three Pillars)인 Metrics(지표), Logs(로그), Traces(분산 추적)** 키워드를 반드시 식별하고자 합니다.
 
 **자책 없는 회고 (Blameless Post-Mortem)**
 
