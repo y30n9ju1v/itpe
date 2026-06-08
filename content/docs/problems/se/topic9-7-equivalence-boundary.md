@@ -35,7 +35,7 @@ question_no: 4
 > **경계에서 결함이 태어난다**  
 > "18세는 안 되고, 19세부터 된다"는 그 경계값 하나가 가장 많은 버그를 낳는다.
 
-프로그래머들이 가장 흔하게 범하는 실수 중 하나는 경계 조건(Boundary Condition)의 오류입니다. `if (age >= 19)` 대신 `if (age > 19)`로 코딩하면 19세가 처리에서 제외됩니다. 동등 분할(Equivalence Partitioning)과 경계값 분석(Boundary Value Analysis)은 이런 Off-by-One 오류를 체계적으로 찾아내기 위한 블랙박스 테스트의 핵심 기법입니다.
+프로그래머들이 가장 흔하게 범하는 실수 중 하나는 경계 조건(Boundary Condition)의 오류입니다. `if (age >= 19)` 대신 `if (age > 19)`로 코딩하면 19세가 처리에서 제외됩니다. 이처럼 딱 1만큼 어긋나는 실수를 Off-by-One 오류라고 합니다. 동등 분할(Equivalence Partitioning, 동일하게 처리될 입력을 그룹으로 묶는 기법)과 경계값 분석(Boundary Value Analysis, 경계 지점의 값을 집중 테스트하는 기법)은 이런 실수를 체계적으로 찾아내기 위한 블랙박스 테스트의 핵심 기법입니다.
 
 ### 1. 출제 배경 및 의도
 

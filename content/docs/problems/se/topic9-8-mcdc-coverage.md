@@ -30,7 +30,7 @@ question_no: 2
 > **조건 하나하나가 결과에 진짜 영향을 미치는가**  
 > MC/DC는 각 개별 조건이 독립적으로 최종 결정에 영향을 줄 수 있음을 증명하는 가장 엄격한 커버리지 기준이다.
 
-항공기 소프트웨어에서 `if (altitude_low AND engine_fail OR fuel_empty)`라는 조건이 잘못 처리되면 수백 명의 목숨이 위험합니다. 각 조건(`altitude_low`, `engine_fail`, `fuel_empty`)이 서로 독립적으로 최종 경보 발생 여부에 영향을 미치는지 철저히 검증해야 합니다. 이것이 MC/DC(Modified Condition/Decision Coverage)가 항공 안전 표준의 요구사항이 된 이유입니다.
+항공기 소프트웨어에서 `if (altitude_low AND engine_fail OR fuel_empty)`라는 조건이 잘못 처리되면 수백 명의 목숨이 위험합니다. 각 조건(`altitude_low`, `engine_fail`, `fuel_empty`)이 서로 독립적으로 최종 경보 발생 여부에 영향을 미치는지 철저히 검증해야 합니다. 이것이 MC/DC(Modified Condition/Decision Coverage, 변경조건/결정 커버리지)가 항공 안전 표준의 요구사항이 된 이유입니다.
 
 ### 1. 출제 배경 및 의도
 

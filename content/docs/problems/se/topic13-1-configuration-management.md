@@ -94,7 +94,7 @@ IEEE 828(소프트웨어 형상관리 계획 표준)과 ISO/IEC 12207의 SCM 프
 ① SCM 계획 수립
    └→ 관리 대상 CI 식별 기준 정의
    └→ 베이스라인 정의
-   └→ CCB 구성 (Change Control Board: 변경통제위원회)
+   └→ CCB(Change Control Board, 변경 승인 심의 위원회) 구성
    └→ 형상관리 도구 선정 (Git, SVN, ClearCase 등)
    └→ 산출물: SCM 계획서
 
@@ -145,7 +145,7 @@ IEEE 828(소프트웨어 형상관리 계획 표준)과 ISO/IEC 12207의 SCM 프
   - 작업 추정
       │
       ▼
-CCB (Change Control Board) 검토
+CCB 검토
   - 프로젝트 관리자, 품질 관리자, 기술 리드 등으로 구성
   - 비용/일정/품질 영향 평가
       │

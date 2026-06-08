@@ -93,7 +93,7 @@ question_no: 1
 품질 개선 (Quality Improvement)
   └→ QA/QC 결과를 분석하여 프로세스 개선
   └→ PDCA 사이클(Plan-Do-Check-Act)
-  └→ CMM/CMMI 성숙도 레벨 향상
+  └→ CMM/CMMI(Capability Maturity Model Integration, 소프트웨어 프로세스 성숙도 평가 모델) 성숙도 레벨 향상
 ```
 
 ### 3. 핵심 키워드 (Must-Have)
@@ -187,4 +187,4 @@ TQM은 조직 전체가 품질에 참여하는 경영 철학으로, 데밍(Demin
 
 **기술사 시험 응용 포인트**
 
-QA/QC 문제는 단독으로 출제되기도 하지만, CMM/CMMI(성숙도 모델), SPICE(ISO 15504), ISO/IEC 25010(품질 모델) 등과 연계하여 출제될 때 고득점이 가능합니다. 특히 "조직의 소프트웨어 품질 수준을 어떻게 평가하고 개선할 것인가"라는 맥락에서 QA는 CMMI의 핵심 프로세스 영역(KPA)과 연결됩니다.
+QA/QC 문제는 단독으로 출제되기도 하지만, CMM/CMMI(성숙도 모델), SPICE(ISO 15504), ISO/IEC 25010(품질 모델) 등과 연계하여 출제될 때 고득점이 가능합니다. 특히 "조직의 소프트웨어 품질 수준을 어떻게 평가하고 개선할 것인가"라는 맥락에서 QA는 CMMI의 핵심 프로세스 영역(KPA, Key Process Area)과 연결됩니다.
