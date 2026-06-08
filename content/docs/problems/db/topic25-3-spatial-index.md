@@ -30,7 +30,7 @@ question_no: 4
 > **공간 탐색의 엔진 — MBR과 R-Tree 계열 인덱스**  
 > MBR 개념, R-Tree/R+-Tree/R*-Tree 비교 분석
 
-공간 데이터에는 일반 B-Tree 인덱스를 적용할 수 없습니다. 점·선·면의 다차원 위치 정보는 단일 키로 정렬할 수 없기 때문입니다. R-Tree는 MBR(최소 경계 사각형)을 계층적으로 조직화하여 공간 탐색을 효율화하는 트리 구조로, PostGIS·Oracle Spatial·MySQL의 공간 인덱스 핵심 알고리즘입니다.
+공간 데이터에는 일반 B-Tree 인덱스를 적용할 수 없습니다. 점·선·면의 다차원 위치 정보는 단일 키로 정렬할 수 없기 때문입니다. R-Tree는 MBR(Minimum Bounding Rectangle, 공간 객체를 완전히 포함하는 가장 작은 축 정렬 사각형)을 계층적으로 조직화하여 공간 탐색을 효율화하는 트리 구조로, PostGIS·Oracle Spatial·MySQL의 공간 인덱스 핵심 알고리즘입니다.
 
 ### 1. 출제 배경 및 의도
 

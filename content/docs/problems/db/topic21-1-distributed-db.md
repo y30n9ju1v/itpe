@@ -97,7 +97,7 @@ question_no: "Day-4"
 
 #### 다. 2PC (Two-Phase Commit)
 
-2PC는 분산 트랜잭션에서 **모든 참여 노드가 동일하게 커밋 또는 롤백**되도록 보장하는 원자성 프로토콜입니다. 코디네이터(Coordinator)와 참여자(Participant)로 구성됩니다.
+2PC(Two-Phase Commit, 분산된 여러 노드가 모두 같이 커밋하거나 롤백하도록 2단계로 합의하는 프로토콜)는 분산 트랜잭션에서 **모든 참여 노드가 동일하게 커밋 또는 롤백**되도록 보장하는 원자성 프로토콜입니다. 코디네이터(Coordinator)와 참여자(Participant)로 구성됩니다.
 
 ```text
 [2PC 프로토콜 흐름]
@@ -140,7 +140,7 @@ question_no: "Day-4"
 | 분산 투명성 | 위치/복제/단편화/장애/병행/이름/성능/스케일 투명성 |
 | 2PC 구성 | 코디네이터(Coordinator), 참여자(Participant) |
 | 2PC 단계 | Phase 1 (Prepare/투표), Phase 2 (Commit/Abort) |
-| 2PC 한계 | 블로킹 프로토콜, 코디네이터 SPOF, 네트워크 지연 |
+| 2PC 한계 | 블로킹 프로토콜, 코디네이터 SPOF(Single Point of Failure, 단일 장애점), 네트워크 지연 |
 | 분산 DB 특성 | 자율성, 수평 확장, 지역성, 복잡성 |
 | 대안 프로토콜 | 3PC (Three-Phase Commit), Paxos, Raft, Saga 패턴 |
 
@@ -168,7 +168,7 @@ question_no: "Day-4"
 **2PC의 코디네이터 단일 장애점(SPOF) 해결**
 
 - **챌린지:** 2PC에서 코디네이터가 Phase 1 이후 Phase 2 메시지를 보내기 전에 장애가 발생하면, 참여자들은 커밋/롤백 결정을 알 수 없어 트랜잭션을 보유 중인 상태로 무한 대기하는 블로킹(Blocking) 문제가 발생합니다. 이는 시스템 전체를 마비시키는 심각한 SPOF입니다.
-- **제언:** MSA 환경에서는 2PC 대신 Saga 패턴(Choreography/Orchestration)을 적극 검토해야 합니다. Saga는 각 서비스가 로컬 트랜잭션을 실행하고, 실패 시 보상 트랜잭션(Compensating Transaction)을 역순으로 실행하여 일관성을 회복하는 방식으로 블로킹 없이 분산 트랜잭션을 처리합니다. 단, 최종적 일관성(Eventual Consistency) 모델임을 설계 단계부터 인지해야 합니다.
+- **제언:** MSA 환경에서는 2PC 대신 Saga 패턴(Choreography/Orchestration, 각 서비스가 로컬 트랜잭션을 실행하고 실패 시 보상 트랜잭션으로 복구하는 분산 트랜잭션 패턴)을 적극 검토해야 합니다. Saga는 각 서비스가 로컬 트랜잭션을 실행하고, 실패 시 보상 트랜잭션(Compensating Transaction)을 역순으로 실행하여 일관성을 회복하는 방식으로 블로킹 없이 분산 트랜잭션을 처리합니다. 단, 최종적 일관성(Eventual Consistency) 모델임을 설계 단계부터 인지해야 합니다.
 
 **분산 투명성과 성능 트레이드오프**
 

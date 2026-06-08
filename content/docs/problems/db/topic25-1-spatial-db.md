@@ -42,7 +42,7 @@ question_no: 3
 
 ### 2. 개념의 본질과 작동 메커니즘
 
-공간 데이터베이스(Spatial Database)는 점·선·면·입체 등 기하학적 공간 객체(Geometry)와 이들의 위치·형상·위상 관계를 저장·관리·분석하는 전문 데이터베이스 시스템입니다.
+공간 데이터베이스(Spatial Database)는 점·선·면·입체 등 기하학적 공간 객체(Geometry)와 이들의 위치·형상·위상 관계(두 도형이 서로 어떻게 접해 있는지를 나타내는 관계)를 저장·관리·분석하는 전문 데이터베이스 시스템입니다.
 
 - **Input:** 위성 좌표(GPS), GIS 데이터(Shapefile/GeoJSON), 센서 위치 데이터
 - **Mechanism:** 공간 인덱스(R-Tree/Quad-Tree) 기반 고속 탐색 → 공간 함수를 통한 관계 연산 → 결과 반환
@@ -114,7 +114,7 @@ question_no: 3
 
 ### 다. 공간 데이터의 공간 관계 표현
 
-#### DE-9IM (Dimensionally Extended 9-Intersection Model)
+#### DE-9IM (Dimensionally Extended 9-Intersection Model, 두 공간 객체 간의 내부·경계·외부 교차를 9개 행렬로 표현하는 OGC 표준 모델)
 
 OGC 표준인 DE-9IM은 두 공간 객체 A, B의 내부(Interior), 경계(Boundary), 외부(Exterior) 간의 9가지 교차 관계를 행렬로 표현합니다.
 

@@ -30,7 +30,7 @@ question_no: "Day-2"
 > **분석(Analysis) → 재실행(Redo) → 취소(Undo)의 3단계로 데이터베이스를 장애 직전 상태로 복구하는 현대 RDBMS 표준 회복 알고리즘**  
 > ARIES(Algorithms for Recovery and Isolation Exploiting Semantics) 회복 기법
 
-ARIES는 오늘날 거의 모든 상용 RDBMS(IBM DB2, MS-SQL Server 등)가 채택하고 있는 가장 정교한 회복 알고리즘입니다. 단순 로그 기반 기법을 넘어 '반복 기록 재실행(Repeating History)'을 통해 장애 복구 효율을 극대화합니다. LSN(Log Sequence Number)을 기준으로 페이지 단위의 세밀한 복구를 수행하여, 트랜잭션 단위의 REDO/UNDO를 수행하는 고전적 회복 기법보다 훨씬 빠르고 정확합니다.
+ARIES는 오늘날 거의 모든 상용 RDBMS(IBM DB2, MS-SQL Server 등)가 채택하고 있는 가장 정교한 회복 알고리즘입니다. 단순 로그 기반 기법을 넘어 '반복 기록 재실행(Repeating History, 장애 직전 상태를 그대로 재현한 뒤 미완료 트랜잭션만 제거)'을 통해 장애 복구 효율을 극대화합니다. LSN(Log Sequence Number, 로그 레코드마다 부여되는 단조 증가 고유 번호)을 기준으로 페이지 단위의 세밀한 복구를 수행하여, 트랜잭션 단위의 REDO/UNDO를 수행하는 고전적 회복 기법보다 훨씬 빠르고 정확합니다.
 
 ### 1. 출제 배경 및 의도
 

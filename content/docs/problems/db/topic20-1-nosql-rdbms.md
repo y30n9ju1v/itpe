@@ -34,7 +34,7 @@ question_no: 4
 > **데이터 저장 패러다임의 분기점**  
 > RDBMS(스키마 고정·ACID)와 NoSQL(스키마 유연·BASE·수평 확장), 그리고 두 장점을 통합한 NewSQL
 
-빅데이터·클라우드 시대가 도래하며 단일 RDBMS로는 수억 건의 비정형 데이터를 실시간으로 처리하기 어렵게 되었습니다. NoSQL은 이 한계를 극복하기 위해 스키마 유연성과 수평 확장성을 전면에 내세웠으며, NewSQL은 다시 ACID 트랜잭션 보장이라는 RDBMS의 강점을 NoSQL 수준의 확장성과 결합하려는 시도입니다.
+빅데이터·클라우드 시대가 도래하며 단일 RDBMS로는 수억 건의 비정형 데이터를 실시간으로 처리하기 어렵게 되었습니다. NoSQL(Not Only SQL, 관계형 모델에 얽매이지 않는 다양한 데이터 저장 방식)은 이 한계를 극복하기 위해 스키마 유연성과 수평 확장성을 전면에 내세웠으며, NewSQL은 다시 ACID 트랜잭션 보장이라는 RDBMS의 강점을 NoSQL 수준의 확장성과 결합하려는 시도입니다.
 
 ### 1. 출제 배경 및 의도
 
@@ -75,7 +75,7 @@ RDBMS (1970s~)          NoSQL (2000s~)           NewSQL (2010s~)
 | NoSQL 핵심 | Not Only SQL, BASE, 스키마리스(Schema-less), 수평 확장(Scale-Out), 분산 저장 |
 | NoSQL 유형 | Document DB, Key-Value DB, Column-family DB, Graph DB |
 | NewSQL 핵심 | ACID + 수평 확장, 분산 SQL, Spanner, CockroachDB, TiDB |
-| 설계 철학 | Polyglot Persistence, CAP 이론, Eventual Consistency |
+| 설계 철학 | Polyglot Persistence(서비스마다 적합한 DB를 혼용하는 전략), CAP 이론, Eventual Consistency |
 
 **NoSQL 4가지 유형 상세**
 
