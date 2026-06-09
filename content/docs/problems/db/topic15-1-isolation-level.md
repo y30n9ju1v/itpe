@@ -101,7 +101,7 @@ T1: SELECT COUNT(*) → 새 행 보임 가능 (Phantom Read, DBMS 구현 의존)
 ```
 
 - 트랜잭션 시작 시점의 스냅샷 고정 → 동일 행 반복 읽기 결과 동일
-- MySQL InnoDB: Gap Lock으로 Phantom Read 부분 방지
+- MySQL InnoDB: Next-Key Lock(Gap Lock + Record Lock)으로 Phantom Read 부분 방지
 - 표준상으로는 Phantom Read 허용
 
 **④ SERIALIZABLE**

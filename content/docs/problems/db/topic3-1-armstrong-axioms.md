@@ -59,7 +59,7 @@ question_no: 1
 
 | 규칙명 | 수학적 정의 | 증명 메커니즘 |
 | --- | --- | --- |
-| **1. 합집합 규칙** *(Union)* | X→Y이고 X→Z이면, X→YZ | ① X→Y에 첨가율 적용 → XX→XY, ② X→Z에 첨가율 적용 → XY→YZ, ③ 이행율 적용 → X→YZ |
+| **1. 합집합 규칙** *(Union)* | X→Y이고 X→Z이면, X→YZ | ① X→Y에 Z 첨가율 적용 → XZ→YZ, ② X→Z에 Y 첨가율 적용 → XY→YZ, ③ X→Y이고 XY→YZ이므로 이행율 적용 → X→YZ |
 | **2. 분해 규칙** *(Decomposition)* | X→YZ이면, X→Y이고 X→Z | ① 반사율에 의해 YZ→Y 성립, ② X→YZ이고 YZ→Y이므로 이행율 적용 → X→Y |
 | **3. 의사이행 규칙** *(Pseudo-transitivity)* | X→Y이고 WY→Z이면, WX→Z | ① X→Y에 첨가율 적용 → WX→WY, ② WX→WY이고 WY→Z이므로 이행율 적용 → WX→Z |
 
