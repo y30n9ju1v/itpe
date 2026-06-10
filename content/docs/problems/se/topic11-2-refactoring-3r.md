@@ -46,7 +46,7 @@ question_no: 4
 
 #### 리팩토링의 정의와 핵심 조건
 
-리팩토링(Refactoring)의 공식 정의: **"외부에서 관찰 가능한 행동(Observable Behavior)을 변경하지 않으면서 소프트웨어의 내부 구조를 개선하는 것"** (Martin Fowler, Refactoring 2nd ed.)
+리팩토링(Refactoring)의 공식 정의: "**외부에서 관찰 가능한 행동(Observable Behavior)을 변경하지 않으면서 소프트웨어의 내부 구조를 개선하는 것**" (Martin Fowler, Refactoring 2nd ed.)
 
 핵심은 두 가지 조건이 동시에 충족되어야 한다는 것입니다.
 
