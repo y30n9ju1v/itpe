@@ -30,125 +30,121 @@ TCP 전송계층 프로토콜에 대하여 다음을 설명하시오.
 
 ## 해설
 
-> **3-way Handshake는 "전화 연결"이고, 4-way는 "정중한 전화 종료"다 — 각각 동기화와 독립적 종료를 위한 최소한의 신호 교환**
+### 출제 배경 및 의도
 
-### 1. 출제 배경 및 의도
+TCP 연결의 생명주기(설정-사용-종료)는 네트워크 프로그래밍, 보안, 성능 튜닝의 기초다. 3-way Handshake는 양방향 초기 시퀀스 번호(ISN) 동기화를 위한 최소한의 교환이며, 4-way Handshake는 전이중(Full-duplex) 통신의 양방향 독립 종료를 보장하기 위해 필요하다.
 
-TCP 연결의 생명주기(설정-사용-종료)는 네트워크 프로그래밍과 보안의 기초입니다. SYN Flooding, TIME_WAIT 등 실무 이슈와 직접 연결됩니다.
+SYN Flooding(DoS 공격)과 TIME_WAIT 포트 고갈은 Handshake 메커니즘의 설계에서 비롯된 실무 이슈이며, 이를 해결하는 SYN Cookie·tcp_tw_reuse 기법까지 서술하면 기술사 수준의 심화 답안이 완성된다. UDP와의 비교는 연결 지향 vs 비연결 프로토콜의 본질적 차이를 드러낸다.
 
-### 2. 개념의 본질과 작동 메커니즘
+### 1. TCP 전송계층, 개요
 
-#### 가. TCP 전송계층 개념
-
-TCP(Transmission Control Protocol)는 전송계층의 연결 지향 프로토콜로, 다음 서비스를 제공합니다:
-
-- **신뢰성:** 패킷 손실 시 재전송, ACK 확인
-- **순서 보장:** 시퀀스 번호(Sequence Number)로 순서 재조합
-- **흐름제어:** 수신자 처리 능력에 맞춘 전송 속도 조절
-- **혼잡제어:** 네트워크 혼잡 감지 및 전송률 조절
-- **전이중 통신:** 양방향 동시 전송 가능
-
-#### 나-1. 3-way Handshake (연결 설정)
-
-**목적:** 양쪽의 초기 시퀀스 번호(ISN) 동기화 및 연결 설정
+정 의  • TCP를 연결 지향·신뢰성 기반으로 순서 보장·흐름제어·혼잡제어를 제공하는 전송계층 프로토콜
+       - 양방향 Handshake로 연결 설정·종료, 시퀀스 번호로 신뢰성 및 순서를 보장
 
 ```
-Client                          Server
-CLOSED                          LISTEN
-  │                               │
-  │── SYN (seq=x) ───────────────▶│  "나 x번부터 시작할게"
-  │   [SYN_SENT]                  │  [SYN_RECEIVED]
-  │                               │
-  │◀── SYN+ACK (seq=y, ack=x+1) ─│  "알겠어, 나는 y번부터"
-  │   [SYN_SENT]                  │  [SYN_RECEIVED]
-  │                               │
-  │── ACK (ack=y+1) ─────────────▶│  "확인!"
-  │   [ESTABLISHED]               │  [ESTABLISHED]
-  │                               │
-  [데이터 전송 가능]
+[TCP 연결 생명주기]
+
+CLOSED → [3-way HS] → ESTABLISHED → [데이터 전송] → [4-way HS] → CLOSED
+             ↑                                              ↑
+      SYN/SYN+ACK/ACK                          FIN/ACK/FIN/ACK
+    (ISN 양방향 동기화)                      (양방향 독립 종료)
+
+TCP 제공 서비스:
+  신뢰성    ← ACK + 재전송 (RTO / Fast Retransmit)
+  순서 보장 ← Sequence Number
+  흐름제어  ← Sliding Window (rwnd)
+  혼잡제어  ← Slow Start / CUBIC / BBR (cwnd)
+  전이중    ← 양방향 동시 전송
 ```
 
-**3번 교환이 필요한 이유:**
-- 1번(SYN): 클라이언트 → 서버 방향 시퀀스 번호 동기화
-- 2번(SYN+ACK): 서버 → 클라이언트 방향 동기화 + 1번 확인
-- 3번(ACK): 2번 확인 → 양방향 모두 동기화 완료
+- TCP는 연결마다 랜덤 ISN을 생성하여 이전 연결의 지연 패킷과 혼동을 방지하고 시퀀스 예측 공격을 차단한다.
 
-**보안 문제 - SYN Flooding:**
-```
-공격자가 수만 개의 SYN 전송 (응답 없음)
-서버: SYN_RECEIVED 상태로 반연결(Half-open) 유지
-→ 서버 메모리 고갈 → DoS 공격
+### 2. 3-way / 4-way Handshake 동작 및 TCP vs UDP 비교
 
-대응: SYN Cookie (서버가 상태 저장 없이 쿠키로 검증)
-     방화벽 SYN Proxy
-```
-
-#### 나-2. 4-way Handshake (연결 종료)
-
-**목적:** 양방향 통신이 독립적으로 종료됨을 보장
+1) 3-way Handshake (연결 설정) 및 SYN Flooding 대응
 
 ```
-Client                          Server
-ESTABLISHED                     ESTABLISHED
-  │                               │
-  │── FIN (seq=u) ───────────────▶│  "나 보낼 거 다 보냈어"
-  │   [FIN_WAIT1]                 │  [CLOSE_WAIT]
-  │                               │
-  │◀── ACK (ack=u+1) ─────────────│  "알겠어"
-  │   [FIN_WAIT2]                 │  [CLOSE_WAIT]
-  │                               │  (서버가 남은 데이터 전송 중...)
-  │◀── FIN (seq=v) ───────────────│  "나도 다 보냈어"
-  │   [TIME_WAIT]                 │  [LAST_ACK]
-  │                               │
-  │── ACK (ack=v+1) ─────────────▶│  "알겠어, 종료!"
-  │   [TIME_WAIT: 2*MSL 대기]     │  [CLOSED]
-  │                               │
-  [CLOSED]
+[3-way Handshake 시퀀스]
+
+Client                              Server
+CLOSED                              LISTEN
+  │── SYN (seq=x, ISN랜덤) ────────▶│  "x번부터 시작"
+  │   [SYN_SENT]                    │  [SYN_RECEIVED]
+  │◀── SYN+ACK (seq=y, ack=x+1) ───│  "확인, 나는 y번부터"
+  │   [SYN_SENT]                    │  [SYN_RECEIVED]
+  │── ACK (ack=y+1) ───────────────▶│  "양방향 동기화 완료"
+  │   [ESTABLISHED]                 │  [ESTABLISHED]
+
+3번 교환 필요 이유:
+  SYN     → Client→Server 방향 ISN 전달
+  SYN+ACK → Server→Client 방향 ISN 전달 + Client ISN 확인
+  ACK     → Server ISN 확인 → 양방향 동기화 완료
+
+[SYN Flooding 공격 및 SYN Cookie 방어]
+공격: 수만 개 위조 SYN 전송 → 서버 SYN_RECEIVED 상태 누적 → 메모리 고갈
+방어: SYN Cookie: 서버가 상태 미저장, SYN+ACK의 ISN을 HMAC 기반 Cookie로 설정
+     → ACK 수신 시 Cookie 검증으로 정상 클라이언트 판별
 ```
 
-**4번 교환이 필요한 이유:**
-- 클라이언트 FIN: 클라이언트→서버 방향 종료
-- 서버 ACK: 클라이언트 FIN 확인
-- 서버 FIN: 서버→클라이언트 방향 종료 (별도 단계)
-- 클라이언트 ACK: 서버 FIN 확인
+2) 4-way Handshake (연결 종료) 및 TIME_WAIT
 
-**TIME_WAIT (2*MSL = 보통 2분):**
 ```
-마지막 ACK가 분실되었을 경우 서버가 FIN 재전송 → 클라이언트가 수신 가능
-이전 연결의 지연 패킷이 새 연결과 혼동되지 않도록 격리
+[4-way Handshake 시퀀스]
+
+Client                              Server
+ESTABLISHED                         ESTABLISHED
+  │── FIN (seq=u) ─────────────────▶│  "내 전송 완료"
+  │   [FIN_WAIT1]                   │  [CLOSE_WAIT]
+  │◀── ACK (ack=u+1) ───────────────│  "확인 (서버 데이터 전송 중...)"
+  │   [FIN_WAIT2]                   │  [CLOSE_WAIT]
+  │◀── FIN (seq=v) ─────────────────│  "내 전송도 완료"
+  │   [TIME_WAIT]                   │  [LAST_ACK]
+  │── ACK (ack=v+1) ───────────────▶│  "종료 확인"
+  │   [TIME_WAIT: 2×MSL 대기]       │  [CLOSED]
+  │   [CLOSED]
+
+4번 교환 필요 이유: TCP 전이중 → 각 방향을 독립적으로 종료
+TIME_WAIT (2×MSL ≈ 2분) 목적:
+  ① 마지막 ACK 손실 시 서버 FIN 재전송 수신 가능
+  ② 이전 연결 지연 패킷이 새 연결과 혼동되지 않도록 격리
 ```
 
-#### 다. TCP vs UDP 비교
+3) TCP vs UDP 비교
 
-| 비교 항목 | TCP | UDP |
-|---|---|---|
-| **연결 방식** | 연결 지향 (3-way HS) | 비연결 (Connectionless) |
-| **신뢰성** | 보장 (ACK, 재전송) | 미보장 |
-| **순서 보장** | 보장 | 미보장 |
-| **흐름 제어** | 있음 (슬라이딩 윈도우) | 없음 |
-| **혼잡 제어** | 있음 | 없음 |
-| **헤더 크기** | 20~60바이트 | 8바이트 |
-| **전이중** | 지원 | 지원 |
-| **브로드캐스트** | 미지원 | 지원 |
-| **속도** | 상대적으로 느림 | 빠름 |
-| **사용 예** | HTTP, FTP, 이메일, DB | DNS, VoIP, 게임, 스트리밍 |
+| 구분 | 항목 | TCP | UDP |
+|------|------|------|------|
+| 연결 | 방식 | 연결 지향 (3-way HS) | 비연결 (Connectionless) |
+| 신뢰성 | ACK/재전송 | 보장 | 미보장 |
+| 순서 | 시퀀스 번호 | 보장 | 미보장 |
+| 제어 | 흐름/혼잡 | 있음 (rwnd / cwnd) | 없음 |
+| 헤더 | 크기 | 20~60바이트 | 8바이트 |
+| 브로드캐스트 | 지원 | 미지원 | 지원 |
+| 속도 | 지연 | 상대적으로 느림 | 빠름 |
+| 적용 서비스 | 예시 | HTTP, FTP, SMTP, DB | DNS, VoIP(RTP), 게임, IPTV |
 
-### 3. 핵심 키워드 (Must-Have)
+- TCP는 신뢰성 보장을 위한 오버헤드를 감수하고, UDP는 애플리케이션이 직접 신뢰성을 처리하거나 손실을 허용하는 서비스에 적합하다.
 
-- **ISN (Initial Sequence Number):** 연결마다 랜덤 생성 (예측 공격 방지)
-- **SYN, ACK, FIN:** TCP 제어 플래그
-- **TIME_WAIT:** 종료 후 2*MSL 대기, 안정적 종료 보장
-- **Half-close:** FIN 전송 후에도 반대 방향 수신 가능
-- **SYN Cookie:** SYN Flooding 방어 기법
+### 3. TIME_WAIT 문제 및 현대 TCP 개선
 
-### 4. 맥락과 비교
+| 항목 | 문제 | 해결 방안 |
+|------|------|------|
+| TIME_WAIT 포트 고갈 | 단기 연결 대량 발생 시 포트 소진 | `tcp_tw_reuse`: 안전한 TIME_WAIT 재사용 |
+| SYN Flooding | Half-open 연결로 서버 메모리 고갈 | SYN Cookie, 방화벽 SYN Proxy |
+| 반복 Handshake 오버헤드 | 매 요청마다 3-way HS 지연 | HTTP Keep-Alive, HTTP/2 멀티플렉싱 |
+| Handshake RTT 지연 | 연결 설정에 1 RTT 소요 | TLS 1.3 (0-RTT), QUIC (0/1-RTT) |
 
-**TIME_WAIT 문제와 해결:**
-고성능 서버에서 대량의 단기 TCP 연결이 TIME_WAIT 상태로 쌓여 포트 고갈 문제가 발생합니다. 해결책:
-- `SO_REUSEADDR`: 같은 포트 재사용 허용
-- `tcp_tw_reuse`: 안전한 TIME_WAIT 소켓 재사용
-- Keep-Alive: 연결을 유지하여 반복 Handshake 방지 (HTTP/1.1)
+- QUIC(HTTP/3)은 UDP 기반으로 연결 설정과 TLS 협상을 0/1-RTT에 완료하여 TCP 3-way HS의 지연을 근본적으로 해소하며, Connection ID 기반으로 IP 변경 시에도 연결을 유지한다.  "끝"
 
-### 5. 실무 제언
+### 실무 제언
 
-웹 서버 성능 튜닝 시 `netstat -an | grep TIME_WAIT` 명령으로 TIME_WAIT 수를 모니터링합니다. 대량 발생 시 HTTP Keep-Alive 적용 또는 `tcp_tw_reuse` 설정으로 완화합니다. 기술사 답안에서 3-way/4-way HS를 시퀀스 다이어그램으로 명확히 표현하고, 각 단계의 목적과 상태 전이(SYN_SENT, ESTABLISHED, TIME_WAIT 등)를 함께 서술하면 높은 점수를 받을 수 있습니다.
+**TIME_WAIT 포트 고갈 대응**
+- **챌린지**: 초당 수천 건의 단기 HTTP 연결 처리 서버에서 `netstat -an | grep TIME_WAIT` 결과 수만 개 누적, 새 연결 불가 상태 발생
+- **제언**: `sysctl net.ipv4.tcp_tw_reuse=1` 설정으로 안전한 TIME_WAIT 재사용 활성화, 근본 해결을 위해 HTTP Keep-Alive 또는 HTTP/2 멀티플렉싱 적용으로 연결 재사용률 향상
+
+**SYN Flooding DDoS 방어 체계 구축**
+- **챌린지**: 외부에 노출된 API 서버 대상 SYN Flooding 공격 시 SYN_RECEIVED 상태 큐 포화 → 정상 사용자 연결 불가
+- **제언**: OS 레벨 `tcp_syncookies=1` 활성화 + L4 스위치/방화벽에서 SYN Rate Limiting(임계값 초과 시 자동 차단), WAF/DDoS 방어 장비와 연계하여 다층 방어
+
+**고성능 서버 Handshake 지연 최소화**
+- **챌린지**: 글로벌 서비스에서 해외 사용자 초기 연결 시 3-way HS + TLS 협상으로 2~3 RTT 소요, 체감 지연 증가
+- **제언**: TLS 1.3 적용으로 Handshake를 1 RTT로 단축, CDN 엣지 서버를 사용자 근거리에 배치하여 RTT 자체를 줄이는 물리적 최적화 병행
