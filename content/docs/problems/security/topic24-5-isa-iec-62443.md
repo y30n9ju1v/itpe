@@ -32,7 +32,7 @@ question_no: 1
 
 ### 1. ISA/IEC 62443 개요
 
-- **정의**: 산업자동화제어시스템(IACS, Industrial Automation and Control System)의 사이버 보안을 위한 국제 표준 시리즈 (ISA99 위원회 개발 → IEC 62443으로 표준화)
+정 의  • 산업자동화제어시스템(IACS, Industrial Automation and Control System)의 사이버 보안을 위한 국제 표준 시리즈 (ISA99 위원회 개발 → IEC 62443으로 표준화)
 - **대상**: SCADA, DCS, PLC 등 OT 시스템과 관련 네트워크·인원·프로세스
 
 ### 2. ISA/IEC 62443 표준 구성
@@ -82,6 +82,9 @@ question_no: 1
 | ③ **보안 레벨 결정** | 각 Zone별 목표 SL(Target SL) 설정 |
 | ④ **보안 대책 구현** | 방화벽, 단방향 게이트웨이, 패치 관리, 계정 관리 |
 | ⑤ **운영 및 유지보수** | 취약점 모니터링, 정기 위험 재평가 |
+
+
+- 최근 ISA/IEC 62443 관련 보안 위협 증가에 대응하여, 서비스 안전성 확보를 위한 체계적인 통제 및 기술 적용이 증대되는 추세임.  "끝"
 
 ### 실무 제언
 

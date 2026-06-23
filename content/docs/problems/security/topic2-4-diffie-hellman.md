@@ -70,7 +70,7 @@ Bob:   K = A^b mod p = g^(ab) mod p
 | ECDH(Elliptic Curve DH) | 타원곡선 기반 DH | 더 짧은 키로 동등한 보안 강도 |
 | ECDHE | 타원곡선 + 임시 키 | TLS 1.3 기본 키 교환 방식 |
 
-- **TLS 1.3**: RSA 키 교환 제거, ECDHE만 허용 → PFS 필수화
+- **TLS 1.3**: RSA 키 교환 제거, ECDHE만 허용 → PFS 필수화.  "끝"
 
 ### 실무 제언
 

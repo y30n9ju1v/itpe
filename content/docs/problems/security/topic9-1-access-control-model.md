@@ -82,7 +82,7 @@ question_no: 4
 #### 마. RBAC (NIST RBAC)
 
 - **구성**: 사용자 → 역할 → 권한(Permission) 계층적 구조
-- **특징**: 역할 계층(Role Hierarchy), 역할 제약(Separation of Duty) 지원
+- **특징**: 역할 계층(Role Hierarchy), 역할 제약(Separation of Duty) 지원.  "끝"
 
 ### 실무 제언
 

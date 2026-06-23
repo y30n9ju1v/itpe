@@ -80,6 +80,9 @@ DRDoS 동작:
 | IoT 기기 대응 | CoAP TLS(DTLS) 적용, MQTT 인증 의무화 |
 | 피해자 대응 | Anti-DDoS 장비, 클라우드 스크러빙 센터 활용 |
 
+
+- 최근 DRDoS(Distributed Reflect Denial of Service) 관련 보안 위협 증가에 대응하여, 서비스 안전성 확보를 위한 체계적인 통제 및 기술 적용이 증대되는 추세임.  "끝"
+
 ### 실무 제언
 
 **스마트 공장 IoT 네트워크 격리**

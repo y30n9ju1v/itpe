@@ -80,6 +80,9 @@ Alice                    양자 채널(광섬유)          Bob
 | 해외 | 중국 위성 QKD(묵자호, 2017), EU OpenQKD 프로젝트 |
 | 표준 | ITU-T SG17, ETSI QKD 표준 그룹, IETF |
 
+
+- 최근 양자키분배(Quantum Key Distribution) 기술 관련 보안 위협 증가에 대응하여, 서비스 안전성 확보를 위한 체계적인 통제 및 기술 적용이 증대되는 추세임.  "끝"
+
 ### 실무 제언
 
 **하이브리드 QKD+PQC 전략**

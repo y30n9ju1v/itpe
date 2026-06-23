@@ -72,7 +72,7 @@ SPN 1라운드:
 ```
 
 - **AES(Advanced Encryption Standard)**: SPN 구조 기반, 128bit 블록, 키 길이 128/192/256bit, NIST 표준
-- **DES**: Feistel 구조 기반, 64bit 블록, 56bit 키(현재 브루트포스에 취약, 폐기)
+- **DES**: Feistel 구조 기반, 64bit 블록, 56bit 키(현재 브루트포스에 취약, 폐기).  "끝"
 
 ### 실무 제언
 

@@ -33,7 +33,7 @@ IPSec은 IP 계층에서 보안을 제공하는 표준 프로토콜 집합으로
 
 ### 1. IPSec 개요
 
-- **정의**: IP 계층(L3)에서 인증·기밀성·무결성을 제공하는 IETF 표준 보안 프로토콜 집합(RFC 4301)
+정 의  • IP 계층(L3)에서 인증·기밀성·무결성을 제공하는 IETF 표준 보안 프로토콜 집합(RFC 4301)
 - **구성**: IKE(키 교환) + AH(인증) + ESP(암호화·인증)
 - **SA(Security Association)**: 보안 통신을 위한 단방향 논리적 연결(SPI, 목적지 IP, 보안 프로토콜로 식별)
 
@@ -88,6 +88,9 @@ IPSec은 IP 계층에서 보안을 제공하는 표준 프로토콜 집합으로
 | IKE_SA_INIT | Diffie-Hellman 키 교환, IKE SA 수립 |
 | IKE_AUTH | 신원 인증(인증서/PSK), Child SA(IPSec SA) 수립 |
 | CREATE_CHILD_SA | 추가 Child SA 생성 또는 재키잉 |
+
+
+- 최근 IPSec 관련 보안 위협 증가에 대응하여, 서비스 안전성 확보를 위한 체계적인 통제 및 기술 적용이 증대되는 추세임.  "끝"
 
 ### 실무 제언
 
