@@ -59,13 +59,13 @@ DRDoS 동작:
 
 ### 3. IoT 환경 DRDoS 공격 유형
 
-#### 가. CoAP(Constrained Application Protocol) 반사 공격
+1) CoAP(Constrained Application Protocol) 반사 공격
 
 - **원리**: IoT 기기에서 사용하는 경량 UDP 기반 프로토콜(CoAP)을 반사 서버로 악용
 - **동작**: 공격자가 피해자 IP로 스푸핑하여 대량 CoAP 멀티캐스트 요청 전송 → IoT 기기들이 피해자에게 응답 → 증폭 공격
 - **증폭**: 최대 34배 증폭 가능
 
-#### 나. MQTT(Message Queuing Telemetry Transport) 기반 증폭 공격
+2) MQTT(Message Queuing Telemetry Transport) 기반 증폭 공격
 
 - **원리**: IoT 기기 관리 프로토콜 MQTT 브로커를 반사 서버로 악용
 - **동작**: 인증 없는 MQTT 브로커에 다수의 토픽 구독(Subscribe) 요청 → 메시지 발행 시 피해자에게 대량 메시지 전달

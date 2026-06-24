@@ -68,7 +68,7 @@ question_no: 4
 정 의  • 정보보호 제품의 보안 기능과 보증 수준을 국제 기준으로 평가하는 제도(ISO/IEC 15408)
 - **국내**: 국가정보원이 지정한 평가기관(ITSC 등)에서 평가, 국정원이 인증서 발급
 
-#### CC 인증 구성요소
+1) CC 인증 구성요소
 
 | 구성요소 | 설명 |
 |----------|------|
@@ -76,7 +76,7 @@ question_no: 4
 | **ST(Security Target)** | 특정 제품의 보안 기능·요구사항 명세 |
 | **TOE(Target of Evaluation)** | 평가 대상 제품 |
 
-#### EAL(Evaluation Assurance Level) 등급
+2) EAL(Evaluation Assurance Level) 등급
 
 | 등급 | 수준 | 특징 |
 |------|------|------|

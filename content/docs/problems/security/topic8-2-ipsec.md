@@ -61,7 +61,7 @@ IPSec은 IP 계층에서 보안을 제공하는 표준 프로토콜 집합으로
 
 ### 4. IPSec 패킷 처리 절차
 
-#### 송신(Outbound) 절차:
+1) 송신(Outbound) 절차
 ```
 ① 패킷 생성
 ② SPD(Security Policy Database) 조회 → 보안 정책 확인
@@ -71,7 +71,7 @@ IPSec은 IP 계층에서 보안을 제공하는 표준 프로토콜 집합으로
 ⑥ 패킷 전송
 ```
 
-#### 수신(Inbound) 절차:
+2) 수신(Inbound) 절차
 ```
 ① 패킷 수신
 ② SPI로 SAD 조회 → 해당 SA 확인

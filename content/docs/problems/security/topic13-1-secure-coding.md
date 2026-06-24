@@ -35,7 +35,7 @@ question_no: 2
 
 ### 1. SW개발 보안 방법론
 
-#### 가. MS SDL(Security Development Lifecycle)
+1) MS SDL(Security Development Lifecycle)
 
 | 단계 | 보안 활동 |
 |------|-----------|
@@ -47,18 +47,18 @@ question_no: 2
 | 출시 | 사고 대응 계획, 최종 보안 검토(FSR) |
 | 대응 | 취약점 신고 처리, 패치 릴리즈 |
 
-#### 나. OWASP SAMM(Software Assurance Maturity Model)
+2) OWASP SAMM(Software Assurance Maturity Model)
 
 - 거버넌스, 설계, 구현, 검증, 운영 5개 영역 × 3단계 성숙도
 - 조직의 소프트웨어 보안 역량 평가 및 개선 로드맵
 
-#### 다. 행안부 소프트웨어 개발 보안 가이드
+3) 행안부 소프트웨어 개발 보안 가이드
 
 - 입력 데이터 검증·표현, API 오용, 보안 기능, 시간 및 상태, 에러 처리, 코드 품질, 캡슐화, 환경 7개 분류
 
 ### 2. 구현 단계의 시큐어 코딩
 
-#### OWASP Top 10(2021) 기반 주요 취약점 및 방어
+1) OWASP Top 10(2021) 기반 주요 취약점 및 방어
 
 | 취약점 | 설명 | 방어 코딩 |
 |--------|------|-----------|
@@ -69,7 +69,7 @@ question_no: 2
 | **A07 인증 실패** | 취약한 세션 관리·패스워드 | MFA, 강력한 패스워드 정책 |
 | **A09 보안 로깅·모니터링 실패** | 공격 탐지 불가 | 보안 이벤트 로깅, SIEM 연동 |
 
-#### 행안부 시큐어 코딩 규칙 주요 항목
+2) 행안부 시큐어 코딩 규칙 주요 항목
 
 ```java
 // 나쁜 예: SQL Injection 취약

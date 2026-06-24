@@ -39,7 +39,7 @@ MLS(Multi-Level Security)는 서로 다른 보안 등급의 데이터를 단일 
 
 ### 2. MLS 보안 등급 체계
 
-#### 가. 미국 정부 기준 (US Government Classification)
+1) 미국 정부 기준 (US Government Classification)
 
 | 등급 | 수준 | 접근 권한 |
 |------|------|-----------|
@@ -48,7 +48,7 @@ MLS(Multi-Level Security)는 서로 다른 보안 등급의 데이터를 단일 
 | Confidential(C) | 대외비 | C 이상 인가자 |
 | Unclassified(U) | 비분류 | 누구나 |
 
-#### 나. 국내 기준 (국가보안기본법)
+2) 국내 기준 (국가보안기본법)
 
 | 등급 | 내용 |
 |------|------|
