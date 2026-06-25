@@ -108,7 +108,7 @@ question_no: 3
 | Index Fast Full Scan | 인덱스 블록만 멀티블록 I/O 스캔 (테이블 미접근) | COUNT, 집계 쿼리 고속 처리 |
 | Covering Index | SELECT 컬럼을 인덱스에 모두 포함하여 테이블 접근 제거 | 읽기 집중 OLTP 최고 효율 |
 
-클라우드 DBMS(Aurora, AlloyDB 등)에서는 LSM-Tree(Log-Structured Merge-Tree) 기반 인덱스가 쓰기 집중 워크로드에서 B-Tree 대비 높은 처리량을 제공하며, 벡터 인덱스(HNSW, IVF)는 AI 임베딩 유사도 검색을 위한 신규 인덱스 유형으로 급속히 확산되고 있다.  "끝"
+클라우드 DBMS의 인덱스 동향을 구분하면: **Aurora(MySQL/PostgreSQL 호환)**와 **AlloyDB**는 InnoDB B-Tree 및 PostgreSQL B-Tree 기반 인덱스를 사용하며, LSM-Tree 기반 인덱스는 RocksDB 계열(TiKV, MyRocks, CockroachDB)이 쓰기 집중 워크로드에서 B-Tree 대비 높은 쓰기 처리량을 제공하는 방식이다. 별도로, **벡터 인덱스(HNSW, IVF)**는 AI 임베딩 유사도 검색을 위한 신규 인덱스 유형으로 pgvector(PostgreSQL), Aurora, AlloyDB 등에서 급속히 지원이 확산되고 있다.  "끝"
 
 ### 실무 제언
 

@@ -119,7 +119,7 @@ question_no: 4
 | 나쁜 조인 순서 | 선행 테이블 잘못 선택 | LEADING 힌트 |
 | Hash Join 대신 NL Join 선택 | 대용량 집합 조인 | USE_HASH 힌트 |
 
-머신러닝 기반 학습형 옵티마이저(Oracle Adaptive Query Optimization, PostgreSQL AI Planner 연구 등)가 등장하여 카디널리티 추정 정확도를 극적으로 향상시키는 방향으로 발전 중이다. 힌트는 통계 갱신, 인덱스 재설계가 불가능한 긴급 상황에서의 최후 수단으로 사용하고, SQL Plan Management(SPM)나 Query Store로 실행 계획을 안정화하는 것이 바람직하다.  "끝"
+머신러닝 기반 학습형 옵티마이저가 등장하여 카디널리티 추정 정확도를 향상시키는 방향으로 발전 중이다. Oracle은 Adaptive Query Optimization으로 런타임 통계를 피드백하고, 연구 영역에서는 **Bao(Bandit-based Query Optimizer, 2021)** 등 학습형 카디널리티 추정 모델이 PostgreSQL 대상으로 연구되고 있으나 아직 공식 배포판에는 미포함이다. 힌트는 통계 갱신, 인덱스 재설계가 불가능한 긴급 상황에서의 최후 수단으로 사용하고, SQL Plan Management(SPM)나 Query Store로 실행 계획을 안정화하는 것이 바람직하다.  "끝"
 
 ### 실무 제언
 

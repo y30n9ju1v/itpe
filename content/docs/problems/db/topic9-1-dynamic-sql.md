@@ -100,7 +100,7 @@ question_no: 2
 | **보안 위험도** | 안전 (구문 구조 불변) | 취약 가능 (문자열 직접 결합 시) |
 | **현대 구현 기술** | JDBC PreparedStatement (고정 쿼리) | MyBatis `<if>`, JPA Criteria, **Querydsl** |
 
-- 현대 엔터프라이즈 환경에서는 Querydsl로 컴파일 타임 타입 체킹을 확보하면서 동적 쿼리 유연성을 동시에 달성하는 것이 표준 접근법이다.  "끝"
+- 현대 엔터프라이즈 환경에서는 타입 안전 쿼리 빌더(Querydsl, JOOQ, Spring Data JPA Specifications 등)로 컴파일 타임 타입 체킹을 확보하면서 동적 쿼리 유연성을 달성하는 것이 권장된다. 단, Querydsl은 2024년 기준 메인테이너 활동이 저조하여 일부 프로젝트에서 JOOQ로의 전환이 진행 중임을 실무 선택 시 고려해야 한다.  "끝"
 
 ### 실무 제언
 

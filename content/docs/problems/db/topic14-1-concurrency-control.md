@@ -112,7 +112,20 @@ question_no: 1
 | 적합 환경 | OLTP 일반 | 충돌 잦은 환경 | 충돌 드문 환경 | 읽기 많은 OLTP |
 | 주요 DBMS | MySQL, Oracle | 일부 분산 DB | 일부 NoSQL | PostgreSQL, InnoDB |
 
-현대 NewSQL(CockroachDB, TiDB 등)과 분산 DB는 MVCC를 기본 채택하며, 분산 트랜잭션에서는 Percolator 프로토콜 등 MVCC 기반 2PC 변형이 표준화되고 있다.  "끝"
+현대 NewSQL(CockroachDB, TiDB 등)과 분산 DB는 MVCC를 기본 채택하며, 분산 트랜잭션에서는 Percolator 프로토콜 등 MVCC 기반 2PC 변형이 표준화되고 있다.
+
+**SSI(Serializable Snapshot Isolation) — MVCC의 직렬화 확장**
+
+MVCC는 Snapshot Isolation(SI) 수준에서 **Write Skew** 이상 현상을 막지 못한다. PostgreSQL 9.1부터 도입된 **SSI(Serializable Snapshot Isolation)**는 MVCC 위에서 읽기-쓰기 의존성을 추적하여 직렬 가능성을 완전 보장하면서도 락 없는 읽기 성능을 유지한다.
+
+| 구분 | Snapshot Isolation(SI) | SSI |
+|------|----------------------|-----|
+| Write Skew | 방지 불가 | 방지 가능 |
+| 구현 방식 | MVCC 스냅샷만 | MVCC + 의존성 그래프 추적 |
+| 성능 | 높음 | SI 대비 약간의 오버헤드 |
+| 대표 DBMS | MySQL InnoDB | PostgreSQL 9.1+ |
+
+- Write Skew 예: 두 의사가 동시에 "당직 중인 의사가 1명 이상"임을 확인하고 각자 당직 취소 → 결과적으로 당직 의사 0명. SSI는 이 충돌을 탐지하여 한 트랜잭션을 롤백한다.  "끝"
 
 ### 실무 제언
 

@@ -137,6 +137,16 @@ A의 외부(E)  E(A)∩I(B)  E(A)∩B(B)  E(A)∩E(B)
 | 대표 제품 | PostGIS, Oracle Spatial | InfluxDB, TimescaleDB | MySQL, PostgreSQL |
 | 활용 분야 | GIS, 자율주행, LBS | IoT, 금융 시계열 | ERP, CRM |
 
+**3D 공간 및 시공간(Spatio-Temporal) 데이터 트렌드**
+
+스마트시티·자율주행의 확산으로 2D 공간 데이터를 넘어 3D 및 시공간 데이터 처리 수요가 급증하고 있다.
+
+| 유형 | 설명 | 도구 |
+|------|------|------|
+| **LiDAR 포인트클라우드** | 자율주행 센서가 생성하는 3D 점군 데이터. 수억 개 포인트의 공간 인덱싱 필요 | PostGIS 3D, pgPointCloud |
+| **CityGML / 3D Tiles** | 건물·지형·인프라의 3D 지오메트리 표준 (디지털트윈 핵심 포맷) | CesiumJS, 3DCityDB |
+| **시공간 인덱스** | 위치(x,y)와 시간(t)을 결합한 4D 인덱싱 — 이동 객체(Moving Object) 궤적 추적 | MobilityDB, PostGIS + TimescaleDB |
+
 - 스마트시티·자율주행·디지털트윈의 확산으로 공간 DB와 시계열 DB의 융합(Geo-Temporal DB) 수요가 급증 중.  "끝"
 
 ### 실무 제언
