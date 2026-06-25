@@ -52,8 +52,8 @@ exam_pecs: ["137회"]
 
 ## 연관 개념
 
-- [교착상태(Deadlock)]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/deadlock" >}}) — Coffman 조건 및 은행가 알고리즘
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 교착상태 회피
+- [교착상태(Deadlock)]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock" >}}) — Coffman 조건 및 은행가 알고리즘
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 교착상태 회피
 - 우선순위 역전 — 실시간 시스템에서 발생하는 관련 현상
 
 ## 참고 기출

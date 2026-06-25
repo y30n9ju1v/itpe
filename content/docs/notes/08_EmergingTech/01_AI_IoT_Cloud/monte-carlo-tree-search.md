@@ -65,7 +65,7 @@ C 값을 크게 → 탐색 우선 / 작게 → 활용 우선
 ## 연관 개념
 
 - [GNN]({{< relref "/docs/notes/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network" >}}) — 그래프 구조 학습과 탐색 알고리즘 연계
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 트리 기반 탐색 알고리즘 비교
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 트리 기반 탐색 알고리즘 비교
 - 강화학습(RL) — MCTS는 모델 기반 RL의 핵심 탐색 기법
 
 ## 참고 기출

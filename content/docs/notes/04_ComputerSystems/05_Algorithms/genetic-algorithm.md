@@ -79,7 +79,7 @@ exam_peim: ["137회"]
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 최적화 알고리즘의 다른 유형
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 최적화 알고리즘의 다른 유형
 - 데이터마이닝 — 유전 알고리즘 기반 특징 선택
 - [GNN]({{< relref "/docs/notes/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network" >}}) — NAS에서 유전 알고리즘 활용
 

@@ -78,7 +78,7 @@ delete(node):
 ## 연관 개념
 
 - [이진 탐색 트리]({{< relref "/docs/notes/03_DataProcessing/01_DataStructures/binary-search-tree" >}}) — 포인터 기반 트리 구조
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 연결 리스트로 자원 관리
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 연결 리스트로 자원 관리
 - 해시 테이블 — Chaining 방식에서 연결 리스트 활용
 
 ## 참고 기출

@@ -72,7 +72,7 @@ A < B → N ≠ V  → BLT 분기
 ## 연관 개념
 
 - [CPU 내부 레지스터]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers" >}}) — 레지스터 전체 종류
-- [데드락]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/deadlock" >}}) — OS 자원 관리 (CPU 사용 연계)
+- [데드락]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock" >}}) — OS 자원 관리 (CPU 사용 연계)
 
 ## 참고 기출
 

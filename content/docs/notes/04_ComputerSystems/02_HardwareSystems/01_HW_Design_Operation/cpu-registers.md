@@ -89,7 +89,7 @@ Write-back: 결과를 레지스터 또는 메모리에 저장
 
 - [시스템 콜]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call" >}}) — 커널 모드 전환 시 레지스터 컨텍스트 저장
 - [CPU 상태 레지스터 플래그]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags" >}}) — 조건 플래그 상세
-- [메모리 영역]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — 스택 메모리와 SP 연계
+- [메모리 영역]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas" >}}) — 스택 메모리와 SP 연계
 
 ## 참고 기출
 

@@ -62,7 +62,7 @@ SDN 컨트롤러 (Controller Layer)
 ## 연관 개념
 
 - [네트워크 설계]({{< relref "/docs/notes/05_Networks/02_NetworkDesign/igp-egp-routing" >}}) — 라우팅 정책과 연계
-- [멀티클라우드]({{< relref "/docs/notes/04_ComputerSystems/04_OS_Virtualization/multi-cloud" >}}) — 클라우드 환경 네트워크 자동화
+- [멀티클라우드]({{< relref "/docs/notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud" >}}) — 클라우드 환경 네트워크 자동화
 
 ## 참고 기출
 

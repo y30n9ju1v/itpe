@@ -45,8 +45,8 @@ exam_peim: ["136회"]
 
 ## 연관 개념
 
-- [동적 메모리 할당과 메모리 누수]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation" >}}) — 힙 메모리 관련 오류
-- [메모리 구조]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — 스택·힙·코드 영역 상세
+- [동적 메모리 할당과 메모리 누수]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation" >}}) — 힙 메모리 관련 오류
+- [메모리 구조]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas" >}}) — 스택·힙·코드 영역 상세
 
 ## 참고 기출
 

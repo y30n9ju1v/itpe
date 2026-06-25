@@ -82,7 +82,7 @@ Long-form: 1F 82 00
 
 ## 연관 개념
 
-- [보안 인증 체계]({{< relref "/docs/notes/06_InfoSecurity/08_SecurityCertification" >}}) — X.509 PKI 인프라
+- [보안 인증 체계]({{< relref "/docs/notes/06_InfoSecurity/07_SecurityCertification" >}}) — X.509 PKI 인프라
 - [해시 함수/암호화]({{< relref "/docs/notes/06_InfoSecurity/01_SecurityTech/hash-function-rainbow-table" >}}) — 디지털 서명 기반
 
 ## 참고 기출

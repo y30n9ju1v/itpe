@@ -64,7 +64,7 @@ PIP 적용:
 ## 연관 개념
 
 - [기아현상과 교착상태]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock" >}}) — 스케줄링 관련 문제 비교
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 교착상태 회피
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 교착상태 회피
 - 임베디드 실시간 OS (RTOS) — 우선순위 역전의 주요 발생 환경
 
 ## 참고 기출

@@ -74,7 +74,7 @@ CPU: 사용자 모드 → 커널 모드 전환
 
 - [IPC (프로세스 간 통신)]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication" >}}) — 시스템 콜로 구현
 - [OS 동기화]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization" >}}) — 뮤텍스/세마포어도 시스템 콜 기반
-- [데드락]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/deadlock" >}}) — OS 자원 관리 연계
+- [데드락]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock" >}}) — OS 자원 관리 연계
 
 ## 참고 기출
 

@@ -66,7 +66,7 @@ exam_pecs: ["134회", "138회"]
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 데드락 회피 알고리즘 상세
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 데드락 회피 알고리즘 상세
 - [OS 동기화]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization" >}}) — 데드락 발생 기반 (뮤텍스/세마포어)
 - IPC — 프로세스 간 자원 공유 (미작성)
 

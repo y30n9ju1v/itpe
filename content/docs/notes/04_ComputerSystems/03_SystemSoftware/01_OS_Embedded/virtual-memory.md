@@ -72,9 +72,9 @@ exam_pecs: ["138회"]
 
 ## 연관 개념
 
-- [데드락]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/deadlock" >}}) — OS 자원 관리 연계
-- [동적 메모리 할당]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation" >}}) — 힙 메모리와 가상 메모리
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 자원 관리 알고리즘
+- [데드락]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock" >}}) — OS 자원 관리 연계
+- [동적 메모리 할당]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation" >}}) — 힙 메모리와 가상 메모리
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 자원 관리 알고리즘
 
 ## 참고 기출
 

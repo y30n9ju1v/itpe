@@ -67,7 +67,7 @@ exam_peim: ["137회"]
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 알고리즘의 다른 응용
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 알고리즘의 다른 응용
 - [연관 규칙 분석]({{< relref "/docs/notes/03_DataProcessing/04_DataMining/association-rule-analysis" >}}) — 데이터마이닝 탐색 구조 연계
 - DB 인덱스 — B-트리 기반 인덱스 구조
 

@@ -68,8 +68,8 @@ IF → ID → EX → MEM → WB
 
 ## 연관 개념
 
-- [MMU]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit" >}}) — 메모리 접근 단계의 해저드
-- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/cache-memory" >}}) — I-Cache/D-Cache 분리로 구조적 해저드 해결
+- [MMU]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit" >}}) — 메모리 접근 단계의 해저드
+- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory" >}}) — I-Cache/D-Cache 분리로 구조적 해저드 해결
 - [알고리즘 복잡도]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/big-o-notation" >}}) — 파이프라인 성능 분석
 
 ## 참고 기출

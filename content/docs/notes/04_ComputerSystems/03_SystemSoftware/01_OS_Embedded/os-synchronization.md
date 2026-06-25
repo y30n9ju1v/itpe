@@ -91,7 +91,7 @@ Thread 2: mutex_B.lock() → mutex_A.lock()
 
 ## 연관 개념
 
-- [데드락]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/deadlock" >}}) — 잘못된 동기화로 발생
+- [데드락]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock" >}}) — 잘못된 동기화로 발생
 - [IPC]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication" >}}) — 프로세스 간 통신과 동기화
 - [시스템 콜]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call" >}}) — 뮤텍스/세마포어는 시스템 콜로 구현
 

@@ -74,9 +74,9 @@ exam_pecs: ["135회", "138회"]
 
 ## 연관 개념
 
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 자원 스케줄링의 교착상태 회피
-- [메모리 영역]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — OS 자원 관리 전반
-- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/cache-memory" >}}) — 메모리 계층 구조
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 자원 스케줄링의 교착상태 회피
+- [메모리 영역]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas" >}}) — OS 자원 관리 전반
+- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory" >}}) — 메모리 계층 구조
 
 ## 참고 기출
 

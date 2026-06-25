@@ -59,9 +59,9 @@ IOMMU는 PCIe 장치가 허가되지 않은 메모리 영역에 DMA 접근하는
 
 ## 연관 개념
 
-- [가상 메모리]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/virtual-memory" >}}) — MMU 기반 가상 메모리 구현
+- [가상 메모리]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory" >}}) — MMU 기반 가상 메모리 구현
 - [DMA]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access" >}}) — IOMMU로 제어되는 DMA
-- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/cache-memory" >}}) — TLB는 주소 변환 전용 캐시
+- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory" >}}) — TLB는 주소 변환 전용 캐시
 
 ## 참고 기출
 

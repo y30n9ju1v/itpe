@@ -53,8 +53,8 @@ exam_peim: ["136회"]
 
 ## 연관 개념
 
-- [세그멘테이션 오류]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/segmentation-fault" >}}) — 잘못된 메모리 접근의 또 다른 유형
-- [메모리 구조]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — 힙·스택·코드 영역 상세
+- [세그멘테이션 오류]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/segmentation-fault" >}}) — 잘못된 메모리 접근의 또 다른 유형
+- [메모리 구조]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas" >}}) — 힙·스택·코드 영역 상세
 
 ## 참고 기출
 

@@ -58,7 +58,7 @@ exam_peim: ["138회"]
 ## 연관 개념
 
 - 운영체제 메모리 관리 — 자원 할당과 교착상태
-- [메모리 영역(Code/Data/Heap/Stack)]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/memory-areas" >}}) — OS 메모리 구조
+- [메모리 영역(Code/Data/Heap/Stack)]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas" >}}) — OS 메모리 구조
 - 프로젝트 위험관리 — 자원 위험 회피 전략과 유사 개념
 
 ## 참고 기출

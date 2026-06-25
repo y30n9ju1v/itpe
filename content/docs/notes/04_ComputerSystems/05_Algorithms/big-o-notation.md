@@ -71,7 +71,7 @@ exam_peim: ["134회"]
 ## 연관 개념
 
 - [이진 탐색 트리]({{< relref "/docs/notes/03_DataProcessing/01_DataStructures/binary-search-tree" >}}) — O(log n) 탐색의 대표
-- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/banker-algorithm" >}}) — 복잡도를 고려한 OS 알고리즘
+- [은행가 알고리즘]({{< relref "/docs/notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm" >}}) — 복잡도를 고려한 OS 알고리즘
 - [다차원 색인구조]({{< relref "/docs/notes/03_DataProcessing/01_DataStructures/multidimensional-index" >}}) — 공간 색인의 복잡도
 
 ## 참고 기출

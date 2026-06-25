@@ -69,7 +69,7 @@ SSD(Solid State Drive)는 NAND 플래시 메모리를 기반으로 한 저장장
 
 - [FRAM]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/fram-ferroelectric-ram" >}}) — 비휘발성 메모리 비교 (쓰기 내구성 대조)
 - [ROM 종류]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/rom-types" >}}) — Flash 기반 ROM과 연계
-- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/05_Algorithms/cache-memory" >}}) — 저장 계층 구조
+- [캐시 메모리]({{< relref "/docs/notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory" >}}) — 저장 계층 구조
 
 ## 참고 기출
 
