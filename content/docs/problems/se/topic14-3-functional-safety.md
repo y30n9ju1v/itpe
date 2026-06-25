@@ -122,7 +122,7 @@ SIL별 위험 감소량:
 | 위험 등급 | SIL 1~4 | ASIL A~D + QM | 클래스 A/B/C | DAL A~E |
 | 최고 등급 | SIL 4 | ASIL D | 클래스 C | DAL A |
 | 제정 기관 | IEC | ISO | IEC | RTCA/EUROCAE |
-| 특화 내용 | 범용 기준 | ASIL 분해·SEooC·V-모델 | 유지보수 이력 관리 | 구조적 커버리지 DO-330 |
+| 특화 내용 | 범용 기준 | ASIL 분해·SEooC·V-모델 | 유지보수 이력 관리 | 구조적 커버리지(MC/DC 등), 도구 인증 DO-330 |
 
 2) SIL과 도메인별 위험 등급 매핑
 

@@ -126,7 +126,7 @@ question_no: 1
 | 구분 | 항목 | 설명 |
 |------|------|------|
 | 방향 | 편차(Deviation) 중심 | 설계 의도 이탈을 가이드워드로 탐색 |
-| 핵심 도구 | 9개 가이드워드 | NO·MORE·LESS·AS WELL AS·PART OF·REVERSE·OTHER THAN·EARLY/LATE·BEFORE/AFTER |
+| 핵심 도구 | 7개 가이드워드 (IEC 61882 표준) | NO·MORE·LESS·AS WELL AS·PART OF·REVERSE·OTHER THAN (EARLY/LATE·BEFORE/AFTER는 시간적 HAZOP 비표준 확장) |
 | 출발점 | 화학 공정 ICI → SW 확장 | 데이터 흐름·API·상태 전이에 적용 |
 | 강점 | 놓치기 쉬운 편차 체계적 발견 | 운용성 문제 사전 예방 |
 | 표준 | IEC 61882 | - |
@@ -157,7 +157,7 @@ BEFORE/AFTER| 인증 전에 데이터가 반환된다면?
 |------|-----|------|-------|
 | 분석 방향 | 하향식·연역 | 상향식·귀납 | 편차 중심·탐색 |
 | 시작점 | 사고 사건(Top Event) | 컴포넌트 고장 모드 | 설계 의도 |
-| 분석 도구 | AND/OR 논리 게이트 | RPN(S×O×D) | 9개 가이드워드 |
+| 분석 도구 | AND/OR 논리 게이트 | RPN(S×O×D) | 7개 가이드워드 (IEC 61882) |
 | 결과물 | 결함 트리, MCS | FMEA 워크시트 | HAZOP 레코드 |
 | 정량 분석 | 가능 | 가능(RPN) | 일반적 불가 |
 | 최적 적용 | 설계 검증·사고 조사 | 상세 설계 단계 | 상세 설계 검토 |
