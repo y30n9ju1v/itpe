@@ -75,7 +75,7 @@ question_no: 1
 ```
 
 
-- 최근 API 보안 위협 및 대응 방안 (OWASP API Security Top 10) 관련 보안 위협 증가에 대응하여, 서비스 안전성 확보를 위한 체계적인 통제 및 기술 적용이 증대되는 추세임.  "끝"
+- OWASP API Security Top 10은 인증 취약·객체 수준 권한·과도한 데이터 노출 등 API 특화 위협을 체계화하며, API 게이트웨이·OAuth2·Rate Limiting·입력 검증을 계층적으로 적용하고 API 인벤토리 관리로 섀도 API를 차단하는 것이 현대 MSA·클라우드 환경 보안의 핵심임.  "끝"
 
 ### 실무 제언
 
