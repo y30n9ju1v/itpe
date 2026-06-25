@@ -100,7 +100,7 @@ question_no: 4
 │   IntServ    │    DiffServ      │      RSVP         │
 │  (개별 흐름) │ (트래픽 분류)    │  (경로 자원 예약) │
 │  per-flow    │ DSCP EF 마킹     │  Path/Resv 메시지 │
-│  RFC 2210   │ RFC 2474         │  RFC 2205         │
+│  RFC 1633   │ RFC 2474         │  RFC 2205         │
 └──────────────┴──────────────────┴───────────────────┘
 ```
 

@@ -104,7 +104,7 @@ ESTABLISHED                         ESTABLISHED
   │   [CLOSED]
 
 4번 교환 필요 이유: TCP 전이중 → 각 방향을 독립적으로 종료
-TIME_WAIT (2×MSL ≈ 2분) 목적:
+TIME_WAIT (RFC 793 기준 2×MSL = 4분, Linux 커널 기본값 60초) 목적:
   ① 마지막 ACK 손실 시 서버 FIN 재전송 수신 가능
   ② 이전 연결 지연 패킷이 새 연결과 혼동되지 않도록 격리
 ```

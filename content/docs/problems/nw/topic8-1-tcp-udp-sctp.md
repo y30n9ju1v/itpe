@@ -101,7 +101,7 @@ Host A (IP1:주, IP2:보조) ──IP1──▶ Host B (IP3:주, IP4:보조)
 | SYN Flooding | 반연결(Half-open) 메모리 고갈 | 4-way HS + Stateless Cookie |
 | 메시지 경계 | 바이트 스트림 (경계 없음) | 청크 단위 전송 (경계 보존) |
 
-- SCTP는 RFC 4960 기반으로 5G 코어(N2/N4 인터페이스)에서 AMF-RAN, SMF-UPF 간 필수 전송 프로토콜로 채택되었다.
+- SCTP는 RFC 4960 기반으로 5G 코어 **N2 인터페이스(AMF-gNB 간 NGAP 전송)**의 하위 전송 프로토콜로 채택되었다. 단, N4 인터페이스(SMF-UPF 간)는 SCTP가 아닌 **PFCP(Packet Forwarding Control Protocol) over UDP**를 사용한다.
 
 ### 3. 프로토콜 진화 동향 및 QUIC 비교
 

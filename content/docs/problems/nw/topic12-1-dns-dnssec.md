@@ -41,7 +41,7 @@ DNSSEC는 DNS 응답의 무결성과 출처 인증을 공개키 기반 서명으
        - UDP/TCP 포트 53 사용, RFC 1034/1035 표준
 
 ```
-루트(.) DNS (13개 클러스터: a.root-servers.net 등)
+루트(.) DNS (13개 루트 네임서버 주소: a.root-servers.net ~ m.root-servers.net, 각각 Anycast로 수백 개 물리 서버 운영)
     |
     +-- .com TLD 서버 (VeriSign)
     |       +-- google.com 권한 서버
