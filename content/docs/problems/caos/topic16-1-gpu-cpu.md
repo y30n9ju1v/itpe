@@ -106,6 +106,7 @@ CPU (직렬·저지연 최적화)          GPU (병렬·고처리량 최적화)
 
 | 가속기 | 설계 방향 | 특징 |
 |--------|-----------|------|
+| NVIDIA B200/GB200 (Blackwell, 2025) | 5세대 NVLink, FP4/FP8 Tensor Core | H100 대비 학습 5배·추론 30배, HBM3e 192GB |
 | NVIDIA H100/H200 | GPGPU + Tensor Core | 범용 딥러닝, 생태계 최강 |
 | Google TPU v5 | 행렬 곱셈 전용 | TensorFlow/JAX 최적화 |
 | Apple Neural Engine | 추론 전용(저전력) | 온디바이스 AI, 모바일 최적화 |

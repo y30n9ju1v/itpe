@@ -81,6 +81,16 @@ FTS 목표: Fault 단계에서 오류 전파를 차단하여 Failure 방지
 
 - 이중화 수준이 높을수록 RTO/RPO가 작아지나 비용이 기하급수적으로 증가
 
+1-1) 하드웨어 수준 결함 허용 기술
+
+| 구분 | 기술 | 설명 |
+|------|------|------|
+| 메모리 | **ECC(Error Correcting Code) 메모리** | 1비트 오류 자동 정정, 2비트 오류 검출 — 서버급 필수 요구 |
+| 전원 | **이중 전원 공급 장치(Redundant PSU)** | 전원 하나 고장 시 나머지로 무중단 전환 |
+| 스토리지 | **RAID(Redundant Array of Independent Disks)** | RAID-1(미러링), RAID-5/6(패리티)로 디스크 결함 허용 |
+| 네트워크 | **NIC Bonding/LACP** | 복수 NIC를 하나의 논리 인터페이스로 묶어 링크 장애 허용 |
+| 프로세서 | **Lockstep 실행** | 두 코어가 동일 명령을 동시 실행 → 결과 비교로 오류 탐지(Itanium, SPARC) |
+
 2) TMR(Triple Modular Redundancy) 및 소프트웨어 기법
 
 | 구분 | 항목 | 설명 |
@@ -104,6 +114,16 @@ TMR 구조:
 - TMR은 하드웨어 비용이 3배이나 안전 임계 시스템에서 유일한 선택지
 
 ### 3. 가용성 지표와 FTS·HA·DR 비교
+
+신뢰성 지표 공식:
+
+| 지표 | 공식 | 의미 |
+|------|------|------|
+| **MTBF** (Mean Time Between Failures) | 총 정상 운영 시간 / 장애 횟수 | 장애와 장애 사이 평균 정상 운영 시간 — 클수록 신뢰성 높음 |
+| **MTTR** (Mean Time To Repair) | 총 복구 시간 / 장애 횟수 | 장애 후 복구까지 평균 시간 — 작을수록 유지보수성 높음 |
+| **가용률** | MTBF / (MTBF + MTTR) × 100% | 전체 시간 중 정상 운영 비율 |
+
+예: MTBF=9,000시간, MTTR=1시간 → A = 9,000/9,001 ≈ 99.989% (약 4-nine)
 
 가용률(Availability): A = MTBF / (MTBF + MTTR) × 100%
 
