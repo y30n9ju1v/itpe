@@ -17,7 +17,7 @@ title: "시스템 평가"
 
 ### 1.1 왜 성과를 측정하는가
 
-> 📄 자세히 보기: [전자정부 성과 측정지표](01_PerformanceEvaluation/e-government-performance-metrics)
+> 📄 자세히 보기: [전자정부 성과 측정지표](01_performanceevaluation/e-government-performance-metrics)
 
 공공기관이 수십억 원을 들여 정보시스템을 구축한다. 그런데 "이 시스템이 정말 효과가 있었나?"를 어떻게 알 수 있을까? 직원 수가 줄었나? 민원 처리가 빨라졌나? 국민 만족도가 높아졌나?
 
@@ -90,7 +90,7 @@ IT·전기전자 분야에서 표준을 만드는 가장 중요한 두 기관이
 
 ### 2.2 IEEE — 기술자들이 모여 만든 표준
 
-> 📄 자세히 보기: [IEEE·IEC 표준 비교](02_HW_SW_Standards/ieee-iec-standards-comparison)
+> 📄 자세히 보기: [IEEE·IEC 표준 비교](02_hw_sw_standards/ieee-iec-standards-comparison)
 
 **IEEE(Institute of Electrical and Electronics Engineers)**는 1963년 미국에서 설립된 전문가 협회이자 표준화 기구다. 전 세계 160만 명 이상의 엔지니어·연구자가 회원으로 참여한다. 개인 전문가들이 모여 기술 혁신을 표준으로 정의하는 "아래에서 위로" 방식이다.
 
