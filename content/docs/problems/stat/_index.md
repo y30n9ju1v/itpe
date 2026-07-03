@@ -16,64 +16,64 @@ bookCollapseSection: true
 ## 📖 목차 (Table of Contents)
 
 * [**Part 1. 가설검정**](#part-1-가설검정)
-  - [1-1. 통계적 가설검정 절차](topic1-1-hypothesis-testing-procedure.md)
-  - [1-2. CDA vs EDA와 가트너 데이터 분석 성숙도 모델](topic1-2-cda-eda-gartner-5step.md)
-  - [1-3. 1종 오류와 2종 오류](topic1-3-type1-type2-error.md)
-  - [1-4. 가설검정과 p-value](topic1-4-hypothesis-testing-pvalue.md)
-  - [1-5. 스마트 팩토리 Z-검정 실전](topic1-5-smart-factory-z-test.md)
+  - 1-1. 통계적 가설검정 절차
+  - 1-2. CDA vs EDA와 가트너 데이터 분석 성숙도 모델
+  - 1-3. 1종 오류와 2종 오류
+  - 1-4. 가설검정과 p-value
+  - 1-5. 스마트 팩토리 Z-검정 실전
 * [**Part 2. 검정방법 (t-검정, ANOVA, Z-검정)**](#part-2-검정방법)
-  - [2-1. T-test와 ANOVA](topic2-1-ttest-anova.md)
-  - [2-2. 중심극한정리·t-검정·z-검정](topic2-2-clt-t-z-test.md)
-  - [2-3. 대수의 법칙과 중심극한정리](topic2-3-law-of-large-numbers-clt.md)
+  - 2-1. T-test와 ANOVA
+  - 2-2. 중심극한정리·t-검정·z-검정
+  - 2-3. 대수의 법칙과 중심극한정리
 * [**Part 3. 기술통계와 추론통계**](#part-3-기술통계와-추론통계)
-  - [3-1. 샘플링·기술통계·왜도·아웃라이어](topic3-1-sampling-descriptive-skewness-outlier.md)
-  - [3-2. 기술통계 vs 추론통계](topic3-2-descriptive-vs-inferential-statistics.md)
-  - [3-3. 추정통계의 표본과 불편 추정량](topic3-3-estimation-unbiased-estimator.md)
-  - [3-4. 점추정과 구간추정](topic3-4-point-interval-estimation.md)
-  - [3-5. 정규분포](topic3-5-normal-distribution.md)
-  - [3-6. 베르누이 분포와 기하 분포](topic3-6-bernoulli-geometric-distribution.md)
+  - 3-1. 샘플링·기술통계·왜도·아웃라이어
+  - 3-2. 기술통계 vs 추론통계
+  - 3-3. 추정통계의 표본과 불편 추정량
+  - 3-4. 점추정과 구간추정
+  - 3-5. 정규분포
+  - 3-6. 베르누이 분포와 기하 분포
 * [**Part 4. 회귀분석**](#part-4-회귀분석)
-  - [4-1. 통계학 4가지 척도 구분, 다중회귀분석 vs 로지스틱회귀분석](topic4-1-regression-scale-comparison.md)
-  - [4-2. 오버피팅·Ridge·Lasso 정규화](topic4-2-overfitting-ridge-lasso.md)
-  - [4-3. 다중공선성](topic4-3-multicollinearity.md)
+  - 4-1. 통계학 4가지 척도 구분, 다중회귀분석 vs 로지스틱회귀분석
+  - 4-2. 오버피팅·Ridge·Lasso 정규화
+  - 4-3. 다중공선성
 * [**Part 5. 차원축소 (PCA, LDA)**](#part-5-차원축소)
-  - [5-1. PCA vs LDA 비교](topic5-1-pca-lda-comparison.md)
+  - 5-1. PCA vs LDA 비교
 * [**Part 6. 상관분석**](#part-6-상관분석)
-  - [6-1. 상관분석 (Pearson·Spearman·Kendall)](topic6-1-correlation-analysis.md)
-  - [6-2. 상관관계 vs 인과관계](topic6-2-correlation-vs-causation.md)
+  - 6-1. 상관분석 (Pearson·Spearman·Kendall)
+  - 6-2. 상관관계 vs 인과관계
 * [**Part 7. 베이즈 정리**](#part-7-베이즈-정리)
-  - [7-1. 베이즈 정리와 조건부 확률](topic7-1-bayes-theorem.md)
+  - 7-1. 베이즈 정리와 조건부 확률
 * [**Part 8. 빅데이터 플랫폼**](#part-8-빅데이터-플랫폼)
-  - [8-1. 폴리글랏·람다·카파 아키텍처](topic8-1-polyglot-lambda-kappa.md)
-  - [8-2. 빅데이터 플랫폼 기술](topic8-2-bigdata-platform-tech.md)
-  - [8-3. 하둡 에코시스템과 HDFS](topic8-3-hadoop-ecosystem-hdfs.md)
-  - [8-4. 카프카(Kafka)](topic8-4-kafka.md)
+  - 8-1. 폴리글랏·람다·카파 아키텍처
+  - 8-2. 빅데이터 플랫폼 기술
+  - 8-3. 하둡 에코시스템과 HDFS
+  - 8-4. 카프카(Kafka)
 * [**Part 9. 데이터 마이닝**](#part-9-데이터-마이닝)
-  - [9-1. CRISP-DM vs SEMMA](topic9-1-crisp-dm-semma.md)
-  - [9-2. 연관규칙·지지도·신뢰도·향상도·Apriori](topic9-2-association-rules-apriori.md)
-  - [9-3. 의사결정나무](topic9-3-decision-tree.md)
-  - [9-4. 지니 지수와 엔트로피 지수](topic9-4-decision-tree-gini-entropy.md)
-  - [9-5. 사회연결망 분석 (SNA)](topic9-5-sna-social-network-analysis.md)
-  - [9-6. 시계열 분석 (AR, MA, ARIMA)](topic9-6-time-series-analysis.md)
-  - [9-7. 텍스트 마이닝·오피니언 마이닝](topic9-7-opinion-text-mining.md)
-  - [9-8. 데이터 마이닝 vs 통계분석](topic9-8-data-mining-vs-statistics.md)
-  - [9-9. 텍스트 마이닝과 SNA 분석절차](topic9-9-text-mining-sna.md)
+  - 9-1. CRISP-DM vs SEMMA
+  - 9-2. 연관규칙·지지도·신뢰도·향상도·Apriori
+  - 9-3. 의사결정나무
+  - 9-4. 지니 지수와 엔트로피 지수
+  - 9-5. 사회연결망 분석 (SNA)
+  - 9-6. 시계열 분석 (AR, MA, ARIMA)
+  - 9-7. 텍스트 마이닝·오피니언 마이닝
+  - 9-8. 데이터 마이닝 vs 통계분석
+  - 9-9. 텍스트 마이닝과 SNA 분석절차
 * [**Part 10. 데이터 전처리**](#part-10-데이터-전처리)
-  - [10-1. 아웃라이어·노이즈·3가지 유형](topic10-1-outlier-noise.md)
-  - [10-2. 이상치(Outlier)와 편향(Bias)](topic10-2-outlier-bias.md)
+  - 10-1. 아웃라이어·노이즈·3가지 유형
+  - 10-2. 이상치(Outlier)와 편향(Bias)
 * [**Part 11. 데이터 분석 플로우**](#part-11-데이터-분석-플로우)
-  - [11-1. 앙상블 기법 (배깅·부스팅·랜덤포레스트)](topic11-1-ensemble.md)
-  - [11-2. 랜덤샘플링과 필터링](topic11-2-random-sampling-filtering.md)
-  - [11-3. 데이터 분석 Flow·기법·모델 평가](topic11-3-data-analysis-flow.md)
-  - [11-4. 데이터 분석 거버넌스](topic11-4-data-analysis-governance.md)
+  - 11-1. 앙상블 기법 (배깅·부스팅·랜덤포레스트)
+  - 11-2. 랜덤샘플링과 필터링
+  - 11-3. 데이터 분석 Flow·기법·모델 평가
+  - 11-4. 데이터 분석 거버넌스
 * [**Part 12. LDW (Logical Data Warehouse)**](#part-12-ldw)
-  - [12-1. LDW 정의·구성요소·아키텍처·활용](topic12-1-ldw-logical-data-warehouse.md)
-  - [12-2. DW 다차원 모델링 (Star Schema, Snowflake Schema)](topic12-2-dw-dimensional-modeling.md)
+  - 12-1. LDW 정의·구성요소·아키텍처·활용
+  - 12-2. DW 다차원 모델링 (Star Schema, Snowflake Schema)
 * [**Part 13. OLAP / OLTP**](#part-13-olap--oltp)
-  - [13-1. OLAP vs OLTP 비교와 분리 운영 이유](topic13-1-olap-oltp-comparison.md)
+  - 13-1. OLAP vs OLTP 비교와 분리 운영 이유
 * [**Part 14. 데이터 레이크 / 데이터 패브릭**](#part-14-데이터-레이크--데이터-패브릭)
-  - [14-1. 데이터 웨어하우스 vs 데이터 레이크](topic14-1-data-lake-data-fabric.md)
-  - [14-2. 데이터 패브릭 (Data Fabric)](topic14-2-data-fabric.md)
+  - 14-1. 데이터 웨어하우스 vs 데이터 레이크
+  - 14-2. 데이터 패브릭 (Data Fabric)
 
 ---
 

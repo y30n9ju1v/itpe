@@ -12,61 +12,61 @@ bookCollapseSection: true
 ## 📖 목차
 
 * [**Part 1. 데이터 모델링 — 데이터의 설계도 그리기**](#part-1-데이터-모델링--데이터의-설계도-그리기)
-  - [1-1. 데이터 모델링의 3단계와 기본 원칙](topic1-1-data-modeling.md)
-  - [1-2. ERD와 관계형 데이터 모델](topic2-1-erd.md)
-  - 1-3. 연결함정 — Fan Trap과 Chasm Trap: [연결함정](topic5-1-connection-trap.md) · [연결함정 심화](topic5-2-connection-trap2.md)
-  - [1-4. 슈퍼타입 / 서브타입](topic6-1-supertype-subtype.md)
-  - [1-5. 식별자 관계 vs 비식별자 관계](topic7-1-identifier-relationship.md)
+  - 1-1. 데이터 모델링의 3단계와 기본 원칙
+  - 1-2. ERD와 관계형 데이터 모델
+  - 1-3. 연결함정 — Fan Trap과 Chasm Trap
+  - 1-4. 슈퍼타입 / 서브타입
+  - 1-5. 식별자 관계 vs 비식별자 관계
 * [**Part 2. 정규화 — 데이터 중복을 제거하는 기술**](#part-2-정규화--데이터-중복을-제거하는-기술)
-  - 2-1. 함수종속성과 암스트롱 공리: [암스트롱 공리](topic3-1-armstrong-axioms.md) · [함수종속성](topic4-1-function-dependency.md)
-  - [2-2. 이상현상(Anomaly)과 정규화](topic4-2-normalization-anomaly.md)
-  - [2-3. 2NF, 3NF, BCNF — 실전 정규화](topic4-3-normalization-table.md)
-  - 2-4. 4NF, 5NF — 고급 정규화: [4차·5차 정규화](topic4-4-normalization-4th-5th.md) · [제5정규형](topic4-5-5th-normal-form.md)
-  - [2-5. 반정규화 — 성능을 위한 타협](topic4-6-denormalization.md)
+  - 2-1. 함수종속성과 암스트롱 공리
+  - 2-2. 이상현상(Anomaly)과 정규화
+  - 2-3. 2NF, 3NF, BCNF — 실전 정규화
+  - 2-4. 4NF, 5NF — 고급 정규화
+  - 2-5. 반정규화 — 성능을 위한 타협
 * [**Part 3. SQL과 관계대수 — 데이터를 다루는 언어**](#part-3-sql과-관계대수--데이터를-다루는-언어)
-  - [3-1. 관계대수 — SQL의 이론적 기반](topic8-1-relational-algebra.md)
-  - 3-2. JOIN의 종류와 활용: [JOIN 유형](topic10-1-join-types.md) · [JOIN 활용 사례](topic10-3-join-usage.md)
-  - [3-3. JOIN 물리적 알고리즘 — NL, Sort Merge, Hash Join](topic10-2-join-methods.md)
-  - [3-4. 동적 SQL — 런타임에 SQL 만들기](topic9-1-dynamic-sql.md)
+  - 3-1. 관계대수 — SQL의 이론적 기반
+  - 3-2. JOIN의 종류와 활용
+  - 3-3. JOIN 물리적 알고리즘 — NL, Sort Merge, Hash Join
+  - 3-4. 동적 SQL — 런타임에 SQL 만들기
 * [**Part 4. 무결성과 트랜잭션 — 데이터를 신뢰할 수 있게**](#part-4-무결성과-트랜잭션--데이터를-신뢰할-수-있게)
-  - 4-1. 데이터 무결성의 종류와 유지 방법: [무결성](topic11-1-integrity.md) · [무결성 유지 방법](topic11-2-integrity-methods.md) · [릴레이션 무결성 규칙](topic11-3-relation-integrity.md)
-  - [4-2. 트랜잭션 ACID — 믿을 수 있는 작업 단위](topic19-2-transaction.md)
-  - [4-3. ANSI/SPARC 3단계 아키텍처](topic12-1-db-architecture.md)
+  - 4-1. 데이터 무결성의 종류와 유지 방법
+  - 4-2. 트랜잭션 ACID — 믿을 수 있는 작업 단위
+  - 4-3. ANSI/SPARC 3단계 아키텍처
 * [**Part 5. 동시성 제어와 회복 — 장애에도 살아남기**](#part-5-동시성-제어와-회복--장애에도-살아남기)
-  - [5-1. 동시성 이상현상](topic14-2-concurrency-anomaly.md)
-  - [5-2. 동시성 제어 기법 — Lock, Timestamp, OCC, MVCC](topic14-1-concurrency-control.md)
-  - [5-3. 격리 수준(Isolation Level)](topic15-1-isolation-level.md)
-  - [5-4. 데이터베이스 회복 기법](topic13-1-recovery.md)
-  - [5-5. ARIES 회복 알고리즘](topic13-2-aries-recovery.md)
+  - 5-1. 동시성 이상현상
+  - 5-2. 동시성 제어 기법 — Lock, Timestamp, OCC, MVCC
+  - 5-3. 격리 수준(Isolation Level)
+  - 5-4. 데이터베이스 회복 기법
+  - 5-5. ARIES 회복 알고리즘
 * [**Part 6. 인덱스와 성능 최적화 — 빠른 데이터베이스 만들기**](#part-6-인덱스와-성능-최적화--빠른-데이터베이스-만들기)
-  - [6-1. 인덱스와 B-Tree](topic16-1-index-btree.md)
-  - [6-2. 인덱스 종류와 스캔 방식](topic16-2-index-types.md)
-  - [6-3. 옵티마이저 — SQL의 두뇌](topic17-1-optimizer.md)
-  - [6-4. 데이터베이스 튜닝 방법론](topic19-1-tuning.md)
+  - 6-1. 인덱스와 B-Tree
+  - 6-2. 인덱스 종류와 스캔 방식
+  - 6-3. 옵티마이저 — SQL의 두뇌
+  - 6-4. 데이터베이스 튜닝 방법론
 * [**Part 7. 분산 데이터베이스와 확장 — 여러 서버로 나누기**](#part-7-분산-데이터베이스와-확장--여러-서버로-나누기)
-  - [7-1. 파티셔닝 — 대용량 테이블 쪼개기](topic18-1-partitioning.md)
-  - [7-2. 샤딩, 리플리케이션, Query Offloading](topic18-2-sharding-replication.md)
-  - [7-3. 분산 데이터베이스와 2PC](topic21-1-distributed-db.md)
-  - [7-4. DB 서버 용량 산정](topic22-1-db-capacity.md)
+  - 7-1. 파티셔닝 — 대용량 테이블 쪼개기
+  - 7-2. 샤딩, 리플리케이션, Query Offloading
+  - 7-3. 분산 데이터베이스와 2PC
+  - 7-4. DB 서버 용량 산정
 * [**Part 8. NoSQL과 현대 데이터베이스 — 관계형의 경계 넘기**](#part-8-nosql과-현대-데이터베이스--관계형의-경계-넘기)
-  - [8-1. RDBMS vs NoSQL vs NewSQL](topic20-1-nosql-rdbms.md)
-  - [8-2. CAP 이론과 PACELC 이론](topic20-2-nosql-cap-pacelc.md)
-  - [8-3. NoSQL 모델링 패턴](topic20-3-nosql-modeling.md)
-  - [8-4. 인메모리 데이터베이스 — Redis](topic20-4-in-memory-db.md)
-  - [8-5. Graph DB — 관계를 저장하다](topic20-5-graph-db.md)
-  - [8-6. 벡터 데이터베이스 — AI의 두뇌 저장소](topic20-6-vector-db.md)
+  - 8-1. RDBMS vs NoSQL vs NewSQL
+  - 8-2. CAP 이론과 PACELC 이론
+  - 8-3. NoSQL 모델링 패턴
+  - 8-4. 인메모리 데이터베이스 — Redis
+  - 8-5. Graph DB — 관계를 저장하다
+  - 8-6. 벡터 데이터베이스 — AI의 두뇌 저장소
 * [**Part 9. 데이터 품질과 거버넌스**](#part-9-데이터-품질과-거버넌스)
-  - [9-1. 데이터 품질 진단 절차와 기법](topic23-1-data-quality-diagnosis.md)
-  - 9-2. DQ 인증과 ISO 8000: [DQ 인증](topic23-2-dq-certification.md) · [ISO 8000](topic23-3-iso8000.md)
-  - [9-3. 데이터 마이그레이션 품질 검증](topic23-4-data-migration.md)
-  - [9-4. 생성형 AI 데이터 품질 관리](topic23-5-generative-ai-data-quality.md)
-  - [9-5. 공공데이터 품질 관리](topic24-1-public-data-quality.md)
-  - [9-6. 데이터 가치평가](topic26-1-data-value-assessment.md)
+  - 9-1. 데이터 품질 진단 절차와 기법
+  - 9-2. DQ 인증과 ISO 8000
+  - 9-3. 데이터 마이그레이션 품질 검증
+  - 9-4. 생성형 AI 데이터 품질 관리
+  - 9-5. 공공데이터 품질 관리
+  - 9-6. 데이터 가치평가
 * [**Part 10. 공간 데이터베이스 — 지도 위의 데이터**](#part-10-공간-데이터베이스--지도-위의-데이터)
-  - [10-1. 공간 데이터베이스 개념](topic25-1-spatial-db.md)
-  - [10-2. 공간 연산자](topic25-2-spatial-operator.md)
-  - [10-3. 공간 인덱스 — R-Tree 계열](topic25-3-spatial-index.md)
-  - [10-4. 다차원 색인 구조](topic25-4-multidimensional-index.md)
+  - 10-1. 공간 데이터베이스 개념
+  - 10-2. 공간 연산자
+  - 10-3. 공간 인덱스 — R-Tree 계열
+  - 10-4. 다차원 색인 구조
   - 10-5. 3D·시공간 공간 데이터 — 스마트시티와 자율주행의 기반
 
 ---

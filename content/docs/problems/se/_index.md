@@ -12,29 +12,29 @@ bookCollapseSection: true
 ## 📖 목차
 
 * [**Part 1. 소프트웨어 설계와 개발 방법론**](#part-1-소프트웨어-설계와-개발-방법론)
-  - 1-1. SW 설계 원칙과 개발 방법론: [설계 원리](topic1-1-sw-design-principles.md) · [개발방법론 발전과정](topic1-2-dev-methodology.md) · [테일러링](topic1-3-tailoring.md)
-  - 1-2. 정보시스템 마스터플랜 (ISMP/ISP): [ISMP 정의·ISP 비교](topic2-1-ismp-isp.md) · [ISMP 방법론](topic2-2-ismp-methodology.md)
-  - 1-3. 객체지향과 SOLID 원칙: [SOLID 5대원칙](topic3-1-oop-solid.md) · [DIP와 DI](topic3-2-dependency-injection.md) · [다형성](topic3-3-polymorphism.md)
-  - 1-4. 애자일, Scrum, XP, TDD: [애자일 vs CBD](topic4-1-agile-vs-cbd.md) · [대규모 애자일 적용](topic4-2-agile-large-scale.md) · [SCRUM·XP](topic4-3-scrum-xp.md) · [TDD](topic4-4-tdd.md)
-  - 1-5. DevOps, SRE, 무중단 배포: [DevOps](topic5-1-devops.md) · [SRE](topic5-2-sre.md) · [무중단 배포](topic5-3-zero-downtime-deploy.md)
+  - 1-1. SW 설계 원칙과 개발 방법론
+  - 1-2. 정보시스템 마스터플랜 (ISMP/ISP)
+  - 1-3. 객체지향과 SOLID 원칙
+  - 1-4. 애자일, Scrum, XP, TDD
+  - 1-5. DevOps, SRE, 무중단 배포
 * [**Part 2. 요구사항과 소프트웨어 아키텍처**](#part-2-요구사항과-소프트웨어-아키텍처)
-  - 2-1. 요구사항 공학: [기능적/비기능적 분류](topic6-1-requirements-functional.md) · [요구공학 프로세스](topic6-2-requirements-engineering.md) · [IT개발 요구사항](topic6-3-it-requirements.md) · [요구사항 상세화](topic6-4-requirements-detail.md)
-  - 2-2. 소프트웨어 아키텍처: [ISO/IEC/IEEE 42010](topic7-1-iso42010.md) · [품질속성·설계전술](topic7-2-architecture-quality.md) · [아키텍처 패턴](topic7-3-architecture-patterns.md) · [ATAM·CBAM](topic7-4-atam-cbam.md) · [아키텍처 분석방법](topic7-5-architecture-analysis.md)
+  - 2-1. 요구사항 공학
+  - 2-2. 소프트웨어 아키텍처
 * [**Part 3. 소프트웨어 테스트**](#part-3-소프트웨어-테스트)
-  - 3-1. 테스트 원칙, 계획, 테스트 용이성 (IEEE 829): [테스트 7원칙](topic8-1-sw-test-principles.md) · [IEEE829·테스트용이성](topic9-1-ieee829-testability.md)
-  - 3-2. 테스트 기법: [통합테스트·스텁/드라이버](topic9-2-integration-test.md) · [회귀 테스트](topic9-3-regression-test.md) · [리스크 기반 테스팅](topic9-4-risk-based-testing.md) · [성능 테스트](topic9-5-performance-test.md) · [블랙박스/화이트박스](topic9-6-black-white-box.md) · [동등분할·경곗값 분석](topic9-7-equivalence-boundary.md) · [MC/DC 커버리지](topic9-8-mcdc-coverage.md)
+  - 3-1. 테스트 원칙, 계획, 테스트 용이성 (IEEE 829)
+  - 3-2. 테스트 기법
 * [**Part 4. 유지보수와 품질 관리**](#part-4-유지보수와-품질-관리)
-  - 4-1. SW 유지보수: [Lehman의 변화관리 법칙](topic10-1-lehman-sw-change.md) · [ISO/IEC 14764](topic10-2-iso14764-maintenance.md)
-  - 4-2. 3R (재사용·역공학·재공학): [SW 위기와 3R](topic11-1-3r-software-crisis.md) · [리팩토링과 3R](topic11-2-refactoring-3r.md)
-  - 4-3. QA/QC와 품질 도구: [QA와 QC](topic12-1-qa-qc.md) · [QC 7도구](topic12-2-qc-7tools.md)
-  - [4-4. 형상관리 (SCM)](topic13-1-configuration-management.md)
+  - 4-1. SW 유지보수
+  - 4-2. 3R (재사용·역공학·재공학)
+  - 4-3. QA/QC와 품질 도구
+  - 4-4. 형상관리 (SCM)
 * [**Part 5. 기능안전과 품질인증**](#part-5-기능안전과-품질인증)
-  - 5-1. 소프트웨어 기능안전: [안전성 분석 개념](topic14-1-sw-safety-analysis.md) · [FTA·FMEA·HAZOP](topic14-2-fta-fmea-hazop.md) · [기능안전 IEC 61508](topic14-3-functional-safety.md) · [IEC 61508 vs ISO 26262](topic14-4-iec61508-iso26262.md)
-  - 5-2. SW 품질인증 제도: [SW 품질인증](topic15-1-sw-quality-certification.md) · [SP 인증제도](topic15-2-sw-process-certification.md)
+  - 5-1. 소프트웨어 기능안전
+  - 5-2. SW 품질인증 제도
 * [**Part 6. 비용산정과 발주**](#part-6-비용산정과-발주)
-  - [6-1. H/W 용량산정](topic16-1-hw-capacity-planning.md)
-  - 6-2. SW 비용산정: [기능점수(FP) 방식](topic17-1-function-point.md) · [비용 산정방법 비교](topic17-2-sw-cost-estimation.md)
-  - 6-3. 발주 프로세스: [단계별 발주제도](topic18-1-staged-procurement.md) · [상용 SW 직접구매](topic18-2-commercial-sw-direct-purchase.md)
+  - 6-1. H/W 용량산정
+  - 6-2. SW 비용산정
+  - 6-3. 발주 프로세스
 
 ---
 

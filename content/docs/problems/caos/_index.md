@@ -12,56 +12,56 @@ bookCollapseSection: true
 ## 📖 목차
 
 * [**Part 1. 컴퓨터 기본 구조 — 모든 것의 시작**](#part-1-컴퓨터-기본-구조--모든-것의-시작)
-  - [1-1. 컴퓨터 기본구조와 Stored-program 개념](topic1-1-computer-architecture.md)
+  - 1-1. 컴퓨터 기본구조와 Stored-program 개념
 * [**Part 2. 주소지정방식 — 데이터 위치를 가리키는 방법**](#part-2-주소지정방식--데이터-위치를-가리키는-방법)
-  - [2-1. CPU 주소지정방식(Addressing Mode)](topic2-1-addressing-mode.md)
+  - 2-1. CPU 주소지정방식(Addressing Mode)
 * [**Part 3. 가상메모리 — 메모리보다 넓은 세상 만들기**](#part-3-가상메모리--메모리보다-넓은-세상-만들기)
-  - [3-1. 가상메모리 관리기법과 단편화 해결방안](topic3-1-virtual-memory.md)
-  - [3-2. 페이지 교체 알고리즘(FIFO, LRU, LFU)](topic3-2-page-replacement.md)
-  - [3-3. 가상주소 → 물리주소 변환 과정 및 TLB](topic3-3-tlb.md)
+  - 3-1. 가상메모리 관리기법과 단편화 해결방안
+  - 3-2. 페이지 교체 알고리즘(FIFO, LRU, LFU)
+  - 3-3. 가상주소 → 물리주소 변환 과정 및 TLB
 * [**Part 4. 캐시메모리 — CPU와 메모리 사이의 속달 택배**](#part-4-캐시메모리--cpu와-메모리-사이의-속달-택배)
-  - [4-1. 캐시메모리 동작 순서와 주소 사상](topic4-1-cache-operation.md)
-  - [4-2. 캐시 쓰기정책과 캐시 일관성(Cache Coherence)](topic4-2-cache-coherence.md)
+  - 4-1. 캐시메모리 동작 순서와 주소 사상
+  - 4-2. 캐시 쓰기정책과 캐시 일관성(Cache Coherence)
 * [**Part 5. 커널과 운영체제 — 하드웨어를 지키는 보안관**](#part-5-커널과-운영체제--하드웨어를-지키는-보안관)
-  - [5-1. 이중 모드(Dual Mode) 구조](topic5-1-dual-mode.md)
+  - 5-1. 이중 모드(Dual Mode) 구조
 * [**Part 6. 스케줄링 알고리즘 — CPU 시간표 짜기**](#part-6-스케줄링-알고리즘--cpu-시간표-짜기)
-  - [6-1. CPU 스케줄링 알고리즘(선점/비선점)](topic6-1-cpu-scheduling.md)
-  - [6-2. 실시간 스케줄링 RM과 EDF](topic6-2-rm-edf.md)
+  - 6-1. CPU 스케줄링 알고리즘(선점/비선점)
+  - 6-2. 실시간 스케줄링 RM과 EDF
 * [**Part 7. 교착상태(Deadlock) — 누구도 움직이지 않는 교통 마비**](#part-7-교착상태deadlock--누구도-움직이지-않는-교통-마비)
-  - [7-1. 교착상태 발생 조건과 해결방안](topic7-1-deadlock.md)
+  - 7-1. 교착상태 발생 조건과 해결방안
 * [**Part 8. IPC — 프로세스들이 대화하는 방법**](#part-8-ipc--프로세스들이-대화하는-방법)
-  - [8-1. IPC(Inter Process Communication) 통신방식](topic8-1-ipc.md)
+  - 8-1. IPC(Inter Process Communication) 통신방식
 * [**Part 9. 동기화 — 공유 자원을 안전하게 쓰는 법**](#part-9-동기화--공유-자원을-안전하게-쓰는-법)
-  - [9-1. 프로세스 동기화 기법(Mutex, Semaphore, Monitor)](topic9-1-synchronization.md)
+  - 9-1. 프로세스 동기화 기법(Mutex, Semaphore, Monitor)
 * [**Part 10. 프로세스 — 실행 중인 프로그램의 모든 것**](#part-10-프로세스--실행-중인-프로그램의-모든-것)
-  - [10-1. 프로세스 상태 다이어그램, PCB, 생성 및 종료](topic10-1-process.md)
+  - 10-1. 프로세스 상태 다이어그램, PCB, 생성 및 종료
 * [**Part 11. 인터럽트 — 긴급 신호를 처리하는 메커니즘**](#part-11-인터럽트--긴급-신호를-처리하는-메커니즘)
-  - [11-1. 인터럽트 동작원리와 다중 인터럽트 처리](topic11-1-interrupt.md)
+  - 11-1. 인터럽트 동작원리와 다중 인터럽트 처리
 * [**Part 12. 문맥교환 — 배우가 무대에서 역할을 바꾸듯**](#part-12-문맥교환--배우가-무대에서-역할을-바꾸듯)
-  - [12-1. 문맥(Context)과 문맥교환(Context Switch)](topic12-1-context-switch.md)
+  - 12-1. 문맥(Context)과 문맥교환(Context Switch)
 * [**Part 13. 파이프라인 — 공장 컨베이어 벨트로 CPU를 빠르게**](#part-13-파이프라인--공장-컨베이어-벨트로-cpu를-빠르게)
-  - [13-1. CPU 파이프라인과 해저드(Hazard)](topic13-1-pipeline.md)
+  - 13-1. CPU 파이프라인과 해저드(Hazard)
 * [**Part 14. 메모리 인터리빙 — 여러 줄을 동시에 읽기**](#part-14-메모리-인터리빙--여러-줄을-동시에-읽기)
-  - [14-1. 메모리 인터리빙 유형과 엑세스 활용방식](topic14-1-memory-interleaving.md)
+  - 14-1. 메모리 인터리빙 유형과 엑세스 활용방식
 * [**Part 15. 아키텍처 — 폰 노이만 vs 하버드**](#part-15-아키텍처--폰-노이만-vs-하버드)
-  - [15-1. 폰 노이만 아키텍처와 하버드 아키텍처](topic15-1-architecture.md)
+  - 15-1. 폰 노이만 아키텍처와 하버드 아키텍처
 * [**Part 16. GPU와 CPU — 다른 목적을 위해 태어난 두 두뇌**](#part-16-gpu와-cpu--다른-목적을-위해-태어난-두-두뇌)
-  - [16-1. GPU와 GPGPU, GPU-CPU 차이점](topic16-1-gpu-cpu.md)
+  - 16-1. GPU와 GPGPU, GPU-CPU 차이점
 * [**Part 17. DMA — CPU를 대신하는 입출력 전담 요원**](#part-17-dma--cpu를-대신하는-입출력-전담-요원)
-  - [17-1. DMA 제어기 구조와 동작 모드](topic17-1-dma.md)
+  - 17-1. DMA 제어기 구조와 동작 모드
 * [**Part 18. 저장장치 — 데이터를 안전하게 보관하는 창고**](#part-18-저장장치--데이터를-안전하게-보관하는-창고)
-  - [18-1. RAID 레벨별 비교(0, 5, 6, 1+0, 5+0)](topic18-1-raid.md)
-  - [18-2. 블록/파일/오브젝트 스토리지 유형](topic18-2-storage-types.md)
+  - 18-1. RAID 레벨별 비교(0, 5, 6, 1+0, 5+0)
+  - 18-2. 블록/파일/오브젝트 스토리지 유형
 * [**Part 19. FTS — 장애에도 절대 멈추지 않는 시스템**](#part-19-fts--장애에도-절대-멈추지-않는-시스템)
-  - [19-1. FTS(Fault Tolerant System)](topic19-1-fts.md)
+  - 19-1. FTS(Fault Tolerant System)
 * [**Part 20. 주기억장치 — DRAM과 SRAM의 두 가지 속도**](#part-20-주기억장치--dram과-sram의-두-가지-속도)
-  - [20-1. DRAM과 SRAM 비교](topic20-1-memory.md)
+  - 20-1. DRAM과 SRAM 비교
 * [**Part 21. 우선순위 역전 — 높은 사람이 낮은 사람에게 막히는 역설**](#part-21-우선순위-역전--높은-사람이-낮은-사람에게-막히는-역설)
-  - [21-1. 우선순위 역전(Priority Inversion)과 해결 기법](topic21-1-priority-inversion.md)
+  - 21-1. 우선순위 역전(Priority Inversion)과 해결 기법
 * [**Part 22. 클라우드 컴퓨팅 — 서버를 소프트웨어로 만들다**](#part-22-클라우드-컴퓨팅--서버를-소프트웨어로-만들다)
-  - [22-1. Hypervisor 유형, Docker 비교 및 배포절차](topic22-1-virtualization.md)
-  - [22-2. Auto Scale Up vs Scale Out](topic22-2-auto-scale.md)
-  - [22-3. 엣지 컴퓨팅과 클라우드 컴퓨팅 차이점](topic22-3-edge-computing.md)
+  - 22-1. Hypervisor 유형, Docker 비교 및 배포절차
+  - 22-2. Auto Scale Up vs Scale Out
+  - 22-3. 엣지 컴퓨팅과 클라우드 컴퓨팅 차이점
 
 ---
 
