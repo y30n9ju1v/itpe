@@ -1,3 +1,3 @@
 ---
-title: "Notes"
+title: "기출문제 노트"
 ---
