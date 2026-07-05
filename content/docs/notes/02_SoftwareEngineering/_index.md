@@ -446,7 +446,7 @@ SLO와 SLA의 차이인 **에러 버짓(Error Budget)**은 구글 SRE 방법론�
 
 ### 5.6 SW 프로세스 품질 인증(SP 인증) — 개발 방식의 성숙도를 인증하다
 
-> 📄 자세히 보기: [SP 인증 (SW 프로세스 품질)](05_sw_quality/sp-software-process-quality) · [SW 프로세스 품질 인증](05_sw_quality/sw-process-quality-certification)
+> 📄 자세히 보기: [SP 인증 (SW 프로세스 품질)](05_sw_quality/sp-software-process-quality)
 
 소프트웨어의 품질은 결과물(제품)만이 아니라 **만드는 과정(프로세스)**에서도 측정할 수 있다. **SP(소프트웨어 프로세스) 품질인증**은 기업의 SW 개발 프로세스가 얼마나 체계적이고 성숙한지를 국가가 인증하는 제도다.
 

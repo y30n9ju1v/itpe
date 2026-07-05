@@ -290,7 +290,7 @@ AI를 실행하는 방식에는 두 가지가 있다. **클라우드 AI**는 데
 
 ### 2.10 CBDC — 디지털 화폐의 등장
 
-> 📄 자세히 보기: [CBDC](01_ai_iot_cloud/cbdc)
+> 📄 자세히 보기: [CBDC]({{< relref "/docs/notes/04_ComputerSystems/06_InfraArchitecture/cbdc" >}}) (블록체인 인프라 노트로 이동됨)
 
 **CBDC(Central Bank Digital Currency, 중앙은행 디지털화폐)**는 중앙은행이 발행하는 법정화폐의 디지털 버전이다. 비트코인 같은 민간 암호화폐와 달리 중앙은행의 신뢰와 보증을 바탕으로 한다.
 

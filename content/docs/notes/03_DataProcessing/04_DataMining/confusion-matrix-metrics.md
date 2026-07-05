@@ -48,7 +48,7 @@ exam_peim: ["136회"]
 ## 연관 개념
 
 - [아웃라이어 탐지]({{< relref "/docs/notes/03_DataProcessing/04_DataMining/outlier-detection" >}}) — 이상 탐지 모델 평가에 혼동행렬 활용
-- [벡터 데이터베이스와 HNSW]({{< relref "/docs/notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf" >}}) — AI 모델 파이프라인 연계
+- [벡터 데이터베이스와 HNSW]({{< relref "/docs/notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf" >}}) — AI 모델 파이프라인 연계
 
 ## 참고 기출
 

@@ -316,7 +316,7 @@ SOM은 레이블 없이 학습하므로 일반 신경망(지도 학습)과 달�
 
 ### 4.4 벡터 데이터베이스와 HNSW/IVF — AI 검색의 엔진
 
-> 📄 자세히 보기: [벡터 데이터베이스와 HNSW/IVF](04_datamining/vector-database-hnsw-ivf)
+> 📄 자세히 보기: [벡터 데이터베이스와 HNSW/IVF](03_dbms_distributed/vector-database-hnsw-ivf)
 
 ChatGPT 같은 AI에게 질문을 던지면, AI는 내부 지식 외에 관련 문서를 검색해서 답한다(RAG, 검색 증강 생성). 이때 "의미적으로 비슷한 문서"를 찾는 데 **벡터 데이터베이스**가 쓰인다.
 

@@ -58,6 +58,21 @@
       "category": "03_DataProcessing"
     },
     {
+      "id": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf",
+      "title": "벡터 데이터베이스와 HNSW/IVF 검색 알고리즘",
+      "tags": [
+        "peim",
+        "자료처리",
+        "데이터마이닝",
+        "벡터DB",
+        "HNSW",
+        "IVF",
+        "임베딩",
+        "RAG"
+      ],
+      "category": "03_DataProcessing"
+    },
+    {
       "id": "notes/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
       "title": "DB 트랜잭션 격리 수준 (Transaction Isolation Level)",
       "tags": [
@@ -343,21 +358,6 @@
       "category": "03_DataProcessing"
     },
     {
-      "id": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "title": "벡터 데이터베이스와 HNSW/IVF 검색 알고리즘",
-      "tags": [
-        "peim",
-        "자료처리",
-        "데이터마이닝",
-        "벡터DB",
-        "HNSW",
-        "IVF",
-        "임베딩",
-        "RAG"
-      ],
-      "category": "03_DataProcessing"
-    },
-    {
       "id": "notes/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
       "title": "혼동행렬과 분류 성능 지표 (Confusion Matrix)",
       "tags": [
@@ -457,6 +457,35 @@
         "AI학습데이터"
       ],
       "category": "03_DataProcessing"
+    },
+    {
+      "id": "notes/06_InfoSecurity/07_SecurityCertification/common-criteria-cc",
+      "title": "CC (Common Criteria, 공통평가기준)",
+      "tags": [
+        "peim",
+        "정보보안",
+        "보안인증",
+        "CC",
+        "공통평가기준",
+        "EAL",
+        "보안기능요건",
+        "보안보증요건"
+      ],
+      "category": "06_InfoSecurity"
+    },
+    {
+      "id": "notes/06_InfoSecurity/07_SecurityCertification/isms-p-simplified-certification",
+      "title": "ISMS-P 간편인증",
+      "tags": [
+        "pecs",
+        "시스템보안",
+        "보안인증",
+        "ISMS-P",
+        "간편인증",
+        "정보보호",
+        "중소기업"
+      ],
+      "category": "06_InfoSecurity"
     },
     {
       "id": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p",
@@ -926,35 +955,6 @@
       "category": "06_InfoSecurity"
     },
     {
-      "id": "notes/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
-      "title": "CC (Common Criteria, 공통평가기준)",
-      "tags": [
-        "peim",
-        "정보보안",
-        "보안인증",
-        "CC",
-        "공통평가기준",
-        "EAL",
-        "보안기능요건",
-        "보안보증요건"
-      ],
-      "category": "06_InfoSecurity"
-    },
-    {
-      "id": "notes/06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
-      "title": "ISMS-P 간편인증",
-      "tags": [
-        "pecs",
-        "시스템보안",
-        "보안인증",
-        "ISMS-P",
-        "간편인증",
-        "정보보호",
-        "중소기업"
-      ],
-      "category": "06_InfoSecurity"
-    },
-    {
       "id": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
       "title": "PET (개인정보 보호 강화기술, Privacy Enhancing Technology)",
       "tags": [
@@ -1351,49 +1351,6 @@
       "category": "05_Networks"
     },
     {
-      "id": "notes/04_ComputerSystems/05_Algorithms/memory-areas",
-      "title": "프로그램 메모리 4가지 영역 (Code/Data/Heap/Stack)",
-      "tags": [
-        "peim",
-        "컴퓨터시스템",
-        "운영체제",
-        "메모리구조",
-        "스택",
-        "힙",
-        "시스템프로그래밍"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/segmentation-fault",
-      "title": "세그멘테이션 오류 (Segmentation Fault)",
-      "tags": [
-        "peim",
-        "컴퓨터시스템및정보통신",
-        "알고리즘",
-        "세그멘테이션폴트",
-        "메모리접근오류",
-        "SIGSEGV",
-        "버퍼오버플로우"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/cache-memory",
-      "title": "캐시 메모리 (Cache Memory)",
-      "tags": [
-        "peim",
-        "pecs",
-        "컴퓨터시스템",
-        "알고리즘",
-        "캐시메모리",
-        "쓰기정책",
-        "캐시일관성",
-        "멀티코어"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
       "id": "notes/04_ComputerSystems/05_Algorithms/big-o-notation",
       "title": "알고리즘 복잡도와 O-Notation",
       "tags": [
@@ -1422,72 +1379,16 @@
       "category": "04_ComputerSystems"
     },
     {
-      "id": "notes/04_ComputerSystems/05_Algorithms/deadlock",
-      "title": "데드락 (Deadlock, 교착 상태)",
+      "id": "notes/04_ComputerSystems/06_InfraArchitecture/cbdc",
+      "title": "중앙은행 디지털 화폐 (CBDC, Central Bank Digital Currency)",
       "tags": [
         "pecs",
-        "컴퓨터시스템",
-        "운영체제",
-        "데드락",
-        "교착상태",
-        "프로세스관리"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
-      "title": "동적 메모리 할당과 메모리 누수",
-      "tags": [
-        "peim",
-        "컴퓨터시스템및정보통신",
-        "알고리즘",
-        "동적메모리",
-        "메모리누수",
-        "GC",
-        "힙메모리"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/virtual-memory",
-      "title": "가상 메모리 (Virtual Memory)",
-      "tags": [
-        "peim",
-        "pecs",
-        "컴퓨터시스템",
-        "운영체제",
-        "가상메모리",
-        "페이징",
-        "스와핑",
-        "TLB"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm",
-      "title": "은행가 알고리즘 (Banker's Algorithm)",
-      "tags": [
-        "peim",
-        "컴퓨터시스템",
-        "알고리즘",
-        "은행가알고리즘",
-        "교착상태",
-        "자원할당"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
-      "title": "MMU (Memory Management Unit)",
-      "tags": [
-        "pecs",
-        "시스템소프트웨어및응용소프트웨어",
-        "운영체제",
-        "MMU",
-        "TLB",
-        "IOMMU",
-        "가상메모리",
-        "주소변환"
+        "최신기술",
+        "블록체인",
+        "CBDC",
+        "디지털화폐",
+        "핀테크",
+        "중앙은행"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1606,6 +1507,34 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas",
+      "title": "프로그램 메모리 4가지 영역 (Code/Data/Heap/Stack)",
+      "tags": [
+        "peim",
+        "컴퓨터시스템",
+        "운영체제",
+        "메모리구조",
+        "스택",
+        "힙",
+        "시스템프로그래밍"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/segmentation-fault",
+      "title": "세그멘테이션 오류 (Segmentation Fault)",
+      "tags": [
+        "peim",
+        "컴퓨터시스템및정보통신",
+        "알고리즘",
+        "세그멘테이션폴트",
+        "메모리접근오류",
+        "SIGSEGV",
+        "버퍼오버플로우"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
       "title": "운영체제 동기화 (OS Synchronization)",
       "tags": [
@@ -1679,6 +1608,33 @@
       "category": "04_ComputerSystems"
     },
     {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/intermittent-computing",
+      "title": "인터미턴트 컴퓨팅 (Intermittent Computing)",
+      "tags": [
+        "peim",
+        "컴퓨터시스템및정보통신",
+        "임베디드",
+        "인터미턴트컴퓨팅",
+        "에너지하베스팅",
+        "IoT",
+        "배터리리스"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock",
+      "title": "데드락 (Deadlock, 교착 상태)",
+      "tags": [
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "데드락",
+        "교착상태",
+        "프로세스관리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
       "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
       "title": "시스템 콜 (System Call)",
       "tags": [
@@ -1689,6 +1645,48 @@
         "커널",
         "사용자모드",
         "커널모드"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation",
+      "title": "동적 메모리 할당과 메모리 누수",
+      "tags": [
+        "peim",
+        "컴퓨터시스템및정보통신",
+        "알고리즘",
+        "동적메모리",
+        "메모리누수",
+        "GC",
+        "힙메모리"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory",
+      "title": "가상 메모리 (Virtual Memory)",
+      "tags": [
+        "peim",
+        "pecs",
+        "컴퓨터시스템",
+        "운영체제",
+        "가상메모리",
+        "페이징",
+        "스와핑",
+        "TLB"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm",
+      "title": "은행가 알고리즘 (Banker's Algorithm)",
+      "tags": [
+        "peim",
+        "컴퓨터시스템",
+        "알고리즘",
+        "은행가알고리즘",
+        "교착상태",
+        "자원할당"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1735,20 +1733,6 @@
       "category": "04_ComputerSystems"
     },
     {
-      "id": "notes/04_ComputerSystems/04_OS_Virtualization/intermittent-computing",
-      "title": "인터미턴트 컴퓨팅 (Intermittent Computing)",
-      "tags": [
-        "peim",
-        "컴퓨터시스템및정보통신",
-        "가상화",
-        "인터미턴트컴퓨팅",
-        "에너지하베스팅",
-        "IoT",
-        "배터리리스"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
       "id": "notes/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
       "title": "서버리스 컴퓨팅 (Serverless Computing)",
       "tags": [
@@ -1759,20 +1743,6 @@
         "FaaS",
         "AWS Lambda",
         "클라우드"
-      ],
-      "category": "04_ComputerSystems"
-    },
-    {
-      "id": "notes/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
-      "title": "멀티클라우드 (MultiCloud)",
-      "tags": [
-        "peim",
-        "컴퓨터시스템및정보통신",
-        "가상화",
-        "멀티클라우드",
-        "클라우드",
-        "벤더종속",
-        "하이브리드클라우드"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1829,6 +1799,21 @@
         "규모산정",
         "TTA표준",
         "성능산정"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory",
+      "title": "캐시 메모리 (Cache Memory)",
+      "tags": [
+        "peim",
+        "pecs",
+        "컴퓨터시스템",
+        "알고리즘",
+        "캐시메모리",
+        "쓰기정책",
+        "캐시일관성",
+        "멀티코어"
       ],
       "category": "04_ComputerSystems"
     },
@@ -1912,6 +1897,21 @@
         "상태레지스터",
         "조건플래그",
         "조건분기"
+      ],
+      "category": "04_ComputerSystems"
+    },
+    {
+      "id": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit",
+      "title": "MMU (Memory Management Unit)",
+      "tags": [
+        "pecs",
+        "시스템소프트웨어및응용소프트웨어",
+        "운영체제",
+        "MMU",
+        "TLB",
+        "IOMMU",
+        "가상메모리",
+        "주소변환"
       ],
       "category": "04_ComputerSystems"
     },
@@ -2248,21 +2248,6 @@
       "category": "02_SoftwareEngineering"
     },
     {
-      "id": "notes/02_SoftwareEngineering/03_Implementation_Testing/iso-26262-asil",
-      "title": "ISO 26262와 ASIL (자동차 기능안전)",
-      "tags": [
-        "pecs",
-        "소프트웨어공학",
-        "SW구현시험",
-        "ISO26262",
-        "ASIL",
-        "기능안전",
-        "자동차안전",
-        "임베디드"
-      ],
-      "category": "02_SoftwareEngineering"
-    },
-    {
       "id": "notes/02_SoftwareEngineering/03_Implementation_Testing/sw-testing",
       "title": "소프트웨어 테스트 (SW Testing)",
       "tags": [
@@ -2398,21 +2383,8 @@
         "SP인증",
         "소프트웨어프로세스",
         "CMMI",
-        "TTA"
-      ],
-      "category": "02_SoftwareEngineering"
-    },
-    {
-      "id": "notes/02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
-      "title": "소프트웨어 프로세스 품질인증 (SP 인증)",
-      "tags": [
-        "pecs",
-        "시스템소프트웨어및응용소프트웨어",
-        "IT품질테스트감리",
-        "SP인증",
-        "소프트웨어프로세스",
-        "CMMI",
-        "품질인증"
+        "TTA",
+        "SW진흥법"
       ],
       "category": "02_SoftwareEngineering"
     },
@@ -2427,6 +2399,21 @@
         "인스펙션",
         "SQA",
         "정적검토"
+      ],
+      "category": "02_SoftwareEngineering"
+    },
+    {
+      "id": "notes/02_SoftwareEngineering/05_SW_Quality/iso-26262-asil",
+      "title": "ISO 26262와 ASIL (자동차 기능안전)",
+      "tags": [
+        "pecs",
+        "소프트웨어공학",
+        "SW구현시험",
+        "ISO26262",
+        "ASIL",
+        "기능안전",
+        "자동차안전",
+        "임베디드"
       ],
       "category": "02_SoftwareEngineering"
     },
@@ -2574,20 +2561,6 @@
         "AIaaS",
         "서비스형AI",
         "MLaaS"
-      ],
-      "category": "08_EmergingTech"
-    },
-    {
-      "id": "notes/08_EmergingTech/01_AI_IoT_Cloud/cbdc",
-      "title": "중앙은행 디지털 화폐 (CBDC, Central Bank Digital Currency)",
-      "tags": [
-        "pecs",
-        "최신기술",
-        "블록체인",
-        "CBDC",
-        "디지털화폐",
-        "핀테크",
-        "중앙은행"
       ],
       "category": "08_EmergingTech"
     },
@@ -2812,7 +2785,9 @@
       "id": "notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud",
       "title": "멀티클라우드 (Multicloud)",
       "tags": [
+        "peim",
         "pecs",
+        "컴퓨터시스템및정보통신",
         "최신기술",
         "클라우드",
         "멀티클라우드",
@@ -3617,7 +3592,7 @@
   "links": [
     {
       "source": "notes/03_DataProcessing/01_DataStructures/binary-search-tree",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/03_DataProcessing/01_DataStructures/binary-search-tree",
@@ -3629,7 +3604,7 @@
     },
     {
       "source": "notes/03_DataProcessing/01_DataStructures/linked-list",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/03_DataProcessing/01_DataStructures/multidimensional-index",
@@ -3646,6 +3621,18 @@
     {
       "source": "notes/03_DataProcessing/01_DataStructures/extendible-hashing",
       "target": "notes/03_DataProcessing/01_DataStructures/binary-search-tree"
+    },
+    {
+      "source": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf",
+      "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
+    },
+    {
+      "source": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf",
+      "target": "notes/03_DataProcessing/03_DBMS_Distributed/text2sql"
+    },
+    {
+      "source": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf",
+      "target": "notes/03_DataProcessing/04_DataMining/association-rule-analysis"
     },
     {
       "source": "notes/03_DataProcessing/03_DBMS_Distributed/transaction-isolation-level",
@@ -3721,7 +3708,7 @@
     },
     {
       "source": "notes/03_DataProcessing/03_DBMS_Distributed/text2sql",
-      "target": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "target": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf"
     },
     {
       "source": "notes/03_DataProcessing/03_DBMS_Distributed/db-transaction-recovery",
@@ -3800,24 +3787,12 @@
       "target": "notes/01_InfoStrategy/05_Statistics/bayes-theorem"
     },
     {
-      "source": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai"
-    },
-    {
-      "source": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "notes/03_DataProcessing/03_DBMS_Distributed/text2sql"
-    },
-    {
-      "source": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf",
-      "target": "notes/03_DataProcessing/04_DataMining/association-rule-analysis"
-    },
-    {
       "source": "notes/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
       "target": "notes/03_DataProcessing/04_DataMining/outlier-detection"
     },
     {
       "source": "notes/03_DataProcessing/04_DataMining/confusion-matrix-metrics",
-      "target": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "target": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf"
     },
     {
       "source": "notes/03_DataProcessing/04_DataMining/self-organizing-map",
@@ -3868,6 +3843,22 @@
       "target": "notes/03_DataProcessing/04_DataMining/ml-performance-metrics"
     },
     {
+      "source": "notes/06_InfoSecurity/07_SecurityCertification/common-criteria-cc",
+      "target": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "notes/06_InfoSecurity/07_SecurityCertification/common-criteria-cc",
+      "target": "notes/02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
+    },
+    {
+      "source": "notes/06_InfoSecurity/07_SecurityCertification/isms-p-simplified-certification",
+      "target": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
+    },
+    {
+      "source": "notes/06_InfoSecurity/07_SecurityCertification/isms-p-simplified-certification",
+      "target": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
+    },
+    {
       "source": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p",
       "target": "notes/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
@@ -3893,7 +3884,7 @@
     },
     {
       "source": "notes/06_InfoSecurity/02_SecuritySystems/secure-os",
-      "target": "notes/06_InfoSecurity/08_SecurityCertification/common-criteria-cc"
+      "target": "notes/06_InfoSecurity/07_SecurityCertification/common-criteria-cc"
     },
     {
       "source": "notes/06_InfoSecurity/02_SecuritySystems/bpfdoor",
@@ -4184,22 +4175,6 @@
       "target": "notes/06_InfoSecurity/02_SecuritySystems/attack-surface-lateral-movement"
     },
     {
-      "source": "notes/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
-      "target": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
-    },
-    {
-      "source": "notes/06_InfoSecurity/08_SecurityCertification/common-criteria-cc",
-      "target": "notes/02_SoftwareEngineering/05_SW_Quality/sw-security-quality"
-    },
-    {
-      "source": "notes/06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
-      "target": "notes/06_InfoSecurity/04_AdminSecurity/isms-isms-p"
-    },
-    {
-      "source": "notes/06_InfoSecurity/08_SecurityCertification/isms-p-simplified-certification",
-      "target": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
-    },
-    {
       "source": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology",
       "target": "notes/06_InfoSecurity/01_SecurityTech/model-inversion-attack"
     },
@@ -4257,7 +4232,7 @@
     },
     {
       "source": "notes/05_Networks/02_NetworkDesign/ibn-intent-based-networking",
-      "target": "notes/04_ComputerSystems/04_OS_Virtualization/multi-cloud"
+      "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud"
     },
     {
       "source": "notes/05_Networks/02_NetworkDesign/igp-egp-routing",
@@ -4428,36 +4403,12 @@
       "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/ai-rmf"
     },
     {
-      "source": "notes/04_ComputerSystems/05_Algorithms/memory-areas",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/segmentation-fault",
-      "target": "notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/segmentation-fault",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/cache-memory",
-      "target": "notes/04_ComputerSystems/06_InfraArchitecture/fts-ha"
-    },
-    {
       "source": "notes/04_ComputerSystems/05_Algorithms/big-o-notation",
       "target": "notes/03_DataProcessing/01_DataStructures/binary-search-tree"
     },
     {
       "source": "notes/04_ComputerSystems/05_Algorithms/big-o-notation",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/04_ComputerSystems/05_Algorithms/big-o-notation",
@@ -4465,55 +4416,19 @@
     },
     {
       "source": "notes/04_ComputerSystems/05_Algorithms/genetic-algorithm",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/04_ComputerSystems/05_Algorithms/genetic-algorithm",
       "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/gnn-graph-neural-network"
     },
     {
-      "source": "notes/04_ComputerSystems/05_Algorithms/deadlock",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "source": "notes/04_ComputerSystems/06_InfraArchitecture/cbdc",
+      "target": "notes/04_ComputerSystems/06_InfraArchitecture/blockchain-network-types"
     },
     {
-      "source": "notes/04_ComputerSystems/05_Algorithms/deadlock",
-      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
-      "target": "notes/04_ComputerSystems/05_Algorithms/segmentation-fault"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/virtual-memory",
-      "target": "notes/04_ComputerSystems/05_Algorithms/deadlock"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/virtual-memory",
-      "target": "notes/04_ComputerSystems/05_Algorithms/dynamic-memory-allocation"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/virtual-memory",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
-      "target": "notes/04_ComputerSystems/05_Algorithms/virtual-memory"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
-      "target": "notes/04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access"
-    },
-    {
-      "source": "notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit",
-      "target": "notes/04_ComputerSystems/05_Algorithms/cache-memory"
+      "source": "notes/04_ComputerSystems/06_InfraArchitecture/cbdc",
+      "target": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
       "source": "notes/04_ComputerSystems/06_InfraArchitecture/high-bandwidth-memory",
@@ -4604,8 +4519,20 @@
       "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/multi-gpu-training"
     },
     {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/segmentation-fault",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/segmentation-fault",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
+    },
+    {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
-      "target": "notes/04_ComputerSystems/05_Algorithms/deadlock"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization",
@@ -4617,15 +4544,15 @@
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling",
-      "target": "notes/04_ComputerSystems/05_Algorithms/cache-memory"
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/priority-inversion",
@@ -4633,7 +4560,7 @@
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/priority-inversion",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
@@ -4641,15 +4568,27 @@
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/ipc-inter-process-communication",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock",
-      "target": "notes/04_ComputerSystems/05_Algorithms/deadlock"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/starvation-deadlock",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/intermittent-computing",
+      "target": "notes/04_ComputerSystems/04_OS_Virtualization/serverless-computing"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-synchronization"
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
@@ -4661,7 +4600,31 @@
     },
     {
       "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/system-call",
-      "target": "notes/04_ComputerSystems/05_Algorithms/deadlock"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/segmentation-fault"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/dynamic-memory-allocation"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
+    },
+    {
+      "source": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
     },
     {
       "source": "notes/04_ComputerSystems/01_CS_Fundamentals/risc-v",
@@ -4696,24 +4659,12 @@
       "target": "notes/06_InfoSecurity/03_InfoProtection/mcp-security"
     },
     {
-      "source": "notes/04_ComputerSystems/04_OS_Virtualization/intermittent-computing",
-      "target": "notes/04_ComputerSystems/04_OS_Virtualization/serverless-computing"
-    },
-    {
       "source": "notes/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
       "target": "notes/04_ComputerSystems/04_OS_Virtualization/kubernetes"
     },
     {
       "source": "notes/04_ComputerSystems/04_OS_Virtualization/serverless-computing",
       "target": "notes/04_ComputerSystems/06_InfraArchitecture/multi-region-active-active"
-    },
-    {
-      "source": "notes/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
-      "target": "notes/04_ComputerSystems/04_OS_Virtualization/kubernetes"
-    },
-    {
-      "source": "notes/04_ComputerSystems/04_OS_Virtualization/multi-cloud",
-      "target": "notes/05_Networks/02_NetworkDesign/ibn-intent-based-networking"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access",
@@ -4737,10 +4688,22 @@
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/ssd-solid-state-drive",
-      "target": "notes/04_ComputerSystems/05_Algorithms/cache-memory"
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/hw-sizing-guideline",
+      "target": "notes/04_ComputerSystems/06_InfraArchitecture/fts-ha"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/os-scheduling"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory",
       "target": "notes/04_ComputerSystems/06_InfraArchitecture/fts-ha"
     },
     {
@@ -4769,11 +4732,11 @@
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
-      "target": "notes/04_ComputerSystems/05_Algorithms/mmu-memory-management-unit"
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
-      "target": "notes/04_ComputerSystems/05_Algorithms/cache-memory"
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/pipeline-hazard",
@@ -4793,7 +4756,19 @@
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-status-register-flags",
-      "target": "notes/04_ComputerSystems/05_Algorithms/deadlock"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/deadlock"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit",
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/virtual-memory"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit",
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/03_IO_Interface/dma-direct-memory-access"
+    },
+    {
+      "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/mmu-memory-management-unit",
+      "target": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cache-memory"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
@@ -4805,7 +4780,7 @@
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/cpu-registers",
-      "target": "notes/04_ComputerSystems/05_Algorithms/memory-areas"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/memory-areas"
     },
     {
       "source": "notes/04_ComputerSystems/02_HardwareSystems/01_HW_Design_Operation/system-bus-arbitration",
@@ -4976,10 +4951,6 @@
       "target": "notes/02_SoftwareEngineering/03_Implementation_Testing/sw-testing"
     },
     {
-      "source": "notes/02_SoftwareEngineering/03_Implementation_Testing/iso-26262-asil",
-      "target": "notes/02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality"
-    },
-    {
       "source": "notes/02_SoftwareEngineering/03_Implementation_Testing/sw-testing",
       "target": "notes/02_SoftwareEngineering/03_Implementation_Testing/deployment-strategy"
     },
@@ -5064,12 +5035,8 @@
       "target": "notes/02_SoftwareEngineering/01_Dev_Methodology/agile-sw-development"
     },
     {
-      "source": "notes/02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
+      "source": "notes/02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality",
       "target": "notes/01_InfoStrategy/04_IT_Audit/it-audit-operation-maintenance"
-    },
-    {
-      "source": "notes/02_SoftwareEngineering/05_SW_Quality/sw-process-quality-certification",
-      "target": "notes/02_SoftwareEngineering/01_Dev_Methodology/devops-pros-cons"
     },
     {
       "source": "notes/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
@@ -5078,6 +5045,10 @@
     {
       "source": "notes/02_SoftwareEngineering/05_SW_Quality/sw-quality-assurance-inspection",
       "target": "notes/02_SoftwareEngineering/05_SW_Quality/sla-service-level-agreement"
+    },
+    {
+      "source": "notes/02_SoftwareEngineering/05_SW_Quality/iso-26262-asil",
+      "target": "notes/02_SoftwareEngineering/05_SW_Quality/sp-software-process-quality"
     },
     {
       "source": "notes/07_SystemEvaluation/01_PerformanceEvaluation/e-government-performance-metrics",
@@ -5174,14 +5145,6 @@
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/ai-as-a-service",
       "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/cloud-ai-vs-ondevice-ai"
-    },
-    {
-      "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/cbdc",
-      "target": "notes/04_ComputerSystems/06_InfraArchitecture/blockchain-network-types"
-    },
-    {
-      "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/cbdc",
-      "target": "notes/06_InfoSecurity/06_PrivacyProtection/pet-privacy-enhancing-technology"
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/time-series-deep-learning",
@@ -5345,6 +5308,14 @@
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "target": "notes/04_ComputerSystems/04_OS_Virtualization/kubernetes"
+    },
+    {
+      "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud",
+      "target": "notes/05_Networks/02_NetworkDesign/ibn-intent-based-networking"
+    },
+    {
+      "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/multicloud",
       "target": "notes/08_EmergingTech/01_AI_IoT_Cloud/cloud-service-types"
     },
     {
@@ -5401,7 +5372,7 @@
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
-      "target": "notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf"
+      "target": "notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf"
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai",
@@ -5521,7 +5492,7 @@
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/monte-carlo-tree-search",
-      "target": "notes/04_ComputerSystems/05_Algorithms/banker-algorithm"
+      "target": "notes/04_ComputerSystems/03_SystemSoftware/01_OS_Embedded/banker-algorithm"
     },
     {
       "source": "notes/08_EmergingTech/01_AI_IoT_Cloud/turboquant",

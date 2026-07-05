@@ -63,7 +63,7 @@ GROUP BY product_name ORDER BY total_sales DESC LIMIT 10;
 ## 연관 개념
 
 - [초거대 AI]({{< relref "/docs/notes/08_EmergingTech/01_AI_IoT_Cloud/large-scale-ai" >}}) — TEXT2SQL의 기반 LLM 기술
-- [벡터 데이터베이스]({{< relref "/docs/notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf" >}}) — RAG 기반 스키마 검색 활용
+- [벡터 데이터베이스]({{< relref "/docs/notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf" >}}) — RAG 기반 스키마 검색 활용
 - 데이터 품질관리 — TEXT2SQL 결과의 신뢰성
 
 ## 참고 기출

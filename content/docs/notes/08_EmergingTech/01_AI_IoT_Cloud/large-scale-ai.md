@@ -60,7 +60,7 @@ exam_peim: ["137회"]
 ## 연관 개념
 
 - [Transformer/MoE]({{< relref "/docs/notes/08_EmergingTech/01_AI_IoT_Cloud/transformer-moe" >}}) — 초거대 AI의 핵심 아키텍처
-- [벡터 데이터베이스/HNSW]({{< relref "/docs/notes/03_DataProcessing/04_DataMining/vector-database-hnsw-ivf" >}}) — RAG 구현 기반
+- [벡터 데이터베이스/HNSW]({{< relref "/docs/notes/03_DataProcessing/03_DBMS_Distributed/vector-database-hnsw-ivf" >}}) — RAG 구현 기반
 - [프롬프트 인젝션]({{< relref "/docs/notes/06_InfoSecurity/01_SecurityTech/prompt-injection" >}}) — 초거대 AI 보안 위협
 - [AI 거버넌스]({{< relref "/docs/notes/01_InfoStrategy/03_AI_Ethics/ai-governance" >}}) — 공공 AI 거버넌스 체계
 
