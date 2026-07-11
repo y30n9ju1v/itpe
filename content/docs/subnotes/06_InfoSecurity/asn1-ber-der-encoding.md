@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **ASN.1 Tag 인코딩(Long-form Tag Number Encoding)과 BER·DER·CER 비교** |
 | **정의** | 데이터 구조를 플랫폼 독립적으로 기술하는 표준 언어 ASN.1(Abstract Syntax Notation One)의 TLV 구조 중, 태그 번호 31 이상을 표현하는 **Long-form Tag Encoding** 방식과, 실제 바이트 스트림 생성 규칙인 **BER·DER·CER**의 X.509 인증서 적용 |

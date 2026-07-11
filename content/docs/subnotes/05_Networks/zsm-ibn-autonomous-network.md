@@ -13,7 +13,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **ETSI ZSM (Zero-touch Network and Service Management) 및 IBN (Intent-Based Networking)** |
 | **정의** | 인간 개입 없이 AI/ML로 네트워크를 자율 운영·최적화·치유하는 ETSI 표준 프레임워크 **ZSM**과, 관리자가 선언한 비즈니스 의도(Intent)를 시스템이 자동으로 정책 변환·배포·검증하는 자율 네트워크 패러다임 **IBN**으로, 5G/6G 완전 자율 운영을 목표로 상호 연계됨 |

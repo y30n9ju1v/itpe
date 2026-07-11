@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **Transformer(Self-Attention) 및 MoE (Mixture of Experts)** |
 | **정의** | 시퀀스 내 모든 토큰 쌍의 관계를 병렬로 계산하는 **Self-Attention 기반 Transformer** 아키텍처와, 입력별 일부 전문가 네트워크만 선택 활성화해 파라미터 효율을 극대화하는 **MoE** |

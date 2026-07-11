@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **MLOps(Machine Learning Operations)와 DevOps 비교** |
 | **정의** | DevOps는 애플리케이션 코드의 개발·운영을 통합해 빠른 배포를 지향하는 방법론이며, **MLOps**는 여기에 데이터와 모델의 학습·검증·배포·모니터링 전 생명주기를 자동화하는 **CT(Continuous Training)**를 결합한 ML 특화 운영 방법론 |

@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **OPC UA (Open Platform Communications Unified Architecture) — IEC 62541 산업 자동화 통신 표준** |
 | **정의** | Microsoft DCOM 기반의 기존 OPC의 Windows 의존성·보안 취약점을 극복한, TCP/IP 기반 플랫폼·벤더 중립적 차세대 산업 자동화 통신 프로토콜(IEC 62541) |

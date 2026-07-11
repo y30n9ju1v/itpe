@@ -13,7 +13,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **WiFi 7 (IEEE 802.11be, Extremely High Throughput) 및 WiFi 8 (IEEE 802.11bn)** |
 | **정의** | 최대 46Gbps 속도와 극저지연을 실현하는 7세대 무선 규격 **WiFi 7**과, 속도 경쟁을 넘어 밀집 지역 내 초고신뢰성(Ultra High Reliability) 확보에 초점을 둔 차세대 **WiFi 8 무선랜 표준 기술** |

@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **고가용성·재해복구 아키텍처: FTS·HA 및 다중지역 Active-Active** |
 | **정의** | 구성요소 장애 시에도 서비스 중단 없이 지속 운영되는 **FTS(Fault Tolerant System)**, 장애 시 빠른 Failover로 가동률을 높게 유지하는 **HA(High Availability)**, 그리고 둘 이상의 지역에 동시 서비스를 배치해 RTO≈0·RPO≈0을 목표로 하는 **다중지역 Active-Active** 아키텍처 |

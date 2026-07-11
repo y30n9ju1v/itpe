@@ -14,7 +14,7 @@ draft: false
 
 ---
 
-| 분류 | 기술 기술사 서브노트 작성 예시 (1교시형 포맷) |
+| 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **암호문 공격(Ciphertext Attack) 4대 유형 및 해시함수 Rainbow Table 방어(Salt/Key Stretching)** |
 | **정의** | 공격자가 보유한 정보 수준에 따라 암호를 해독하려는 **암호문 공격 4유형(COA·KPA·CPA·CCA)**과, 단방향 해시 함수의 취약점을 노리는 **Rainbow Table 공격** 및 이를 무력화하는 **Salt·Key Stretching** 방어 기법 |
