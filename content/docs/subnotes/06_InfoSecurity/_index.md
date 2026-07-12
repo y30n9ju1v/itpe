@@ -6,7 +6,7 @@ title: "정보보안"
 | 번호 | 토픽명 | 정의 |
 | :--- | :--- | :--- |
 | 1 | [접근통제 정책(MAC/DAC/RBAC/ABAC)과 보안운영체제(Secure OS)]({{< relref "/docs/subnotes/06_InfoSecurity/access-control-secure-os" >}}) | 인가된 주체만 보호 자원에 접근하도록 제한하는 4대 **접근통제 정책(M·D·R·A)**과, 이를 커널 수준에서 강제 구현한 **보안운영체제(Secure OS)** |
-| 2 | [AI 적대적 공격 및 프라이버시 보호]({{< relref "/docs/subnotes/06_InfoSecurity/ai-adversarial-attacks" >}}) | 모델에 노이즈를 넣어 오분류·유출을 유도하는 **AI 적대적 공격(포·이·엑)**과, 민감 데이터 유출을 막는 **프라이버시 보존 기술(동·차·연)** |
+| 2 | [AI 적대적 공격 및 프라이버시 보호]({{< relref "/docs/subnotes/06_InfoSecurity/ai-adversarial-attacks" >}}) | 모델에 노이즈를 넣어 오분류·유출을 유도하는 **AI 적대적 공격(포·이·엑·전)**과, 민감 데이터 유출을 막는 **프라이버시 보존 기술(동·차·연)** |
 | 3 | [AI 프라이버시 위협: 생명주기별 이슈, 안면인식 결제, 딥페이크]({{< relref "/docs/subnotes/06_InfoSecurity/ai-privacy-biometric-threats" >}}) | AI 생명주기(수·학·추·배) 단계별 프라이버시 위험과, 그 대표 사례인 **안면인식 결제**, 실사 유사 가짜 미디어 **딥페이크(G·V·확·F·V·립)** 위협군 |
 | 4 | [안티드론 시스템 프레임워크 (TTAK.KO-10.1460)]({{< relref "/docs/subnotes/06_InfoSecurity/anti-drone-system" >}}) | 불법·위협 드론(UAV)의 탐지·추적·식별·대응 절차와 기술구조를 정의한 TTA 표준(**TTAK.KO-10.1460**)의 **5단계 기능계층(탐·추·식·대·C2)** |
 | 5 | [ASN.1 Tag 인코딩과 BER/DER/CER 비교]({{< relref "/docs/subnotes/06_InfoSecurity/asn1-ber-der-encoding" >}}) | 데이터 구조 기술 표준 ASN.1의 TLV 구조 중 **Long-form Tag Encoding** 방식과, 바이트 스트림 생성 규칙 **BER·DER·CER**의 X.509 적용 |
