@@ -1,6 +1,6 @@
 ---
 title: "NAT(Network Address Translation) 핵심 기능"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "NAT", "PAT", "SNAT", "DNAT", "NAT-T", "서브노트"]
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "프로세스 생명주기와 문맥교환(Context Switch)"
-date: 2026-07-13T13:24:19+09:00
+date: 2026-07-12T13:24:19+09:00
 tags: ["컴퓨터시스템", "운영체제", "프로세스", "PCB", "ContextSwitch", "문맥교환", "서브노트"]
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "ARP와 보안 취약점"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "ARP", "RARP", "ARP Spoofing", "DAI", "NDP", "서브노트"]
 draft: false
 ---

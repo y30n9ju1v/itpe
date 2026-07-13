@@ -1,6 +1,6 @@
 ---
 title: "메모리 인터리빙(Memory Interleaving)"
-date: 2026-07-13T13:24:19+09:00
+date: 2026-07-12T13:24:19+09:00
 tags: ["컴퓨터시스템", "컴퓨터구조", "메모리인터리빙", "MemoryInterleaving", "뱅크", "서브노트"]
 draft: false
 ---

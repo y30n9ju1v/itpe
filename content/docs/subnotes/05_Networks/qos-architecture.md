@@ -1,6 +1,6 @@
 ---
 title: "QoS 스케줄링, 모델, 측정요소"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "QoS", "IntServ", "DiffServ", "스케줄링", "WRED", "서브노트"]
 draft: false
 ---

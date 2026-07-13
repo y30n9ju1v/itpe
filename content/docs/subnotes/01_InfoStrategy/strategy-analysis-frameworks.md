@@ -1,6 +1,6 @@
 ---
 title: "경영전략 분석 프레임워크: SWOT/STP/3C/PEST/MECE/LISS"
-date: 2026-07-13T15:23:43+09:00
+date: 2026-07-12T15:23:43+09:00
 tags: ["정보전략", "IT경영", "SWOT", "PEST", "3C", "MECE", "LISS", "STP", "서브노트"]
 draft: false
 ---

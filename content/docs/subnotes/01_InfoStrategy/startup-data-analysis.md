@@ -1,6 +1,6 @@
 ---
 title: "스타트업 데이터 분석기법: Funnel·Cohort·A/B Test·VDT"
-date: 2026-07-13T15:23:43+09:00
+date: 2026-07-12T15:23:43+09:00
 tags: ["정보전략", "IT경영", "스타트업", "Funnel", "Cohort", "ABTest", "서브노트"]
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "이중 모드(Dual Mode)와 보호 링(Protection Ring)"
-date: 2026-07-13T13:24:19+09:00
+date: 2026-07-12T13:24:19+09:00
 tags: ["컴퓨터시스템", "운영체제", "이중모드", "DualMode", "특권명령어", "ProtectionRing", "서브노트"]
 draft: false
 ---

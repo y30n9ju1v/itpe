@@ -1,6 +1,6 @@
 ---
 title: "BCP·BIA와 재해복구시스템(DRS) 체계"
-date: 2026-07-13T15:23:43+09:00
+date: 2026-07-12T15:23:43+09:00
 tags: ["정보전략", "IT경영", "BCP", "DRS", "RTO", "RPO", "BIA", "서브노트"]
 draft: false
 ---

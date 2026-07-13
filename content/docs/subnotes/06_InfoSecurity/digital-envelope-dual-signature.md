@@ -1,6 +1,6 @@
 ---
 title: "전자봉투(Digital Envelope) 및 이중서명(Dual Signature)"
-date: 2026-07-13T15:25:24+09:00
+date: 2026-07-12T15:25:24+09:00
 tags: ["정보보안", "전자봉투", "이중서명", "SET", "하이브리드암호", "서브노트"]
 draft: false
 ---

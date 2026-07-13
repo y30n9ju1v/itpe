@@ -1,6 +1,6 @@
 ---
 title: "API 보안과 AIoT 보안"
-date: 2026-07-13T15:25:55+09:00
+date: 2026-07-12T15:25:55+09:00
 tags: ["정보보안", "API보안", "OWASPAPITop10", "AIoT보안", "IoT보안", "서브노트"]
 draft: false
 ---

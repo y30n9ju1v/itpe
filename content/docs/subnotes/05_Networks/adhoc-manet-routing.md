@@ -1,6 +1,6 @@
 ---
 title: "Ad-hoc 네트워킹 라우팅 프로토콜"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "Ad-hoc", "MANET", "AODV", "DSR", "OLSR", "서브노트"]
 draft: false
 ---

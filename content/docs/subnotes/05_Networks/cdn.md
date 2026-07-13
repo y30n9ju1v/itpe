@@ -1,6 +1,6 @@
 ---
 title: "CDN 동작원리와 캐싱"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "CDN", "PoP", "캐싱", "Anycast", "Cache-Control", "서브노트"]
 draft: false
 ---

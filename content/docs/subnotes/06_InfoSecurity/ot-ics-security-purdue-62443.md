@@ -1,6 +1,6 @@
 ---
 title: "OT/ICS 보안 — 파듀(Purdue) 모델과 ISA/IEC 62443"
-date: 2026-07-13T15:25:55+09:00
+date: 2026-07-12T15:25:55+09:00
 tags: ["정보보안", "파듀모델", "ISA-IEC62443", "OT보안", "ICS보안", "SCADA", "서브노트"]
 draft: false
 ---

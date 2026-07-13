@@ -1,6 +1,6 @@
 ---
 title: "전송계층 보안 프로토콜: SSL/TLS·IPSec·VPN"
-date: 2026-07-13T13:24:45+09:00
+date: 2026-07-12T13:24:45+09:00
 tags: ["정보보안", "SSL", "TLS", "IPSec", "VPN", "서브노트"]
 draft: false
 ---

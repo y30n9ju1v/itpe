@@ -1,6 +1,6 @@
 ---
 title: "시스템 통합 솔루션의 진화: EAI, ESB, API Gateway"
-date: 2026-07-13T15:23:43+09:00
+date: 2026-07-12T15:23:43+09:00
 tags: ["정보전략", "IT경영", "EAI", "ESB", "APIGateway", "시스템통합", "서브노트"]
 draft: false
 ---

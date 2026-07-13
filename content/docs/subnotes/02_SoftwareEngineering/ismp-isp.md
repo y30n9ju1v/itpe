@@ -1,6 +1,6 @@
 ---
 title: "ISMP와 ISP, EA/ITA 비교"
-date: 2026-07-13T15:22:39+09:00
+date: 2026-07-12T15:22:39+09:00
 tags: ["소프트웨어공학", "ISMP", "ISP", "EA", "ITA", "기능점수", "서브노트"]
 draft: false
 ---

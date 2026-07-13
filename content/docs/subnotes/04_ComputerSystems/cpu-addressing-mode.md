@@ -1,6 +1,6 @@
 ---
 title: "CPU 주소지정방식(Addressing Mode)"
-date: 2026-07-13T13:24:19+09:00
+date: 2026-07-12T13:24:19+09:00
 tags: ["컴퓨터시스템", "컴퓨터구조", "주소지정방식", "AddressingMode", "RISC", "CISC", "서브노트"]
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "다중 접근 프로토콜"
-date: 2026-07-13T18:13:12+09:00
+date: 2026-07-12T18:13:12+09:00
 tags: ["네트워크", "CSMA/CD", "CSMA/CA", "TDMA", "FDMA", "CDMA", "OFDMA", "서브노트"]
 draft: false
 ---

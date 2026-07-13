@@ -1,6 +1,6 @@
 ---
 title: "LDW와 DW 다차원 모델링: Star/Snowflake Schema"
-date: 2026-07-13T15:35:09+09:00
+date: 2026-07-12T15:35:09+09:00
 tags: ["데이터처리", "데이터웨어하우스", "LDW", "StarSchema", "SnowflakeSchema", "다차원모델링", "서브노트"]
 draft: false
 ---
