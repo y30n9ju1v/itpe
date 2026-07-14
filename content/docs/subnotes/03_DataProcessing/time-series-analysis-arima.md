@@ -16,9 +16,9 @@ draft: false
 | 항목 | 내용 |
 | :--- | :--- |
 | **토픽명** | **시계열 분석 (Time Series Analysis: AR, MA, ARIMA)** |
-| **정의** | 연도·분기·월별 등 시간 순서로 관측되는 자료를 정상성(Stationary) 가정 하에 분석하여 미래를 예측하는 기법으로, AR·MA·ARIMA 모형을 통해 추세·계절·순환·불규칙 요인을 분해 |
+| **정의** | 연도·분기·월별 등 시간순 관측자료를 정상성(Stationary) 가정 하 분석 → 미래예측 기법, AR·MA·ARIMA 모형으로 추세·계절·순환·불규칙 요인 분해 |
 | **키워드** | 정상성(Stationary), AR(자기회귀), MA(이동평균), ARIMA(p,d,q), 차분, 시계열 분해 |
 | **개념도** | `AR(p) 모형` ┐<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├▶`ARMA(p,q) 모형` ─차분─▶`ARIMA(p,d,q) 모형`<br>`MA(q) 모형` ┘ |
-| **구성요소** | 1. **정상성(Stationary)**: 평균 일정·분산이 시점 무관·공분산이 시차에만 의존하는 조건, 시계열 분석의 전제<br>2. **AR 모형(Auto-Regressive)**: Zt=φ₁Zt-1+...+φpZt-p+at, 현시점 자료를 p시점 전 과거 자료로 설명<br>3. **MA 모형(Moving Average)**: Zt=at-θ₁at-1-...-θqat-q, 유한개 백색잡음의 선형결합으로 표현되어 항상 정상성 만족<br>4. **ARIMA 모형**: ARMA(p,q)를 d번 차분하여 정상화한 모형, p=AR차수·d=차분횟수·q=MA차수<br>5. **시계열 분해 4요인**: 추세(Trend, 선형/지수적 형태)·계절(Seasonal, 고정 주기 반복)·순환(Cyclical, 불규칙 주기)·불규칙(Irregular, 잔차) |
+| **구성요소** | 1. **정상성(Stationary)**: 평균일정·분산 시점무관·공분산 시차의존 조건, 시계열분석 전제<br>2. **AR 모형(Auto-Regressive)**: Zt=φ₁Zt-1+...+φpZt-p+at, 현시점자료를 p시점전 과거자료로 설명<br>3. **MA 모형(Moving Average)**: Zt=at-θ₁at-1-...-θqat-q, 유한개 백색잡음 선형결합 → 항상 정상성 만족<br>4. **ARIMA 모형**: ARMA(p,q) d번 차분 → 정상화, p=AR차수·d=차분횟수·q=MA차수<br>5. **시계열 분해 4요인**: 추세(Trend, 선형/지수형)·계절(Seasonal, 고정주기)·순환(Cyclical, 불규칙주기)·불규칙(Irregular, 잔차) |
 | **비교** | **AR 모형**<br>- 과거 관측값(Zt-k)의 선형결합으로 현재값 설명<br>- 정상성 가정 필요<br><br>**MA 모형**<br>- 과거 백색잡음(오차항)의 선형결합으로 현재값 설명<br>- 항상 정상성 만족, 별도 정상성 가정 불필요 |
-| **차별화** | **시계열 분석 실무 적용 전략** <br>1. **모형 선택 절차**: ACF/PACF 그래프로 AR·MA 차수를 식별하고, 정상성 미충족 시 차분(Differencing)으로 ARIMA(p,d,q)를 정합<br>2. **비즈니스 예측 적용**: 분기/반기/연간 지표 예측이나 주간/월간 트렌드 리뷰에 ARIMA를 활용해 의사결정 지원<br>3. **딥러닝 대체 기법**: 비선형·장기 의존성이 강한 데이터에는 Facebook Prophet, LSTM 등 딥러닝 기반 시계열 예측이 ARIMA의 대안으로 부상 |
+| **차별화** | **시계열 분석 실무 적용 전략** <br>1. **모형 선택 절차**: ACF/PACF 그래프로 AR·MA 차수 식별, 정상성 미충족 시 차분(Differencing)으로 ARIMA(p,d,q) 정합<br>2. **비즈니스 예측 적용**: 분기/반기/연간 지표예측, 주간/월간 트렌드리뷰에 ARIMA 활용 → 의사결정 지원<br>3. **딥러닝 대체 기법**: 비선형·장기의존성 강한 데이터 → Facebook Prophet, LSTM 등 딥러닝 시계열예측이 ARIMA 대안으로 부상 |
