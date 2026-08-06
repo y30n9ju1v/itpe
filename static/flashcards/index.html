@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보처리기술사 암기용 플래시 카드 (Flashcards)</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo">
+        <i class="fa-solid fa-brain logo-icon"></i>
+        <div class="logo-text">
+          <h1>ITPE 기술사 Flashcards</h1>
+          <span class="subtitle">정보처리기술사 핵심 서브노트 & 용어 암기 앱</span>
+        </div>
+      </div>
+
+      <!-- Control Stats Summary -->
+      <div class="header-stats">
+        <div class="stat-pill easy">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>알고 있음: <strong id="stat-easy-count">0</strong></span>
+        </div>
+        <div class="stat-pill medium">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>헷갈림: <strong id="stat-medium-count">0</strong></span>
+        </div>
+        <div class="stat-pill hard">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <span>모름: <strong id="stat-hard-count">0</strong></span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="overall-progress-bar" style="width: 0%;"></div>
+          <span class="progress-text" id="overall-progress-text">0% 완료</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="다크/라이트 테마 전환" aria-label="다크/라이트 테마 전환">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="reset-stats-btn" class="icon-btn danger" title="학습 데이터 초기화" aria-label="학습 데이터 초기화">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <div class="app-layout">
+
+    <!-- Sidebar: Filters & Modes -->
+    <aside class="sidebar">
+      <!-- Mode Selection -->
+      <div class="sidebar-section">
+        <h3><i class="fa-solid fa-layer-group"></i> 학습 모드</h3>
+        <nav class="mode-menu">
+          <button class="mode-btn active" data-mode="flashcard">
+            <i class="fa-solid fa-clone"></i> <span>플래시 카드 모드</span>
+          </button>
+          <button class="mode-btn" data-mode="review">
+            <i class="fa-solid fa-arrows-rotate"></i> <span>복습 모드 (모름/헷갈림)</span>
+          </button>
+          <button class="mode-btn" data-mode="quiz">
+            <i class="fa-solid fa-vial-circle-check"></i> <span>퀴즈 모드 (4지선다)</span>
+          </button>
+          <button class="mode-btn" data-mode="list">
+            <i class="fa-solid fa-list-check"></i> <span>전체 목록 / 검색</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Card Type Selector -->
+      <div class="sidebar-section">
+        <h3><i class="fa-solid fa-filter"></i> 카테고리 / 종류</h3>
+        <div class="type-selector">
+          <button class="type-btn active" data-type="all">전체</button>
+          <button class="type-btn" data-type="subnote">서브노트 핵심</button>
+          <button class="type-btn" data-type="glossary">용어집</button>
+        </div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="sidebar-section">
+        <div class="section-title-wrap">
+          <h3><i class="fa-solid fa-folder-open"></i> 주제별 선택</h3>
+          <span class="badge" id="filtered-card-count">0개</span>
+        </div>
+        <div class="category-list" id="category-list">
+          <!-- Categories populated via JS -->
+        </div>
+      </div>
+
+      <!-- Shortcut guide -->
+      <div class="sidebar-section shortcut-guide">
+        <h3><i class="fa-keyboard fa-regular"></i> 단축키 안내</h3>
+        <ul>
+          <li><kbd>Space</kbd> / <kbd>Click</kbd> 카드 뒤집기</li>
+          <li><kbd>←</kbd> / <kbd>→</kbd> 이전 / 다음 카드</li>
+          <li><kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 암기완료</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Top Toolbar (Search, Random, Mnemonic Toggle) -->
+      <div class="toolbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="토픽명, 키워드, 정의 검색 (예: EVM, SOLID, 다익스트라)...">
+          <button id="clear-search-btn" class="clear-btn" aria-label="검색어 지우기"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="toolbar-controls">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggle-mnemonic" checked>
+            <span class="slider"></span>
+            <span class="label-text">두음(🧠) 힌트 표시</span>
+          </label>
+          <button id="shuffle-btn" class="btn secondary">
+            <i class="fa-solid fa-shuffle"></i> 카드 섞기
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW 1: FLASHCARD MODE -->
+      <section id="view-flashcard" class="view-panel active">
+        <div class="flashcard-deck-header">
+          <span class="card-counter" id="card-counter">1 / 100</span>
+          <div class="deck-category-tag" id="current-card-cat">
+            <span class="cat-icon">📊</span> <span class="cat-name">정보전략 및 관리</span>
+          </div>
+        </div>
+
+        <!-- 3D Flip Card Scene -->
+        <div class="card-scene">
+          <div class="card-3d" id="flashcard">
+            <!-- Front of Card -->
+            <div class="card-face card-front">
+              <div class="card-tag-wrapper">
+                <span class="card-badge-type" id="card-front-type">서브노트</span>
+                <span class="mnemonic-badge" id="card-front-mnemonic-badge"><i class="fa-solid fa-brain"></i> 두음 암기</span>
+              </div>
+
+              <div class="card-front-body">
+                <h2 class="card-title" id="card-front-title">획득가치관리 (EVM)</h2>
+                
+                <!-- Mnemonics Box -->
+                <div class="mnemonic-container" id="card-front-mnemonic-container">
+                  <div class="mnemonic-title"><i class="fa-solid fa-lightbulb"></i> 두음 머리에 박기 🧠</div>
+                  <ul class="mnemonic-list" id="card-front-mnemonics">
+                    <!-- Mnemonics inserted by JS -->
+                  </ul>
+                </div>
+
+                <!-- Keywords Hint -->
+                <div class="keyword-hint-box" id="card-front-keywords">
+                  <span class="hint-label">핵심 키워드 힌트:</span>
+                  <p id="card-front-keyword-text">PV/EV/AC, SV/CV, SPI/CPI...</p>
+                </div>
+              </div>
+
+              <div class="card-flip-prompt">
+                <i class="fa-solid fa-rotate"></i> 클릭하거나 Space바를 눌러 뒷면(정의/구성요소) 확인
+              </div>
+            </div>
+
+            <!-- Back of Card -->
+            <div class="card-face card-back">
+              <div class="card-back-header">
+                <h3 class="card-back-title" id="card-back-title">획득가치관리 (EVM)</h3>
+                <div class="card-back-rating" id="card-back-rating-badge">미평가</div>
+              </div>
+
+              <div class="card-back-scrollable">
+                <!-- Definition -->
+                <div class="detail-block definition-block">
+                  <h4><i class="fa-solid fa-book"></i> 정의 (Definition)</h4>
+                  <p id="card-back-definition">프로젝트의 일정 계획과 실제 비용을 수행 성과와 비교하여...</p>
+                </div>
+
+                <!-- Keywords -->
+                <div class="detail-block keyword-block" id="block-keywords">
+                  <h4><i class="fa-solid fa-tags"></i> 핵심 키워드</h4>
+                  <div class="tags-cloud" id="card-back-keywords-cloud"></div>
+                </div>
+
+                <!-- Components -->
+                <div class="detail-block components-block" id="block-components">
+                  <h4><i class="fa-solid fa-cubes"></i> 주요 구성요소 및 내용</h4>
+                  <div class="detail-content" id="card-back-components"></div>
+                </div>
+
+                <!-- Comparison -->
+                <div class="detail-block comparison-block" id="block-comparison">
+                  <h4><i class="fa-solid fa-code-compare"></i> 핵심 비교 / 항목</h4>
+                  <div class="detail-content" id="card-back-comparison"></div>
+                </div>
+
+                <!-- Differentiation -->
+                <div class="detail-block diff-block" id="block-differentiation">
+                  <h4><i class="fa-solid fa-award"></i> 4단락 기술사 차별화 포인트</h4>
+                  <div class="detail-content" id="card-back-differentiation"></div>
+                </div>
+              </div>
+
+              <div class="card-back-footer">
+                <span class="source-file-info" id="card-source-file">file.md</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rating & Navigation Controls -->
+        <div class="deck-controls">
+          <button id="prev-card-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> 이전 (←)</button>
+          
+          <div class="rating-buttons">
+            <button class="rate-btn rate-hard" id="rate-hard-btn">
+              <i class="fa-solid fa-xmark"></i> 모름 <kbd>(1)</kbd>
+            </button>
+            <button class="rate-btn rate-medium" id="rate-medium-btn">
+              <i class="fa-solid fa-question"></i> 헷갈림 <kbd>(2)</kbd>
+            </button>
+            <button class="rate-btn rate-easy" id="rate-easy-btn">
+              <i class="fa-solid fa-check"></i> 암기 완료 <kbd>(3)</kbd>
+            </button>
+          </div>
+
+          <button id="next-card-btn" class="nav-btn">다음 (→) <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <!-- VIEW 3: QUIZ MODE -->
+      <section id="view-quiz" class="view-panel">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <div class="quiz-score-badge">
+              <span>점수: <strong id="quiz-score">0</strong> / <span id="quiz-total">0</span></span>
+            </div>
+            <button id="start-new-quiz-btn" class="btn primary">
+              <i class="fa-solid fa-play"></i> 새 퀴즈 시작 (10문제)
+            </button>
+          </div>
+
+          <div id="quiz-card-box" class="quiz-box">
+            <div class="quiz-question">
+              <span class="quiz-cat-tag" id="quiz-cat-tag">소프트웨어 공학</span>
+              <h3 id="quiz-question-text">다음 정의에 해당하는 올바른 정보처리기술사 토픽은 무엇일까요?</h3>
+              <div class="quiz-prompt-quote" id="quiz-question-prompt">"..."</div>
+            </div>
+
+            <div class="quiz-options" id="quiz-options">
+              <!-- 4 options created by JS -->
+            </div>
+
+            <div class="quiz-explanation" id="quiz-explanation" style="display: none;">
+              <div id="quiz-result-message"></div>
+              <div id="quiz-detail-explanation"></div>
+              <button id="quiz-next-btn" class="btn primary">다음 문제 <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 4: LIST & SEARCH MODE -->
+      <section id="view-list" class="view-panel">
+        <div class="list-header">
+          <h2><i class="fa-solid fa-list-check"></i> 전체 토픽 카탈로그</h2>
+          <span id="list-total-count" class="badge">총 0개 토픽</span>
+        </div>
+        <div class="card-grid" id="card-grid">
+          <!-- Cards grid populated by JS -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
