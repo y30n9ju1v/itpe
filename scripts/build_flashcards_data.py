@@ -73,6 +73,13 @@ def clean_html_and_markdown(text):
     text = text.replace('&nbsp;', ' ')
     return text.strip()
 
+def strip_markdown_emphasis(text):
+    if not text:
+        return text
+    text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
+    text = re.sub(r'`(.+?)`', r'\1', text)
+    return text.strip()
+
 def parse_subnote_file(filepath, cat_id):
     with open(filepath, 'r', encoding='utf-8') as f:
         raw = f.read()
@@ -85,7 +92,7 @@ def parse_subnote_file(filepath, cat_id):
     mnemonics = parse_mnemonics(content)
     table = parse_markdown_table(content)
 
-    topic_title = table.get("토픽명") or meta.get("title") or filename.replace('.md', '')
+    topic_title = strip_markdown_emphasis(table.get("토픽명")) or meta.get("title") or filename.replace('.md', '')
     definition = clean_html_and_markdown(table.get("정의", ""))
     keywords = clean_html_and_markdown(table.get("키워드", ""))
     components = clean_html_and_markdown(table.get("구성요소", ""))

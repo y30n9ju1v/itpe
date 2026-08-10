@@ -223,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (state.filteredCards.length === 0) {
-      el.viewFlashcard.style.display = 'flex';
       el.frontMnemonicBox.style.display = 'block';
       el.frontKeywordsBox.style.display = 'none';
       if (state.currentMode === 'review') {
@@ -237,8 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
       el.cardCounter.textContent = '0 / 0';
       return;
     }
-
-    el.viewFlashcard.style.display = 'flex';
 
     const card = state.filteredCards[state.currentIndex];
     el.cardCounter.textContent = `${state.currentIndex + 1} / ${state.filteredCards.length}`;
@@ -255,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mnemonics
     if (card.mnemonics && card.mnemonics.length > 0 && state.showMnemonic) {
       el.frontMnemonicBox.style.display = 'block';
-      el.frontMnemonics.innerHTML = card.mnemonics.map(m => `<li>• ${escapeHtml(m)}</li>`).join('');
+      el.frontMnemonics.innerHTML = card.mnemonics.map(m => `<li>• ${renderInlineMarkdown(m)}</li>`).join('');
     } else {
       el.frontMnemonicBox.style.display = 'none';
     }
@@ -362,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
               ${r ? `<span class="stat-pill ${ratingClass}" style="font-size:0.7rem; padding:1px 6px;">${r.toUpperCase()}</span>` : ''}
             </div>
             <h3 class="grid-card-title">${escapeHtml(card.title)}</h3>
-            <p class="grid-card-defn" style="margin-top:0.4rem;">${escapeHtml(card.definition)}</p>
+            <p class="grid-card-defn" style="margin-top:0.4rem;">${renderInlineMarkdown(card.definition)}</p>
           </div>
           <div style="font-size:0.75rem; color: var(--text-muted); border-top:1px solid var(--border-color); padding-top:0.5rem; margin-top:0.5rem;">
             <span>${card.category_icon} ${card.category_name}</span>
@@ -523,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Detail Explanation
     el.quizDetailExplanation.innerHTML = `
       <p style="margin-top:0.75rem; font-size:0.9rem;"><strong>정답 토픽:</strong> ${escapeHtml(target.title)}</p>
-      ${target.mnemonics?.length ? `<p style="font-size:0.85rem; color:var(--color-medium); margin-top:0.25rem;">🧠 두음: ${escapeHtml(target.mnemonics.join(' / '))}</p>` : ''}
+      ${target.mnemonics?.length ? `<p style="font-size:0.85rem; color:var(--color-medium); margin-top:0.25rem;">🧠 두음: ${renderInlineMarkdown(target.mnemonics.join(' / '))}</p>` : ''}
     `;
 
     el.quizScore.textContent = state.quiz.score;
