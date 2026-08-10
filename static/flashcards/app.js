@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Definition
-    el.backDefinition.textContent = card.definition || '정의 정보 없음';
+    el.backDefinition.innerHTML = card.definition ? renderInlineMarkdown(card.definition) : '정의 정보 없음';
 
     // Keywords Cloud
     if (card.keywords) {
@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Question Prompt
     el.quizCatTag.textContent = `${target.category_icon} ${target.category_name}`;
-    el.quizQuestionPrompt.textContent = target.definition ? target.definition : (target.keywords || target.doc_title);
+    el.quizQuestionPrompt.innerHTML = renderInlineMarkdown(target.definition || target.keywords || target.doc_title);
 
     // Render Options
     el.quizOptions.innerHTML = options.map((opt, i) => `
@@ -665,9 +665,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // UTILITY FUNCTIONS
+
+  // Renders minimal inline markdown (**bold**, `code`) found in source notes.
+  // Input is escaped first, so the markers below only ever wrap safe text.
+  function renderInlineMarkdown(text) {
+    return escapeHtml(text)
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.+?)`/g, '<code>$1</code>');
+  }
+
   function formatDetailContent(str) {
     if (!str) return '';
-    return str.split('\n').map(line => `<p style="margin-bottom:0.3rem;">${escapeHtml(line)}</p>`).join('');
+    return str.split('\n').map(line => {
+      const trimmed = line.trim();
+      const listMatch = trimmed.match(/^(?:\d+\.|[-*])\s+(.*)$/);
+      const body = listMatch ? listMatch[1] : trimmed;
+      return `<p style="margin-bottom:0.3rem;">${listMatch ? '• ' : ''}${renderInlineMarkdown(body)}</p>`;
+    }).join('');
   }
 
   function escapeHtml(text) {

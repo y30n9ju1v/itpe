@@ -11,10 +11,10 @@ theme = "hugo-book"
   BookComments = false
   BookMenuBundle = false
 
-[[menu.after]]
+[[menu.before]]
   name = "🧠 Flashcards"
   url = "/flashcards/"
-  weight = 10
+  weight = 1
 
 [markup.goldmark.renderer]
   unsafe = true
