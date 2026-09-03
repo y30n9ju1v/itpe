@@ -28,6 +28,10 @@
 
       <!-- Control Stats Summary -->
       <div class="header-stats">
+        <div class="stat-pill bookmark" id="stat-bookmark-pill" title="북마크한 카드">
+          <i class="fa-solid fa-star"></i>
+          <span>북마크: <strong id="stat-bookmark-count">0</strong></span>
+        </div>
         <div class="stat-pill easy">
           <i class="fa-solid fa-circle-check"></i>
           <span>알고 있음: <strong id="stat-easy-count">0</strong></span>
@@ -66,7 +70,10 @@
       <div class="sidebar-section">
         <h3><i class="fa-solid fa-layer-group"></i> 학습 모드</h3>
         <nav class="mode-menu">
-          <button class="mode-btn active" data-mode="flashcard">
+          <button class="mode-btn active" data-mode="study">
+            <i class="fa-solid fa-book-open-reader"></i> <span>학습 카드 모드</span>
+          </button>
+          <button class="mode-btn" data-mode="flashcard">
             <i class="fa-solid fa-clone"></i> <span>플래시 카드 모드</span>
           </button>
           <button class="mode-btn" data-mode="review">
@@ -88,6 +95,8 @@
           <button class="type-btn active" data-type="all">전체</button>
           <button class="type-btn" data-type="subnote">서브노트 핵심</button>
           <button class="type-btn" data-type="glossary">용어집</button>
+          <button class="type-btn" data-type="bookmark"><i class="fa-solid fa-star"></i> 북마크</button>
+          <button class="type-btn" data-type="unread"><i class="fa-regular fa-circle"></i> 안읽음</button>
         </div>
       </div>
 
@@ -106,9 +115,10 @@
       <div class="sidebar-section shortcut-guide">
         <h3><i class="fa-keyboard fa-regular"></i> 단축키 안내</h3>
         <ul>
-          <li><kbd>Space</kbd> / <kbd>Click</kbd> 카드 뒤집기</li>
+          <li><kbd>Space</kbd> 다음 단계 또는 카드 뒤집기</li>
           <li><kbd>←</kbd> / <kbd>→</kbd> 이전 / 다음 카드</li>
-          <li><kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 암기완료</li>
+          <li><kbd>B</kbd> 북마크 토글 <kbd>M</kbd> 키워드 마스킹</li>
+          <li><kbd>P</kbd> 슬라이드쇼 <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> 평가</li>
         </ul>
       </div>
     </aside>
@@ -136,8 +146,180 @@
         </div>
       </div>
 
-      <!-- VIEW 1: FLASHCARD MODE -->
-      <section id="view-flashcard" class="view-panel active">
+      <!-- VIEW 0: STUDY MODE (학습용 플래시 카드) -->
+      <section id="view-study" class="view-panel active">
+        <!-- Study Deck Header -->
+        <div class="study-deck-header">
+          <div class="study-header-left">
+            <span class="card-counter" id="study-card-counter">1 / 100</span>
+            <div class="deck-category-tag" id="study-current-cat">
+              <span class="cat-icon">📊</span> <span class="cat-name">정보전략 및 관리</span>
+            </div>
+          </div>
+          <div class="study-header-actions">
+            <button id="study-bookmark-btn" class="study-action-btn bookmark-btn" title="중요 토픽 북마크 (B)">
+              <i class="fa-regular fa-star"></i> <span>북마크</span>
+            </button>
+            <button id="study-read-btn" class="study-action-btn read-btn" title="회독 완료 체크">
+              <i class="fa-regular fa-circle-check"></i> <span>회독 완료</span>
+            </button>
+            <a id="study-doc-link" href="#" target="_blank" rel="noopener noreferrer" class="study-action-btn doc-link-btn" title="원문 서브노트 새 창에서 보기">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>원문 서브노트</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Study Sub-Toolbar -->
+        <div class="study-toolbar">
+          <div class="study-view-tabs">
+            <button class="study-tab-btn active" id="study-tab-all" data-study-view="all">
+              <i class="fa-solid fa-table-cells-large"></i> 전체 펼쳐보기
+            </button>
+            <button class="study-tab-btn" id="study-tab-step" data-study-view="step">
+              <i class="fa-solid fa-stairs"></i> 단계별 학습 (Step Reveal)
+            </button>
+          </div>
+
+          <div class="study-toolbar-options">
+            <label class="toggle-switch small">
+              <input type="checkbox" id="toggle-keyword-mask">
+              <span class="slider"></span>
+              <span class="label-text"><i class="fa-solid fa-eye-slash"></i> 키워드 블러 마스킹 (M)</span>
+            </label>
+
+            <div class="autoplay-controls" id="autoplay-controls-wrap">
+              <button id="study-autoplay-btn" class="btn-autoplay" title="회독 슬라이드쇼 자동 넘김 (P)">
+                <i class="fa-solid fa-play"></i> <span>자동 회독</span>
+              </button>
+              <select id="study-autoplay-interval" class="autoplay-interval-select" title="슬라이드 전환 시간">
+                <option value="5000">5초</option>
+                <option value="8000" selected>8초</option>
+                <option value="12000">12초</option>
+                <option value="20000">20초</option>
+              </select>
+              <div class="autoplay-progress" id="study-autoplay-progress" style="display: none;">
+                <div class="autoplay-progress-bar" id="study-autoplay-progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stepper Navigation (visible when Step Reveal is active) -->
+        <div class="study-stepper-wrap" id="study-stepper-wrap" style="display: none;">
+          <div class="study-stepper">
+            <button class="step-pill-btn active" data-step="1"><span>1</span> 정의/개념</button>
+            <button class="step-pill-btn" data-step="2"><span>2</span> 두음(🧠)</button>
+            <button class="step-pill-btn" data-step="3"><span>3</span> 개념도</button>
+            <button class="step-pill-btn" data-step="4"><span>4</span> 구성요소/비교</button>
+            <button class="step-pill-btn" data-step="5"><span>5</span> 4단락 차별화</button>
+          </div>
+        </div>
+
+        <!-- Master Study Card Container -->
+        <div class="study-card-wrapper">
+          <article class="study-card" id="study-card">
+            <!-- Top Tag & Title -->
+            <div class="study-card-header">
+              <div class="study-card-meta">
+                <span class="card-badge-type" id="study-card-type">서브노트</span>
+                <span class="study-read-badge" id="study-card-read-badge" style="display: none;">
+                  <i class="fa-solid fa-check-double"></i> 회독 완료
+                </span>
+              </div>
+              <h2 class="study-card-title" id="study-card-title">토픽명</h2>
+            </div>
+
+            <!-- Content Blocks (All shown or stepped) -->
+            <div class="study-card-body" id="study-card-body">
+
+              <!-- Step 1: Definition -->
+              <section class="study-block step-block" data-step="1" id="study-block-definition">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-book-bookmark"></i> 1단락 핵심 정의 (Definition)</h4>
+                </div>
+                <div class="study-block-content defn-content" id="study-card-definition">
+                  <!-- JS injected -->
+                </div>
+              </section>
+
+              <!-- Step 2: Mnemonics -->
+              <section class="study-block step-block" data-step="2" id="study-block-mnemonic">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-brain"></i> 두음 머리에 박기 (Brain Imprint 🧠)</h4>
+                </div>
+                <div class="study-block-content mnemonic-content" id="study-card-mnemonic">
+                  <ul id="study-card-mnemonic-list">
+                    <!-- JS injected -->
+                  </ul>
+                </div>
+              </section>
+
+              <!-- Step 3: Concept Diagram (ASCII Architecture) -->
+              <section class="study-block step-block" data-step="3" id="study-block-diagram">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-diagram-project"></i> 2단락 개념도 &amp; 아키텍처 흐름 (Concept Diagram)</h4>
+                  <button class="copy-diagram-btn" id="copy-diagram-btn" title="개념도 텍스트 복사">
+                    <i class="fa-regular fa-copy"></i> 복사
+                  </button>
+                </div>
+                <div class="study-block-content diagram-content">
+                  <pre class="concept-diagram-code" id="study-card-diagram"></pre>
+                </div>
+              </section>
+
+              <!-- Step 4A: Keywords Cloud -->
+              <section class="study-block step-block" data-step="4" id="study-block-keywords">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-tags"></i> 필수 답안 현출 키워드 (Key Terms)</h4>
+                </div>
+                <div class="study-block-content">
+                  <div class="tags-cloud" id="study-card-keywords-cloud"></div>
+                </div>
+              </section>
+
+              <!-- Step 4B: Components & Mechanisms -->
+              <section class="study-block step-block" data-step="4" id="study-block-components">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-cubes"></i> 주요 구성요소 및 기술 메커니즘 (Components)</h4>
+                </div>
+                <div class="study-block-content detail-content" id="study-card-components"></div>
+              </section>
+
+              <!-- Step 4C: Comparison -->
+              <section class="study-block step-block" data-step="4" id="study-block-comparison">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-code-compare"></i> 3단락 핵심 비교 분석 (Comparison)</h4>
+                </div>
+                <div class="study-block-content detail-content" id="study-card-comparison"></div>
+              </section>
+
+              <!-- Step 5: Differentiation -->
+              <section class="study-block step-block" data-step="5" id="study-block-differentiation">
+                <div class="study-block-header">
+                  <h4><i class="fa-solid fa-award"></i> 4단락 기술사 차별화 포인트 (Differentiation &amp; Insight)</h4>
+                </div>
+                <div class="study-block-content diff-content detail-content" id="study-card-differentiation"></div>
+              </section>
+
+            </div>
+
+            <!-- Card Bottom Source Info -->
+            <div class="study-card-footer">
+              <span class="source-file-info" id="study-card-source-file">file.md</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Study Deck Navigation Controls -->
+        <div class="study-deck-controls">
+          <button id="study-prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> 이전 (←)</button>
+          <button id="study-step-next-btn" class="btn primary" style="display: none;">다음 단계 (Space) <i class="fa-solid fa-arrow-down"></i></button>
+          <button id="study-next-btn" class="nav-btn">다음 카드 (→) <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <!-- VIEW 1: FLASHCARD MODE (자가 테스트 뒤집기) -->
+      <section id="view-flashcard" class="view-panel">
         <div class="flashcard-deck-header">
           <span class="card-counter" id="card-counter">1 / 100</span>
           <div class="deck-category-tag" id="current-card-cat">

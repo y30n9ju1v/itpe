@@ -95,14 +95,17 @@ def parse_subnote_file(filepath, cat_id):
     topic_title = strip_markdown_emphasis(table.get("토픽명")) or meta.get("title") or filename.replace('.md', '')
     definition = clean_html_and_markdown(table.get("정의", ""))
     keywords = clean_html_and_markdown(table.get("키워드", ""))
+    concept_diagram = clean_html_and_markdown(table.get("개념도", ""))
     components = clean_html_and_markdown(table.get("구성요소", ""))
     comparison = clean_html_and_markdown(table.get("비교", ""))
     differentiation = clean_html_and_markdown(table.get("차별화", ""))
 
     rel_path = os.path.relpath(filepath, WORKSPACE_ROOT)
+    doc_slug = filename.replace('.md', '')
+    doc_url = f"../docs/subnotes/{cat_id}/{doc_slug}/"
 
     card = {
-        "id": f"{cat_id}_{filename.replace('.md', '')}",
+        "id": f"{cat_id}_{doc_slug}",
         "type": "subnote",
         "category_id": cat_id,
         "category_name": CATEGORY_MAP.get(cat_id, {}).get("name", cat_id),
@@ -113,10 +116,12 @@ def parse_subnote_file(filepath, cat_id):
         "mnemonics": mnemonics,
         "definition": definition,
         "keywords": keywords,
+        "concept_diagram": concept_diagram,
         "components": components,
         "comparison": comparison,
         "differentiation": differentiation,
-        "source_file": rel_path
+        "source_file": rel_path,
+        "doc_url": doc_url
     }
     return card
 
@@ -142,6 +147,15 @@ def parse_glossary_file(filepath):
             if len(parts) >= 2:
                 term = parts[0].strip()
                 defn = parts[1].strip()
+                doc_url = ""
+                related_note = ""
+                if len(parts) >= 3:
+                    ref_part = parts[2].strip()
+                    m_ref = re.search(r'\[(.*?)\]\(\{\{<\s*relref\s*"([^"]+)"\s*>\}\}\)', ref_part)
+                    if m_ref:
+                        related_note = m_ref.group(1)
+                        ref_path = m_ref.group(2).strip('/')
+                        doc_url = f"../{ref_path}/"
                 if term and defn:
                     cards.append({
                         "id": f"glossary_{cat_id}_{len(cards)}",
@@ -155,10 +169,12 @@ def parse_glossary_file(filepath):
                         "mnemonics": [],
                         "definition": defn,
                         "keywords": term,
-                        "components": "",
+                        "concept_diagram": "",
+                        "components": f"연관 서브노트: {related_note}" if related_note else "",
                         "comparison": "",
                         "differentiation": "",
-                        "source_file": os.path.relpath(filepath, WORKSPACE_ROOT)
+                        "source_file": os.path.relpath(filepath, WORKSPACE_ROOT),
+                        "doc_url": doc_url
                     })
     return cards
 

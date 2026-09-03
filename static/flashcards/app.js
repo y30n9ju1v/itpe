@@ -21,6 +21,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function loadBookmarks() {
+    try {
+      return JSON.parse(localStorage.getItem('itpe_flashcard_bookmarks') || '{}');
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function saveBookmarks(bookmarks) {
+    try {
+      localStorage.setItem('itpe_flashcard_bookmarks', JSON.stringify(bookmarks));
+    } catch (err) {}
+  }
+
+  function loadReadCompleted() {
+    try {
+      return JSON.parse(localStorage.getItem('itpe_flashcard_read_completed') || '{}');
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function saveReadCompleted(completed) {
+    try {
+      localStorage.setItem('itpe_flashcard_read_completed', JSON.stringify(completed));
+    } catch (err) {}
+  }
+
   // APP STATE
   const state = {
     allCards: [],
@@ -28,9 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
     filteredCards: [],
     currentIndex: 0,
     ratings: loadRatings(),
+    bookmarks: loadBookmarks(),
+    readCompleted: loadReadCompleted(),
     selectedCategory: 'all',
-    selectedType: 'all',
-    currentMode: 'flashcard', // 'flashcard', 'review', 'quiz', 'list'
+    selectedType: 'all', // 'all', 'subnote', 'glossary', 'bookmark'
+    currentMode: 'study', // 'study', 'flashcard', 'review', 'quiz', 'list'
+    studyView: 'all', // 'all' (전체 펼치기) or 'step' (단계별 학습)
+    currentStep: 1, // 1~5
+    isKeywordMasked: false,
+    autoplay: {
+      isPlaying: false,
+      intervalMs: 8000,
+      progressTimerId: null
+    },
     searchQuery: '',
     showMnemonic: true,
     isFlipped: false,
@@ -47,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM ELEMENTS
   const el = {
     // Stats
+    statBookmark: document.getElementById('stat-bookmark-count'),
     statEasy: document.getElementById('stat-easy-count'),
     statMedium: document.getElementById('stat-medium-count'),
     statHard: document.getElementById('stat-hard-count'),
@@ -69,11 +108,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Views
     viewPanels: document.querySelectorAll('.view-panel'),
+    viewStudy: document.getElementById('view-study'),
     viewFlashcard: document.getElementById('view-flashcard'),
     viewQuiz: document.getElementById('view-quiz'),
     viewList: document.getElementById('view-list'),
 
-    // Flashcard Deck
+    // View 0: Study Mode Elements
+    studyCardCounter: document.getElementById('study-card-counter'),
+    studyCurrentCat: document.getElementById('study-current-cat'),
+    studyBookmarkBtn: document.getElementById('study-bookmark-btn'),
+    studyReadBtn: document.getElementById('study-read-btn'),
+    studyDocLink: document.getElementById('study-doc-link'),
+    studyTabAll: document.getElementById('study-tab-all'),
+    studyTabStep: document.getElementById('study-tab-step'),
+    toggleKeywordMask: document.getElementById('toggle-keyword-mask'),
+    autoplayControlsWrap: document.getElementById('autoplay-controls-wrap'),
+    studyAutoplayBtn: document.getElementById('study-autoplay-btn'),
+    studyAutoplayInterval: document.getElementById('study-autoplay-interval'),
+    studyAutoplayProgress: document.getElementById('study-autoplay-progress'),
+    studyAutoplayProgressBar: document.getElementById('study-autoplay-progress-bar'),
+    studyStepperWrap: document.getElementById('study-stepper-wrap'),
+    stepPillBtns: document.querySelectorAll('.step-pill-btn'),
+    studyCard: document.getElementById('study-card'),
+    studyCardBody: document.getElementById('study-card-body'),
+    studyCardType: document.getElementById('study-card-type'),
+    studyCardReadBadge: document.getElementById('study-card-read-badge'),
+    studyCardTitle: document.getElementById('study-card-title'),
+    studyCardDefn: document.getElementById('study-card-definition'),
+    studyBlockMnemonic: document.getElementById('study-block-mnemonic'),
+    studyCardMnemonicList: document.getElementById('study-card-mnemonic-list'),
+    studyBlockDiagram: document.getElementById('study-block-diagram'),
+    studyCardDiagram: document.getElementById('study-card-diagram'),
+    copyDiagramBtn: document.getElementById('copy-diagram-btn'),
+    studyBlockKeywords: document.getElementById('study-block-keywords'),
+    studyCardKeywordsCloud: document.getElementById('study-card-keywords-cloud'),
+    studyBlockComponents: document.getElementById('study-block-components'),
+    studyCardComponents: document.getElementById('study-card-components'),
+    studyBlockComparison: document.getElementById('study-block-comparison'),
+    studyCardComparison: document.getElementById('study-card-comparison'),
+    studyBlockDiff: document.getElementById('study-block-differentiation'),
+    studyCardDiff: document.getElementById('study-card-differentiation'),
+    studyCardSourceFile: document.getElementById('study-card-source-file'),
+    studyPrevBtn: document.getElementById('study-prev-btn'),
+    studyStepNextBtn: document.getElementById('study-step-next-btn'),
+    studyNextBtn: document.getElementById('study-next-btn'),
+
+    // Flashcard Deck (Existing Flip Mode)
     cardCounter: document.getElementById('card-counter'),
     currentCardCat: document.getElementById('current-card-cat'),
     flashcard3d: document.getElementById('flashcard'),
@@ -186,7 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Filter by Type
-    if (state.selectedType !== 'all') {
+    if (state.selectedType === 'bookmark') {
+      result = result.filter(c => !!state.bookmarks[c.id]);
+    } else if (state.selectedType === 'unread') {
+      result = result.filter(c => !state.readCompleted[c.id]);
+    } else if (state.selectedType !== 'all') {
       result = result.filter(c => c.type === state.selectedType);
     }
 
@@ -203,17 +287,307 @@ document.addEventListener('DOMContentLoaded', () => {
 
     state.filteredCards = result;
     state.currentIndex = 0;
+    state.currentStep = 1;
     state.isFlipped = false;
 
     el.filteredCountBadge.textContent = `${result.length}개`;
-    el.cardCounter.textContent = result.length > 0 ? `${state.currentIndex + 1} / ${result.length}` : '0 / 0';
 
-    if (state.currentMode === 'flashcard' || state.currentMode === 'review') {
+    if (state.currentMode === 'study') {
+      renderStudyCard();
+    } else if (state.currentMode === 'flashcard' || state.currentMode === 'review') {
       renderCurrentCard();
     } else if (state.currentMode === 'list') {
       renderListView();
     }
   }
+
+  // ==========================================================================
+  // VIEW 0: STUDY MODE (학습용 플래시 카드 로직)
+  // ==========================================================================
+
+  function renderStudyCard() {
+    if (state.filteredCards.length === 0) {
+      const emptyMessages = {
+        bookmark: ["북마크된 카드가 없습니다 ⭐️", "상단의 북마크 버튼(또는 단축키 B)을 눌러 중요한 토픽을 추가해 보세요."],
+        unread: ["회독 완료! 안 읽은 카드가 없습니다 🎉", "모든 카드를 한 번씩 확인했습니다. 다른 필터로 계속 복습해 보세요."]
+      };
+      const [title, desc] = emptyMessages[state.selectedType] || ["조건에 해당하는 카드가 없습니다.", "다른 카테고리나 검색어를 선택해 보세요."];
+      el.studyCardTitle.textContent = title;
+      el.studyCardDefn.innerHTML = `<p style="color:var(--text-secondary);">${desc}</p>`;
+      el.studyBlockMnemonic.style.display = 'none';
+      el.studyBlockDiagram.style.display = 'none';
+      el.studyBlockKeywords.style.display = 'none';
+      el.studyBlockComponents.style.display = 'none';
+      el.studyBlockComparison.style.display = 'none';
+      el.studyBlockDiff.style.display = 'none';
+      el.studyCardCounter.textContent = '0 / 0';
+      el.studyBookmarkBtn.classList.remove('active');
+      el.studyReadBtn.classList.remove('active');
+      el.studyCardReadBadge.style.display = 'none';
+      el.studyDocLink.style.display = 'none';
+      return;
+    }
+
+    const card = state.filteredCards[state.currentIndex];
+    el.studyCardCounter.textContent = `${state.currentIndex + 1} / ${state.filteredCards.length}`;
+
+    // Header Category Info
+    const catName = card.category_name || state.categories[card.category_id]?.name || '기술사';
+    const catIcon = card.category_icon || state.categories[card.category_id]?.icon || '📝';
+    el.studyCurrentCat.innerHTML = `<span class="cat-icon">${catIcon}</span> <span class="cat-name">${catName}</span>`;
+
+    // Title and Meta
+    el.studyCardType.textContent = card.type === 'subnote' ? '서브노트' : '용어집';
+    el.studyCardTitle.textContent = card.title || card.doc_title;
+
+    // Bookmark button state
+    const isBookmarked = !!state.bookmarks[card.id];
+    el.studyBookmarkBtn.classList.toggle('active', isBookmarked);
+    el.studyBookmarkBtn.querySelector('span').textContent = isBookmarked ? '북마크됨' : '북마크';
+    el.studyBookmarkBtn.querySelector('i').className = isBookmarked ? 'fa-solid fa-star' : 'fa-regular fa-star';
+
+    // Read Completed button & badge
+    const isRead = !!state.readCompleted[card.id];
+    el.studyReadBtn.classList.toggle('active', isRead);
+    el.studyReadBtn.querySelector('span').textContent = isRead ? '회독완료' : '회독 완료';
+    el.studyCardReadBadge.style.display = isRead ? 'inline-flex' : 'none';
+
+    // Doc URL link
+    if (card.doc_url) {
+      el.studyDocLink.href = card.doc_url;
+      el.studyDocLink.style.display = 'inline-flex';
+    } else {
+      el.studyDocLink.style.display = 'none';
+    }
+
+    // Definition
+    el.studyCardDefn.innerHTML = card.definition 
+      ? renderInlineMarkdown(card.definition) 
+      : '<p style="color:var(--text-muted);">정의 내용이 없습니다.</p>';
+
+    // Mnemonics
+    const hasMnemonic = !!(card.mnemonics && card.mnemonics.length > 0 && state.showMnemonic);
+    el.studyBlockMnemonic.dataset.hasContent = String(hasMnemonic);
+    if (hasMnemonic) {
+      el.studyCardMnemonicList.innerHTML = card.mnemonics.map(m => `<li>• ${renderInlineMarkdown(m)}</li>`).join('');
+    }
+
+    // Concept Diagram (ASCII Architecture)
+    const hasDiagram = !!(card.concept_diagram && card.concept_diagram.trim());
+    el.studyBlockDiagram.dataset.hasContent = String(hasDiagram);
+    if (hasDiagram) {
+      el.studyCardDiagram.textContent = stripWrappingBackticks(card.concept_diagram);
+    }
+
+    // Keywords Cloud
+    const hasKeywords = !!card.keywords;
+    el.studyBlockKeywords.dataset.hasContent = String(hasKeywords);
+    if (hasKeywords) {
+      const tags = card.keywords.split(/[,;\/]/).map(t => t.trim()).filter(Boolean);
+      el.studyCardKeywordsCloud.innerHTML = tags.map(t => `<span class="tag-item"># ${escapeHtml(t)}</span>`).join('');
+    }
+
+    // Components
+    const hasComponents = !!card.components;
+    el.studyBlockComponents.dataset.hasContent = String(hasComponents);
+    if (hasComponents) {
+      el.studyCardComponents.innerHTML = formatDetailContent(card.components);
+    }
+
+    // Comparison
+    const hasComparison = !!card.comparison;
+    el.studyBlockComparison.dataset.hasContent = String(hasComparison);
+    if (hasComparison) {
+      el.studyCardComparison.innerHTML = formatDetailContent(card.comparison);
+    }
+
+    // Differentiation
+    const hasDiff = !!card.differentiation;
+    el.studyBlockDiff.dataset.hasContent = String(hasDiff);
+    if (hasDiff) {
+      el.studyCardDiff.innerHTML = formatDetailContent(card.differentiation);
+    }
+
+    // Source file
+    el.studyCardSourceFile.textContent = card.source_file;
+
+    // Apply Keyword Blur Masking
+    el.studyCardBody.classList.toggle('mask-keywords-active', state.isKeywordMasked);
+
+    // Update Step Reveal View
+    updateStudyStepView();
+  }
+
+  // A block's dataset.hasContent is the single source of truth for whether it has
+  // anything to show; step visibility is combined with it right here, always as an
+  // inline style, so nothing else needs to fight over display later (see the earlier
+  // flashcard-panel bug for why mixing inline styles and CSS-class toggles is unsafe).
+  function blockHasContent(block) {
+    return block.dataset.hasContent !== 'false';
+  }
+
+  function stepHasContent(stepNum) {
+    const blocks = document.querySelectorAll(`.study-block.step-block[data-step="${stepNum}"]`);
+    return Array.from(blocks).some(blockHasContent);
+  }
+
+  function updateStudyStepView() {
+    const stepBlocks = document.querySelectorAll('.study-block.step-block');
+
+    if (state.studyView === 'step') {
+      el.studyCard.classList.add('step-mode-active');
+      el.studyStepperWrap.style.display = 'block';
+      el.studyStepNextBtn.style.display = 'inline-flex';
+
+      el.stepPillBtns.forEach(btn => {
+        btn.classList.toggle('active', Number(btn.dataset.step) === state.currentStep);
+      });
+
+      stepBlocks.forEach(block => {
+        const stepNum = Number(block.dataset.step);
+        const show = blockHasContent(block) && stepNum <= state.currentStep;
+        block.style.display = show ? '' : 'none';
+        block.classList.toggle('step-visible', show);
+      });
+
+      if (state.currentStep >= 5) {
+        el.studyStepNextBtn.innerHTML = '다음 카드 (Space) <i class="fa-solid fa-arrow-right"></i>';
+      } else {
+        el.studyStepNextBtn.innerHTML = `다음 단계 (스텝 ${state.currentStep + 1}/5) <i class="fa-solid fa-arrow-down"></i>`;
+      }
+    } else {
+      el.studyCard.classList.remove('step-mode-active');
+      el.studyStepperWrap.style.display = 'none';
+      el.studyStepNextBtn.style.display = 'none';
+      stepBlocks.forEach(block => {
+        block.style.display = blockHasContent(block) ? '' : 'none';
+        block.classList.remove('step-visible');
+      });
+    }
+  }
+
+  function nextStudyStep() {
+    if (state.studyView === 'step') {
+      // Skip steps that have nothing to show for this card (common for glossary
+      // entries, which only ever populate the definition block) instead of landing
+      // on a visually empty step.
+      let next = state.currentStep;
+      while (next < 5) {
+        next++;
+        if (stepHasContent(next)) {
+          state.currentStep = next;
+          updateStudyStepView();
+          const targetBlock = document.querySelector(`.study-block.step-block[data-step="${state.currentStep}"]`);
+          if (targetBlock) {
+            targetBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+          return;
+        }
+      }
+      nextStudyCard();
+    } else {
+      nextStudyCard();
+    }
+  }
+
+  function nextStudyCard() {
+    if (state.filteredCards.length === 0) return;
+    if (state.currentIndex < state.filteredCards.length - 1) {
+      state.currentIndex++;
+    } else {
+      state.currentIndex = 0;
+    }
+    state.currentStep = 1;
+    renderStudyCard();
+  }
+
+  function prevStudyCard() {
+    if (state.filteredCards.length === 0) return;
+    if (state.currentIndex > 0) {
+      state.currentIndex--;
+    } else {
+      state.currentIndex = state.filteredCards.length - 1;
+    }
+    state.currentStep = 1;
+    renderStudyCard();
+  }
+
+  function toggleBookmark(cardId) {
+    if (!cardId) return;
+    state.bookmarks[cardId] = !state.bookmarks[cardId];
+    if (!state.bookmarks[cardId]) {
+      delete state.bookmarks[cardId];
+    }
+    saveBookmarks(state.bookmarks);
+    updateStats();
+    if (state.selectedType === 'bookmark') {
+      applyFilters();
+    } else {
+      renderStudyCard();
+    }
+  }
+
+  function toggleReadCompleted(cardId) {
+    if (!cardId) return;
+    state.readCompleted[cardId] = !state.readCompleted[cardId];
+    if (!state.readCompleted[cardId]) {
+      delete state.readCompleted[cardId];
+    }
+    saveReadCompleted(state.readCompleted);
+    if (state.selectedType === 'unread') {
+      applyFilters();
+    } else {
+      renderStudyCard();
+    }
+  }
+
+  function toggleAutoplay() {
+    if (state.autoplay.isPlaying) {
+      stopAutoplay();
+    } else {
+      startAutoplay();
+    }
+  }
+
+  function startAutoplay() {
+    state.autoplay.isPlaying = true;
+    el.studyAutoplayBtn.classList.add('playing');
+    el.studyAutoplayBtn.innerHTML = '<i class="fa-solid fa-pause"></i> <span>일시정지</span>';
+    el.studyAutoplayProgress.style.display = 'block';
+
+    const interval = state.autoplay.intervalMs;
+    const startTime = Date.now();
+
+    if (state.autoplay.progressTimerId) clearInterval(state.autoplay.progressTimerId);
+    state.autoplay.progressTimerId = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const pct = Math.min(100, (elapsed / interval) * 100);
+      el.studyAutoplayProgressBar.style.width = `${pct}%`;
+      if (elapsed >= interval) {
+        clearInterval(state.autoplay.progressTimerId);
+        nextStudyCard();
+        if (state.autoplay.isPlaying) {
+          startAutoplay();
+        }
+      }
+    }, 50);
+  }
+
+  function stopAutoplay() {
+    state.autoplay.isPlaying = false;
+    if (state.autoplay.progressTimerId) {
+      clearInterval(state.autoplay.progressTimerId);
+      state.autoplay.progressTimerId = null;
+    }
+    el.studyAutoplayBtn.classList.remove('playing');
+    el.studyAutoplayBtn.innerHTML = '<i class="fa-solid fa-play"></i> <span>자동 회독</span>';
+    el.studyAutoplayProgress.style.display = 'none';
+    el.studyAutoplayProgressBar.style.width = '0%';
+  }
+
+  // ==========================================================================
+  // VIEW 1: FLASHCARD MODE (기존 뒤집기 암기 테스트)
+  // ==========================================================================
 
   // RENDER CURRENT FLASHCARD
   function renderCurrentCard() {
@@ -424,6 +798,9 @@ document.addEventListener('DOMContentLoaded', () => {
     el.statMedium.textContent = mediumCount;
     el.statHard.textContent = hardCount;
 
+    const bookmarkCount = Object.keys(state.bookmarks).filter(k => state.bookmarks[k]).length;
+    if (el.statBookmark) el.statBookmark.textContent = bookmarkCount;
+
     const total = state.allCards.length || 1;
     const percent = Math.round((easyCount / total) * 100);
     el.progressBarFill.style.width = `${percent}%`;
@@ -530,31 +907,113 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // EVENT LISTENERS
   function setupEventListeners() {
-    // 3D Card Flip
+    // 1. Study Mode Listeners
+    el.studyPrevBtn.addEventListener('click', () => { stopAutoplay(); prevStudyCard(); });
+    el.studyNextBtn.addEventListener('click', () => { stopAutoplay(); nextStudyCard(); });
+    el.studyStepNextBtn.addEventListener('click', () => { stopAutoplay(); nextStudyStep(); });
+
+    el.studyBookmarkBtn.addEventListener('click', () => {
+      if (state.filteredCards.length > 0) {
+        toggleBookmark(state.filteredCards[state.currentIndex].id);
+      }
+    });
+
+    el.studyReadBtn.addEventListener('click', () => {
+      if (state.filteredCards.length > 0) {
+        toggleReadCompleted(state.filteredCards[state.currentIndex].id);
+      }
+    });
+
+    el.studyTabAll.addEventListener('click', () => {
+      state.studyView = 'all';
+      el.studyTabAll.classList.add('active');
+      el.studyTabStep.classList.remove('active');
+      el.autoplayControlsWrap.style.display = '';
+      updateStudyStepView();
+    });
+
+    el.studyTabStep.addEventListener('click', () => {
+      // Autoplay just jumps to the next card on a timer — that's at odds with
+      // reading through a card one step at a time, so it's unavailable here.
+      stopAutoplay();
+      el.autoplayControlsWrap.style.display = 'none';
+      state.studyView = 'step';
+      el.studyTabStep.classList.add('active');
+      el.studyTabAll.classList.remove('active');
+      state.currentStep = 1;
+      updateStudyStepView();
+    });
+
+    el.stepPillBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.currentStep = Number(btn.dataset.step);
+        updateStudyStepView();
+      });
+    });
+
+    el.toggleKeywordMask.addEventListener('change', (e) => {
+      state.isKeywordMasked = e.target.checked;
+      el.studyCardBody.classList.toggle('mask-keywords-active', state.isKeywordMasked);
+    });
+
+    el.copyDiagramBtn.addEventListener('click', () => {
+      const text = el.studyCardDiagram.textContent;
+      if (text) {
+        navigator.clipboard.writeText(text).then(() => {
+          el.copyDiagramBtn.innerHTML = '<i class="fa-solid fa-check"></i> 복사됨!';
+          setTimeout(() => {
+            el.copyDiagramBtn.innerHTML = '<i class="fa-regular fa-copy"></i> 복사';
+          }, 1500);
+        }).catch(() => {
+          alert('복사에 실패했습니다.');
+        });
+      }
+    });
+
+    el.studyAutoplayBtn.addEventListener('click', toggleAutoplay);
+
+    el.studyAutoplayInterval.addEventListener('change', (e) => {
+      state.autoplay.intervalMs = Number(e.target.value);
+      if (state.autoplay.isPlaying) {
+        startAutoplay();
+      }
+    });
+
+    // Click on individual masked keywords to toggle reveal
+    el.studyCardBody.addEventListener('click', (e) => {
+      const target = e.target.closest('strong, code, .tag-item');
+      if (target && state.isKeywordMasked) {
+        target.classList.toggle('revealed');
+      }
+    });
+
+    // 2. Flashcard Mode (3D Flip & Ratings)
     el.flashcard3d.addEventListener('click', () => {
       state.isFlipped = !state.isFlipped;
       el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
     });
 
-    // Rating Buttons
     el.rateHardBtn.addEventListener('click', (e) => { e.stopPropagation(); rateCard('hard'); });
     el.rateMediumBtn.addEventListener('click', (e) => { e.stopPropagation(); rateCard('medium'); });
     el.rateEasyBtn.addEventListener('click', (e) => { e.stopPropagation(); rateCard('easy'); });
 
-    // Prev / Next Navigation
     el.prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevCard(); });
     el.nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextCard(); });
 
-    // Modes Menu Navigation
+    // 3. Modes Menu Navigation
     el.modeBtns.forEach(btn => {
       btn.addEventListener('click', () => {
+        stopAutoplay();
         el.modeBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         state.currentMode = btn.dataset.mode;
 
         el.viewPanels.forEach(panel => panel.classList.remove('active'));
 
-        if (state.currentMode === 'flashcard') {
+        if (state.currentMode === 'study') {
+          el.viewStudy.classList.add('active');
+          applyFilters();
+        } else if (state.currentMode === 'flashcard') {
           el.viewFlashcard.classList.add('active');
           applyFilters();
         } else if (state.currentMode === 'review') {
@@ -570,7 +1029,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Category Buttons (Sidebar Delegation)
+    // 4. Category Filter Buttons
     el.categoryList.addEventListener('click', (e) => {
       const btn = e.target.closest('.cat-item-btn');
       if (!btn) return;
@@ -580,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', () => {
       applyFilters();
     });
 
-    // Type Selector Buttons
+    // 5. Type Selector Buttons (All / Subnote / Glossary / Bookmark)
     el.typeBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         el.typeBtns.forEach(b => b.classList.remove('active'));
@@ -590,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Search Box
+    // 6. Search Box
     el.searchInput.addEventListener('input', (e) => {
       state.searchQuery = e.target.value;
       el.clearSearchBtn.style.display = state.searchQuery ? 'block' : 'none';
@@ -604,64 +1063,112 @@ document.addEventListener('DOMContentLoaded', () => {
       applyFilters();
     });
 
-    // Mnemonic Toggle
+    // 7. Mnemonic Toggle
     el.toggleMnemonic.addEventListener('change', (e) => {
       state.showMnemonic = e.target.checked;
-      renderCurrentCard();
+      if (state.currentMode === 'study') {
+        renderStudyCard();
+      } else {
+        renderCurrentCard();
+      }
     });
 
-    // Shuffle Button
+    // 8. Shuffle Button
     el.shuffleBtn.addEventListener('click', () => {
       shuffleArray(state.filteredCards);
       state.currentIndex = 0;
-      renderCurrentCard();
+      if (state.currentMode === 'study') {
+        renderStudyCard();
+      } else {
+        renderCurrentCard();
+      }
     });
 
-    // Quiz Next Button
+    // 9. Quiz Next & Restart Buttons
     el.quizNextBtn.addEventListener('click', loadNextQuizQuestion);
     el.startNewQuizBtn.addEventListener('click', startNewQuiz);
 
-    // Theme Toggle
+    // 10. Theme Toggle
     el.themeToggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('light-theme');
       const isLight = document.body.classList.contains('light-theme');
       el.themeToggleBtn.innerHTML = isLight ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
     });
 
-    // Reset Stats
+    // 11. Reset Stats
     el.resetStatsBtn.addEventListener('click', () => {
-      if (confirm('모든 학습 평가 기록을 초기화하시겠습니까?')) {
+      if (confirm('모든 학습 평가 기록 및 북마크를 초기화하시겠습니까?')) {
         state.ratings = {};
-        try { localStorage.removeItem('itpe_flashcard_ratings'); } catch (err) { /* ignore */ }
+        state.bookmarks = {};
+        state.readCompleted = {};
+        try {
+          localStorage.removeItem('itpe_flashcard_ratings');
+          localStorage.removeItem('itpe_flashcard_bookmarks');
+          localStorage.removeItem('itpe_flashcard_read_completed');
+        } catch (err) { /* ignore */ }
         updateStats();
         applyFilters();
       }
     });
 
-    // Keyboard Shortcuts
+    // 12. Global Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
-      if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
-      if (state.currentMode !== 'flashcard' && state.currentMode !== 'review') return;
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
 
-      if (e.code === 'Space') {
-        e.preventDefault();
-        state.isFlipped = !state.isFlipped;
-        el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
-      } else if (e.code === 'ArrowRight' || e.code === 'KeyD') {
-        nextCard();
-      } else if (e.code === 'ArrowLeft' || e.code === 'KeyA') {
-        prevCard();
-      } else if (e.code === 'Digit1') {
-        rateCard('hard');
-      } else if (e.code === 'Digit2') {
-        rateCard('medium');
-      } else if (e.code === 'Digit3') {
-        rateCard('easy');
+      if (state.currentMode === 'study') {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          nextStudyStep();
+        } else if (e.code === 'ArrowRight' || e.code === 'KeyD') {
+          stopAutoplay();
+          nextStudyCard();
+        } else if (e.code === 'ArrowLeft' || e.code === 'KeyA') {
+          stopAutoplay();
+          prevStudyCard();
+        } else if (e.code === 'KeyB') {
+          if (state.filteredCards.length > 0) {
+            toggleBookmark(state.filteredCards[state.currentIndex].id);
+          }
+        } else if (e.code === 'KeyM') {
+          state.isKeywordMasked = !state.isKeywordMasked;
+          el.toggleKeywordMask.checked = state.isKeywordMasked;
+          el.studyCardBody.classList.toggle('mask-keywords-active', state.isKeywordMasked);
+        } else if (e.code === 'KeyP') {
+          if (state.studyView !== 'step') toggleAutoplay();
+        }
+      } else if (state.currentMode === 'flashcard' || state.currentMode === 'review') {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          state.isFlipped = !state.isFlipped;
+          el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
+        } else if (e.code === 'ArrowRight' || e.code === 'KeyD') {
+          nextCard();
+        } else if (e.code === 'ArrowLeft' || e.code === 'KeyA') {
+          prevCard();
+        } else if (e.code === 'Digit1') {
+          rateCard('hard');
+        } else if (e.code === 'Digit2') {
+          rateCard('medium');
+        } else if (e.code === 'Digit3') {
+          rateCard('easy');
+        }
       }
     });
   }
 
   // UTILITY FUNCTIONS
+
+  // Some source notes wrap their whole concept-diagram cell in a single
+  // ` `...` ` inline-code span; strip that outer pair so it isn't rendered
+  // as literal backtick characters (the diagram already gets code styling).
+  function stripWrappingBackticks(text) {
+    if (!text) return text;
+    const trimmed = text.trim();
+    if (trimmed.length > 1 && trimmed.startsWith('`') && trimmed.endsWith('`')) {
+      return trimmed.slice(1, -1).trim();
+    }
+    return trimmed;
+  }
 
   // Renders minimal inline markdown (**bold**, `code`) found in source notes.
   // Input is escaped first, so the markers below only ever wrap safe text.
