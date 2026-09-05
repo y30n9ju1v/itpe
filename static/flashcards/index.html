@@ -132,6 +132,15 @@
           <li><kbd>P</kbd> 슬라이드쇼 <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> 평가</li>
         </ul>
       </div>
+
+      <!-- Mobile-only: header hides the danger action to declutter, so
+           surface it here where the drawer is already the settings home. -->
+      <div class="sidebar-section mobile-only-danger">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> 위험 구역</h3>
+        <button id="reset-stats-btn-mobile" class="btn danger-outline" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-rotate-left"></i> 학습 데이터 초기화
+        </button>
+      </div>
     </aside>
 
     <!-- Main Content Area -->

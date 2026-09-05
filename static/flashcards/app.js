@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     readCompleted: loadReadCompleted(),
     selectedCategory: 'all',
     selectedType: 'all', // 'all', 'subnote', 'glossary', 'bookmark'
-    currentMode: 'study', // 'study', 'flashcard', 'review', 'quiz', 'list'
+    currentMode: 'study', // Desktop default; phones start in the compact flashcard view.
     studyView: 'step', // 'all' (전체 펼쳐보기) or 'step' (능동 회상)
     currentStep: 1, // 1~5
     isKeywordMasked: false,
@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     progressText: document.getElementById('overall-progress-text'),
     themeToggleBtn: document.getElementById('theme-toggle-btn'),
     resetStatsBtn: document.getElementById('reset-stats-btn'),
+    resetStatsBtnMobile: document.getElementById('reset-stats-btn-mobile'),
     mobileFilterBtn: document.getElementById('mobile-filter-btn'),
     mobileFilterCloseBtn: document.getElementById('mobile-filter-close-btn'),
     sidebar: document.getElementById('learning-sidebar'),
@@ -236,6 +237,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await resp.json();
       state.allCards = data.cards || [];
       state.categories = data.categories || {};
+
+      // A full study card is intentionally long-form. On a phone, start with
+      // the recall card instead so the prompt and its rating controls remain
+      // usable within the viewport.
+      if (window.matchMedia('(max-width: 640px)').matches) {
+        state.currentMode = 'flashcard';
+        el.modeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.mode === 'flashcard'));
+        el.viewStudy.classList.remove('active');
+        el.viewFlashcard.classList.add('active');
+      }
+      syncMobileFocusMode();
 
       renderCategorySidebar();
       applyFilters();
@@ -1082,6 +1094,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.modeBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         state.currentMode = btn.dataset.mode;
+        syncMobileFocusMode();
         setMobileFiltersOpen(false);
 
         el.viewPanels.forEach(panel => panel.classList.remove('active'));
@@ -1174,7 +1187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 11. Reset Stats
-    el.resetStatsBtn.addEventListener('click', () => {
+    function resetLearningData() {
       if (confirm('모든 학습 평가 기록 및 북마크를 초기화하시겠습니까?')) {
         state.ratings = {};
         state.bookmarks = {};
@@ -1189,7 +1202,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateStats();
         applyFilters();
       }
-    });
+    }
+    el.resetStatsBtn.addEventListener('click', resetLearningData);
+    // Mobile hides the header's danger action to declutter; it is
+    // re-surfaced inside the settings drawer instead of dropped entirely.
+    if (el.resetStatsBtnMobile) {
+      el.resetStatsBtnMobile.addEventListener('click', () => {
+        resetLearningData();
+        setMobileFiltersOpen(false);
+      });
+    }
 
     // 12. Global Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
@@ -1250,6 +1272,12 @@ document.addEventListener('DOMContentLoaded', () => {
     el.sidebar.classList.toggle('mobile-open', isOpen);
     el.mobileFilterBtn.setAttribute('aria-expanded', String(isOpen));
     if (isOpen) el.mobileFilterCloseBtn.focus();
+  }
+
+  function syncMobileFocusMode() {
+    const isCompactViewport = window.matchMedia('(max-width: 640px)').matches;
+    const isRecallMode = state.currentMode === 'flashcard' || state.currentMode === 'review';
+    document.body.classList.toggle('flashcard-focus', isCompactViewport && isRecallMode);
   }
 
   // UTILITY FUNCTIONS
