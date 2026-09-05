@@ -39,7 +39,7 @@ title: "정보전략 및 관리 용어집"
 | ISMP | 개별 정보화사업 발주요건 도출 위한 요구사항 정밀화 계획 | [ISP 및 ISMP]({{< relref "/docs/subnotes/01_InfoStrategy/isp-ismp" >}}) |
 | ISO 22301 | 사업연속성경영시스템(BCP) 국제표준 | [BCP·DRS 체계]({{< relref "/docs/subnotes/01_InfoStrategy/bcp-drs-business-continuity" >}}) |
 | ISO 31000 | 조직 전 활동 리스크 관리 원칙·프로세스 국제표준 | [COSO·ISO31000]({{< relref "/docs/subnotes/01_InfoStrategy/coso-iso31000-risk-governance" >}}) |
-| ISO/IEC 38500 | IT거버넌스 6대 원칙+EDM 3대 프로세스모델 국제표준 | [IT 거버넌스 및 COBIT]({{< relref "/docs/subnotes/01_InfoStrategy/it-governance-cobit" >}}) |
+| ISO/IEC 38500 | 조직의 IT 거버넌스 원칙과 Evaluate·Direct·Monitor(EDM) 활동을 제시한 국제표준 | [IT 거버넌스 및 COBIT]({{< relref "/docs/subnotes/01_InfoStrategy/it-governance-cobit" >}}) |
 | ISP | 경영비전 지원 중장기 IT 로드맵 수립 계획 | [ISP 및 ISMP]({{< relref "/docs/subnotes/01_InfoStrategy/isp-ismp" >}}) |
 | ITIL V4 SVS | 서비스가치사슬 6대 활동 기반 유연한 서비스관리 체계 | [ITSM/ISO20000과 ITIL]({{< relref "/docs/subnotes/01_InfoStrategy/itsm-itil-service-management" >}}) |
 | LDA (선형판별분석) | 클래스레이블 활용, 클래스간 분리 최대화 지도학습 차원축소 | [PCA와 LDA 차원축소]({{< relref "/docs/subnotes/01_InfoStrategy/pca-lda-dimensionality-reduction" >}}) |
@@ -90,7 +90,7 @@ title: "정보전략 및 관리 용어집"
 | 예비타당성 조사(예타) | 대규모 신규사업 착수전 경제성·정책성·기술성 종합검토 제도 | [예비타당성 조사]({{< relref "/docs/subnotes/01_InfoStrategy/preliminary-feasibility-study" >}}) |
 | 왜도(Skewness)·첨도(Kurtosis) | 분포의 비대칭성·뾰족한 정도를 나타내는 형태통계량 | [표본추출과 기술통계·추론통계]({{< relref "/docs/subnotes/01_InfoStrategy/sampling-descriptive-inferential-statistics" >}}) |
 | 유턴법 | 2013년 제정된 리쇼어링 세제혜택 지원법 | [리쇼어링과 ICT 활용]({{< relref "/docs/subnotes/01_InfoStrategy/reshoring-ict" >}}) |
-| 의무감리(예대비) | 예산 5억↑구축·대국민서비스·비효율우려 시 IT감리 의무대상 | [IT 감리 및 PMO]({{< relref "/docs/subnotes/01_InfoStrategy/it-audit-pmo" >}}) |
+| 정보시스템 감리 대상 | 전자정부법 및 하위 고시에서 정한 사업 규모·특성 등에 따라 결정되는 감리 대상 | [IT 감리 및 PMO]({{< relref "/docs/subnotes/01_InfoStrategy/it-audit-pmo" >}}) |
 | 이항/포아송/정규/지수 분포 | 대표적 이산·연속 확률분포 4종 | [통계 분석용 확률 분포 모델]({{< relref "/docs/subnotes/01_InfoStrategy/statistics-distributions" >}}) |
 | 인시던트 관리 (Incident Management) | 서비스 신속복구를 위한 임시조치 프로세스 | [ITSM/ISO20000과 ITIL]({{< relref "/docs/subnotes/01_InfoStrategy/itsm-itil-service-management" >}}) |
 | 채찍효과 (Bullwhip Effect) | 수요변동이 상위 공급망으로 갈수록 증폭되는 현상 | [SCM과 화이트 레이블 마케팅]({{< relref "/docs/subnotes/01_InfoStrategy/scm-white-label" >}}) |

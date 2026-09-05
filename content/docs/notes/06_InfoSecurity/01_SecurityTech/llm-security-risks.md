@@ -8,7 +8,7 @@ exam_peim: ["136회"]
 
 ## 개요
 
-LLM(Large Language Model)을 소프트웨어 개발에 도입할 때 기존 보안 취약점과는 다른 새로운 위협이 발생한다. OWASP는 2025년 LLM Top 10을 발표하여 프롬프트 인젝션, 데이터 유출, 모델 오용 등 LLM 특유의 보안 위험과 대응 기준을 제시한다.
+LLM(Large Language Model)을 소프트웨어 개발에 도입할 때 기존 보안 취약점과는 다른 새로운 위협이 발생한다. 아래 목록은 OWASP LLM Top 10 **2023판 아카이브**를 학습용으로 정리한 것이며, 실제 설계·감사에는 OWASP의 최신판을 확인한다.
 
 ## 핵심 내용
 
@@ -22,7 +22,7 @@ LLM(Large Language Model)을 소프트웨어 개발에 도입할 때 기존 보�
 | 4 | 에이전트 과도한 권한 | LLM 에이전트가 필요 이상의 시스템 접근 | 최소 권한 원칙, 행동 범위 제한, 인간 승인 |
 | 5 | 모델 조작 공격(Model Inversion) | 쿼리를 통한 학습 데이터 역추출 | 차분 프라이버시, 응답 제한, 쿼리 속도 제한 |
 
-**OWASP LLM Top 10 (2025) 주요 항목**
+**OWASP LLM Top 10 (2023 아카이브) 주요 항목**
 1. LLM01: Prompt Injection
 2. LLM02: Insecure Output Handling
 3. LLM03: Training Data Poisoning
@@ -59,3 +59,7 @@ LLM(Large Language Model)을 소프트웨어 개발에 도입할 때 기존 보�
 
 - 136회 2교시 3번 (PEIM)
 - 136회 4교시 5번 (PEIM)
+
+## 출처·최신성
+
+- [OWASP Top 10 for LLM and GenAI Applications](https://genai.owasp.org/initiatives/top-10-for-llm-and-genai/)의 최신 버전과 항목명을 적용 전 확인한다.

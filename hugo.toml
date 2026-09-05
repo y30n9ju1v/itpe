@@ -1,5 +1,5 @@
 baseURL = "https://y30n9ju1v.github.io/itpe/"
-languageCode = "ko-KR"
+locale = "ko-KR"
 title = "y30n9ju1v's ITPE Notes"
 theme = "hugo-book"
 

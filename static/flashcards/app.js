@@ -49,6 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (err) {}
   }
 
+  // Keep review timing separate from the latest confidence rating.
+  function loadSchedules() {
+    try {
+      return JSON.parse(localStorage.getItem('itpe_flashcard_schedules') || '{}');
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function saveSchedules(schedules) {
+    try {
+      localStorage.setItem('itpe_flashcard_schedules', JSON.stringify(schedules));
+    } catch (err) {
+      console.warn('Failed to save flashcard schedules.', err);
+    }
+  }
+
   // APP STATE
   const state = {
     allCards: [],
@@ -56,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filteredCards: [],
     currentIndex: 0,
     ratings: loadRatings(),
+    schedules: loadSchedules(),
     bookmarks: loadBookmarks(),
     readCompleted: loadReadCompleted(),
     selectedCategory: 'all',
@@ -89,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     statEasy: document.getElementById('stat-easy-count'),
     statMedium: document.getElementById('stat-medium-count'),
     statHard: document.getElementById('stat-hard-count'),
+    statDue: document.getElementById('stat-due-count'),
     progressBarFill: document.getElementById('overall-progress-bar'),
     progressText: document.getElementById('overall-progress-text'),
     themeToggleBtn: document.getElementById('theme-toggle-btn'),
@@ -160,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Front Face
     frontType: document.getElementById('card-front-type'),
+    frontMnemonicBadge: document.getElementById('card-front-mnemonic-badge'),
     frontTitle: document.getElementById('card-front-title'),
     frontMnemonicBox: document.getElementById('card-front-mnemonic-container'),
     frontMnemonics: document.getElementById('card-front-mnemonics'),
@@ -254,10 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter by Mode
     if (state.currentMode === 'review') {
-      result = result.filter(c => {
-        const r = state.ratings[c.id];
-        return r === 'hard' || r === 'medium';
-      });
+      result = result.filter(isDueForReview);
     }
 
     // Filter by Category
@@ -600,8 +617,8 @@ document.addEventListener('DOMContentLoaded', () => {
       el.frontMnemonicBox.style.display = 'block';
       el.frontKeywordsBox.style.display = 'none';
       if (state.currentMode === 'review') {
-        el.frontTitle.textContent = "복습할 카드가 없습니다! 🎉";
-        el.frontMnemonics.innerHTML = "<li>'모름' 또는 '헷갈림'으로 평가된 카드가 모두 해소되었습니다.</li>";
+        el.frontTitle.textContent = "오늘 예정된 복습이 없습니다! 🎉";
+        el.frontMnemonics.innerHTML = "<li>다음 복습일에 다시 만나요. 새 카드는 학습 카드 모드에서 시작할 수 있습니다.</li>";
       } else {
         el.frontTitle.textContent = "조건에 해당하는 카드가 없습니다.";
         el.frontMnemonics.innerHTML = "<li>다른 카테고리나 검색어를 선택해 보세요.</li>";
@@ -620,24 +637,16 @@ document.addEventListener('DOMContentLoaded', () => {
     el.currentCardCat.innerHTML = `<span class="cat-icon">${catIcon}</span> <span class="cat-name">${catName}</span>`;
 
     // FRONT FACE
-    el.frontType.textContent = card.type === 'subnote' ? '서브노트 핵심' : '용어집';
-    el.frontTitle.textContent = card.title || card.doc_title;
+    el.frontType.textContent = card.type === 'subnote' ? '정의 → 토픽 회상' : '정의 → 용어 회상';
+    el.frontMnemonicBadge.style.display = 'inline-flex';
+    el.frontTitle.innerHTML = card.definition
+      ? renderInlineMarkdown(card.definition)
+      : '정의를 보고 토픽명과 답안 구조를 떠올려 보세요.';
 
-    // Mnemonics
-    if (card.mnemonics && card.mnemonics.length > 0 && state.showMnemonic) {
-      el.frontMnemonicBox.style.display = 'block';
-      el.frontMnemonics.innerHTML = card.mnemonics.map(m => `<li>• ${renderInlineMarkdown(m)}</li>`).join('');
-    } else {
-      el.frontMnemonicBox.style.display = 'none';
-    }
-
-    // Keywords Hint
-    if (card.keywords) {
-      el.frontKeywordsBox.style.display = 'block';
-      el.frontKeywordText.textContent = card.keywords.split(',').slice(0, 4).join(', ') + '...';
-    } else {
-      el.frontKeywordsBox.style.display = 'none';
-    }
+    // Titles, mnemonics, and keywords are answers. Keep them on the back so
+    // this mode practises retrieval instead of recognition.
+    el.frontMnemonicBox.style.display = 'none';
+    el.frontKeywordsBox.style.display = 'none';
 
     // BACK FACE
     el.backTitle.textContent = card.title || card.doc_title;
@@ -750,14 +759,56 @@ document.addEventListener('DOMContentLoaded', () => {
     if (state.filteredCards.length === 0) return;
     const card = state.filteredCards[state.currentIndex];
     state.ratings[card.id] = rating;
+    scheduleCard(card, rating);
     saveRatings(state.ratings);
     updateStats();
+
+    // A rated due card leaves today's queue immediately; it will return when
+    // its scheduled review time arrives.
+    if (state.currentMode === 'review') {
+      applyFilters();
+      return;
+    }
 
     // Visual feedback & next card
     renderCurrentCard();
     setTimeout(() => {
       nextCard();
     }, 200);
+  }
+
+  function isDueForReview(card) {
+    const schedule = state.schedules[card.id];
+    return !schedule || !schedule.dueAt || new Date(schedule.dueAt).getTime() <= Date.now();
+  }
+
+  function scheduleCard(card, rating) {
+    const previous = state.schedules[card.id] || { reps: 0, lapses: 0, intervalDays: 0 };
+    let intervalDays;
+    let dueAt;
+
+    if (rating === 'hard') {
+      intervalDays = 0;
+      dueAt = new Date(Date.now() + 10 * 60 * 1000);
+    } else if (rating === 'medium') {
+      intervalDays = Math.max(1, Math.round((previous.intervalDays || 1) * 1.5));
+      dueAt = new Date(Date.now() + intervalDays * 24 * 60 * 60 * 1000);
+    } else {
+      intervalDays = previous.reps === 0
+        ? 3
+        : Math.max(4, Math.round((previous.intervalDays || 3) * 2.5));
+      dueAt = new Date(Date.now() + intervalDays * 24 * 60 * 60 * 1000);
+    }
+
+    state.schedules[card.id] = {
+      dueAt: dueAt.toISOString(),
+      intervalDays,
+      reps: previous.reps + 1,
+      lapses: previous.lapses + (rating === 'hard' ? 1 : 0),
+      lastRating: rating,
+      lastReviewedAt: new Date().toISOString()
+    };
+    saveSchedules(state.schedules);
   }
 
   function nextCard() {
@@ -801,10 +852,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookmarkCount = Object.keys(state.bookmarks).filter(k => state.bookmarks[k]).length;
     if (el.statBookmark) el.statBookmark.textContent = bookmarkCount;
 
+    const dueCount = state.allCards.filter(isDueForReview).length;
+    if (el.statDue) el.statDue.textContent = dueCount;
+
     const total = state.allCards.length || 1;
-    const percent = Math.round((easyCount / total) * 100);
+    const scheduledCount = state.allCards.filter(c => !!state.schedules[c.id]).length;
+    const percent = Math.round((scheduledCount / total) * 100);
     el.progressBarFill.style.width = `${percent}%`;
-    el.progressText.textContent = `${percent}% 완료 (${easyCount}/${total})`;
+    el.progressText.textContent = `${percent}% 복습 계획 (${scheduledCount}/${total})`;
   }
 
   // QUIZ MODE LOGIC
@@ -847,8 +902,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = pool[Math.floor(Math.random() * pool.length)];
     state.quiz.currentQuestion = target;
 
-    // Pick 3 distractors
-    const distractors = pool.filter(c => c.id !== target.id);
+    // Prefer close distractors. Unrelated terms make a recognition quiz too easy.
+    let distractors = pool.filter(c => c.id !== target.id && c.type === target.type);
+    if (distractors.length < 3) {
+      distractors = pool.filter(c => c.id !== target.id);
+    }
     shuffleArray(distractors);
     const options = [target, ...distractors.slice(0, 3)];
     shuffleArray(options);
@@ -1101,10 +1159,12 @@ document.addEventListener('DOMContentLoaded', () => {
         state.ratings = {};
         state.bookmarks = {};
         state.readCompleted = {};
+        state.schedules = {};
         try {
           localStorage.removeItem('itpe_flashcard_ratings');
           localStorage.removeItem('itpe_flashcard_bookmarks');
           localStorage.removeItem('itpe_flashcard_read_completed');
+          localStorage.removeItem('itpe_flashcard_schedules');
         } catch (err) { /* ignore */ }
         updateStats();
         applyFilters();

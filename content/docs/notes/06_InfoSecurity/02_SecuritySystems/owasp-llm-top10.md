@@ -1,5 +1,5 @@
 ---
-title: "OWASP LLM Top 10 (2025)"
+title: "OWASP LLM Top 10 (2023 아카이브)"
 date: 2026-05-08T23:38:40+09:00
 tags: ["peim", "정보보안", "보안시스템", "OWASP", "LLM", "AI보안", "프롬프트인젝션"]
 draft: false
@@ -8,7 +8,7 @@ exam_peim: ["136회"]
 
 ## 개요
 
-OWASP LLM Top 10은 LLM(Large Language Model) 애플리케이션의 안전한 개발·운영을 위해 OWASP가 제시한 10대 보안 위협 목록이다. 2025년 버전은 프롬프트 인젝션·공급망 취약점·에이전트 과도한 권한 등 LLM 고유의 공격 벡터를 체계적으로 정리한다.
+OWASP LLM Top 10은 LLM(Large Language Model) 애플리케이션의 안전한 개발·운영을 위해 OWASP가 제시한 보안 위험 목록이다. 이 문서의 10개 항목은 **2023판 아카이브**이며, 적용·답안 작성 시에는 OWASP 최신판의 버전과 항목명을 확인한다.
 
 ## 핵심 내용
 
@@ -17,7 +17,7 @@ OWASP LLM Top 10은 LLM(Large Language Model) 애플리케이션의 안전한 �
 - 기존 OWASP Top 10으로 커버되지 않는 LLM 특유 위협 등장
 - 표준화된 보안 가이드라인 수요 증가
 
-**OWASP LLM Top 10 (2025) 목록**
+**OWASP LLM Top 10 (2023 아카이브) 목록**
 
 | 순위 | 위협 | 핵심 내용 |
 |------|------|-----------|
@@ -55,3 +55,7 @@ OWASP LLM Top 10은 LLM(Large Language Model) 애플리케이션의 안전한 �
 ## 참고 기출
 
 - 136회 4교시 5번 (PEIM)
+
+## 출처·최신성
+
+- [OWASP Top 10 for LLM and GenAI Applications](https://genai.owasp.org/initiatives/top-10-for-llm-and-genai/)에서 최신판을 확인한다.

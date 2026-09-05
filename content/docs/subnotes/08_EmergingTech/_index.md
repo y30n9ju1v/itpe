@@ -6,7 +6,7 @@ title: "신기술"
 | 번호 | 토픽명 | 정의 |
 | :--- | :--- | :--- |
 | 1 | [에이전틱 AI, MCP 및 다중 에이전트 시스템(MAS)]({{< relref "/docs/subnotes/08_EmergingTech/agentic-ai-mcp-multiagent" >}}) | 스스로 계획을 세우고 도구를 사용해 목표를 자율 달성하는 **에이전틱 AI**, AI-도구 연동 표준 **MCP**, 복수 에이전트가 협업하는 **MAS**, 그리고 에이전틱 AI 환경의 5대 보안위협과 관리적·기술적 대책 |
-| 2 | [인공지능기본법 및 생성형 AI 이용자 보호 가이드라인]({{< relref "/docs/subnotes/08_EmergingTech/ai-basic-law-user-protection" >}}) | 2026.1.22 시행된 국내 최초 AI 기본법 **인공지능기본법**과, 허위정보·딥페이크 등 생성형 AI 피해를 막는 **이용자 보호 가이드라인** |
+| 2 | [인공지능기본법 및 생성형 AI 이용자 보호 가이드라인]({{< relref "/docs/subnotes/08_EmergingTech/ai-basic-law-user-protection" >}}) | 2026.7.21 시행 중인 **인공지능기본법**의 고영향 인공지능 사업자 책무·영향평가 노력 규정과, 생성형 AI 이용자 피해를 예방하는 **이용자 보호 가이드라인** |
 | 3 | [AI 학습 하드웨어 (GPU·TPU) 및 멀티 GPU 분산학습]({{< relref "/docs/subnotes/08_EmergingTech/ai-hardware-gpu-tpu-multigpu" >}}) | 병렬 부동소수점 연산용 범용 프로세서 **GPU**와 텐서 연산 전용 ASIC **TPU**를 비교하고, 대형 모델을 여러 GPU에 나눠 학습시키는 **멀티 GPU 기술** |
 | 4 | [인공지능 영향평가(AI Impact Assessment) 총론과 수행 단계]({{< relref "/docs/subnotes/08_EmergingTech/ai-impact-assessment" >}}) | AI 시스템의 개발·도입 전 또는 운영 중 발생할 수 있는 인권·안전·편향·사회적 부작용 등의 위험을 사전에 식별·평가하고 완화 방안을 마련하는 절차적 평가 제도로, PIA의 사전예방적 구조를 인권·안전·사회적 영향 전반으로 확장한 개념 |
 | 5 | [AI 리스크·윤리·거버넌스 표준 (AI RMF·GPAI·ISO 42001·AI윤리기준·AI신뢰성)]({{< relref "/docs/subnotes/08_EmergingTech/ai-risk-governance-standards" >}}) | AI 리스크 관리를 위한 NIST **AI RMF**, EU AI Act의 **GPAI(범용AI) 규제**, 국제 인증 표준 **ISO/IEC 42001(AIMS)**, 정부 **AI윤리기준(3대원칙·10대핵심요건)**과 **AI 거버넌스 규제모형(자율·공동·정부규제)**, **AI 신뢰성 7대 속성** |

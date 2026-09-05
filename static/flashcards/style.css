@@ -141,6 +141,7 @@ body {
 .stat-pill.easy { color: var(--color-easy); border-color: rgba(16, 185, 129, 0.3); }
 .stat-pill.medium { color: var(--color-medium); border-color: rgba(245, 158, 11, 0.3); }
 .stat-pill.hard { color: var(--color-hard); border-color: rgba(239, 68, 68, 0.3); }
+.stat-pill.due { color: var(--primary); border-color: color-mix(in srgb, var(--primary) 35%, transparent); }
 
 .progress-bar-container {
   width: 160px;
