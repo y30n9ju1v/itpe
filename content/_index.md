@@ -11,7 +11,7 @@ title: "IT Professional Engineer's Notes"
 1. **5분 — 개념 연결**: [기출문제 노트]({{< relref "/docs/notes" >}})에서 토픽 하나를 읽습니다.
 2. **7분 — 답안 압축**: [서브노트]({{< relref "/docs/subnotes" >}})의 정의·개념도·비교·차별화 포인트를 손으로 재현합니다.
 3. **5분 — 실전 적용**: [핵심토픽 200제]({{< relref "/docs/problems" >}})에서 같은 토픽의 문제 목차를 3단락으로 설계합니다.
-4. **3분 — 회상 복습**: [🧠 Flashcards](/flashcards/)에서 오늘 복습 카드만 평가합니다.
+4. **3분 — 회상 복습**: [🧠 Flashcards](flashcards/)에서 오늘 복습 카드만 평가합니다.
 
 ## 자료를 사용하는 순서
 
