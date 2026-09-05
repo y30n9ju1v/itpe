@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedCategory: 'all',
     selectedType: 'all', // 'all', 'subnote', 'glossary', 'bookmark'
     currentMode: 'study', // 'study', 'flashcard', 'review', 'quiz', 'list'
-    studyView: 'all', // 'all' (전체 펼치기) or 'step' (단계별 학습)
+    studyView: 'step', // 'all' (전체 펼쳐보기) or 'step' (능동 회상)
     currentStep: 1, // 1~5
     isKeywordMasked: false,
     autoplay: {
@@ -112,6 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
     progressText: document.getElementById('overall-progress-text'),
     themeToggleBtn: document.getElementById('theme-toggle-btn'),
     resetStatsBtn: document.getElementById('reset-stats-btn'),
+    mobileFilterBtn: document.getElementById('mobile-filter-btn'),
+    mobileFilterCloseBtn: document.getElementById('mobile-filter-close-btn'),
+    sidebar: document.getElementById('learning-sidebar'),
 
     // Sidebar & Filters
     categoryList: document.getElementById('category-list'),
@@ -611,6 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (state.isFlipped) {
       el.flashcard3d.classList.remove('is-flipped');
       state.isFlipped = false;
+      el.flashcard3d.setAttribute('aria-pressed', 'false');
     }
 
     if (state.filteredCards.length === 0) {
@@ -986,6 +990,8 @@ document.addEventListener('DOMContentLoaded', () => {
       state.studyView = 'all';
       el.studyTabAll.classList.add('active');
       el.studyTabStep.classList.remove('active');
+      el.studyTabAll.setAttribute('aria-pressed', 'true');
+      el.studyTabStep.setAttribute('aria-pressed', 'false');
       el.autoplayControlsWrap.style.display = '';
       updateStudyStepView();
     });
@@ -998,6 +1004,8 @@ document.addEventListener('DOMContentLoaded', () => {
       state.studyView = 'step';
       el.studyTabStep.classList.add('active');
       el.studyTabAll.classList.remove('active');
+      el.studyTabStep.setAttribute('aria-pressed', 'true');
+      el.studyTabAll.setAttribute('aria-pressed', 'false');
       state.currentStep = 1;
       updateStudyStepView();
     });
@@ -1047,9 +1055,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Flashcard Mode (3D Flip & Ratings)
     el.flashcard3d.addEventListener('click', () => {
-      state.isFlipped = !state.isFlipped;
-      el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
+      toggleFlashcard();
     });
+
+    el.flashcard3d.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' || e.code === 'Enter') {
+        e.preventDefault();
+        toggleFlashcard();
+      }
+    });
+
+    el.mobileFilterBtn.addEventListener('click', () => setMobileFiltersOpen(true));
+    el.mobileFilterCloseBtn.addEventListener('click', () => setMobileFiltersOpen(false));
 
     el.rateHardBtn.addEventListener('click', (e) => { e.stopPropagation(); rateCard('hard'); });
     el.rateMediumBtn.addEventListener('click', (e) => { e.stopPropagation(); rateCard('medium'); });
@@ -1065,6 +1082,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.modeBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         state.currentMode = btn.dataset.mode;
+        setMobileFiltersOpen(false);
 
         el.viewPanels.forEach(panel => panel.classList.remove('active'));
 
@@ -1095,6 +1113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       state.selectedCategory = btn.dataset.cat;
       applyFilters();
+      setMobileFiltersOpen(false);
     });
 
     // 5. Type Selector Buttons (All / Subnote / Glossary / Bookmark)
@@ -1104,6 +1123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
         state.selectedType = btn.dataset.type;
         applyFilters();
+        setMobileFiltersOpen(false);
       });
     });
 
@@ -1173,6 +1193,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 12. Global Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
+      if (e.code === 'Escape' && el.sidebar.classList.contains('mobile-open')) {
+        setMobileFiltersOpen(false);
+        el.mobileFilterBtn.focus();
+        return;
+      }
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
 
       if (state.currentMode === 'study') {
@@ -1199,8 +1224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (state.currentMode === 'flashcard' || state.currentMode === 'review') {
         if (e.code === 'Space') {
           e.preventDefault();
-          state.isFlipped = !state.isFlipped;
-          el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
+          toggleFlashcard();
         } else if (e.code === 'ArrowRight' || e.code === 'KeyD') {
           nextCard();
         } else if (e.code === 'ArrowLeft' || e.code === 'KeyA') {
@@ -1214,6 +1238,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+  }
+
+  function toggleFlashcard() {
+    state.isFlipped = !state.isFlipped;
+    el.flashcard3d.classList.toggle('is-flipped', state.isFlipped);
+    el.flashcard3d.setAttribute('aria-pressed', String(state.isFlipped));
+  }
+
+  function setMobileFiltersOpen(isOpen) {
+    el.sidebar.classList.toggle('mobile-open', isOpen);
+    el.mobileFilterBtn.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) el.mobileFilterCloseBtn.focus();
   }
 
   // UTILITY FUNCTIONS

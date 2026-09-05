@@ -55,6 +55,9 @@
       </div>
 
       <div class="header-actions">
+        <button id="mobile-filter-btn" class="icon-btn mobile-filter-btn" title="학습 설정 및 필터" aria-label="학습 설정 및 필터" aria-expanded="false" aria-controls="learning-sidebar">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
         <button id="theme-toggle-btn" class="icon-btn" title="다크/라이트 테마 전환" aria-label="다크/라이트 테마 전환">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -69,7 +72,11 @@
   <div class="app-layout">
 
     <!-- Sidebar: Filters & Modes -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="learning-sidebar" aria-label="학습 설정 및 필터">
+      <div class="mobile-sidebar-title">
+        <strong>학습 설정</strong>
+        <button id="mobile-filter-close-btn" class="icon-btn" aria-label="학습 설정 닫기"><i class="fa-solid fa-xmark"></i></button>
+      </div>
       <!-- Mode Selection -->
       <div class="sidebar-section">
         <h3><i class="fa-solid fa-layer-group"></i> 학습 모드</h3>
@@ -134,7 +141,7 @@
       <div class="toolbar">
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" id="search-input" placeholder="토픽명, 키워드, 정의 검색 (예: EVM, SOLID, 다익스트라)...">
+          <input type="text" id="search-input" aria-label="토픽, 키워드, 정의 검색" placeholder="토픽명, 키워드, 정의 검색 (예: EVM, SOLID, 다익스트라)...">
           <button id="clear-search-btn" class="clear-btn" aria-label="검색어 지우기"><i class="fa-solid fa-xmark"></i></button>
         </div>
 
@@ -176,10 +183,10 @@
         <!-- Study Sub-Toolbar -->
         <div class="study-toolbar">
           <div class="study-view-tabs">
-            <button class="study-tab-btn active" id="study-tab-all" data-study-view="all">
+            <button class="study-tab-btn" id="study-tab-all" data-study-view="all" aria-pressed="false">
               <i class="fa-solid fa-table-cells-large"></i> 전체 펼쳐보기
             </button>
-            <button class="study-tab-btn" id="study-tab-step" data-study-view="step">
+            <button class="study-tab-btn active" id="study-tab-step" data-study-view="step" aria-pressed="true">
               <i class="fa-solid fa-stairs"></i> 단계별 학습 (Step Reveal)
             </button>
           </div>
@@ -333,7 +340,7 @@
 
         <!-- 3D Flip Card Scene -->
         <div class="card-scene">
-          <div class="card-3d" id="flashcard">
+          <div class="card-3d" id="flashcard" role="button" tabindex="0" aria-label="카드 뒤집기" aria-pressed="false">
             <!-- Front of Card -->
             <div class="card-face card-front">
               <div class="card-tag-wrapper">
